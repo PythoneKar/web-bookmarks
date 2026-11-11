@@ -1,0 +1,650 @@
+{
+  "categories": [
+    {
+      "id": "development",
+      "name": "برنامه‌نویسی و توسعه",
+      "icon": "⌘"
+    },
+    {
+      "id": "design",
+      "name": "طراحی و گرافیک",
+      "icon": "✎"
+    },
+    {
+      "id": "ai",
+      "name": "هوش مصنوعی",
+      "icon": "✧"
+    },
+    {
+      "id": "learning",
+      "name": "آموزش و یادگیری",
+      "icon": "▤"
+    },
+    {
+      "id": "movies",
+      "name": "فیلم و سرگرمی",
+      "icon": "▶"
+    },
+    {
+      "id": "media",
+      "name": "رسانه و موسیقی",
+      "icon": "♫"
+    },
+    {
+      "id": "news",
+      "name": "خبرگزاری‌ها و اخبار",
+      "icon": "◉"
+    },
+    {
+      "id": "satellite",
+      "name": "تلویزیون و پخش زنده",
+      "icon": "▣"
+    },
+    {
+      "id": "social",
+      "name": "شبکه‌های اجتماعی",
+      "icon": "◎"
+    },
+    {
+      "id": "cloud",
+      "name": "فضای ابری و فایل",
+      "icon": "☁"
+    },
+    {
+      "id": "security",
+      "name": "امنیت و حریم خصوصی",
+      "icon": "◇"
+    },
+    {
+      "id": "productivity",
+      "name": "بهره‌وری و ابزارها",
+      "icon": "◷"
+    },
+    {
+      "id": "reference",
+      "name": "دانشنامه و مرجع",
+      "icon": "⌕"
+    },
+    {
+      "id": "photography",
+      "name": "عکاسی و تصویر",
+      "icon": "▧"
+    },
+    {
+      "id": "misc",
+      "name": "سایر منابع",
+      "icon": "＋"
+    }
+  ],
+  "resources": [
+    {
+      "title": "GitHub",
+      "category": "development",
+      "description": "میزبانی کد، مدیریت مخزن و همکاری در پروژه‌های نرم‌افزاری.",
+      "url": "https://github.com",
+      "tags": [
+        "git",
+        "code",
+        "گیت‌هاب"
+      ]
+    },
+    {
+      "title": "GitLab",
+      "category": "development",
+      "description": "پلتفرم توسعه نرم‌افزار و مدیریت چرخه DevOps.",
+      "url": "https://gitlab.com",
+      "tags": [
+        "git",
+        "devops"
+      ]
+    },
+    {
+      "title": "Stack Overflow",
+      "category": "development",
+      "description": "پرسش و پاسخ تخصصی برای برنامه‌نویسان.",
+      "url": "https://stackoverflow.com",
+      "tags": [
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "MDN Web Docs",
+      "category": "development",
+      "description": "مستندات جامع فناوری‌های وب و استانداردهای مرورگر.",
+      "url": "https://developer.mozilla.org",
+      "tags": [
+        "html",
+        "css",
+        "javascript"
+      ]
+    },
+    {
+      "title": "W3Schools",
+      "category": "development",
+      "description": "آموزش و نمونه‌های تعاملی توسعه وب.",
+      "url": "https://www.w3schools.com",
+      "tags": [
+        "آموزش"
+      ]
+    },
+    {
+      "title": "CodePen",
+      "category": "development",
+      "description": "آزمایش و اشتراک‌گذاری نمونه‌کدهای فرانت‌اند.",
+      "url": "https://codepen.io",
+      "tags": [
+        "css",
+        "html"
+      ]
+    },
+    {
+      "title": "freeCodeCamp",
+      "category": "development",
+      "description": "آموزش رایگان برنامه‌نویسی و تمرین پروژه‌محور.",
+      "url": "https://www.freecodecamp.org",
+      "tags": [
+        "آموزش",
+        "کدنویسی"
+      ]
+    },
+    {
+      "title": "Python.org",
+      "category": "development",
+      "description": "وب‌سایت رسمی زبان برنامه‌نویسی پایتون.",
+      "url": "https://www.python.org",
+      "tags": [
+        "python"
+      ]
+    },
+    {
+      "title": "Microsoft Learn",
+      "category": "learning",
+      "description": "مسیرهای آموزشی فناوری و ابزارهای مایکروسافت.",
+      "url": "https://learn.microsoft.com",
+      "tags": [
+        "آموزش"
+      ]
+    },
+    {
+      "title": "Visual Studio Code",
+      "category": "development",
+      "description": "ویرایشگر کد سبک و قابل توسعه.",
+      "url": "https://code.visualstudio.com",
+      "tags": [
+        "ادیتور"
+      ]
+    },
+    {
+      "title": "Figma",
+      "category": "design",
+      "description": "طراحی رابط کاربری و نمونه‌سازی گروهی.",
+      "url": "https://www.figma.com",
+      "tags": [
+        "ui",
+        "ux"
+      ]
+    },
+    {
+      "title": "Canva",
+      "category": "design",
+      "description": "ساخت طرح‌های گرافیکی و محتوای بصری.",
+      "url": "https://www.canva.com",
+      "tags": [
+        "گرافیک"
+      ]
+    },
+    {
+      "title": "Adobe Color",
+      "category": "design",
+      "description": "ساخت و بررسی پالت‌های رنگی.",
+      "url": "https://color.adobe.com",
+      "tags": [
+        "رنگ"
+      ]
+    },
+    {
+      "title": "Google Fonts",
+      "category": "design",
+      "description": "مجموعه فونت‌های وب و ابزارهای تایپوگرافی.",
+      "url": "https://fonts.google.com",
+      "tags": [
+        "فونت"
+      ]
+    },
+    {
+      "title": "Unsplash",
+      "category": "photography",
+      "description": "مجموعه تصاویر باکیفیت برای استفاده در پروژه‌ها.",
+      "url": "https://unsplash.com",
+      "tags": [
+        "عکس"
+      ]
+    },
+    {
+      "title": "Pexels",
+      "category": "photography",
+      "description": "تصاویر و ویدئوهای استوک رایگان.",
+      "url": "https://www.pexels.com",
+      "tags": [
+        "ویدئو",
+        "عکس"
+      ]
+    },
+    {
+      "title": "Pixabay",
+      "category": "photography",
+      "description": "تصویر، وکتور، موسیقی و ویدئو.",
+      "url": "https://pixabay.com",
+      "tags": [
+        "رسانه"
+      ]
+    },
+    {
+      "title": "OpenAI",
+      "category": "ai",
+      "description": "ابزارها و پژوهش‌های هوش مصنوعی.",
+      "url": "https://openai.com",
+      "tags": [
+        "هوش مصنوعی"
+      ]
+    },
+    {
+      "title": "Hugging Face",
+      "category": "ai",
+      "description": "مدل‌ها، دیتاست‌ها و ابزارهای یادگیری ماشین.",
+      "url": "https://huggingface.co",
+      "tags": [
+        "مدل"
+      ]
+    },
+    {
+      "title": "Google AI Studio",
+      "category": "ai",
+      "description": "محیط آزمایش و توسعه با مدل‌های هوش مصنوعی گوگل.",
+      "url": "https://aistudio.google.com",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "title": "Khan Academy",
+      "category": "learning",
+      "description": "آموزش رایگان موضوعات گوناگون.",
+      "url": "https://www.khanacademy.org",
+      "tags": [
+        "آموزش"
+      ]
+    },
+    {
+      "title": "Coursera",
+      "category": "learning",
+      "description": "دوره‌های آموزشی دانشگاهی و مهارتی.",
+      "url": "https://www.coursera.org",
+      "tags": [
+        "دوره"
+      ]
+    },
+    {
+      "title": "edX",
+      "category": "learning",
+      "description": "دوره‌های آنلاین از دانشگاه‌ها و مؤسسات آموزشی.",
+      "url": "https://www.edx.org",
+      "tags": [
+        "دانشگاه"
+      ]
+    },
+    {
+      "title": "Internet Archive",
+      "category": "reference",
+      "description": "آرشیو دیجیتال کتاب، فیلم، صدا و صفحات وب.",
+      "url": "https://archive.org",
+      "tags": [
+        "آرشیو"
+      ]
+    },
+    {
+      "title": "IMDb",
+      "category": "movies",
+      "description": "پایگاه اطلاعات فیلم، سریال و عوامل تولید.",
+      "url": "https://www.imdb.com",
+      "tags": [
+        "سینما"
+      ]
+    },
+    {
+      "title": "TMDB",
+      "category": "movies",
+      "description": "پایگاه داده فیلم و سریال با API عمومی.",
+      "url": "https://www.themoviedb.org",
+      "tags": [
+        "فیلم"
+      ]
+    },
+    {
+      "title": "Letterboxd",
+      "category": "movies",
+      "description": "ثبت و مرور فیلم‌های تماشا‌شده و فهرست‌های سینمایی.",
+      "url": "https://letterboxd.com",
+      "tags": [
+        "سینما"
+      ]
+    },
+    {
+      "title": "JustWatch",
+      "category": "movies",
+      "description": "جست‌وجوی محل پخش آنلاین فیلم و سریال.",
+      "url": "https://www.justwatch.com",
+      "tags": [
+        "استریم"
+      ]
+    },
+    {
+      "title": "YouTube",
+      "category": "media",
+      "description": "پلتفرم اشتراک‌گذاری و تماشای ویدئو.",
+      "url": "https://www.youtube.com",
+      "tags": [
+        "ویدئو"
+      ]
+    },
+    {
+      "title": "Vimeo",
+      "category": "media",
+      "description": "میزبانی و نمایش ویدئوهای خلاقانه.",
+      "url": "https://vimeo.com",
+      "tags": [
+        "ویدئو"
+      ]
+    },
+    {
+      "title": "SoundCloud",
+      "category": "media",
+      "description": "کشف و انتشار موسیقی و محتوای صوتی.",
+      "url": "https://soundcloud.com",
+      "tags": [
+        "موسیقی"
+      ]
+    },
+    {
+      "title": "Spotify",
+      "category": "media",
+      "description": "سرویس پخش موسیقی و پادکست.",
+      "url": "https://open.spotify.com",
+      "tags": [
+        "موسیقی"
+      ]
+    },
+    {
+      "title": "Reuters",
+      "category": "news",
+      "description": "خبرگزاری بین‌المللی و پوشش رویدادهای جهان.",
+      "url": "https://www.reuters.com",
+      "tags": [
+        "خبر"
+      ]
+    },
+    {
+      "title": "Associated Press",
+      "category": "news",
+      "description": "خبرگزاری بین‌المللی و گزارش‌های خبری.",
+      "url": "https://apnews.com",
+      "tags": [
+        "خبر"
+      ]
+    },
+    {
+      "title": "France 24",
+      "category": "news",
+      "description": "شبکه خبری بین‌المللی با پوشش چندزبانه.",
+      "url": "https://www.france24.com",
+      "tags": [
+        "خبر"
+      ]
+    },
+    {
+      "title": "Deutsche Welle",
+      "category": "news",
+      "description": "رسانه بین‌المللی آلمان و گزارش‌های خبری.",
+      "url": "https://www.dw.com",
+      "tags": [
+        "خبر"
+      ]
+    },
+    {
+      "title": "Euronews",
+      "category": "news",
+      "description": "شبکه خبری بین‌المللی و گزارش رویدادها.",
+      "url": "https://www.euronews.com",
+      "tags": [
+        "خبر"
+      ]
+    },
+    {
+      "title": "Associated Press Video",
+      "category": "news",
+      "description": "گزارش‌های ویدئویی و تصویری خبرگزاری AP.",
+      "url": "https://apnews.com/video",
+      "tags": [
+        "ویدئو"
+      ]
+    },
+    {
+      "title": "NASA+",
+      "category": "satellite",
+      "description": "پخش زنده و برنامه‌های تصویری ناسا.",
+      "url": "https://plus.nasa.gov",
+      "tags": [
+        "پخش زنده",
+        "فضا"
+      ]
+    },
+    {
+      "title": "France 24 Live",
+      "category": "satellite",
+      "description": "پخش زنده شبکه خبری فرانس ۲۴.",
+      "url": "https://www.france24.com/en/live",
+      "tags": [
+        "تلویزیون"
+      ]
+    },
+    {
+      "title": "Al Jazeera Live",
+      "category": "satellite",
+      "description": "پخش زنده شبکه الجزیره انگلیسی.",
+      "url": "https://www.aljazeera.com/live",
+      "tags": [
+        "تلویزیون"
+      ]
+    },
+    {
+      "title": "Euronews Live",
+      "category": "satellite",
+      "description": "پخش زنده شبکه خبری یورونیوز.",
+      "url": "https://www.euronews.com/live",
+      "tags": [
+        "تلویزیون"
+      ]
+    },
+    {
+      "title": "Persian TV Live",
+      "category": "satellite",
+      "description": "فهرست پخش زنده شبکه‌های فارسی‌زبان.",
+      "url": "https://www.persiantvlive.com",
+      "tags": [
+        "فارسی",
+        "تلویزیون"
+      ]
+    },
+    {
+      "title": "Zende TV",
+      "category": "satellite",
+      "description": "دسترسی به پخش زنده شبکه‌های تلویزیونی.",
+      "url": "https://www.zendetv.com/stream",
+      "tags": [
+        "تلویزیون"
+      ]
+    },
+    {
+      "title": "Telegram",
+      "category": "social",
+      "description": "پیام‌رسان و بستر کانال‌ها و گروه‌ها.",
+      "url": "https://telegram.org",
+      "tags": [
+        "پیام‌رسان"
+      ]
+    },
+    {
+      "title": "Reddit",
+      "category": "social",
+      "description": "انجمن‌های موضوعی و گفت‌وگوهای کاربران.",
+      "url": "https://www.reddit.com",
+      "tags": [
+        "انجمن"
+      ]
+    },
+    {
+      "title": "LinkedIn",
+      "category": "social",
+      "description": "شبکه حرفه‌ای برای ارتباطات کاری.",
+      "url": "https://www.linkedin.com",
+      "tags": [
+        "کاری"
+      ]
+    },
+    {
+      "title": "Mastodon",
+      "category": "social",
+      "description": "شبکه اجتماعی غیرمتمرکز و متن‌باز.",
+      "url": "https://joinmastodon.org",
+      "tags": [
+        "اجتماعی"
+      ]
+    },
+    {
+      "title": "Google Drive",
+      "category": "cloud",
+      "description": "ذخیره‌سازی و اشتراک‌گذاری فایل در فضای ابری.",
+      "url": "https://drive.google.com",
+      "tags": [
+        "فضای ابری"
+      ]
+    },
+    {
+      "title": "Dropbox",
+      "category": "cloud",
+      "description": "همگام‌سازی و اشتراک‌گذاری فایل‌ها.",
+      "url": "https://www.dropbox.com",
+      "tags": [
+        "فایل"
+      ]
+    },
+    {
+      "title": "Proton",
+      "category": "security",
+      "description": "ابزارهای حریم خصوصی و ارتباطات امن.",
+      "url": "https://proton.me",
+      "tags": [
+        "امنیت"
+      ]
+    },
+    {
+      "title": "EFF",
+      "category": "security",
+      "description": "منابع آموزشی و راهنماهای حقوق دیجیتال و حریم خصوصی.",
+      "url": "https://www.eff.org",
+      "tags": [
+        "حریم خصوصی"
+      ]
+    },
+    {
+      "title": "Bitwarden",
+      "category": "security",
+      "description": "مدیریت رمزهای عبور.",
+      "url": "https://bitwarden.com",
+      "tags": [
+        "رمز عبور"
+      ]
+    },
+    {
+      "title": "Trello",
+      "category": "productivity",
+      "description": "مدیریت کارها و پروژه‌ها با بردهای بصری.",
+      "url": "https://trello.com",
+      "tags": [
+        "مدیریت"
+      ]
+    },
+    {
+      "title": "Notion",
+      "category": "productivity",
+      "description": "فضای کاری برای یادداشت، دانش و مدیریت پروژه.",
+      "url": "https://www.notion.com",
+      "tags": [
+        "یادداشت"
+      ]
+    },
+    {
+      "title": "Todoist",
+      "category": "productivity",
+      "description": "مدیریت وظایف و برنامه‌ریزی روزانه.",
+      "url": "https://todoist.com",
+      "tags": [
+        "وظایف"
+      ]
+    },
+    {
+      "title": "Google Scholar",
+      "category": "reference",
+      "description": "جست‌وجوی مقالات و منابع علمی.",
+      "url": "https://scholar.google.com",
+      "tags": [
+        "پژوهش"
+      ]
+    },
+    {
+      "title": "Wikipedia",
+      "category": "reference",
+      "description": "دانشنامه آزاد چندزبانه.",
+      "url": "https://www.wikipedia.org",
+      "tags": [
+        "دانشنامه"
+      ]
+    },
+    {
+      "title": "Wikimedia Commons",
+      "category": "reference",
+      "description": "مخزن رسانه‌ای آزاد و قابل جست‌وجو.",
+      "url": "https://commons.wikimedia.org",
+      "tags": [
+        "رسانه"
+      ]
+    },
+    {
+      "title": "WorldCat",
+      "category": "reference",
+      "description": "جست‌وجوی کتابخانه‌ها و منابع کتاب‌شناختی.",
+      "url": "https://www.worldcat.org",
+      "tags": [
+        "کتاب"
+      ]
+    },
+    {
+      "title": "Speedtest",
+      "category": "misc",
+      "description": "اندازه‌گیری سرعت و کیفیت اتصال اینترنت.",
+      "url": "https://www.speedtest.net",
+      "tags": [
+        "اینترنت"
+      ]
+    },
+    {
+      "title": "Have I Been Pwned",
+      "category": "security",
+      "description": "بررسی حضور نشانی ایمیل در رخدادهای افشای داده.",
+      "url": "https://haveibeenpwned.com",
+      "tags": [
+        "امنیت"
+      ]
+    }
+  ]
+}
