@@ -1,7 +1,7 @@
 (() => {
   const PAGE_SIZE = 18;
   const $ = (selector) => document.querySelector(selector);
-  const state = { resources: [], categories: [], category: "all", query: "", page: 1, sort: "default" };
+  const state = { resources: [], categories: [], category: "all", query: "", page: 1, sort: "default", suggestions: [], activeSuggestion: -1 };
   const normalize = (value) => String(value ?? "").toLowerCase()
     .replace(/[يى]/g, "ی").replace(/ك/g, "ک")
     .replace(/[\u064B-\u065F\u0670\u0640]/g, "")
@@ -64,10 +64,32 @@
     $("#next-page").onclick=()=>{if(state.page<pages){state.page++;render()}};
     $("#clear-search").hidden=!state.query;
   };
-  let debounce;
-  $("#search-input").addEventListener("input",e=>{clearTimeout(debounce);debounce=setTimeout(()=>{state.query=e.target.value.trim();state.page=1;render()},120)});
-  $("#clear-search").addEventListener("click",()=>{$("#search-input").value="";state.query="";state.page=1;render();});
-  $("#reset-search").addEventListener("click",()=>{state.category="all";state.query="";$("#search-input").value="";state.page=1;render();});
+  const suggestionBox=$("#search-suggestions"), searchInput=$("#search-input");
+  const closeSuggestions=()=>{suggestionBox.hidden=true;searchInput.setAttribute("aria-expanded","false");state.activeSuggestion=-1;};
+  const updateSuggestions=()=>{
+    const q=searchInput.value.trim();
+    if(!q||!state.resources.length){closeSuggestions();return;}
+    const matches=state.resources.filter(item=>fuzzyMatch([item.title,item.description,item.url,...(item.tags||[])].join(" "),q)).slice(0,7);
+    state.suggestions=matches;
+    if(!matches.length){suggestionBox.innerHTML='<div class="suggestion-hint">پیشنهادی پیدا نشد؛ برای دیدن نتایج کامل Enter بزن.</div>';suggestionBox.hidden=false;searchInput.setAttribute("aria-expanded","true");return;}
+    suggestionBox.innerHTML=matches.map((item,i)=>'<button type="button" class="suggestion-item" role="option" aria-selected="'+(i===state.activeSuggestion)+'" data-suggestion="'+i+'"><span class="suggestion-initial">'+safe((item.title||"؟").trim().charAt(0))+'</span><span class="suggestion-copy"><strong>'+safe(item.title)+'</strong><small>'+safe(categoryName(item.category))+' · '+safe(item.url)+'</small></span></button>').join("")+'<div class="suggestion-hint">برای انتخاب پیشنهاد از کلیدهای جهت‌نما یا کلیک استفاده کن</div>';
+    suggestionBox.hidden=false;searchInput.setAttribute("aria-expanded","true");
+  };
+  searchInput.addEventListener("input",()=>{state.query=searchInput.value.trim();state.page=1;state.activeSuggestion=-1;render();updateSuggestions();});
+  searchInput.addEventListener("keydown",e=>{
+    if(e.key==="Escape"){closeSuggestions();return;}
+    if(e.key==="ArrowDown"&&state.suggestions.length){e.preventDefault();state.activeSuggestion=Math.min(state.activeSuggestion+1,state.suggestions.length-1);updateSuggestions();return;}
+    if(e.key==="ArrowUp"&&state.suggestions.length){e.preventDefault();state.activeSuggestion=Math.max(state.activeSuggestion-1,0);updateSuggestions();return;}
+    if(e.key==="Enter"&&state.activeSuggestion>=0&&state.suggestions[state.activeSuggestion]){e.preventDefault();searchInput.value=state.suggestions[state.activeSuggestion].title;state.query=searchInput.value;state.page=1;closeSuggestions();render();}
+  });
+  suggestionBox.addEventListener("click",e=>{
+    const button=e.target.closest("[data-suggestion]");if(!button)return;
+    const item=state.suggestions[Number(button.dataset.suggestion)];if(!item)return;
+    searchInput.value=item.title;state.query=item.title;state.page=1;closeSuggestions();render();
+  });
+  document.addEventListener("click",e=>{if(!e.target.closest(".search-wrap")&&!e.target.closest("#search-suggestions"))closeSuggestions();});
+  $("#clear-search").addEventListener("click",()=>{$("#search-input").value="";state.query="";state.page=1;closeSuggestions();render();});
+  $("#reset-search").addEventListener("click",()=>{state.category="all";state.query="";$("#search-input").value="";state.page=1;closeSuggestions();render();});
   $("#sort-select").addEventListener("change",e=>{state.sort=e.target.value;state.page=1;render();});
   $("#theme-toggle").addEventListener("click",()=>{const light=document.documentElement.classList.toggle("light");localStorage.setItem("library-theme",light?"light":"dark");});
   if(localStorage.getItem("library-theme")==="light")document.documentElement.classList.add("light");
