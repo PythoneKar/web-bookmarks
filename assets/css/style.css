@@ -341,3 +341,17 @@ main{max-width:1240px;margin:auto;padding:0 28px}.hero{position:relative;isolati
 .category-number{display:inline-grid;place-items:center;min-width:22px;height:22px;margin-inline:3px;padding:0 5px;border:1px solid color-mix(in srgb,var(--accent2) 45%,var(--line));border-radius:7px;background:color-mix(in srgb,var(--accent2) 12%,var(--panel));color:var(--accent2);font-size:10px;font-weight:800;font-variant-numeric:tabular-nums;line-height:1}
 .category-with-menu>.category{gap:7px}
 @media(max-width:680px){.category-number{min-width:20px;height:20px;font-size:9px}}
+
+
+/* Bookmark and star controls inside mega-menu tool rows */
+.mega-tool-row{display:flex;align-items:center;gap:5px;min-width:0;padding:2px 3px;border-radius:9px;transition:background .15s}
+.mega-tool-row:hover{background:var(--panel2)}
+.mega-tool-row .mega-tool{flex:1;min-width:0;padding:6px 5px}
+.mega-tool-actions{display:flex;align-items:center;gap:4px;flex:0 0 auto}
+.mega-action-button{width:27px;height:27px;flex:0 0 27px;display:grid;place-items:center;border:1px solid var(--line);border-radius:7px;background:var(--panel2);color:var(--muted);font-size:17px;line-height:1;cursor:pointer;transition:color .16s,border-color .16s,background .16s,transform .16s}
+.mega-action-button:hover{transform:translateY(-1px);background:var(--panel)}
+.mega-action-button svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.mega-bookmark-action:hover,.mega-bookmark-action.is-bookmarked{color:var(--accent2);border-color:color-mix(in srgb,var(--accent2) 55%,var(--line));background:color-mix(in srgb,var(--accent2) 11%,var(--panel2))}
+.mega-bookmark-action.is-bookmarked svg{fill:color-mix(in srgb,var(--accent2) 22%,transparent)}
+.mega-favorite-action:hover,.mega-favorite-action.is-favorite{color:#f5c451;border-color:color-mix(in srgb,#f5c451 50%,var(--line));background:color-mix(in srgb,#f5c451 10%,var(--panel2))}
+@media(max-width:700px){.mega-tool-row .mega-tool{padding:6px 3px}.mega-action-button{width:25px;height:25px;flex-basis:25px}}
