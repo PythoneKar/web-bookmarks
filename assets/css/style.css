@@ -24,3 +24,11 @@ main{max-width:1240px;margin:auto;padding:0 28px}.hero{position:relative;isolati
 .card-heading{min-width:0;flex:1}
 .favorite-button{width:31px;height:31px;flex:0 0 31px;display:grid;place-items:center;border:1px solid var(--line);border-radius:9px;background:var(--panel2);color:var(--muted);font-size:19px;line-height:1;cursor:pointer;transition:color .18s,border-color .18s,background .18s}
 .favorite-button:hover,.favorite-button.is-favorite{color:#f5c451;border-color:color-mix(in srgb,#f5c451 45%,var(--line));background:color-mix(in srgb,#f5c451 10%,var(--panel2))}
+
+
+/* Pinned bookmark control: distinct from the star/favorites control */
+.bookmark-button{width:31px;height:31px;flex:0 0 31px;display:grid;place-items:center;border:1px solid var(--line);border-radius:9px;background:var(--panel2);color:var(--muted);cursor:pointer;transition:color .2s,border-color .2s,background .2s,transform .2s}
+.bookmark-button svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.bookmark-button:hover,.bookmark-button.is-bookmarked{color:var(--accent2);border-color:color-mix(in srgb,var(--accent2) 55%,var(--line));background:color-mix(in srgb,var(--accent2) 11%,var(--panel2))}
+.bookmark-button.is-bookmarked svg{fill:color-mix(in srgb,var(--accent2) 22%,transparent)}
+.resource-card.is-bookmarked{border-color:color-mix(in srgb,var(--accent2) 38%,var(--line))}
