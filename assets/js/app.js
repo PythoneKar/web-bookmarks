@@ -155,7 +155,7 @@
     }).join("");
     $("#all-count").textContent=state.resources.length.toLocaleString("fa-IR");
     document.querySelectorAll(".category").forEach(button=>button.addEventListener("click",()=>{
-      state.category=button.dataset.category;state.subcategory=null;state.page=1;render();
+      state.category=button.dataset.category;state.folderId=null;state.subcategory=null;state.page=1;render();
       const wrapper=[...document.querySelectorAll(".category-with-menu")].find(x=>x.querySelector(".category").dataset.category===button.dataset.category);
       if(wrapper){wrapper.classList.add("open");wrapper.querySelector(".category").setAttribute("aria-expanded","true");}
     }));
@@ -260,6 +260,43 @@
     $("#next-page").onclick=()=>{if(state.page<pages){state.page++;render()}};
     $("#clear-search").hidden=!state.query;
   };
+
+  // Personal folders: saved locally and kept separate from the catalogue.
+  document.addEventListener("click",e=>{
+    const add=e.target.closest("#add-folder-button");
+    if(add){
+      if(folders.length>=10)return;
+      const name=window.prompt("نام پوشه جدید را وارد کن:");
+      if(!name||!name.trim())return;
+      if(folders.some(f=>f.name.trim().toLocaleLowerCase()===name.trim().toLocaleLowerCase())){window.alert("پوشه‌ای با این نام وجود دارد.");return;}
+      folders.push({id:"folder-"+Date.now().toString(36)+"-"+Math.random().toString(36).slice(2,7),name:name.trim().slice(0,40)});
+      saveFolders();renderFolderBar();return;
+    }
+    const filter=e.target.closest("[data-folder-filter]");
+    if(filter){state.folderId=filter.dataset.folderFilter||null;state.category="all";state.subcategory=null;state.page=1;render();return;}
+    const assign=e.target.closest("[data-assign-folder]");
+    if(assign){
+      const menu=$("#folder-context-menu"),url=menu?.dataset.url;if(!url)return;
+      const id=assign.dataset.assignFolder;
+      if(folderItems[url]===id)delete folderItems[url];else folderItems[url]=id;
+      saveFolderItems();closeFolderMenu();renderFolderBar();if(state.folderId)render();return;
+    }
+    if(e.target.closest("[data-remove-folder-item]")){
+      const url=$("#folder-context-menu")?.dataset.url;
+      if(url){delete folderItems[url];saveFolderItems();closeFolderMenu();renderFolderBar();if(state.folderId)render();}
+      return;
+    }
+    if(e.target.closest("[data-close-folder-menu]")){closeFolderMenu();return;}
+    if(!e.target.closest("#folder-context-menu"))closeFolderMenu();
+  });
+  document.addEventListener("contextmenu",e=>{
+    const row=e.target.closest(".resource-card[data-resource-url],.mega-tool-row");
+    if(!row)return;
+    const url=row.dataset.resourceUrl||row.querySelector(".mega-tool")?.getAttribute("href");
+    if(!url)return;
+    e.preventDefault();showFolderMenu(url,e.clientX,e.clientY);
+  });
+  document.addEventListener("keydown",e=>{if(e.key==="Escape")closeFolderMenu();});
   const suggestionBox=$("#search-suggestions"), searchInput=$("#search-input");
   const closeSuggestions=()=>{suggestionBox.hidden=true;searchInput.setAttribute("aria-expanded","false");state.activeSuggestion=-1;};
   const updateSuggestions=()=>{
@@ -286,7 +323,7 @@
   });
   document.addEventListener("click",e=>{if(!e.target.closest(".search-wrap")&&!e.target.closest("#search-suggestions"))closeSuggestions();});
   $("#clear-search").addEventListener("click",()=>{$("#search-input").value="";state.query="";state.page=1;closeSuggestions();render();});
-  $("#reset-search").addEventListener("click",()=>{state.category="all";state.query="";$("#search-input").value="";state.page=1;closeSuggestions();render();});
+  $("#reset-search").addEventListener("click",()=>{state.category="all";state.folderId=null;state.query="";$("#search-input").value="";state.page=1;closeSuggestions();render();});
   $("#sort-select").addEventListener("change",e=>{state.sort=e.target.value;state.page=1;render();});
   $("#theme-toggle").addEventListener("click",()=>{const light=document.documentElement.classList.toggle("light");localStorage.setItem("library-theme",light?"light":"dark");});
   if(localStorage.getItem("library-theme")==="light")document.documentElement.classList.add("light");
