@@ -88,3 +88,32 @@ main{max-width:1240px;margin:auto;padding:0 28px}.hero{position:relative;isolati
 
 /* Keep desktop nested flyouts outside the parent mega-menu clipping area */
 @media(min-width:681px){.mega-menu{overflow:visible;max-height:none}}
+
+
+/* Prevent large category menus from extending the document height */
+@media(min-width:681px){
+  .mega-menu{
+    max-height:min(76vh,720px);
+    overflow-y:auto;
+    overflow-x:hidden;
+    overscroll-behavior:contain;
+    scrollbar-gutter:stable;
+  }
+  /* Nested tool lists expand inside the scrollable menu, not outside the viewport */
+  .mega-submenu{
+    position:static;
+    display:none;
+    width:auto;
+    max-height:none;
+    overflow:visible;
+    margin:4px 8px 9px;
+    padding:8px;
+    border-radius:10px;
+    box-shadow:none;
+    backdrop-filter:none;
+    animation:none;
+  }
+  .mega-link-wrap:hover>.mega-submenu,
+  .mega-link-wrap:focus-within>.mega-submenu{display:block}
+  .mega-tool-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
