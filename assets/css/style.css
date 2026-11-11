@@ -355,3 +355,39 @@ main{max-width:1240px;margin:auto;padding:0 28px}.hero{position:relative;isolati
 .mega-bookmark-action.is-bookmarked svg{fill:color-mix(in srgb,var(--accent2) 22%,transparent)}
 .mega-favorite-action:hover,.mega-favorite-action.is-favorite{color:#f5c451;border-color:color-mix(in srgb,#f5c451 50%,var(--line));background:color-mix(in srgb,#f5c451 10%,var(--panel2))}
 @media(max-width:700px){.mega-tool-row .mega-tool{padding:6px 3px}.mega-action-button{width:25px;height:25px;flex-basis:25px}}
+
+
+/* Larger nested resource panels and compact bookmark/star actions */
+@media(min-width:681px){
+  .mega-menu{
+    width:min(1080px,calc(100vw - 285px));
+    max-height:min(84vh,860px);
+  }
+  .mega-submenu{
+    width:100%;
+    max-height:min(74vh,760px);
+    padding:13px;
+  }
+  .mega-tool-list{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:3px 7px;
+  }
+  .mega-tool-row{gap:3px;padding:1px 2px}
+  .mega-tool-row .mega-tool{padding:6px 4px;gap:7px;font-size:11px}
+  .mega-tool-row .mega-tool span{min-width:0;flex:1}
+  .mega-tool-actions{gap:2px}
+  .mega-action-button{
+    width:20px;height:20px;flex-basis:20px;
+    border-radius:5px;font-size:12px;
+  }
+  .mega-action-button svg{width:11px;height:11px;stroke-width:2}
+}
+@media(max-width:680px){
+  .mega-menu{max-height:calc(100vh - 150px)}
+  .mega-submenu{max-height:42vh;overflow:auto}
+  .mega-tool-row{gap:3px;padding:1px}
+  .mega-tool-row .mega-tool{gap:6px;padding:6px 3px;font-size:10px}
+  .mega-tool-actions{gap:2px}
+  .mega-action-button{width:20px;height:20px;flex-basis:20px;font-size:12px;border-radius:5px}
+  .mega-action-button svg{width:11px;height:11px;stroke-width:2}
+}
