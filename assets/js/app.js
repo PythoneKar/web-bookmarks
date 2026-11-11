@@ -5,7 +5,7 @@
   const BOOKMARKS_KEY = "web-bookmarks:pinned";
   const FOLDERS_KEY = "web-bookmarks:folders";
   const FOLDER_ITEMS_KEY = "web-bookmarks:folder-items";
-  const ASSET_VERSION = "20261111-19";
+  const ASSET_VERSION = "20261111-20";
   const loadStored = (key,fallback) => { try { return JSON.parse(localStorage.getItem(key)||"null") ?? fallback; } catch { return fallback; } };
   let folderCreateOpen = false;
   let folders = loadStored(FOLDERS_KEY,[]);
@@ -158,7 +158,7 @@
         const toolLinks=tools.map(tool=>{
           const favicon="https://www.google.com/s2/favicons?domain_url="+encodeURIComponent(tool.url)+"&sz=64";
           const pinned=bookmarks.includes(tool.url), starred=favorites.has(tool.url);
-          return '<div class="mega-tool-row"><a class="mega-tool" href="'+safe(tool.url)+'" target="_blank" rel="noopener noreferrer"><img src="'+favicon+'" alt="" loading="lazy" referrerpolicy="no-referrer"><span>'+safe(tool.title)+'</span></a><div class="mega-tool-actions"><button class="mega-action-button mega-bookmark-action '+(pinned?'is-bookmarked':'')+'" type="button" data-mega-bookmark="'+safe(tool.url)+'" aria-label="'+(pinned?'برداشتن بوکمارک':'بوکمارک کردن ابزار')+'" aria-pressed="'+pinned+'" title="'+(pinned?'برداشتن بوکمارک':'بوکمارک کردن')+'"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.75 3.75h10.5a1 1 0 0 1 1 1v15.5L12 16.1l-6.25 4.15V4.75a1 1 0 0 1 1-1Z"/></svg></button><button class="mega-action-button mega-favorite-action '+(starred?'is-favorite':'')+'" type="button" data-mega-favorite="'+safe(tool.url)+'" aria-label="'+(starred?'حذف از نشان‌شده‌ها':'افزودن به نشان‌شده‌ها')+'" aria-pressed="'+starred+'" title="'+(starred?'حذف ستاره':'ستاره‌دار کردن')+'">'+(starred?'★':'☆')+'</button></div></div>';
+          return '<div class="mega-tool-row"><a class="mega-tool" href="'+safe(tool.url)+'" target="_blank" rel="noopener noreferrer"><img src="'+favicon+'" alt="" loading="lazy" referrerpolicy="no-referrer"><span>'+safe(tool.title)+'</span></a></div>';
         }).join("");
         return '<div class="mega-link-wrap"><button type="button" class="mega-link '+(state.subcategory===item.id?'active':'')+'" data-subcategory="'+item.id+'" aria-haspopup="true"><span>'+safe(item.name)+'</span><b>'+tools.length.toLocaleString("fa-IR")+'</b><span class="mega-link-arrow" aria-hidden="true">‹</span></button><div class="mega-submenu" role="region" aria-label="ابزارهای '+safe(item.name)+'"><div class="mega-submenu-head">'+safe(item.name)+' <small>'+tools.length.toLocaleString("fa-IR")+' ابزار</small></div><div class="mega-tool-list">'+(toolLinks||'<span class="mega-tools-empty">هنوز ابزاری ثبت نشده</span>')+'</div></div></div>';
       }).join("")+'</section>').join("");
@@ -251,7 +251,11 @@
     const menu=document.createElement("div");menu.id="folder-context-menu";menu.className="folder-context-menu";menu.dataset.url=url;
     menu.style.left=Math.max(8,Math.min(x,window.innerWidth-250))+"px";
     menu.style.top=Math.max(8,Math.min(y,window.innerHeight-300))+"px";
-    menu.innerHTML='<strong>انتقال ابزار به پوشه</strong>'+
+    const pinned=bookmarks.includes(url),starred=favorites.has(url);
+    menu.innerHTML='<strong>مدیریت ابزار</strong>'+
+      '<button type="button" class="context-action" data-context-bookmark>'+(pinned?'✓ حذف بوکمارک':'▣ افزودن به بوکمارک‌ها')+'</button>'+
+      '<button type="button" class="context-action" data-context-favorite>'+(starred?'★ حذف از نشان‌شده‌ها':'☆ افزودن به نشان‌شده‌ها')+'</button>'+
+      '<div class="context-menu-divider"></div><strong>انتقال به پوشه</strong>'+
       (folders.length?folders.map(f=>'<button type="button" data-assign-folder="'+safe(f.id)+'">'+(folderItems[url]===f.id?'✓ ':'📁 ')+safe(f.name)+'</button>').join(''):'<p>هنوز پوشه‌ای نساخته‌ای.</p>')+
       (folderItems[url]?'<button type="button" class="folder-remove-item" data-remove-folder-item>× حذف از پوشه فعلی</button>':'')+
       '<button type="button" class="folder-context-close" data-close-folder-menu>بستن</button>';
@@ -276,7 +280,7 @@
       const favicon="https://www.google.com/s2/favicons?domain_url="+encodeURIComponent(item.url)+"&sz=128";
       const isFavorite=favorites.has(item.url);
       const isBookmarked=bookmarks.includes(item.url);
-      return '<article class="resource-card '+(isBookmarked?'is-bookmarked':'')+'" data-resource-url="'+safe(item.url)+'"><div class="card-top"><div class="site-icon"><img src="'+favicon+'" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="site-icon-fallback" hidden>'+safe(initial)+'</span></div><div class="card-heading"><div class="card-title">'+safe(item.title)+'</div><div class="card-category">'+safe(categoryName(item.category))+'</div></div><button class="bookmark-button '+(isBookmarked?'is-bookmarked':'')+'" type="button" data-bookmark="'+safe(item.url)+'" aria-label="'+(isBookmarked?'برداشتن بوکمارک':'بوکمارک و انتقال به ابتدای دسته')+'" aria-pressed="'+isBookmarked+'"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.75 3.75h10.5a1 1 0 0 1 1 1v15.5L12 16.1l-6.25 4.15V4.75a1 1 0 0 1 1-1Z"/></svg></button><button class="favorite-button '+(isFavorite?'is-favorite':'')+'" type="button" data-favorite="'+safe(item.url)+'" aria-label="'+(isFavorite?'حذف از نشان‌شده‌ها':'افزودن به نشان‌شده‌ها')+'" aria-pressed="'+isFavorite+'">'+(isFavorite?'★':'☆')+'</button></div><p class="card-description">'+safe(item.description)+'</p><div class="card-bottom"><span class="card-domain">'+safe(domain)+'</span><a class="visit-link" href="'+safe(item.url)+'" target="_blank" rel="noopener noreferrer">بازدید از سایت ↗</a></div></article>';
+      return '<article class="resource-card '+(isBookmarked?'is-bookmarked':'')+'" data-resource-url="'+safe(item.url)+'"><div class="card-top"><div class="site-icon"><img src="'+favicon+'" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="site-icon-fallback" hidden>'+safe(initial)+'</span></div><div class="card-heading"><div class="card-title">'+safe(item.title)+'</div><div class="card-category">'+safe(categoryName(item.category))+'</div></div></div><p class="card-description">'+safe(item.description)+'</p><div class="card-bottom"><span class="card-domain">'+safe(domain)+'</span><a class="visit-link" href="'+safe(item.url)+'" target="_blank" rel="noopener noreferrer">بازدید از سایت ↗</a></div></article>';
     }).join("");
     $("#empty-state").hidden=visible.length!==0;$("#resource-grid").hidden=visible.length===0;
     $("#page-info").textContent=list.length?("نمایش "+(start+1).toLocaleString("fa-IR")+" تا "+Math.min(start+PAGE_SIZE,list.length).toLocaleString("fa-IR")+" از "+list.length.toLocaleString("fa-IR")):"۰ نتیجه";
@@ -311,6 +315,18 @@
 
   // Personal folders: saved locally and kept separate from the catalogue.
   document.addEventListener("click",e=>{
+    const contextAction=e.target.closest("[data-context-bookmark],[data-context-favorite]");
+    if(contextAction){
+      const menu=$("#folder-context-menu"),url=menu?.dataset.url;if(!url)return;
+      if(contextAction.hasAttribute("data-context-bookmark")){
+        const index=bookmarks.indexOf(url);if(index!==-1)bookmarks.splice(index,1);else bookmarks.unshift(url);
+        saveBookmarks();animateCardsOnNextRender=true;
+      }else{
+        if(favorites.has(url))favorites.delete(url);else favorites.add(url);
+        saveFavorites();
+      }
+      closeFolderMenu();render();return;
+    }
     const add=e.target.closest("#add-folder-button");
     if(add){
       if(folders.length>=10)return;
