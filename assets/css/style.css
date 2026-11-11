@@ -505,3 +505,12 @@ main{max-width:1240px;margin:auto;padding:0 28px}.hero{position:relative;isolati
     to{opacity:1;transform:translateY(-50%)}
   }
 }
+
+
+/* Cleaner resource lists: actions live in the right-click context menu */
+.resource-card .bookmark-button,
+.resource-card .favorite-button,
+.mega-tool-actions{display:none!important}
+.folder-context-menu{min-width:238px;max-width:min(290px,calc(100vw - 16px));max-height:min(72vh,520px);overflow:auto}
+.folder-context-menu .context-action{font-weight:700}
+.folder-context-menu .context-menu-divider{height:1px;background:var(--line);margin:7px 2px}
