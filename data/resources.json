@@ -106,14 +106,45 @@
       ]
     },
     {
-      "title": "Kayhan Life",
+      "title": "VOA Persian",
       "category": "news",
-      "description": "رسانه انگلیسی‌زبان خانواده کیهان با پوشش سیاست، اقتصاد، جامعه و فرهنگ ایران.",
-      "url": "https://kayhanlife.com/",
+      "description": "بخش فارسی صدای آمریکا؛ خبر، گزارش، تحلیل و برنامه‌های تلویزیونی و ویدئویی.",
+      "url": "https://ir.voanews.com/",
       "tags": [
-        "انگلیسی",
+        "فارسی",
         "خبر",
-        "ایران"
+        "صدای آمریکا"
+      ]
+    },
+    {
+      "title": "Radio Farda",
+      "category": "news",
+      "description": "رسانه خبری فارسی‌زبان رادیو اروپای آزاد/رادیو آزادی با پوشش ایران و جهان.",
+      "url": "https://www.radiofarda.com/",
+      "tags": [
+        "فارسی",
+        "خبر",
+        "رادیو"
+      ]
+    },
+    {
+      "title": "Euronews Persian",
+      "category": "news",
+      "description": "نسخه فارسی یورونیوز با خبرها و گزارش‌های بین‌المللی.",
+      "url": "https://per.euronews.com/",
+      "tags": [
+        "فارسی",
+        "خبر",
+        "اروپا"
+      ]
+    },
+    {
+      "title": "Deutsche Welle فارسی",
+      "category": "news",
+      "url": "https://www.dw.com/fa-ir",
+      "description": "اخبار و گزارش‌های فارسی",
+      "tags": [
+        "news"
       ]
     },
     {
@@ -137,6 +168,40 @@
         "خبر",
         "تحلیل",
         "ویدئو"
+      ]
+    },
+    {
+      "title": "Simay Azadi",
+      "category": "news",
+      "description": "تلویزیون ماهواره‌ای فارسی‌زبان با پخش زنده، خبر، گفت‌وگو و برنامه‌های اجتماعی.",
+      "url": "https://www.iranntv.com/about_us",
+      "tags": [
+        "فارسی",
+        "خبر",
+        "ماهواره",
+        "پخش زنده"
+      ]
+    },
+    {
+      "title": "Kalameh Farsi TV",
+      "category": "news",
+      "description": "شبکه فارسی‌زبان با خبر، تحلیل و برنامه‌های زنده ماهواره‌ای و آنلاین.",
+      "url": "https://www.kalamehfarsi.tv/en/about/",
+      "tags": [
+        "فارسی",
+        "خبر",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "Kayhan Life",
+      "category": "news",
+      "description": "رسانه انگلیسی‌زبان خانواده کیهان با پوشش سیاست، اقتصاد، جامعه و فرهنگ ایران.",
+      "url": "https://kayhanlife.com/",
+      "tags": [
+        "انگلیسی",
+        "خبر",
+        "ایران"
       ]
     },
     {
@@ -311,15 +376,6 @@
       ]
     },
     {
-      "title": "Deutsche Welle فارسی",
-      "category": "news",
-      "url": "https://www.dw.com/fa-ir",
-      "description": "اخبار و گزارش‌های فارسی",
-      "tags": [
-        "news"
-      ]
-    },
-    {
       "title": "ایرنا",
       "category": "news",
       "url": "https://www.irna.ir",
@@ -407,62 +463,6 @@
       "description": "اخبار فناوری و محصولات دیجیتال",
       "tags": [
         "news"
-      ]
-    },
-    {
-      "title": "VOA Persian",
-      "category": "news",
-      "description": "بخش فارسی صدای آمریکا؛ خبر، گزارش، تحلیل و برنامه‌های تلویزیونی و ویدئویی.",
-      "url": "https://ir.voanews.com/",
-      "tags": [
-        "فارسی",
-        "خبر",
-        "صدای آمریکا"
-      ]
-    },
-    {
-      "title": "Radio Farda",
-      "category": "news",
-      "description": "رسانه خبری فارسی‌زبان رادیو اروپای آزاد/رادیو آزادی با پوشش ایران و جهان.",
-      "url": "https://www.radiofarda.com/",
-      "tags": [
-        "فارسی",
-        "خبر",
-        "رادیو"
-      ]
-    },
-    {
-      "title": "Euronews Persian",
-      "category": "news",
-      "description": "نسخه فارسی یورونیوز با خبرها و گزارش‌های بین‌المللی.",
-      "url": "https://per.euronews.com/",
-      "tags": [
-        "فارسی",
-        "خبر",
-        "اروپا"
-      ]
-    },
-    {
-      "title": "Simay Azadi",
-      "category": "news",
-      "description": "تلویزیون ماهواره‌ای فارسی‌زبان با پخش زنده، خبر، گفت‌وگو و برنامه‌های اجتماعی.",
-      "url": "https://www.iranntv.com/about_us",
-      "tags": [
-        "فارسی",
-        "خبر",
-        "ماهواره",
-        "پخش زنده"
-      ]
-    },
-    {
-      "title": "Kalameh Farsi TV",
-      "category": "news",
-      "description": "شبکه فارسی‌زبان با خبر، تحلیل و برنامه‌های زنده ماهواره‌ای و آنلاین.",
-      "url": "https://www.kalamehfarsi.tv/en/about/",
-      "tags": [
-        "فارسی",
-        "خبر",
-        "ماهواره"
       ]
     },
     {
