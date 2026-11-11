@@ -5,7 +5,7 @@
   const BOOKMARKS_KEY = "web-bookmarks:pinned";
   const FOLDERS_KEY = "web-bookmarks:folders";
   const FOLDER_ITEMS_KEY = "web-bookmarks:folder-items";
-  const ASSET_VERSION = "20261111-21";
+  const ASSET_VERSION = "20261111-22";
   const loadStored = (key,fallback) => { try { return JSON.parse(localStorage.getItem(key)||"null") ?? fallback; } catch { return fallback; } };
   let folderCreateOpen = false;
   let folderEditMode = false;
@@ -439,6 +439,95 @@
     e.preventDefault();e.stopPropagation();showFolderMenu(url,e.clientX,e.clientY);
   },true);
   document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeFolderMenu();closeFolderDeleteConfirm();}});
+
+
+  // Export and restore only user-owned browser data; catalogue resources remain in data/resources.json.
+  const BACKUP_APP = "web-bookmarks";
+  const BACKUP_VERSION = 1;
+  const BACKUP_KEYS = {
+    favorites: FAVORITES_KEY,
+    bookmarks: BOOKMARKS_KEY,
+    folders: FOLDERS_KEY,
+    folderItems: FOLDER_ITEMS_KEY,
+    theme: "library-theme"
+  };
+  const readBackupValue = key => {
+    const raw = localStorage.getItem(key);
+    if (raw === null) return null;
+    try { return JSON.parse(raw); } catch { return raw; }
+  };
+  const exportPersonalBackup = () => {
+    const payload = {
+      app: BACKUP_APP,
+      version: BACKUP_VERSION,
+      createdAt: new Date().toISOString(),
+      data: Object.fromEntries(Object.entries(BACKUP_KEYS).map(([name,key]) => [name, readBackupValue(key)]))
+    };
+    const blob = new Blob([JSON.stringify(payload, null, 2)], {type:"application/json;charset=utf-8"});
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "web-bookmarks-backup-" + new Date().toISOString().slice(0,10) + ".json";
+    document.body.appendChild(link); link.click(); link.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  };
+  const validateBackup = payload => {
+    if (!payload || payload.app !== BACKUP_APP || payload.version !== BACKUP_VERSION || !payload.data || typeof payload.data !== "object") {
+      throw new Error("این فایل، پشتیبان معتبر کتابخانه منابع وب نیست یا نسخه آن پشتیبانی نمی‌شود.");
+    }
+    const d = payload.data;
+    const validStrings = value => Array.isArray(value) && value.every(item => typeof item === "string");
+    const favoriteItems = Array.isArray(d.favorites) ? d.favorites : d.favorites && Array.isArray(d.favorites.items) ? d.favorites.items : null;
+    if (!favoriteItems || !validStrings(favoriteItems)) throw new Error("اطلاعات نشان‌شده‌ها در فایل پشتیبان معتبر نیست.");
+    if (!validStrings(d.bookmarks)) throw new Error("اطلاعات بوکمارک‌ها در فایل پشتیبان معتبر نیست.");
+    if (!Array.isArray(d.folders) || d.folders.length > 10 || !d.folders.every(f => f && typeof f.id === "string" && typeof f.name === "string")) {
+      throw new Error("ساختار پوشه‌های شخصی در فایل پشتیبان معتبر نیست.");
+    }
+    if (!d.folderItems || typeof d.folderItems !== "object" || Array.isArray(d.folderItems) ||
+        !Object.entries(d.folderItems).every(([url,folderId]) => typeof url === "string" && typeof folderId === "string")) {
+      throw new Error("ارتباط ابزارها با پوشه‌ها در فایل پشتیبان معتبر نیست.");
+    }
+    if (d.theme !== null && d.theme !== "light" && d.theme !== "dark") throw new Error("تنظیم پوسته در فایل پشتیبان معتبر نیست.");
+    return {
+      [FAVORITES_KEY]: JSON.stringify(d.favorites),
+      [BOOKMARKS_KEY]: JSON.stringify(d.bookmarks),
+      [FOLDERS_KEY]: JSON.stringify(d.folders),
+      [FOLDER_ITEMS_KEY]: JSON.stringify(d.folderItems),
+      "library-theme": d.theme === null ? null : d.theme
+    };
+  };
+  const restorePersonalBackup = async file => {
+    try {
+      if (!file) return;
+      if (file.size > 5 * 1024 * 1024) throw new Error("حجم فایل پشتیبان بیش از ۵ مگابایت است.");
+      const payload = JSON.parse(await file.text());
+      const restored = validateBackup(payload);
+      if (!window.confirm("با بازیابی این فایل، بوکمارک‌ها، نشان‌شده‌ها، پوشه‌ها و پوسته فعلی این مرورگر با اطلاعات داخل فایل جایگزین می‌شوند. ادامه می‌دهی؟")) return;
+      const previous = Object.values(BACKUP_KEYS).map(key => [key, localStorage.getItem(key)]);
+      try {
+        for (const [key,value] of Object.entries(restored)) {
+          if (value === null) localStorage.removeItem(key);
+          else localStorage.setItem(key,value);
+        }
+      } catch (error) {
+        for (const [key,value] of previous) {
+          try { if (value === null) localStorage.removeItem(key); else localStorage.setItem(key,value); } catch {}
+        }
+        throw error;
+      }
+      window.alert("بازیابی با موفقیت انجام شد. صفحه برای بارگذاری اطلاعات بازگردانی‌شده تازه می‌شود.");
+      window.location.reload();
+    } catch (error) {
+      window.alert(error instanceof SyntaxError ? "فایل انتخاب‌شده JSON معتبر نیست." : (error.message || "بازیابی فایل ناموفق بود."));
+    }
+  };
+  $("#backup-export").addEventListener("click", exportPersonalBackup);
+  $("#backup-import").addEventListener("click", () => $("#backup-file-input").click());
+  $("#backup-file-input").addEventListener("change", e => {
+    const file = e.target.files?.[0];
+    if (file) restorePersonalBackup(file);
+    e.target.value = "";
+  });
 
   const suggestionBox=$("#search-suggestions"), searchInput=$("#search-input");
   const closeSuggestions=()=>{suggestionBox.hidden=true;searchInput.setAttribute("aria-expanded","false");state.activeSuggestion=-1;};
