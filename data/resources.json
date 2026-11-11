@@ -83,6 +83,432 @@
   ],
   "resources": [
     {
+      "title": "Iran International",
+      "category": "news",
+      "description": "رسانه خبری فارسی‌زبان مستقر در خارج از ایران با پوشش شبانه‌روزی اخبار و پخش تلویزیونی.",
+      "url": "https://www.iranintl.com/",
+      "tags": [
+        "فارسی",
+        "خبر",
+        "تلویزیون"
+      ]
+    },
+    {
+      "title": "Kayhan London – کیهان لندن",
+      "category": "news",
+      "description": "رسانه فارسی‌زبان مستقل مستقر در لندن؛ اخبار، گزارش‌ها، دیدگاه‌ها و تحلیل درباره ایران و جهان.",
+      "url": "https://kayhan.london/",
+      "tags": [
+        "فارسی",
+        "خبر",
+        "تحلیل",
+        "لندن"
+      ]
+    },
+    {
+      "title": "Kayhan Life",
+      "category": "news",
+      "description": "رسانه انگلیسی‌زبان خانواده کیهان با پوشش سیاست، اقتصاد، جامعه و فرهنگ ایران.",
+      "url": "https://kayhanlife.com/",
+      "tags": [
+        "انگلیسی",
+        "خبر",
+        "ایران"
+      ]
+    },
+    {
+      "title": "خبرگزاری ایرانشهر",
+      "category": "news",
+      "description": "پایگاه خبری فارسی‌زبان با پوشش خبرها و موضوعات مرتبط با ایران و ایرانیان خارج از کشور.",
+      "url": "https://iranshahrnewsagency.com/",
+      "tags": [
+        "فارسی",
+        "خبرگزاری",
+        "ایران"
+      ]
+    },
+    {
+      "title": "Unika – یونیکا",
+      "category": "news",
+      "description": "پایگاه خبری‌تحلیلی فارسی‌زبان با گزارش‌های ویدئویی، خبر و تحلیل سیاسی؛ رسانه خود را مستقل معرفی می‌کند.",
+      "url": "https://unika.tv/",
+      "tags": [
+        "فارسی",
+        "خبر",
+        "تحلیل",
+        "ویدئو"
+      ]
+    },
+    {
+      "title": "Reuters",
+      "category": "news",
+      "description": "خبرگزاری بین‌المللی و پوشش رویدادهای جهان.",
+      "url": "https://www.reuters.com",
+      "tags": [
+        "خبر"
+      ]
+    },
+    {
+      "title": "Associated Press",
+      "category": "news",
+      "description": "خبرگزاری بین‌المللی و گزارش‌های خبری.",
+      "url": "https://apnews.com",
+      "tags": [
+        "خبر"
+      ]
+    },
+    {
+      "title": "France 24",
+      "category": "news",
+      "description": "شبکه خبری بین‌المللی با پوشش چندزبانه.",
+      "url": "https://www.france24.com",
+      "tags": [
+        "خبر"
+      ]
+    },
+    {
+      "title": "Deutsche Welle",
+      "category": "news",
+      "description": "رسانه بین‌المللی آلمان و گزارش‌های خبری.",
+      "url": "https://www.dw.com",
+      "tags": [
+        "خبر"
+      ]
+    },
+    {
+      "title": "Euronews",
+      "category": "news",
+      "description": "شبکه خبری بین‌المللی و گزارش رویدادها.",
+      "url": "https://www.euronews.com",
+      "tags": [
+        "خبر"
+      ]
+    },
+    {
+      "title": "Associated Press Video",
+      "category": "news",
+      "description": "گزارش‌های ویدئویی و تصویری خبرگزاری AP.",
+      "url": "https://apnews.com/video",
+      "tags": [
+        "ویدئو"
+      ]
+    },
+    {
+      "title": "BBC News",
+      "category": "news",
+      "url": "https://www.bbc.com/news",
+      "description": "پوشش خبری بین‌المللی",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "The Guardian",
+      "category": "news",
+      "url": "https://www.theguardian.com/international",
+      "description": "روزنامه و گزارش‌های بین‌المللی",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "The New York Times",
+      "category": "news",
+      "url": "https://www.nytimes.com",
+      "description": "روزنامه و گزارش‌های خبری",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "The Washington Post",
+      "category": "news",
+      "url": "https://www.washingtonpost.com",
+      "description": "خبر و تحلیل رویدادها",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "The Independent",
+      "category": "news",
+      "url": "https://www.independent.co.uk",
+      "description": "رسانه خبری بریتانیا",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "The Telegraph",
+      "category": "news",
+      "url": "https://www.telegraph.co.uk",
+      "description": "خبر و گزارش بین‌المللی",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "Al Jazeera",
+      "category": "news",
+      "url": "https://www.aljazeera.com",
+      "description": "شبکه خبری بین‌المللی",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "Sky News",
+      "category": "news",
+      "url": "https://news.sky.com",
+      "description": "خبر و پوشش زنده رویدادها",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "ABC News",
+      "category": "news",
+      "url": "https://abcnews.go.com",
+      "description": "خبرگزاری و شبکه خبری آمریکا",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "CBS News",
+      "category": "news",
+      "url": "https://www.cbsnews.com",
+      "description": "گزارش‌ها و خبرهای روز",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "NBC News",
+      "category": "news",
+      "url": "https://www.nbcnews.com",
+      "description": "خبر و گزارش‌های تصویری",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "Franceinfo",
+      "category": "news",
+      "url": "https://www.francetvinfo.fr",
+      "description": "رسانه خبری فرانسه",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "RFI",
+      "category": "news",
+      "url": "https://www.rfi.fr",
+      "description": "رادیو و خبرگزاری بین‌المللی فرانسه",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "Deutsche Welle فارسی",
+      "category": "news",
+      "url": "https://www.dw.com/fa-ir",
+      "description": "اخبار و گزارش‌های فارسی",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "ایرنا",
+      "category": "news",
+      "url": "https://www.irna.ir",
+      "description": "خبرگزاری جمهوری اسلامی ایران",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "ایسنا",
+      "category": "news",
+      "url": "https://www.isna.ir",
+      "description": "خبرگزاری دانشجویان ایران",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "خبرگزاری مهر",
+      "category": "news",
+      "url": "https://www.mehrnews.com",
+      "description": "خبرگزاری و گزارش‌های خبری",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "ایلنا",
+      "category": "news",
+      "url": "https://www.ilna.ir",
+      "description": "خبرگزاری کار ایران",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "خبرآنلاین",
+      "category": "news",
+      "url": "https://www.khabaronline.ir",
+      "description": "پایگاه خبری و تحلیلی",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "تابناک",
+      "category": "news",
+      "url": "https://www.tabnak.ir",
+      "description": "پایگاه خبری",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "انتخاب",
+      "category": "news",
+      "url": "https://www.entekhab.ir",
+      "description": "پایگاه خبری و تحلیلی",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "دنیای اقتصاد",
+      "category": "news",
+      "url": "https://donya-e-eqtesad.com",
+      "description": "رسانه اخبار اقتصاد و بازار",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "زومیت",
+      "category": "news",
+      "url": "https://www.zoomit.ir",
+      "description": "اخبار فناوری و دانش",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "دیجیاتو",
+      "category": "news",
+      "url": "https://digiato.com",
+      "description": "اخبار فناوری و محصولات دیجیتال",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "VOA Persian",
+      "category": "news",
+      "description": "بخش فارسی صدای آمریکا؛ خبر، گزارش، تحلیل و برنامه‌های تلویزیونی و ویدئویی.",
+      "url": "https://ir.voanews.com/",
+      "tags": [
+        "فارسی",
+        "خبر",
+        "صدای آمریکا"
+      ]
+    },
+    {
+      "title": "Radio Farda",
+      "category": "news",
+      "description": "رسانه خبری فارسی‌زبان رادیو اروپای آزاد/رادیو آزادی با پوشش ایران و جهان.",
+      "url": "https://www.radiofarda.com/",
+      "tags": [
+        "فارسی",
+        "خبر",
+        "رادیو"
+      ]
+    },
+    {
+      "title": "Euronews Persian",
+      "category": "news",
+      "description": "نسخه فارسی یورونیوز با خبرها و گزارش‌های بین‌المللی.",
+      "url": "https://per.euronews.com/",
+      "tags": [
+        "فارسی",
+        "خبر",
+        "اروپا"
+      ]
+    },
+    {
+      "title": "Simay Azadi",
+      "category": "news",
+      "description": "تلویزیون ماهواره‌ای فارسی‌زبان با پخش زنده، خبر، گفت‌وگو و برنامه‌های اجتماعی.",
+      "url": "https://www.iranntv.com/about_us",
+      "tags": [
+        "فارسی",
+        "خبر",
+        "ماهواره",
+        "پخش زنده"
+      ]
+    },
+    {
+      "title": "Kalameh Farsi TV",
+      "category": "news",
+      "description": "شبکه فارسی‌زبان با خبر، تحلیل و برنامه‌های زنده ماهواره‌ای و آنلاین.",
+      "url": "https://www.kalamehfarsi.tv/en/about/",
+      "tags": [
+        "فارسی",
+        "خبر",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "Agence France-Presse (AFP)",
+      "category": "news",
+      "description": "خبرگزاری جهانی فرانسه با گزارش و محتوای چندرسانه‌ای.",
+      "url": "https://www.afp.com/",
+      "tags": [
+        "خبر",
+        "فرانسه",
+        "بین‌المللی"
+      ]
+    },
+    {
+      "title": "CNN",
+      "category": "news",
+      "description": "شبکه خبری بین‌المللی آمریکا با پوشش زنده و گزارش‌های جهانی.",
+      "url": "https://www.cnn.com/",
+      "tags": [
+        "خبر",
+        "تلویزیون",
+        "آمریکا"
+      ]
+    },
+    {
+      "title": "Politico",
+      "category": "news",
+      "description": "رسانه خبری تخصصی سیاست و تحولات دولت‌ها.",
+      "url": "https://www.politico.com/",
+      "tags": [
+        "خبر",
+        "سیاست",
+        "بین‌المللی"
+      ]
+    },
+    {
+      "title": "Deutsche Welle English",
+      "category": "news",
+      "description": "نسخه انگلیسی دویچه‌وله برای خبرها و گزارش‌های بین‌المللی.",
+      "url": "https://www.dw.com/en/",
+      "tags": [
+        "خبر",
+        "انگلیسی"
+      ]
+    },
+    {
       "title": "GitHub",
       "category": "development",
       "description": "میزبانی کد، مدیریت مخزن و همکاری در پروژه‌های نرم‌افزاری.",
@@ -377,60 +803,6 @@
       "url": "https://open.spotify.com",
       "tags": [
         "موسیقی"
-      ]
-    },
-    {
-      "title": "Reuters",
-      "category": "news",
-      "description": "خبرگزاری بین‌المللی و پوشش رویدادهای جهان.",
-      "url": "https://www.reuters.com",
-      "tags": [
-        "خبر"
-      ]
-    },
-    {
-      "title": "Associated Press",
-      "category": "news",
-      "description": "خبرگزاری بین‌المللی و گزارش‌های خبری.",
-      "url": "https://apnews.com",
-      "tags": [
-        "خبر"
-      ]
-    },
-    {
-      "title": "France 24",
-      "category": "news",
-      "description": "شبکه خبری بین‌المللی با پوشش چندزبانه.",
-      "url": "https://www.france24.com",
-      "tags": [
-        "خبر"
-      ]
-    },
-    {
-      "title": "Deutsche Welle",
-      "category": "news",
-      "description": "رسانه بین‌المللی آلمان و گزارش‌های خبری.",
-      "url": "https://www.dw.com",
-      "tags": [
-        "خبر"
-      ]
-    },
-    {
-      "title": "Euronews",
-      "category": "news",
-      "description": "شبکه خبری بین‌المللی و گزارش رویدادها.",
-      "url": "https://www.euronews.com",
-      "tags": [
-        "خبر"
-      ]
-    },
-    {
-      "title": "Associated Press Video",
-      "category": "news",
-      "description": "گزارش‌های ویدئویی و تصویری خبرگزاری AP.",
-      "url": "https://apnews.com/video",
-      "tags": [
-        "ویدئو"
       ]
     },
     {
@@ -1588,222 +1960,6 @@
       ]
     },
     {
-      "title": "BBC News",
-      "category": "news",
-      "url": "https://www.bbc.com/news",
-      "description": "پوشش خبری بین‌المللی",
-      "tags": [
-        "news"
-      ]
-    },
-    {
-      "title": "The Guardian",
-      "category": "news",
-      "url": "https://www.theguardian.com/international",
-      "description": "روزنامه و گزارش‌های بین‌المللی",
-      "tags": [
-        "news"
-      ]
-    },
-    {
-      "title": "The New York Times",
-      "category": "news",
-      "url": "https://www.nytimes.com",
-      "description": "روزنامه و گزارش‌های خبری",
-      "tags": [
-        "news"
-      ]
-    },
-    {
-      "title": "The Washington Post",
-      "category": "news",
-      "url": "https://www.washingtonpost.com",
-      "description": "خبر و تحلیل رویدادها",
-      "tags": [
-        "news"
-      ]
-    },
-    {
-      "title": "The Independent",
-      "category": "news",
-      "url": "https://www.independent.co.uk",
-      "description": "رسانه خبری بریتانیا",
-      "tags": [
-        "news"
-      ]
-    },
-    {
-      "title": "The Telegraph",
-      "category": "news",
-      "url": "https://www.telegraph.co.uk",
-      "description": "خبر و گزارش بین‌المللی",
-      "tags": [
-        "news"
-      ]
-    },
-    {
-      "title": "Al Jazeera",
-      "category": "news",
-      "url": "https://www.aljazeera.com",
-      "description": "شبکه خبری بین‌المللی",
-      "tags": [
-        "news"
-      ]
-    },
-    {
-      "title": "Sky News",
-      "category": "news",
-      "url": "https://news.sky.com",
-      "description": "خبر و پوشش زنده رویدادها",
-      "tags": [
-        "news"
-      ]
-    },
-    {
-      "title": "ABC News",
-      "category": "news",
-      "url": "https://abcnews.go.com",
-      "description": "خبرگزاری و شبکه خبری آمریکا",
-      "tags": [
-        "news"
-      ]
-    },
-    {
-      "title": "CBS News",
-      "category": "news",
-      "url": "https://www.cbsnews.com",
-      "description": "گزارش‌ها و خبرهای روز",
-      "tags": [
-        "news"
-      ]
-    },
-    {
-      "title": "NBC News",
-      "category": "news",
-      "url": "https://www.nbcnews.com",
-      "description": "خبر و گزارش‌های تصویری",
-      "tags": [
-        "news"
-      ]
-    },
-    {
-      "title": "Franceinfo",
-      "category": "news",
-      "url": "https://www.francetvinfo.fr",
-      "description": "رسانه خبری فرانسه",
-      "tags": [
-        "news"
-      ]
-    },
-    {
-      "title": "RFI",
-      "category": "news",
-      "url": "https://www.rfi.fr",
-      "description": "رادیو و خبرگزاری بین‌المللی فرانسه",
-      "tags": [
-        "news"
-      ]
-    },
-    {
-      "title": "Deutsche Welle فارسی",
-      "category": "news",
-      "url": "https://www.dw.com/fa-ir",
-      "description": "اخبار و گزارش‌های فارسی",
-      "tags": [
-        "news"
-      ]
-    },
-    {
-      "title": "ایرنا",
-      "category": "news",
-      "url": "https://www.irna.ir",
-      "description": "خبرگزاری جمهوری اسلامی ایران",
-      "tags": [
-        "news"
-      ]
-    },
-    {
-      "title": "ایسنا",
-      "category": "news",
-      "url": "https://www.isna.ir",
-      "description": "خبرگزاری دانشجویان ایران",
-      "tags": [
-        "news"
-      ]
-    },
-    {
-      "title": "خبرگزاری مهر",
-      "category": "news",
-      "url": "https://www.mehrnews.com",
-      "description": "خبرگزاری و گزارش‌های خبری",
-      "tags": [
-        "news"
-      ]
-    },
-    {
-      "title": "ایلنا",
-      "category": "news",
-      "url": "https://www.ilna.ir",
-      "description": "خبرگزاری کار ایران",
-      "tags": [
-        "news"
-      ]
-    },
-    {
-      "title": "خبرآنلاین",
-      "category": "news",
-      "url": "https://www.khabaronline.ir",
-      "description": "پایگاه خبری و تحلیلی",
-      "tags": [
-        "news"
-      ]
-    },
-    {
-      "title": "تابناک",
-      "category": "news",
-      "url": "https://www.tabnak.ir",
-      "description": "پایگاه خبری",
-      "tags": [
-        "news"
-      ]
-    },
-    {
-      "title": "انتخاب",
-      "category": "news",
-      "url": "https://www.entekhab.ir",
-      "description": "پایگاه خبری و تحلیلی",
-      "tags": [
-        "news"
-      ]
-    },
-    {
-      "title": "دنیای اقتصاد",
-      "category": "news",
-      "url": "https://donya-e-eqtesad.com",
-      "description": "رسانه اخبار اقتصاد و بازار",
-      "tags": [
-        "news"
-      ]
-    },
-    {
-      "title": "زومیت",
-      "category": "news",
-      "url": "https://www.zoomit.ir",
-      "description": "اخبار فناوری و دانش",
-      "tags": [
-        "news"
-      ]
-    },
-    {
-      "title": "دیجیاتو",
-      "category": "news",
-      "url": "https://digiato.com",
-      "description": "اخبار فناوری و محصولات دیجیتال",
-      "tags": [
-        "news"
-      ]
-    },
-    {
       "title": "BBC News Live",
       "category": "satellite",
       "url": "https://www.bbc.com/news/live",
@@ -2398,62 +2554,6 @@
       ]
     },
     {
-      "title": "Iran International",
-      "category": "news",
-      "description": "رسانه خبری فارسی‌زبان مستقر در خارج از ایران با پوشش شبانه‌روزی اخبار و پخش تلویزیونی.",
-      "url": "https://www.iranintl.com/",
-      "tags": [
-        "فارسی",
-        "خبر",
-        "تلویزیون"
-      ]
-    },
-    {
-      "title": "VOA Persian",
-      "category": "news",
-      "description": "بخش فارسی صدای آمریکا؛ خبر، گزارش، تحلیل و برنامه‌های تلویزیونی و ویدئویی.",
-      "url": "https://ir.voanews.com/",
-      "tags": [
-        "فارسی",
-        "خبر",
-        "صدای آمریکا"
-      ]
-    },
-    {
-      "title": "Radio Farda",
-      "category": "news",
-      "description": "رسانه خبری فارسی‌زبان رادیو اروپای آزاد/رادیو آزادی با پوشش ایران و جهان.",
-      "url": "https://www.radiofarda.com/",
-      "tags": [
-        "فارسی",
-        "خبر",
-        "رادیو"
-      ]
-    },
-    {
-      "title": "Euronews Persian",
-      "category": "news",
-      "description": "نسخه فارسی یورونیوز با خبرها و گزارش‌های بین‌المللی.",
-      "url": "https://per.euronews.com/",
-      "tags": [
-        "فارسی",
-        "خبر",
-        "اروپا"
-      ]
-    },
-    {
-      "title": "Simay Azadi",
-      "category": "news",
-      "description": "تلویزیون ماهواره‌ای فارسی‌زبان با پخش زنده، خبر، گفت‌وگو و برنامه‌های اجتماعی.",
-      "url": "https://www.iranntv.com/about_us",
-      "tags": [
-        "فارسی",
-        "خبر",
-        "ماهواره",
-        "پخش زنده"
-      ]
-    },
-    {
       "title": "ZED-TV",
       "category": "satellite-networks",
       "description": "شبکه ماهواره‌ای فارسی‌زبان با تمرکز بر خبر و محتوای روز.",
@@ -2462,60 +2562,6 @@
         "فارسی",
         "خبر",
         "ماهواره"
-      ]
-    },
-    {
-      "title": "Kalameh Farsi TV",
-      "category": "news",
-      "description": "شبکه فارسی‌زبان با خبر، تحلیل و برنامه‌های زنده ماهواره‌ای و آنلاین.",
-      "url": "https://www.kalamehfarsi.tv/en/about/",
-      "tags": [
-        "فارسی",
-        "خبر",
-        "ماهواره"
-      ]
-    },
-    {
-      "title": "Agence France-Presse (AFP)",
-      "category": "news",
-      "description": "خبرگزاری جهانی فرانسه با گزارش و محتوای چندرسانه‌ای.",
-      "url": "https://www.afp.com/",
-      "tags": [
-        "خبر",
-        "فرانسه",
-        "بین‌المللی"
-      ]
-    },
-    {
-      "title": "CNN",
-      "category": "news",
-      "description": "شبکه خبری بین‌المللی آمریکا با پوشش زنده و گزارش‌های جهانی.",
-      "url": "https://www.cnn.com/",
-      "tags": [
-        "خبر",
-        "تلویزیون",
-        "آمریکا"
-      ]
-    },
-    {
-      "title": "Politico",
-      "category": "news",
-      "description": "رسانه خبری تخصصی سیاست و تحولات دولت‌ها.",
-      "url": "https://www.politico.com/",
-      "tags": [
-        "خبر",
-        "سیاست",
-        "بین‌المللی"
-      ]
-    },
-    {
-      "title": "Deutsche Welle English",
-      "category": "news",
-      "description": "نسخه انگلیسی دویچه‌وله برای خبرها و گزارش‌های بین‌المللی.",
-      "url": "https://www.dw.com/en/",
-      "tags": [
-        "خبر",
-        "انگلیسی"
       ]
     },
     {
