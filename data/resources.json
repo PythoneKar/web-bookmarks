@@ -120,6 +120,27 @@
               "name": "یادگیری و مستندات"
             }
           ]
+        },
+        {
+          "title": "تحلیل و بررسی وردپرس",
+          "items": [
+            {
+              "id": "wp-detection",
+              "name": "شناسایی وردپرس، قالب و افزونه"
+            },
+            {
+              "id": "wp-security-audit",
+              "name": "امنیت و آسیب‌پذیری وردپرس"
+            },
+            {
+              "id": "wp-performance-audit",
+              "name": "سرعت و عملکرد سایت"
+            },
+            {
+              "id": "wp-seo-audit",
+              "name": "سئو و بررسی فنی سایت"
+            }
+          ]
         }
       ]
     },
@@ -4577,6 +4598,236 @@
         "learn",
         "web",
         "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Wappalyzer",
+      "category": "development",
+      "subcategory": "wp-detection",
+      "description": "شناسایی فناوری‌های استفاده‌شده در وب‌سایت؛ از CMS و وردپرس تا ابزارهای تحلیل، فریم‌ورک‌ها و سرویس‌های جانبی.",
+      "url": "https://www.wappalyzer.com/",
+      "tags": [
+        "wordpress",
+        "technology detector",
+        "تشخیص فناوری"
+      ]
+    },
+    {
+      "title": "BuiltWith",
+      "category": "development",
+      "subcategory": "wp-detection",
+      "description": "تحلیل فناوری‌های یک وب‌سایت، سیستم مدیریت محتوا، ابزارهای بازاریابی، هاست و زیرساخت.",
+      "url": "https://builtwith.com/",
+      "tags": [
+        "wordpress",
+        "technology lookup",
+        "تحلیل سایت"
+      ]
+    },
+    {
+      "title": "WhatCMS",
+      "category": "development",
+      "subcategory": "wp-detection",
+      "description": "تشخیص سیستم مدیریت محتوای وب‌سایت‌ها و شناسایی فناوری‌هایی مانند WordPress.",
+      "url": "https://whatcms.org/",
+      "tags": [
+        "wordpress",
+        "cms detector",
+        "تشخیص سیستم مدیریت محتوا"
+      ]
+    },
+    {
+      "title": "WP Rank – Theme & Plugin Detector",
+      "category": "development",
+      "subcategory": "wp-detection",
+      "description": "شناسایی عمومی قالب و افزونه‌های قابل مشاهده وردپرس؛ همراه با اطلاعات محبوبیت و وضعیت نگهداری افزونه‌ها.",
+      "url": "https://wp-rank.com/tools/wordpress-theme-detector",
+      "tags": [
+        "wordpress",
+        "plugin detector",
+        "theme detector",
+        "شناسایی افزونه"
+      ]
+    },
+    {
+      "title": "WP Config – Theme & Plugin Checker",
+      "category": "development",
+      "subcategory": "wp-detection",
+      "description": "بررسی نشانه‌های عمومی قالب و افزونه‌های وردپرس و مقایسه نسخه‌های قابل تشخیص با نسخه‌های منتشرشده.",
+      "url": "https://wp-config.org/checker",
+      "tags": [
+        "wordpress",
+        "plugin detector",
+        "theme detector"
+      ]
+    },
+    {
+      "title": "IsItWP",
+      "category": "development",
+      "subcategory": "wp-detection",
+      "description": "ابزار تشخیص وردپرسی بودن سایت و بررسی برخی اطلاعات قالب و فناوری‌های آن.",
+      "url": "https://www.isitwp.com/",
+      "tags": [
+        "wordpress",
+        "theme detector",
+        "cms"
+      ]
+    },
+    {
+      "title": "WPScan",
+      "category": "development",
+      "subcategory": "wp-security-audit",
+      "description": "اسکن امنیتی وردپرس و بررسی آسیب‌پذیری‌های شناخته‌شده هسته، افزونه‌ها و قالب‌ها؛ امکان بررسی عمومی سایت و API دارد.",
+      "url": "https://wpscan.com/",
+      "tags": [
+        "wordpress security",
+        "vulnerability",
+        "cve",
+        "امنیت وردپرس"
+      ]
+    },
+    {
+      "title": "Patchstack",
+      "category": "development",
+      "subcategory": "wp-security-audit",
+      "description": "پایگاه اطلاعات آسیب‌پذیری وردپرس برای هسته، افزونه‌ها و قالب‌ها؛ همراه با هشدارهای امنیتی و ابزارهای مدیریت ریسک.",
+      "url": "https://patchstack.com/",
+      "tags": [
+        "wordpress security",
+        "plugin vulnerabilities",
+        "theme vulnerabilities"
+      ]
+    },
+    {
+      "title": "Sucuri SiteCheck",
+      "category": "development",
+      "subcategory": "wp-security-audit",
+      "description": "اسکن عمومی بدافزار، کد مخرب، وضعیت فهرست‌های سیاه و برخی مشکلات امنیتی وب‌سایت.",
+      "url": "https://sitecheck.sucuri.net/",
+      "tags": [
+        "malware scanner",
+        "wordpress security",
+        "blacklist"
+      ]
+    },
+    {
+      "title": "Wordfence Intelligence",
+      "category": "development",
+      "subcategory": "wp-security-audit",
+      "description": "اطلاعات تهدید و آسیب‌پذیری‌های امنیتی وردپرس، افزونه‌ها و قالب‌ها از پژوهشگران Wordfence.",
+      "url": "https://www.wordfence.com/threat-intel/",
+      "tags": [
+        "wordpress security",
+        "vulnerability database",
+        "threat intelligence"
+      ]
+    },
+    {
+      "title": "WP Vulnerability",
+      "category": "development",
+      "subcategory": "wp-security-audit",
+      "description": "پایگاه داده و فید آسیب‌پذیری‌های امنیتی مرتبط با هسته، افزونه‌ها و قالب‌های وردپرس.",
+      "url": "https://wpvulnerability.net/",
+      "tags": [
+        "wordpress security",
+        "cve",
+        "vulnerability database"
+      ]
+    },
+    {
+      "title": "Security Headers",
+      "category": "development",
+      "subcategory": "wp-security-audit",
+      "description": "تحلیل هدرهای امنیتی HTTP وب‌سایت و ارائه امتیاز و پیشنهادهای بهبود پیکربندی.",
+      "url": "https://securityheaders.com/",
+      "tags": [
+        "security headers",
+        "http",
+        "website audit"
+      ]
+    },
+    {
+      "title": "Google PageSpeed Insights",
+      "category": "development",
+      "subcategory": "wp-performance-audit",
+      "description": "تحلیل سرعت و تجربه کاربری صفحات با داده‌های آزمایشگاهی و در صورت وجود داده‌های واقعی کاربران؛ مناسب بررسی سایت‌های وردپرسی.",
+      "url": "https://pagespeed.web.dev/",
+      "tags": [
+        "wordpress speed",
+        "pagespeed",
+        "core web vitals"
+      ]
+    },
+    {
+      "title": "GTmetrix",
+      "category": "development",
+      "subcategory": "wp-performance-audit",
+      "description": "تحلیل عملکرد و سرعت بارگذاری صفحات، نمودار آبشاری درخواست‌ها و پیشنهادهای بهینه‌سازی.",
+      "url": "https://gtmetrix.com/",
+      "tags": [
+        "wordpress performance",
+        "website speed",
+        "waterfall"
+      ]
+    },
+    {
+      "title": "WebPageTest",
+      "category": "development",
+      "subcategory": "wp-performance-audit",
+      "description": "آزمایش عمیق عملکرد وب‌سایت از مکان‌ها و مرورگرهای مختلف و بررسی جزئیات بارگذاری صفحه.",
+      "url": "https://www.webpagetest.org/",
+      "tags": [
+        "wordpress speed",
+        "performance audit",
+        "website testing"
+      ]
+    },
+    {
+      "title": "DebugBear",
+      "category": "development",
+      "subcategory": "wp-performance-audit",
+      "description": "تحلیل و پایش عملکرد وب، Core Web Vitals و تجربه بارگذاری صفحات.",
+      "url": "https://www.debugbear.com/",
+      "tags": [
+        "core web vitals",
+        "wordpress performance",
+        "monitoring"
+      ]
+    },
+    {
+      "title": "Ahrefs Webmaster Tools",
+      "category": "development",
+      "subcategory": "wp-seo-audit",
+      "description": "ابزار بررسی سئو و سلامت فنی سایت‌های تأییدشده؛ شامل خطاهای فنی و فرصت‌های بهینه‌سازی.",
+      "url": "https://ahrefs.com/webmaster-tools",
+      "tags": [
+        "wordpress seo",
+        "site audit",
+        "backlinks"
+      ]
+    },
+    {
+      "title": "Semrush Site Audit",
+      "category": "development",
+      "subcategory": "wp-seo-audit",
+      "description": "خزش و ممیزی فنی وب‌سایت برای شناسایی مشکلات سئو، لینک‌ها، قابلیت خزش و مسائل فنی.",
+      "url": "https://www.semrush.com/siteaudit/",
+      "tags": [
+        "wordpress seo",
+        "technical seo",
+        "site audit"
+      ]
+    },
+    {
+      "title": "Seobility SEO Checker",
+      "category": "development",
+      "subcategory": "wp-seo-audit",
+      "description": "بررسی سئوی داخلی صفحه، ساختار محتوا، متادیتا و برخی مشکلات فنی و بهینه‌سازی.",
+      "url": "https://www.seobility.net/en/seocheck/",
+      "tags": [
+        "wordpress seo",
+        "on-page seo",
+        "seo checker"
       ]
     }
   ]
