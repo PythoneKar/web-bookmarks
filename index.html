@@ -36,6 +36,11 @@
         <button id="clear-search" type="button" aria-label="پاک کردن جست‌وجو" hidden>×</button>
       </div>
       <div id="search-suggestions" class="search-suggestions" role="listbox" aria-label="پیشنهادهای جست‌وجو" hidden></div>
+      <section class="ai-search-panel" aria-labelledby="ai-search-title">
+        <div class="ai-panel-heading"><span class="ai-sparkle">✧</span><div><h2 id="ai-search-title">جست‌وجو با هوش مصنوعی</h2><p>سؤالت را بنویس؛ برای گفتگو به Duck.ai منتقل می‌شوی.</p></div><span class="ai-free-label">رایگان</span></div>
+        <textarea id="ai-search-prompt" rows="2" placeholder="مثلاً بهترین منابع رایگان برای یادگیری پایتون کدام‌اند؟" aria-label="پرسش برای هوش مصنوعی"></textarea>
+        <div class="ai-panel-footer"><span id="ai-search-status" role="status">متن پرسش کپی می‌شود تا در Duck.ai وارد کنی.</span><button id="ai-search-submit" type="button">کپی پرسش و بازکردن Duck.ai <span>↗</span></button></div>
+      </section>
       <div class="hero-meta"><span id="total-count">در حال بارگذاری منابع...</span><span class="meta-dot"></span><span>جست‌وجوی فارسی هوشمند</span></div>
     </section>
 
