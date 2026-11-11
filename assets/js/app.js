@@ -5,8 +5,9 @@
   const BOOKMARKS_KEY = "web-bookmarks:pinned";
   const FOLDERS_KEY = "web-bookmarks:folders";
   const FOLDER_ITEMS_KEY = "web-bookmarks:folder-items";
-  const ASSET_VERSION = "20261111-16";
+  const ASSET_VERSION = "20261111-17";
   const loadStored = (key,fallback) => { try { return JSON.parse(localStorage.getItem(key)||"null") ?? fallback; } catch { return fallback; } };
+  let folderCreateOpen = false;
   let folders = loadStored(FOLDERS_KEY,[]);
   if(!Array.isArray(folders)) folders=[];
   folders=folders.filter(f=>f&&typeof f.id==="string"&&typeof f.name==="string").slice(0,10);
@@ -224,10 +225,14 @@
 
   const renderFolderBar=()=>{
     const bar=$("#folder-toolbar");if(!bar)return;
-    bar.innerHTML='<button type="button" class="folder-add-button" id="add-folder-button" '+(folders.length>=10?'disabled':'')+'>＋ افزودن پوشه جدید</button>'+
+    const createControl=folderCreateOpen
+      ? '<form class="folder-create-form" id="folder-create-form"><input id="folder-name-input" name="folderName" type="text" maxlength="40" autocomplete="off" placeholder="نام پوشه..." aria-label="نام پوشه جدید" required><button type="submit" class="folder-save-button">ذخیره</button><button type="button" class="folder-cancel-button" data-cancel-folder>انصراف</button></form>'
+      : '<button type="button" class="folder-add-button" id="add-folder-button" '+(folders.length>=10?'disabled':'')+'>＋ افزودن پوشه جدید</button>';
+    bar.innerHTML=createControl+
       '<button type="button" class="folder-chip '+(!state.folderId?'active':'')+'" data-folder-filter="">همه منابع</button>'+
       folders.map(f=>'<button type="button" class="folder-chip '+(state.folderId===f.id?'active':'')+'" data-folder-filter="'+safe(f.id)+'">📁 '+safe(f.name)+' <span>'+state.resources.filter(r=>folderItems[r.url]===f.id).length.toLocaleString("fa-IR")+'</span></button>').join('')+
       '<span class="folder-limit">'+folders.length.toLocaleString("fa-IR")+' از ۱۰ پوشه</span>';
+    if(folderCreateOpen) requestAnimationFrame(()=>$("#folder-name-input")?.focus());
   };
   const showFolderMenu=(url,x,y)=>{
     document.querySelector("#folder-context-menu")?.remove();
@@ -297,12 +302,9 @@
     const add=e.target.closest("#add-folder-button");
     if(add){
       if(folders.length>=10)return;
-      const name=window.prompt("نام پوشه جدید را وارد کن:");
-      if(!name||!name.trim())return;
-      if(folders.some(f=>f.name.trim().toLocaleLowerCase()===name.trim().toLocaleLowerCase())){window.alert("پوشه‌ای با این نام وجود دارد.");return;}
-      folders.push({id:"folder-"+Date.now().toString(36)+"-"+Math.random().toString(36).slice(2,7),name:name.trim().slice(0,40)});
-      saveFolders();renderFolderBar();return;
+      folderCreateOpen=true;renderFolderBar();return;
     }
+    if(e.target.closest("[data-cancel-folder]")){folderCreateOpen=false;renderFolderBar();return;}
     const filter=e.target.closest("[data-folder-filter]");
     if(filter){state.folderId=filter.dataset.folderFilter||null;state.category="all";state.subcategory=null;state.page=1;render();return;}
     const assign=e.target.closest("[data-assign-folder]");
@@ -320,13 +322,27 @@
     if(e.target.closest("[data-close-folder-menu]")){closeFolderMenu();return;}
     if(!e.target.closest("#folder-context-menu"))closeFolderMenu();
   });
+  document.addEventListener("submit",e=>{
+    const form=e.target.closest("#folder-create-form");if(!form)return;
+    e.preventDefault();
+    const input=form.querySelector("#folder-name-input");
+    const name=(input?.value||"").trim();
+    if(!name){input?.focus();return;}
+    if(folders.length>=10){folderCreateOpen=false;renderFolderBar();return;}
+    if(folders.some(f=>f.name.trim().toLocaleLowerCase()===name.toLocaleLowerCase())){
+      input.setCustomValidity("پوشه‌ای با این نام وجود دارد.");input.reportValidity();return;
+    }
+    folders.push({id:"folder-"+Date.now().toString(36)+"-"+Math.random().toString(36).slice(2,7),name:name.slice(0,40)});
+    saveFolders();folderCreateOpen=false;renderFolderBar();
+  });
   document.addEventListener("contextmenu",e=>{
-    const row=e.target.closest(".resource-card[data-resource-url],.mega-tool-row");
+    const target=e.target instanceof Element?e.target:e.target?.parentElement;
+    const row=target?.closest(".resource-card[data-resource-url],.mega-tool-row");
     if(!row)return;
     const url=row.dataset.resourceUrl||row.querySelector(".mega-tool")?.getAttribute("href");
     if(!url)return;
-    e.preventDefault();showFolderMenu(url,e.clientX,e.clientY);
-  });
+    e.preventDefault();e.stopPropagation();showFolderMenu(url,e.clientX,e.clientY);
+  },true);
   document.addEventListener("keydown",e=>{if(e.key==="Escape")closeFolderMenu();});
 
   const suggestionBox=$("#search-suggestions"), searchInput=$("#search-input");
@@ -359,6 +375,7 @@
   $("#sort-select").addEventListener("change",e=>{state.sort=e.target.value;state.page=1;render();});
   $("#theme-toggle").addEventListener("click",()=>{const light=document.documentElement.classList.toggle("light");localStorage.setItem("library-theme",light?"light":"dark");});
   if(localStorage.getItem("library-theme")==="light")document.documentElement.classList.add("light");
+  renderFolderBar();
   fetch("data/resources.json?v=" + ASSET_VERSION).then(r=>{if(!r.ok)throw new Error("Data unavailable");return r.json()}).then(data=>{
     state.resources=data.resources||[];state.categories=data.categories||[];render();
   }).catch(()=>{$("#total-count").textContent="بارگذاری منابع ناموفق بود";$("#resource-grid").innerHTML='<p class="card-description">فایل داده در دسترس نیست. لطفاً صفحه را دوباره بارگذاری کن.</p>';});
