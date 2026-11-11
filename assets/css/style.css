@@ -489,3 +489,12 @@ main{max-width:1240px;margin:auto;padding:0 28px}.hero{position:relative;isolati
   }
   .mega-bridge{display:none!important}
 }
+
+@media(min-width:681px){
+  .category-with-menu.open>.mega-menu,
+  .category-with-menu:focus-within>.mega-menu{animation:mega-content-in .18s ease-out!important}
+  @keyframes mega-content-in{
+    from{opacity:0;transform:translateY(calc(-50% + 10px))}
+    to{opacity:1;transform:translateY(-50%)}
+  }
+}
