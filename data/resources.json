@@ -241,7 +241,7 @@
     },
     {
       "id": "learning",
-      "name": "آموزش و یادگیری",
+      "name": "یادگیری آزاد و مهارت‌آموزی",
       "icon": "▤",
       "subcategoryGroups": [
         {
@@ -284,7 +284,7 @@
     },
     {
       "id": "movies",
-      "name": "فیلم و سرگرمی",
+      "name": "فیلم، رسانه و سرگرمی",
       "icon": "▶",
       "subcategoryGroups": [
         {
@@ -313,14 +313,7 @@
               "name": "سینمای منتخب"
             }
           ]
-        }
-      ]
-    },
-    {
-      "id": "media",
-      "name": "رسانه و موسیقی",
-      "icon": "♫",
-      "subcategoryGroups": [
+        },
         {
           "title": "ویدئو و میزبانی",
           "items": [
@@ -395,7 +388,7 @@
     },
     {
       "id": "satellite",
-      "name": "تلویزیون و پخش زنده",
+      "name": "تلویزیون، شبکه‌های ماهواره‌ای و پخش زنده",
       "icon": "▣",
       "subcategoryGroups": [
         {
@@ -440,6 +433,42 @@
             {
               "id": "satellite-topic-5",
               "name": "سایر منابع این دسته"
+            }
+          ]
+        },
+        {
+          "title": "فهرست و راهنمای شبکه‌ها",
+          "items": [
+            {
+              "id": "satellite-networks-topic-1",
+              "name": "فهرست و راهنمای شبکه‌ها"
+            }
+          ]
+        },
+        {
+          "title": "شبکه‌های خبری فارسی",
+          "items": [
+            {
+              "id": "satellite-networks-topic-2",
+              "name": "شبکه‌های خبری فارسی"
+            }
+          ]
+        },
+        {
+          "title": "سرگرمی، فیلم و موسیقی",
+          "items": [
+            {
+              "id": "satellite-networks-topic-3",
+              "name": "سرگرمی، فیلم و موسیقی"
+            }
+          ]
+        },
+        {
+          "title": "اطلاعات شبکه و آرشیو",
+          "items": [
+            {
+              "id": "satellite-networks-topic-4",
+              "name": "اطلاعات شبکه و آرشیو"
             }
           ]
         }
@@ -583,7 +612,7 @@
     },
     {
       "id": "reference",
-      "name": "دانشنامه و مرجع",
+      "name": "دانشنامه و منابع مرجع",
       "icon": "⌕",
       "subcategoryGroups": [
         {
@@ -660,7 +689,7 @@
     },
     {
       "id": "misc",
-      "name": "سایر منابع",
+      "name": "ابزارهای وب و اینترنت",
       "icon": "＋",
       "subcategoryGroups": [
         {
@@ -705,49 +734,6 @@
             {
               "id": "misc-topic-5",
               "name": "سایر منابع این دسته"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "satellite-networks",
-      "name": "شبکه‌های ماهواره‌ای",
-      "icon": "📡",
-      "subcategoryGroups": [
-        {
-          "title": "فهرست و راهنمای شبکه‌ها",
-          "items": [
-            {
-              "id": "satellite-networks-topic-1",
-              "name": "فهرست و راهنمای شبکه‌ها"
-            }
-          ]
-        },
-        {
-          "title": "شبکه‌های خبری فارسی",
-          "items": [
-            {
-              "id": "satellite-networks-topic-2",
-              "name": "شبکه‌های خبری فارسی"
-            }
-          ]
-        },
-        {
-          "title": "سرگرمی، فیلم و موسیقی",
-          "items": [
-            {
-              "id": "satellite-networks-topic-3",
-              "name": "سرگرمی، فیلم و موسیقی"
-            }
-          ]
-        },
-        {
-          "title": "اطلاعات شبکه و آرشیو",
-          "items": [
-            {
-              "id": "satellite-networks-topic-4",
-              "name": "اطلاعات شبکه و آرشیو"
             }
           ]
         }
@@ -1847,7 +1833,7 @@
     },
     {
       "title": "YouTube",
-      "category": "media",
+      "category": "movies",
       "description": "پلتفرم اشتراک‌گذاری و تماشای ویدئو.",
       "url": "https://www.youtube.com",
       "tags": [
@@ -1857,7 +1843,7 @@
     },
     {
       "title": "Vimeo",
-      "category": "media",
+      "category": "movies",
       "description": "میزبانی و نمایش ویدئوهای خلاقانه.",
       "url": "https://vimeo.com",
       "tags": [
@@ -1867,7 +1853,7 @@
     },
     {
       "title": "SoundCloud",
-      "category": "media",
+      "category": "movies",
       "description": "کشف و انتشار موسیقی و محتوای صوتی.",
       "url": "https://soundcloud.com",
       "tags": [
@@ -1877,7 +1863,7 @@
     },
     {
       "title": "Spotify",
-      "category": "media",
+      "category": "movies",
       "description": "سرویس پخش موسیقی و پادکست.",
       "url": "https://open.spotify.com",
       "tags": [
@@ -3141,7 +3127,7 @@
     },
     {
       "title": "Bandcamp",
-      "category": "media",
+      "category": "movies",
       "url": "https://bandcamp.com",
       "description": "کشف و خرید موسیقی از هنرمندان",
       "tags": [
@@ -3151,7 +3137,7 @@
     },
     {
       "title": "Deezer",
-      "category": "media",
+      "category": "movies",
       "url": "https://www.deezer.com",
       "description": "پخش موسیقی آنلاین",
       "tags": [
@@ -3161,7 +3147,7 @@
     },
     {
       "title": "Mixcloud",
-      "category": "media",
+      "category": "movies",
       "url": "https://www.mixcloud.com",
       "description": "میکس‌ها و برنامه‌های رادیویی",
       "tags": [
@@ -3171,7 +3157,7 @@
     },
     {
       "title": "Radio Garden",
-      "category": "media",
+      "category": "movies",
       "url": "https://radio.garden",
       "description": "شنیدن ایستگاه‌های رادیویی جهان روی نقشه",
       "tags": [
@@ -3181,7 +3167,7 @@
     },
     {
       "title": "TuneIn",
-      "category": "media",
+      "category": "movies",
       "url": "https://tunein.com",
       "description": "رادیو و پادکست آنلاین",
       "tags": [
@@ -3191,7 +3177,7 @@
     },
     {
       "title": "Internet Radio",
-      "category": "media",
+      "category": "movies",
       "url": "https://www.internet-radio.com",
       "description": "فهرست ایستگاه‌های رادیویی اینترنتی",
       "tags": [
@@ -3201,7 +3187,7 @@
     },
     {
       "title": "Pocket Casts",
-      "category": "media",
+      "category": "movies",
       "url": "https://pocketcasts.com",
       "description": "مدیریت و شنیدن پادکست",
       "tags": [
@@ -3211,7 +3197,7 @@
     },
     {
       "title": "Podcast Index",
-      "category": "media",
+      "category": "movies",
       "url": "https://podcastindex.org",
       "description": "فهرست و جست‌وجوی پادکست‌ها",
       "tags": [
@@ -3881,7 +3867,7 @@
     },
     {
       "title": "Pardeh – تلویزیون زنده فارسی",
-      "category": "satellite-networks",
+      "category": "satellite",
       "description": "درگاه تجمیعی شبکه‌های فارسی‌زبان با فهرست کانال‌های خبری، سرگرمی، موسیقی، فیلم و برنامه‌های عمومی؛ لینک پخش هر شبکه ممکن است تغییر کند.",
       "url": "https://pardehtv.com/live-tv",
       "tags": [
@@ -3894,7 +3880,7 @@
     },
     {
       "title": "Persian TV Live – پخش زنده شبکه‌ها",
-      "category": "satellite-networks",
+      "category": "satellite",
       "description": "فهرست گسترده شبکه‌های فارسی‌زبان و ماهواره‌ای در حوزه خبر، موسیقی، سرگرمی، فیلم، ورزش و شبکه‌های داخلی.",
       "url": "https://www.persiantvlive.com/",
       "tags": [
@@ -3907,7 +3893,7 @@
     },
     {
       "title": "UKFarsi – راهنمای پخش زنده فارسی",
-      "category": "satellite-networks",
+      "category": "satellite",
       "description": "دایرکتوری جست‌وجوپذیر شبکه‌های فارسی‌زبان با تفکیک شبکه‌ها و تجمیع‌کننده‌ها؛ وضعیت لینک‌ها متغیر است.",
       "url": "https://ukfarsi.com/live-tv/",
       "tags": [
@@ -3920,7 +3906,7 @@
     },
     {
       "title": "Zende TV – فهرست پخش زنده",
-      "category": "satellite-networks",
+      "category": "satellite",
       "description": "فهرست پخش زنده شبکه‌های تلویزیونی فارسی، داخلی و بین‌المللی؛ فعال بودن هر جریان را هنگام باز کردن بررسی کنید.",
       "url": "https://www.zendetv.com/stream",
       "tags": [
@@ -3933,7 +3919,7 @@
     },
     {
       "title": "Darya Stream – تلویزیون زنده",
-      "category": "satellite-networks",
+      "category": "satellite",
       "description": "درگاه فهرست و دسترسی به پخش زنده شبکه‌های تلویزیونی فارسی و بین‌المللی.",
       "url": "https://darya.stream/live-tv/",
       "tags": [
@@ -3946,7 +3932,7 @@
     },
     {
       "title": "Iran International – پخش زنده",
-      "category": "satellite-networks",
+      "category": "satellite",
       "description": "صفحه رسمی پخش زنده تلویزیون ایران اینترنشنال و جدول برنامه‌ها.",
       "url": "https://www.iranintl.com/live",
       "tags": [
@@ -3958,21 +3944,8 @@
       "subcategory": "satellite-networks-topic-2"
     },
     {
-      "title": "VOA Persian – تلویزیون و پخش زنده",
-      "category": "satellite-networks",
-      "description": "صفحه رسمی معرفی برنامه‌های تلویزیونی فارسی صدای آمریکا و راه‌های دسترسی به VOA365.",
-      "url": "https://ir.voanews.com/",
-      "tags": [
-        "فارسی",
-        "پخش زنده",
-        "تلویزیون",
-        "ماهواره"
-      ],
-      "subcategory": "satellite-networks-topic-2"
-    },
-    {
       "title": "Simay Azadi – سیمای آزادی",
-      "category": "satellite-networks",
+      "category": "satellite",
       "description": "وب‌سایت شبکه سیمای آزادی با برنامه‌های تلویزیونی فارسی و دسترسی به محتوای ویدئویی و پخش شبکه.",
       "url": "https://www.iranntv.com/",
       "tags": [
@@ -3985,7 +3958,7 @@
     },
     {
       "title": "Kalameh Farsi TV – شبکه کلمه",
-      "category": "satellite-networks",
+      "category": "satellite",
       "description": "وب‌سایت رسمی شبکه کلمه فارسی و برنامه‌های تلویزیونی و ویدئویی.",
       "url": "https://www.kalamehfarsi.tv/",
       "tags": [
@@ -3998,7 +3971,7 @@
     },
     {
       "title": "Pars TV – پارس تی‌وی",
-      "category": "satellite-networks",
+      "category": "satellite",
       "description": "وب‌سایت شبکه فارسی‌زبان پارس تی‌وی با برنامه‌های خبری، گفت‌وگو و محتوای تلویزیونی.",
       "url": "https://parstv.tv/",
       "tags": [
@@ -4011,7 +3984,7 @@
     },
     {
       "title": "Mihan TV – میهن تی‌وی",
-      "category": "satellite-networks",
+      "category": "satellite",
       "description": "وب‌سایت شبکه فارسی‌زبان میهن با برنامه‌های سیاسی، اجتماعی و تلویزیونی.",
       "url": "https://mihantv.com/",
       "tags": [
@@ -4024,7 +3997,7 @@
     },
     {
       "title": "Tapesh TV – تپش",
-      "category": "satellite-networks",
+      "category": "satellite",
       "description": "وب‌سایت شبکه تپش با برنامه‌های فارسی، موسیقی و سرگرمی.",
       "url": "https://tapesh.tv/",
       "tags": [
@@ -4037,7 +4010,7 @@
     },
     {
       "title": "GEM Group – شبکه‌های جم",
-      "category": "satellite-networks",
+      "category": "satellite",
       "description": "وب‌سایت گروه شبکه‌های جم برای معرفی شبکه‌ها، برنامه‌ها و اطلاعات رسمی مجموعه؛ این صفحه لزوماً پخش زنده مستقیم نیست.",
       "url": "https://gemgroup.tv/",
       "tags": [
@@ -4050,7 +4023,7 @@
     },
     {
       "title": "Persiana – شبکه‌های پرشیانا",
-      "category": "satellite-networks",
+      "category": "satellite",
       "description": "درگاه رسمی مجموعه شبکه‌های پرشیانا و معرفی کانال‌های فیلم، سریال، موسیقی و سرگرمی.",
       "url": "https://persiana.tv/",
       "tags": [
@@ -4063,7 +4036,7 @@
     },
     {
       "title": "MBC Persia – ام‌بی‌سی پرشیا",
-      "category": "satellite-networks",
+      "category": "satellite",
       "description": "وب‌سایت شبکه ام‌بی‌سی پرشیا و برنامه‌های سرگرمی فارسی‌زبان.",
       "url": "https://www.mbc.net/",
       "tags": [
@@ -4076,7 +4049,7 @@
     },
     {
       "title": "PMC – Persian Music Channel",
-      "category": "satellite-networks",
+      "category": "satellite",
       "description": "شبکه موسیقی فارسی PMC؛ وب‌سایت و اطلاعات شبکه.",
       "url": "https://pmc.tv/",
       "tags": [
@@ -4089,7 +4062,7 @@
     },
     {
       "title": "ZED-TV",
-      "category": "satellite-networks",
+      "category": "satellite",
       "description": "شبکه ماهواره‌ای فارسی‌زبان با تمرکز بر خبر و محتوای روز.",
       "url": "https://zed-tv.com/",
       "tags": [
@@ -4101,7 +4074,7 @@
     },
     {
       "title": "VOA365 – شبکه ماهواره‌ای فارسی صدای آمریکا",
-      "category": "satellite-networks",
+      "category": "satellite",
       "description": "معرفی رسمی برنامه‌های فارسی صدای آمریکا و شبکه ماهواره‌ای ۲۴ساعته VOA365؛ صفحه اطلاعات شبکه و شیوه‌های دسترسی.",
       "url": "https://www.voanews.com/voa-persian-fact-sheet",
       "tags": [
@@ -4113,7 +4086,7 @@
     },
     {
       "title": "Manoto Archive",
-      "category": "satellite-networks",
+      "category": "satellite",
       "description": "وب‌سایت مرتبط با آرشیو و محتوای من‌وتو؛ وضعیت پخش زنده یا فعالیت شبکه را پیش از استفاده بررسی کنید.",
       "url": "https://www.manototv.com/",
       "tags": [
@@ -4125,7 +4098,7 @@
     },
     {
       "title": "PersianHub1 – راهنمای شبکه‌ها و فرکانس‌ها",
-      "category": "satellite-networks",
+      "category": "satellite",
       "url": "https://persianhub1.com/guides/frequencies",
       "description": "فهرست قابل جست‌وجوی شبکه‌های فارسی و فرکانس‌های ماهواره‌ای یاهست، هاتبرد، بدر و دیگر موقعیت‌ها.",
       "tags": [
@@ -4137,7 +4110,7 @@
     },
     {
       "title": "GEM Group",
-      "category": "satellite-networks",
+      "category": "satellite",
       "url": "https://www.gemgroup.tv/en/",
       "description": "وب‌سایت رسمی گروه شبکه‌های جم با معرفی شبکه‌ها، برنامه‌ها و اطلاعات فرکانس ماهواره‌ای.",
       "tags": [
@@ -7088,8 +7061,8 @@
     },
     {
       "title": "Semantic Scholar",
-      "category": "ai",
-      "subcategory": "ai-topic-5",
+      "category": "university",
+      "subcategory": "uni-papers",
       "description": "موتور جست‌وجوی هوشمند مقالات و پژوهش‌های علمی.",
       "url": "https://www.semanticscholar.org/",
       "tags": [
@@ -7208,8 +7181,8 @@
     },
     {
       "title": "CORE",
-      "category": "learning",
-      "subcategory": "learning-topic-4",
+      "category": "university",
+      "subcategory": "uni-papers",
       "description": "موتور جست‌وجوی مقالات و متون علمی دسترسی‌آزاد.",
       "url": "https://core.ac.uk/",
       "tags": [
@@ -7296,7 +7269,7 @@
     },
     {
       "title": "Dailymotion",
-      "category": "media",
+      "category": "movies",
       "subcategory": "media-topic-1",
       "description": "پلتفرم اشتراک‌گذاری و میزبانی ویدئو.",
       "url": "https://www.dailymotion.com/",
@@ -7307,7 +7280,7 @@
     },
     {
       "title": "PeerTube",
-      "category": "media",
+      "category": "movies",
       "subcategory": "media-topic-1",
       "description": "پلتفرم آزاد و غیرمتمرکز میزبانی ویدئو.",
       "url": "https://joinpeertube.org/",
@@ -7318,7 +7291,7 @@
     },
     {
       "title": "Internet Archive TV News",
-      "category": "media",
+      "category": "movies",
       "subcategory": "media-topic-1",
       "description": "آرشیو ویدئویی و برنامه‌های تلویزیونی خبری.",
       "url": "https://archive.org/details/tv",
@@ -7329,7 +7302,7 @@
     },
     {
       "title": "Tidal",
-      "category": "media",
+      "category": "movies",
       "subcategory": "media-topic-2",
       "description": "سرویس پخش موسیقی با تمرکز بر کیفیت صدا و اطلاعات هنرمندان.",
       "url": "https://tidal.com/",
@@ -7340,7 +7313,7 @@
     },
     {
       "title": "Qobuz",
-      "category": "media",
+      "category": "movies",
       "subcategory": "media-topic-2",
       "description": "سرویس موسیقی دیجیتال و پخش با کیفیت بالا.",
       "url": "https://www.qobuz.com/",
@@ -7351,7 +7324,7 @@
     },
     {
       "title": "Jamendo",
-      "category": "media",
+      "category": "movies",
       "subcategory": "media-topic-2",
       "description": "موسیقی مستقل و آثار قابل کشف برای شنیدن و استفاده با مجوزهای مشخص.",
       "url": "https://www.jamendo.com/",
@@ -7362,7 +7335,7 @@
     },
     {
       "title": "AntennaPod",
-      "category": "media",
+      "category": "movies",
       "subcategory": "media-topic-3",
       "description": "برنامه متن‌باز مدیریت و پخش پادکست.",
       "url": "https://antennapod.org/",
@@ -7373,7 +7346,7 @@
     },
     {
       "title": "Listen Notes",
-      "category": "media",
+      "category": "movies",
       "subcategory": "media-topic-3",
       "description": "موتور جست‌وجوی پادکست و اپیزودها.",
       "url": "https://www.listennotes.com/",
@@ -7384,7 +7357,7 @@
     },
     {
       "title": "Podbean",
-      "category": "media",
+      "category": "movies",
       "subcategory": "media-topic-3",
       "description": "میزبانی، انتشار و مدیریت پادکست.",
       "url": "https://www.podbean.com/",
@@ -8164,17 +8137,6 @@
       ]
     },
     {
-      "title": "BuiltWith",
-      "category": "misc",
-      "subcategory": "misc-topic-1",
-      "description": "شناسایی فناوری‌ها و سرویس‌های استفاده‌شده در وب‌سایت‌ها.",
-      "url": "https://builtwith.com/",
-      "tags": [
-        "website",
-        "technology"
-      ]
-    },
-    {
       "title": "W3Techs",
       "category": "misc",
       "subcategory": "misc-topic-1",
@@ -8275,17 +8237,6 @@
       ]
     },
     {
-      "title": "Excalidraw",
-      "category": "misc",
-      "subcategory": "misc-topic-4",
-      "description": "ترسیم سریع نمودار و دیاگرام با ظاهر دست‌کشیده.",
-      "url": "https://excalidraw.com/",
-      "tags": [
-        "diagram",
-        "tool"
-      ]
-    },
-    {
       "title": "Regex101",
       "category": "misc",
       "subcategory": "misc-topic-4",
@@ -8309,7 +8260,7 @@
     },
     {
       "title": "LyngSat",
-      "category": "satellite-networks",
+      "category": "satellite",
       "subcategory": "satellite-networks-topic-1",
       "description": "اطلاعات ماهواره‌ها، فرکانس‌ها و شبکه‌های تلویزیونی ماهواره‌ای.",
       "url": "https://www.lyngsat.com/",
@@ -8320,7 +8271,7 @@
     },
     {
       "title": "KingOfSat",
-      "category": "satellite-networks",
+      "category": "satellite",
       "subcategory": "satellite-networks-topic-1",
       "description": "فهرست شبکه‌های ماهواره‌ای، فرکانس‌ها و تغییرات پخش.",
       "url": "https://en.kingofsat.net/",
@@ -8332,7 +8283,7 @@
     },
     {
       "title": "FlySat",
-      "category": "satellite-networks",
+      "category": "satellite",
       "subcategory": "satellite-networks-topic-1",
       "description": "اطلاعات فرکانس و پوشش شبکه‌های ماهواره‌ای.",
       "url": "https://www.flysat.com/",
@@ -8343,7 +8294,7 @@
     },
     {
       "title": "SatBeams",
-      "category": "satellite-networks",
+      "category": "satellite",
       "subcategory": "satellite-networks-topic-4",
       "description": "نقشه پوشش ماهواره‌ها و اطلاعات فنی ترانسپاندرها.",
       "url": "https://www.satbeams.com/",
@@ -8621,7 +8572,7 @@
     },
     {
       "title": "Our World in Data",
-      "category": "school",
+      "category": "university",
       "description": "نمودارها و داده‌های قابل فهم برای شناخت مسائل جهان.",
       "url": "https://ourworldindata.org/",
       "tags": [
@@ -8629,11 +8580,11 @@
         "داده",
         "اجتماعی"
       ],
-      "subcategory": "school-middle-social"
+      "subcategory": "uni-public-health"
     },
     {
       "title": "Wolfram Alpha",
-      "category": "school",
+      "category": "university",
       "description": "حل و بررسی مسائل ریاضی و محاسبات نمادین.",
       "url": "https://www.wolframalpha.com/",
       "tags": [
@@ -8641,7 +8592,7 @@
         "ریاضی",
         "حل مسئله"
       ],
-      "subcategory": "school-high-math"
+      "subcategory": "uni-math-stats"
     },
     {
       "title": "Symbolab",
@@ -8693,7 +8644,7 @@
     },
     {
       "title": "PubChem",
-      "category": "school",
+      "category": "university",
       "description": "مرجع اطلاعات مواد و ترکیبات شیمیایی.",
       "url": "https://pubchem.ncbi.nlm.nih.gov/",
       "tags": [
@@ -8701,7 +8652,7 @@
         "شیمی",
         "مرجع"
       ],
-      "subcategory": "school-high-chemistry"
+      "subcategory": "uni-chemistry"
     },
     {
       "title": "BioDigital Human",
@@ -8741,7 +8692,7 @@
     },
     {
       "title": "Internet Archive",
-      "category": "school",
+      "category": "reference",
       "description": "کتاب‌ها و منابع دیجیتال برای مطالعه و تحقیق.",
       "url": "https://archive.org/",
       "tags": [
@@ -8749,7 +8700,7 @@
         "کتاب",
         "آرشیو"
       ],
-      "subcategory": "school-high-humanities"
+      "subcategory": "reference-topic-1"
     },
     {
       "title": "British Council LearnEnglish",
@@ -8787,17 +8738,6 @@
       "subcategory": "school-vocational-computer"
     },
     {
-      "title": "freeCodeCamp",
-      "category": "school",
-      "description": "آموزش عملی برنامه‌نویسی و توسعه وب.",
-      "url": "https://www.freecodecamp.org/",
-      "tags": [
-        "آموزشی",
-        "برنامه‌نویسی"
-      ],
-      "subcategory": "school-vocational-computer"
-    },
-    {
       "title": "Tinkercad Circuits",
       "category": "school",
       "description": "طراحی و شبیه‌سازی مدارهای الکترونیکی.",
@@ -8829,18 +8769,6 @@
         "آموزشی",
         "گرافیک",
         "ارائه"
-      ],
-      "subcategory": "school-vocational-design"
-    },
-    {
-      "title": "Krita",
-      "category": "school",
-      "description": "نرم‌افزار آزاد نقاشی دیجیتال و تصویرسازی.",
-      "url": "https://krita.org/",
-      "tags": [
-        "آموزشی",
-        "طراحی",
-        "نقاشی"
       ],
       "subcategory": "school-vocational-design"
     },
@@ -8891,18 +8819,6 @@
         "مدرسه"
       ],
       "subcategory": "school-exams"
-    },
-    {
-      "title": "Anki",
-      "category": "school",
-      "description": "فلش‌کارت با تکرار فاصله‌دار برای تثبیت مطالب.",
-      "url": "https://apps.ankiweb.net/",
-      "tags": [
-        "آموزشی",
-        "مرور",
-        "حافظه"
-      ],
-      "subcategory": "school-flashcards"
     },
     {
       "title": "Knowt",
@@ -8998,18 +8914,6 @@
       "subcategory": "uni-cs"
     },
     {
-      "title": "Jupyter",
-      "category": "university",
-      "description": "دفترچه تعاملی برای کدنویسی، تحلیل و آموزش.",
-      "url": "https://jupyter.org/",
-      "tags": [
-        "آموزشی",
-        "پایتون",
-        "تحلیل"
-      ],
-      "subcategory": "uni-cs"
-    },
-    {
       "title": "Google Colab",
       "category": "university",
       "description": "اجرای نوت‌بوک پایتون در فضای ابری.",
@@ -9019,7 +8923,7 @@
         "پایتون",
         "محاسبات"
       ],
-      "subcategory": "uni-cs"
+      "subcategory": "uni-data"
     },
     {
       "title": "LTspice",
@@ -9092,18 +8996,6 @@
       "subcategory": "uni-civil"
     },
     {
-      "title": "PubChem",
-      "category": "university",
-      "description": "داده‌های ساختار، خواص و منابع ترکیبات شیمیایی.",
-      "url": "https://pubchem.ncbi.nlm.nih.gov/",
-      "tags": [
-        "آموزشی",
-        "شیمی",
-        "داده"
-      ],
-      "subcategory": "uni-chemical"
-    },
-    {
       "title": "ChemSpider",
       "category": "university",
       "description": "پایگاه جست‌وجوی ساختار و اطلاعات مواد شیمیایی.",
@@ -9135,18 +9027,6 @@
         "مدیریت پروژه"
       ],
       "subcategory": "uni-industrial"
-    },
-    {
-      "title": "PubMed",
-      "category": "university",
-      "description": "جست‌وجوی مقالات زیست‌پزشکی و علوم سلامت.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/",
-      "tags": [
-        "آموزشی",
-        "مقاله",
-        "پزشکی"
-      ],
-      "subcategory": "uni-medicine"
     },
     {
       "title": "ClinicalTrials.gov",
@@ -9231,17 +9111,6 @@
       "subcategory": "uni-dentistry"
     },
     {
-      "title": "PubMed",
-      "category": "university",
-      "description": "جست‌وجوی پژوهش‌های دندان‌پزشکی و سلامت دهان.",
-      "url": "https://pubmed.ncbi.nlm.nih.gov/",
-      "tags": [
-        "آموزشی",
-        "مقاله"
-      ],
-      "subcategory": "uni-dentistry"
-    },
-    {
       "title": "WHO Data",
       "category": "university",
       "description": "داده‌ها و شاخص‌های سلامت جهانی.",
@@ -9250,18 +9119,6 @@
         "آموزشی",
         "آمار",
         "سلامت"
-      ],
-      "subcategory": "uni-public-health"
-    },
-    {
-      "title": "Our World in Data",
-      "category": "university",
-      "description": "داده‌های باز و نمودارهای سلامت و جمعیت.",
-      "url": "https://ourworldindata.org/",
-      "tags": [
-        "آموزشی",
-        "داده",
-        "اپیدمیولوژی"
       ],
       "subcategory": "uni-public-health"
     },
@@ -9287,17 +9144,6 @@
         "ژنتیک"
       ],
       "subcategory": "uni-biomedical"
-    },
-    {
-      "title": "Wolfram Alpha",
-      "category": "university",
-      "description": "محاسبات نمادین، جبر و تحلیل ریاضی.",
-      "url": "https://www.wolframalpha.com/",
-      "tags": [
-        "آموزشی",
-        "ریاضی"
-      ],
-      "subcategory": "uni-math-stats"
     },
     {
       "title": "R Project",
@@ -9333,28 +9179,6 @@
         "پژوهش"
       ],
       "subcategory": "uni-physics"
-    },
-    {
-      "title": "PhET",
-      "category": "university",
-      "description": "شبیه‌سازی مفاهیم فیزیک و علوم پایه.",
-      "url": "https://phet.colorado.edu/",
-      "tags": [
-        "آموزشی",
-        "شبیه‌سازی"
-      ],
-      "subcategory": "uni-physics"
-    },
-    {
-      "title": "PubChem",
-      "category": "university",
-      "description": "پایگاه ساختار و خواص ترکیبات.",
-      "url": "https://pubchem.ncbi.nlm.nih.gov/",
-      "tags": [
-        "آموزشی",
-        "شیمی"
-      ],
-      "subcategory": "uni-chemistry"
     },
     {
       "title": "ChemDraw Cloud",
@@ -9445,7 +9269,7 @@
         "آموزشی",
         "مقاله"
       ],
-      "subcategory": "uni-law"
+      "subcategory": "uni-papers"
     },
     {
       "title": "WorldLII",
@@ -9468,17 +9292,6 @@
         "آموزشی",
         "روان‌شناسی",
         "مقاله"
-      ],
-      "subcategory": "uni-psychology"
-    },
-    {
-      "title": "OSF",
-      "category": "university",
-      "description": "مدیریت و اشتراک پروژه‌ها و داده‌های پژوهشی.",
-      "url": "https://osf.io/",
-      "tags": [
-        "آموزشی",
-        "پژوهش"
       ],
       "subcategory": "uni-psychology"
     },
@@ -9658,17 +9471,6 @@
       "subcategory": "uni-media"
     },
     {
-      "title": "Internet Archive",
-      "category": "university",
-      "description": "آرشیو منابع صوتی‌تصویری و تاریخی.",
-      "url": "https://archive.org/",
-      "tags": [
-        "آموزشی",
-        "آرشیو"
-      ],
-      "subcategory": "uni-media"
-    },
-    {
       "title": "MuseScore",
       "category": "university",
       "description": "نرم‌افزار نت‌نویسی و تنظیم موسیقی.",
@@ -9689,40 +9491,6 @@
         "نت موسیقی"
       ],
       "subcategory": "uni-music"
-    },
-    {
-      "title": "Google Scholar",
-      "category": "university",
-      "description": "جست‌وجوی مقاله، پایان‌نامه و استنادهای علمی.",
-      "url": "https://scholar.google.com/",
-      "tags": [
-        "آموزشی",
-        "مقاله"
-      ],
-      "subcategory": "uni-papers"
-    },
-    {
-      "title": "Semantic Scholar",
-      "category": "university",
-      "description": "جست‌وجوی هوشمند مقالات و ارتباط پژوهش‌ها.",
-      "url": "https://www.semanticscholar.org/",
-      "tags": [
-        "آموزشی",
-        "مقاله",
-        "هوش مصنوعی"
-      ],
-      "subcategory": "uni-papers"
-    },
-    {
-      "title": "CORE",
-      "category": "university",
-      "description": "جست‌وجو در مقالات و مخازن دسترسی آزاد.",
-      "url": "https://core.ac.uk/",
-      "tags": [
-        "آموزشی",
-        "دسترسی آزاد"
-      ],
-      "subcategory": "uni-papers"
     },
     {
       "title": "DOAJ",
@@ -9832,17 +9600,6 @@
       "tags": [
         "آموزشی",
         "آمار"
-      ],
-      "subcategory": "uni-data"
-    },
-    {
-      "title": "Google Colab",
-      "category": "university",
-      "description": "تحلیل داده و اجرای پایتون در فضای ابری.",
-      "url": "https://colab.research.google.com/",
-      "tags": [
-        "آموزشی",
-        "پایتون"
       ],
       "subcategory": "uni-data"
     },
