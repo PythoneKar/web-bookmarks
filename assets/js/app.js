@@ -88,6 +88,20 @@
     searchInput.value=item.title;state.query=item.title;state.page=1;closeSuggestions();render();
   });
   document.addEventListener("click",e=>{if(!e.target.closest(".search-wrap")&&!e.target.closest("#search-suggestions"))closeSuggestions();});
+  $("#ai-search-submit").addEventListener("click",async()=>{
+    const prompt=$("#ai-search-prompt").value.trim(),status=$("#ai-search-status"),button=$("#ai-search-submit");
+    if(!prompt){status.textContent="اول پرسشت را بنویس.";$("#ai-search-prompt").focus();return;}
+    button.disabled=true;
+    try{
+      await navigator.clipboard.writeText(prompt);
+      status.textContent="پرسش کپی شد؛ آن را در کادر گفتگو Paste کن.";
+      window.open("https://duck.ai/","_blank","noopener,noreferrer");
+    }catch(error){
+      status.textContent="کپی خودکار در دسترس نیست؛ متن را دستی کپی کن و Duck.ai را باز کن.";
+      $("#ai-search-prompt").focus();$("#ai-search-prompt").select();
+      window.open("https://duck.ai/","_blank","noopener,noreferrer");
+    }finally{button.disabled=false;}
+  });
   $("#clear-search").addEventListener("click",()=>{$("#search-input").value="";state.query="";state.page=1;closeSuggestions();render();});
   $("#reset-search").addEventListener("click",()=>{state.category="all";state.query="";$("#search-input").value="";state.page=1;closeSuggestions();render();});
   $("#sort-select").addEventListener("change",e=>{state.sort=e.target.value;state.page=1;render();});
