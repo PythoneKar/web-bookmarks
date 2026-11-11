@@ -29,12 +29,13 @@
       <div class="eyebrow"><span class="pulse"></span> یک نقطه شروع برای وب‌گردی بهتر</div>
       <h1>چیزی که دنبالش هستی،<br><span>اینجا پیداش می‌کنی.</span></h1>
       <p class="hero-copy">مجموعه‌ای مرتب از وب‌سایت‌ها، ابزارها و منابع مفید؛ بدون شلوغی و با جست‌وجویی سریع.</p>
-      <div class="search-wrap">
+      <div class="search-wrap" role="search">
         <span class="search-icon">⌕</span>
-        <input id="search-input" type="search" autocomplete="off" placeholder="نام سایت، موضوع یا کلیدواژه را جست‌وجو کن..." aria-label="جست‌وجوی منابع">
+        <input id="search-input" type="search" autocomplete="off" placeholder="نام سایت، موضوع یا کلیدواژه را جست‌وجو کن..." aria-label="جست‌وجوی منابع" aria-autocomplete="list" aria-controls="search-suggestions" aria-expanded="false">
         <kbd>جست‌وجو</kbd>
         <button id="clear-search" type="button" aria-label="پاک کردن جست‌وجو" hidden>×</button>
       </div>
+      <div id="search-suggestions" class="search-suggestions" role="listbox" aria-label="پیشنهادهای جست‌وجو" hidden></div>
       <div class="hero-meta"><span id="total-count">در حال بارگذاری منابع...</span><span class="meta-dot"></span><span>جست‌وجوی فارسی هوشمند</span></div>
     </section>
 
