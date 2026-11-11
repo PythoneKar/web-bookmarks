@@ -3,7 +3,7 @@
   const FAVORITES_KEY = "web-bookmarks:favorites";
   const FAVORITES_VERSION = 1;
   const BOOKMARKS_KEY = "web-bookmarks:pinned";
-  const ASSET_VERSION = "20261111-9";
+  const ASSET_VERSION = "20261111-10";
   const $ = (selector) => document.querySelector(selector);
   // Keep personal bookmarks separate from the site's frequently updated resource data.
   const loadFavorites = () => {
@@ -139,9 +139,9 @@
   const renderCategories = () => {
     const root=$("#category-list");
     const favoriteCategory = '<button class="category '+(state.category==="favorites"?'active':'')+'" data-category="favorites"><span class="category-icon">★</span><span>نشان‌شده‌های من</span><b>'+favorites.size.toLocaleString("fa-IR")+'</b></button>';
-    root.innerHTML=favoriteCategory+state.categories.map(c=>{
+    root.innerHTML=favoriteCategory+state.categories.map((c,index)=>{
       const count=state.resources.filter(r=>r.category===c.id).length;
-      if(!c.subcategoryGroups || !c.subcategoryGroups.length) return '<button class="category '+(state.category===c.id?'active':'')+'" data-category="'+c.id+'"><span class="category-icon">'+(c.icon||"◈")+'</span><span>'+safe(c.name)+'</span><b>'+count.toLocaleString("fa-IR")+'</b></button>';
+      if(!c.subcategoryGroups || !c.subcategoryGroups.length) return '<button class="category '+(state.category===c.id?'active':'')+'" data-category="'+c.id+'"><span class="category-icon">'+(c.icon||"◈")+'</span><span class="category-number">'+(index+1).toLocaleString("fa-IR")+'</span><span>'+safe(c.name)+'</span><b>'+count.toLocaleString("fa-IR")+'</b></button>';
       const groups=c.subcategoryGroups.map(group=>'<section class="mega-group"><h4>'+safe(group.title)+'</h4>'+group.items.map(item=>{
         const tools=state.resources.filter(r=>r.category===c.id&&r.subcategory===item.id);
         const toolLinks=tools.map(tool=>{
