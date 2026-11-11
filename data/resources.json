@@ -2411,8 +2411,8 @@
     {
       "title": "VOA Persian",
       "category": "news",
-      "description": "بخش فارسی صدای آمریکا؛ خبر، گزارش، تحلیل و برنامه‌های ویدئویی.",
-      "url": "https://www.voa.com/persian",
+      "description": "بخش فارسی صدای آمریکا؛ خبر، گزارش، تحلیل و برنامه‌های تلویزیونی و ویدئویی.",
+      "url": "https://ir.voanews.com/",
       "tags": [
         "فارسی",
         "خبر",
@@ -2541,16 +2541,6 @@
       ]
     },
     {
-      "title": "Farsi TV Live",
-      "category": "satellite-networks",
-      "description": "فهرست و دسترسی آنلاین به شبکه‌های تلویزیونی فارسی‌زبان.",
-      "url": "https://farsitvlive.com/",
-      "tags": [
-        "فارسی",
-        "پخش زنده"
-      ]
-    },
-    {
       "title": "Iran International – Live",
       "category": "satellite-networks",
       "description": "پخش زنده تلویزیون ایران اینترنشنال.",
@@ -2570,28 +2560,6 @@
         "فارسی",
         "خبری",
         "پخش زنده"
-      ]
-    },
-    {
-      "title": "MBC Persia",
-      "category": "satellite-networks",
-      "description": "شبکه سرگرمی فارسی‌زبان؛ برنامه‌ها و اطلاعات پخش از درگاه رسمی گروه MBC.",
-      "url": "https://www.mbc.net/",
-      "tags": [
-        "فارسی",
-        "سرگرمی",
-        "ماهواره"
-      ]
-    },
-    {
-      "title": "PMC",
-      "category": "satellite-networks",
-      "description": "شبکه موسیقی فارسی‌زبان و اطلاعات برنامه‌ها.",
-      "url": "https://pmc.tv/",
-      "tags": [
-        "فارسی",
-        "موسیقی",
-        "ماهواره"
       ]
     },
     {
@@ -2658,6 +2626,39 @@
         "فارسی",
         "آرشیو",
         "تلویزیون"
+      ]
+    },
+    {
+      "title": "PersianHub1 – راهنمای شبکه‌ها و فرکانس‌ها",
+      "category": "satellite-networks",
+      "url": "https://persianhub1.com/guides/frequencies",
+      "description": "فهرست قابل جست‌وجوی شبکه‌های فارسی و فرکانس‌های ماهواره‌ای یاهست، هاتبرد، بدر و دیگر موقعیت‌ها.",
+      "tags": [
+        "فارسی",
+        "فرکانس",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "Darya Stream – Live TV",
+      "category": "satellite-networks",
+      "url": "https://darya.stream/live-tv/",
+      "description": "فهرست پخش زنده شبکه‌های تلویزیونی بین‌المللی و فارسی؛ در دسترس بودن هر جریان ممکن است تغییر کند.",
+      "tags": [
+        "فارسی",
+        "پخش زنده",
+        "فهرست شبکه‌ها"
+      ]
+    },
+    {
+      "title": "GEM Group",
+      "category": "satellite-networks",
+      "url": "https://www.gemgroup.tv/en/",
+      "description": "وب‌سایت رسمی گروه شبکه‌های جم با معرفی شبکه‌ها، برنامه‌ها و اطلاعات فرکانس ماهواره‌ای.",
+      "tags": [
+        "فارسی",
+        "ماهواره",
+        "سرگرمی"
       ]
     }
   ]
