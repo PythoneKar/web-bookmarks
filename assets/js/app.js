@@ -461,7 +461,7 @@
       app: BACKUP_APP,
       version: BACKUP_VERSION,
       createdAt: new Date().toISOString(),
-      data: Object.fromEntries(Object.entries(BACKUP_KEYS).map(([name,key]) => [name, readBackupValue(key)]))
+      data: { favorites: readBackupValue(FAVORITES_KEY) ?? {version:FAVORITES_VERSION,items:[...favorites]}, bookmarks: readBackupValue(BOOKMARKS_KEY) ?? bookmarks, folders: readBackupValue(FOLDERS_KEY) ?? folders, folderItems: readBackupValue(FOLDER_ITEMS_KEY) ?? folderItems, theme: readBackupValue("library-theme") }
     };
     const blob = new Blob([JSON.stringify(payload, null, 2)], {type:"application/json;charset=utf-8"});
     const url = URL.createObjectURL(blob);
