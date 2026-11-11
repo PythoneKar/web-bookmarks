@@ -1,6 +1,24 @@
 (() => {
   const PAGE_SIZE = 18;
+  const FAVORITES_KEY = "web-bookmarks:favorites";
+  const FAVORITES_VERSION = 1;
   const $ = (selector) => document.querySelector(selector);
+  // Keep personal bookmarks separate from the site's frequently updated resource data.
+  const loadFavorites = () => {
+    try {
+      const saved = JSON.parse(localStorage.getItem(FAVORITES_KEY) || "null");
+      if (Array.isArray(saved)) return new Set(saved.filter(v => typeof v === "string"));
+      if (saved && Array.isArray(saved.items)) return new Set(saved.items.filter(v => typeof v === "string"));
+    } catch (error) { console.warn("Could not read saved bookmarks", error); }
+    return new Set();
+  };
+  const favorites = loadFavorites();
+  const saveFavorites = () => {
+    try {
+      localStorage.setItem(FAVORITES_KEY, JSON.stringify({ version: FAVORITES_VERSION, items: [...favorites] }));
+      return true;
+    } catch (error) { console.warn("Could not save bookmarks", error); return false; }
+  };
   const state = { resources: [], categories: [], category: "all", query: "", page: 1, sort: "default", suggestions: [], activeSuggestion: -1 };
   const normalize = (value) => String(value ?? "").toLowerCase()
     .replace(/[يى]/g, "ی").replace(/ك/g, "ک")
@@ -85,9 +103,9 @@
     return matched >= required ? score + (matched / units.length) * 4 : 0;
   };
   const fuzzyMatch = (haystack, query) => searchScore(haystack, query) > 0;
-  const categoryName = id => state.categories.find(c => c.id === id)?.name || "سایر";
+  const categoryName = id => id === "favorites" ? "نشان‌شده‌های من" : (state.categories.find(c => c.id === id)?.name || "سایر");
   const filtered = () => {
-    let list=state.resources.filter(item => state.category==="all" || item.category===state.category);
+    let list=state.category==="favorites" ? state.resources.filter(item => favorites.has(item.url)) : state.resources.filter(item => state.category==="all" || item.category===state.category);
     if(state.query) list=list.map(item=>({item,score:searchScore([item.title,item.description,item.url,...(item.tags||[])].join(" "),state.query,item.title)}))
       .filter(x=>x.score>0).sort((a,b)=>b.score-a.score).map(x=>x.item);
     if(state.sort==="name") list.sort((a,b)=>a.title.localeCompare(b.title,"fa"));
@@ -95,7 +113,8 @@
   };
   const renderCategories = () => {
     const root=$("#category-list");
-    root.innerHTML=state.categories.map(c=>{
+    const favoriteCategory = '<button class="category '+(state.category==="favorites"?'active':'')+'" data-category="favorites"><span class="category-icon">★</span><span>نشان‌شده‌های من</span><b>'+favorites.size.toLocaleString("fa-IR")+'</b></button>';
+    root.innerHTML=favoriteCategory+state.categories.map(c=>{
       const count=state.resources.filter(r=>r.category===c.id).length;
       return '<button class="category '+(state.category===c.id?'active':'')+'" data-category="'+c.id+'"><span class="category-icon">'+(c.icon||"◈")+'</span><span>'+c.name+'</span><b>'+count.toLocaleString("fa-IR")+'</b></button>';
     }).join("");
@@ -118,12 +137,19 @@
       const domain=(()=>{try{return new URL(item.url).hostname.replace(/^www\./,"")}catch{return item.url}})();
       const initial=(item.title||"؟").trim().charAt(0);
       const favicon="https://www.google.com/s2/favicons?domain_url="+encodeURIComponent(item.url)+"&sz=128";
-      return '<article class="resource-card"><div class="card-top"><div class="site-icon"><img src="'+favicon+'" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="site-icon-fallback" hidden>'+safe(initial)+'</span></div><div style="min-width:0"><div class="card-title">'+safe(item.title)+'</div><div class="card-category">'+safe(categoryName(item.category))+'</div></div></div><p class="card-description">'+safe(item.description)+'</p><div class="card-bottom"><span class="card-domain">'+safe(domain)+'</span><a class="visit-link" href="'+safe(item.url)+'" target="_blank" rel="noopener noreferrer">بازدید از سایت ↗</a></div></article>';
+      const isFavorite=favorites.has(item.url);
+      return '<article class="resource-card"><div class="card-top"><div class="site-icon"><img src="'+favicon+'" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="site-icon-fallback" hidden>'+safe(initial)+'</span></div><div class="card-heading"><div class="card-title">'+safe(item.title)+'</div><div class="card-category">'+safe(categoryName(item.category))+'</div></div><button class="favorite-button '+(isFavorite?'is-favorite':'')+'" type="button" data-favorite="'+safe(item.url)+'" aria-label="'+(isFavorite?'حذف از نشان‌شده‌ها':'افزودن به نشان‌شده‌ها')+'" aria-pressed="'+isFavorite+'">'+(isFavorite?'★':'☆')+'</button></div><p class="card-description">'+safe(item.description)+'</p><div class="card-bottom"><span class="card-domain">'+safe(domain)+'</span><a class="visit-link" href="'+safe(item.url)+'" target="_blank" rel="noopener noreferrer">بازدید از سایت ↗</a></div></article>';
     }).join("");
     $("#empty-state").hidden=visible.length!==0;$("#resource-grid").hidden=visible.length===0;
     $("#page-info").textContent=list.length?("نمایش "+(start+1).toLocaleString("fa-IR")+" تا "+Math.min(start+PAGE_SIZE,list.length).toLocaleString("fa-IR")+" از "+list.length.toLocaleString("fa-IR")):"۰ نتیجه";
     $("#page-numbers").innerHTML=Array.from({length:pages},(_,i)=>i+1).filter(n=>pages<=5||Math.abs(n-state.page)<=1||n===1||n===pages).map(n=>'<button class="page-number '+(n===state.page?"current":"")+'" data-page="'+n+'">'+n.toLocaleString("fa-IR")+'</button>').join("");
     document.querySelectorAll("[data-page]").forEach(b=>b.addEventListener("click",()=>{state.page=Number(b.dataset.page);render();}));
+    document.querySelectorAll("[data-favorite]").forEach(button=>button.addEventListener("click",()=>{
+      const url=button.dataset.favorite;
+      if(favorites.has(url)) favorites.delete(url); else favorites.add(url);
+      saveFavorites();
+      render();
+    }));
     $("#prev-page").disabled=state.page===1;$("#next-page").disabled=state.page===pages;
     $("#prev-page").onclick=()=>{if(state.page>1){state.page--;render()}};
     $("#next-page").onclick=()=>{if(state.page<pages){state.page++;render()}};
