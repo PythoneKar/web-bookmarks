@@ -537,3 +537,12 @@ main{max-width:1240px;margin:auto;padding:0 28px}.hero{position:relative;isolati
 .folder-confirm-yes{border-color:#c95660!important;background:#c95660;color:white}
 @keyframes folder-dialog-in{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
 @media(max-width:680px){.folder-edit-toggle{font-size:9px}.folder-confirm-dialog{padding:19px}}
+
+
+/* Personal-data backup and restore controls */
+.top-actions{gap:8px}
+.backup-button{min-height:34px;padding:7px 12px;border:1px solid color-mix(in srgb,var(--accent2) 55%,var(--line));border-radius:9px;background:color-mix(in srgb,var(--accent2) 12%,var(--panel));color:var(--text);font:inherit;font-size:10px;font-weight:700;cursor:pointer;transition:background .16s,border-color .16s,transform .16s}
+.backup-button:hover{transform:translateY(-1px);border-color:var(--accent2);background:color-mix(in srgb,var(--accent2) 22%,var(--panel))}
+.backup-import-button{border-color:var(--line);background:var(--panel2);color:var(--muted)}
+.backup-import-button:hover{color:var(--text);border-color:var(--accent)}
+@media(max-width:560px){.top-actions{gap:5px}.backup-button{min-height:31px;padding:5px 8px;font-size:9px}.top-actions>a{font-size:10px}}
