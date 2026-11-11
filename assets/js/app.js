@@ -3,7 +3,7 @@
   const FAVORITES_KEY = "web-bookmarks:favorites";
   const FAVORITES_VERSION = 1;
   const BOOKMARKS_KEY = "web-bookmarks:pinned";
-  const ASSET_VERSION = "20261111-5";
+  const ASSET_VERSION = "20261111-6";
   const $ = (selector) => document.querySelector(selector);
   // Keep personal bookmarks separate from the site's frequently updated resource data.
   const loadFavorites = () => {
@@ -143,8 +143,12 @@
       const count=state.resources.filter(r=>r.category===c.id).length;
       if(!c.subcategoryGroups || !c.subcategoryGroups.length) return '<button class="category '+(state.category===c.id?'active':'')+'" data-category="'+c.id+'"><span class="category-icon">'+(c.icon||"◈")+'</span><span>'+safe(c.name)+'</span><b>'+count.toLocaleString("fa-IR")+'</b></button>';
       const groups=c.subcategoryGroups.map(group=>'<section class="mega-group"><h4>'+safe(group.title)+'</h4>'+group.items.map(item=>{
-        const n=state.resources.filter(r=>r.category===c.id&&r.subcategory===item.id).length;
-        return '<button type="button" class="mega-link '+(state.subcategory===item.id?'active':'')+'" data-subcategory="'+item.id+'"><span>'+safe(item.name)+'</span><b>'+n.toLocaleString("fa-IR")+'</b></button>';
+        const tools=state.resources.filter(r=>r.category===c.id&&r.subcategory===item.id);
+        const toolLinks=tools.map(tool=>{
+          const favicon="https://www.google.com/s2/favicons?domain_url="+encodeURIComponent(tool.url)+"&sz=64";
+          return '<a class="mega-tool" href="'+safe(tool.url)+'" target="_blank" rel="noopener noreferrer"><img src="'+favicon+'" alt="" loading="lazy" referrerpolicy="no-referrer"><span>'+safe(tool.title)+'</span></a>';
+        }).join("");
+        return '<div class="mega-link-wrap"><button type="button" class="mega-link '+(state.subcategory===item.id?'active':'')+'" data-subcategory="'+item.id+'" aria-haspopup="true"><span>'+safe(item.name)+'</span><b>'+tools.length.toLocaleString("fa-IR")+'</b><span class="mega-link-arrow" aria-hidden="true">‹</span></button><div class="mega-submenu" role="region" aria-label="ابزارهای '+safe(item.name)+'"><div class="mega-submenu-head">'+safe(item.name)+' <small>'+tools.length.toLocaleString("fa-IR")+' ابزار</small></div><div class="mega-tool-list">'+(toolLinks||'<span class="mega-tools-empty">هنوز ابزاری ثبت نشده</span>')+'</div></div></div>';
       }).join("")+'</section>').join("");
       return '<div class="category-with-menu"><button class="category '+(state.category===c.id?'active':'')+'" data-category="'+c.id+'" aria-haspopup="true" aria-expanded="false"><span class="category-icon">'+(c.icon||"◈")+'</span><span>'+safe(c.name)+'</span><b>'+count.toLocaleString("fa-IR")+'</b><span class="category-menu-cue" aria-hidden="true">☷</span></button><div class="mega-menu" role="region" aria-label="زیرشاخه‌های '+safe(c.name)+'"><div class="mega-menu-head"><div><strong>'+safe(c.name)+'</strong><small>همه منابع این دسته، مرتب‌شده بر اساس موضوع</small></div><button type="button" class="mega-all" data-subcategory="">همه ابزارها و منابع</button></div><div class="mega-menu-grid">'+groups+'</div></div></div>';
     }).join("");
