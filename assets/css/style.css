@@ -61,3 +61,27 @@ main{max-width:1240px;margin:auto;padding:0 28px}.hero{position:relative;isolati
 .category-with-menu.open{z-index:140}
 .mega-menu{z-index:150}
 @media(max-width:680px){.sidebar{position:relative;z-index:120}.category-with-menu.open{z-index:140}.mega-menu{z-index:150}}
+
+
+/* Nested tool flyouts: hover a subcategory to reveal its actual resources */
+.mega-group{position:relative}
+.mega-link-wrap{position:relative}
+.mega-link{position:relative;padding-left:24px}
+.mega-link-arrow{position:absolute;left:8px;top:50%;transform:translateY(-50%);font-size:17px;line-height:1;color:var(--muted)}
+.mega-submenu{display:none;position:absolute;z-index:220;top:-10px;right:calc(100% - 2px);width:300px;max-height:min(68vh,620px);overflow:auto;padding:12px;border:1px solid var(--line);border-radius:14px;background:var(--panel);box-shadow:0 18px 55px rgba(0,0,0,.32);backdrop-filter:blur(18px);text-align:right}
+.mega-link-wrap:hover>.mega-submenu,.mega-link-wrap:focus-within>.mega-submenu{display:block;animation:mega-in .16s ease-out}
+.mega-submenu-head{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:3px 5px 10px;margin-bottom:7px;border-bottom:1px solid var(--line);font-size:12px;font-weight:700;color:var(--text)}
+.mega-submenu-head small{font-size:10px;font-weight:500;color:var(--muted)}
+.mega-tool-list{display:grid;grid-template-columns:1fr;gap:3px}
+.mega-tool{display:flex;align-items:center;gap:10px;min-width:0;padding:8px 9px;border-radius:8px;color:var(--text);text-decoration:none;font-size:11px;transition:background .15s}
+.mega-tool:hover{background:var(--panel2)}
+.mega-tool img{width:18px;height:18px;flex:0 0 18px;object-fit:contain;border-radius:4px}
+.mega-tool span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.mega-tools-empty{padding:10px;color:var(--muted);font-size:11px}
+@media(max-width:1100px){.mega-submenu{width:270px}}
+@media(max-width:680px){
+  .mega-link-wrap{position:relative}
+  .mega-submenu{position:static;width:auto;max-height:260px;margin:4px 8px 8px;padding:8px;border-radius:10px;box-shadow:none;backdrop-filter:none}
+  .mega-link-wrap:focus-within>.mega-submenu{display:block}
+  .mega-tool{padding:7px}
+}
