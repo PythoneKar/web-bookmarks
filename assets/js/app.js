@@ -274,12 +274,13 @@
     menu.style.left=Math.max(8,Math.min(x,window.innerWidth-250))+"px";
     menu.style.top=Math.max(8,Math.min(y,window.innerHeight-300))+"px";
     const pinned=bookmarks.includes(url),starred=favorites.has(url);
-    menu.innerHTML='<strong>مدیریت ابزار</strong>'+
+    menu.innerHTML='<strong>مدیریت کارت / ابزارک</strong>'+
       '<button type="button" class="context-action" data-context-bookmark>'+(pinned?'✓ حذف بوکمارک':'▣ افزودن به بوکمارک‌ها')+'</button>'+
       '<button type="button" class="context-action" data-context-favorite>'+(starred?'★ حذف از نشان‌شده‌ها':'☆ افزودن به نشان‌شده‌ها')+'</button>'+
       '<div class="context-menu-divider"></div><strong>انتقال به پوشه</strong>'+
       (folders.length?folders.map(f=>'<button type="button" data-assign-folder="'+safe(f.id)+'">'+(folderItems[url]===f.id?'✓ ':'📁 ')+safe(f.name)+'</button>').join(''):'<p>هنوز پوشه‌ای نساخته‌ای.</p>')+
       (folderItems[url]?'<button type="button" class="folder-remove-item" data-remove-folder-item>× حذف از پوشه فعلی</button>':'')+
+      (folders.length<10?'<div class="context-menu-divider"></div><button type="button" class="context-action" data-context-new-folder>＋ ساخت پوشه جدید و افزودن این مورد</button>':'')+
       '<button type="button" class="folder-context-close" data-close-folder-menu>بستن</button>';
     document.body.appendChild(menu);
   };
@@ -302,7 +303,7 @@
       const favicon="https://www.google.com/s2/favicons?domain_url="+encodeURIComponent(item.url)+"&sz=128";
       const isFavorite=favorites.has(item.url);
       const isBookmarked=bookmarks.includes(item.url);
-      return '<article class="resource-card '+(isBookmarked?'is-bookmarked':'')+'" data-resource-url="'+safe(item.url)+'"><div class="card-top"><div class="site-icon"><img src="'+favicon+'" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="site-icon-fallback" hidden>'+safe(initial)+'</span></div><div class="card-heading"><div class="card-title">'+safe(item.title)+'</div><div class="card-category">'+safe(categoryName(item.category))+'</div></div></div><p class="card-description">'+safe(item.description)+'</p><div class="card-bottom"><span class="card-domain">'+safe(domain)+'</span><a class="visit-link" href="'+safe(item.url)+'" target="_blank" rel="noopener noreferrer">بازدید از سایت ↗</a></div></article>';
+      return '<article class="resource-card '+(isBookmarked?'is-bookmarked':'')+'" data-resource-url="'+safe(item.url)+'"><div class="card-top"><div class="site-icon"><img src="'+favicon+'" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="site-icon-fallback" hidden>'+safe(initial)+'</span></div><div class="card-heading"><div class="card-title">'+safe(item.title)+'</div><div class="card-category">'+safe(categoryName(item.category))+'</div></div><div class="card-actions"><button type="button" class="card-action-button card-bookmark-button '+(isBookmarked?'is-bookmarked':'')+'" data-bookmark="'+safe(item.url)+'" aria-label="'+(isBookmarked?'برداشتن بوکمارک':'افزودن به بوکمارک‌ها')+'" aria-pressed="'+String(isBookmarked)+'" title="'+(isBookmarked?'حذف بوکمارک':'بوکمارک کردن')+'">▣</button><button type="button" class="card-action-button card-favorite-button '+(isFavorite?'is-favorite':'')+'" data-favorite="'+safe(item.url)+'" aria-label="'+(isFavorite?'حذف از نشان‌شده‌ها':'افزودن به نشان‌شده‌ها')+'" aria-pressed="'+String(isFavorite)+'" title="'+(isFavorite?'حذف ستاره':'ستاره‌دار کردن')+'">'+(isFavorite?'★':'☆')+'</button></div></div><p class="card-description">'+safe(item.description)+'</p><div class="card-bottom"><span class="card-domain">'+safe(domain)+'</span><a class="visit-link" href="'+safe(item.url)+'" target="_blank" rel="noopener noreferrer">بازدید از سایت ↗</a></div></article>';
     }).join("");
     $("#empty-state").hidden=visible.length!==0;$("#resource-grid").hidden=visible.length===0;
     $("#page-info").textContent=list.length?("نمایش "+(start+1).toLocaleString("fa-IR")+" تا "+Math.min(start+PAGE_SIZE,list.length).toLocaleString("fa-IR")+" از "+list.length.toLocaleString("fa-IR")):"۰ نتیجه";
@@ -354,6 +355,13 @@
     if(editFolder){editingFolderId=editFolder.dataset.editFolder;renderFolderBar();return;}
     if(e.target.closest("[data-cancel-folder-edit]")){editingFolderId=null;renderFolderBar();return;}
     if(e.target.closest("[data-toggle-folder-edit]")){folderEditMode=!folderEditMode;editingFolderId=null;renderFolderBar();return;}
+    if(e.target.closest("[data-context-new-folder]")){
+      const menu=$("#folder-context-menu"),url=menu?.dataset.url;if(!menu||!url||folders.length>=10)return;
+      menu.querySelector("[data-context-new-folder]")?.remove();
+      const form=document.createElement("form");form.className="context-folder-create-form";form.dataset.contextFolderCreate="true";
+      form.innerHTML='<input name="folderName" maxlength="40" autocomplete="off" placeholder="نام پوشه جدید..." aria-label="نام پوشه جدید" required><button type="submit">ساخت و افزودن</button>';
+      menu.appendChild(form);form.querySelector("input")?.focus();return;
+    }
     const contextAction=e.target.closest("[data-context-bookmark],[data-context-favorite]");
     if(contextAction){
       const menu=$("#folder-context-menu"),url=menu?.dataset.url;if(!url)return;
@@ -390,6 +398,18 @@
     if(!e.target.closest("#folder-context-menu"))closeFolderMenu();
   });
   document.addEventListener("submit",e=>{
+    const contextForm=e.target.closest("[data-context-folder-create]");
+    if(contextForm){
+      e.preventDefault();const menu=$("#folder-context-menu"),url=menu?.dataset.url;
+      const input=contextForm.querySelector("input"),name=(input?.value||"").trim();
+      if(!url||!name||folders.length>=10)return;
+      if(folders.some(f=>f.name.trim().toLocaleLowerCase()===name.toLocaleLowerCase())){
+        input.setCustomValidity("پوشه‌ای با این نام وجود دارد.");input.reportValidity();return;
+      }
+      const id="folder-"+Date.now().toString(36)+"-"+Math.random().toString(36).slice(2,7);
+      folders.push({id,name:name.slice(0,40)});folderItems[url]=id;saveFolders();saveFolderItems();
+      closeFolderMenu();renderFolderBar();if(state.folderId)render();return;
+    }
     const editForm=e.target.closest("[data-folder-edit-form]");
     if(editForm){
       e.preventDefault();const folder=folders.find(f=>f.id===editForm.dataset.folderEditForm);
