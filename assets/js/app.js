@@ -17,15 +17,79 @@
     }
     return prev[b.length];
   };
-  const fuzzyMatch = (haystack, query) => {
-    if (!query) return true;
-    const words = normalize(haystack).split(/\s+/);
-    return normalize(query).split(/\s+/).every(q => words.some(w => w.includes(q) || (q.length > 3 && distance(w,q) <= (q.length > 6 ? 2 : 1))));
+  // Offline bilingual vocabulary: Persian and English queries share the same search terms.
+  const aliasGroups = [
+    ["برنامه نویسی","programming","coding","کدنویسی","developer"],["توسعه","development","build","ساخت"],
+    ["وب","web","website","سایت","وبسایت"],["طراحی","design","designer"],["گرافیک","graphic","graphics"],
+    ["هوش","ai","artificial intelligence","intelligence"],["مصنوعی","artificial","ai"],
+    ["یادگیری","learning","learn","study","آموزش"],["آموزش","tutorial","course","lesson","education"],
+    ["فیلم","movie","movies","film","cinema"],["سریال","series","tv show"],["سرگرمی","entertainment"],
+    ["خبر","news","headline","اخبار"],["خبرگزاری","news agency","press"],["رسانه","media","broadcast"],
+    ["ماهواره","satellite"],["شبکه","channel","network"],["تلویزیون","television","tv"],
+    ["زنده","live","stream","streaming","پخش زنده"],["پخش","broadcast","stream"],
+    ["موسیقی","music","song","audio"],["عکس","photo","photography","image"],["تصویر","image","picture"],
+    ["کتاب","book","books"],["دانشنامه","encyclopedia","wiki"],["امنیت","security","cybersecurity"],
+    ["حریم","privacy"],["رمز","password"],["ابزار","tool","tools"],["رایگان","free"],
+    ["دانلود","download"],["آپلود","upload"],["فضای ابری","cloud storage","cloud"],
+    ["شبکه اجتماعی","social network","social media"],["پیام رسان","messaging","chat"],
+    ["جستجو","search","find"],["موتور جستجو","search engine"],["ایمیل","email","mail"],
+    ["بازی","game","gaming"],["ورزش","sport","sports"],["فوتبال","football","soccer"],
+    ["اقتصاد","economy","business","finance"],["علم","science"],["فناوری","technology","tech"],
+    ["پایتون","python"],["جاوااسکریپت","javascript","js"],["سی شارپ","c sharp","c#"],
+    ["وردپرس","wordpress"],["فایرفاکس","firefox"],["گوگل","google"],["مایکروسافت","microsoft"],
+    ["هوش مصنوعی مولد","generative ai"],["چت بات","chatbot","chat bot"],["ترجمه","translate","translation"],
+    ["نقشه","map","maps"],["آب و هوا","weather"],["خرید","shopping","buy"]
+  ];
+  const aliasMap = new Map();
+  for (const group of aliasGroups) {
+    const normalized = group.map(normalize);
+    for (const term of normalized) aliasMap.set(term, normalized);
+  }
+  const queryUnits = query => {
+    const q = normalize(query);
+    const units = [];
+    const consumed = new Set();
+    // Match known multi-word concepts first, so their component words don't over-constrain results.
+    const phrases = aliasGroups.filter(g => g.some(v => normalize(v).includes(" "))).sort((a,b)=>Math.max(...b.map(x=>normalize(x).length))-Math.max(...a.map(x=>normalize(x).length)));
+    for (const group of phrases) {
+      const variants = group.map(normalize);
+      const found = variants.find(v => v.includes(" ") && (" "+q+" ").includes(" "+v+" "));
+      if (found) {
+        found.split(" ").forEach(w=>consumed.add(w));
+        units.push(variants);
+      }
+    }
+    for (const word of q.split(/\s+/).filter(Boolean)) {
+      if (consumed.has(word)) continue;
+      units.push(aliasMap.get(word) || [word]);
+    }
+    return units;
   };
+  const searchScore = (haystack, query, title = "") => {
+    if (!query) return 1;
+    const text = normalize(haystack), titleText = normalize(title);
+    const words = text.split(/\s+/);
+    const units = queryUnits(query);
+    let matched = 0, score = 0;
+    for (const variants of units) {
+      let best = 0;
+      for (const variant of variants) {
+        const parts = variant.split(/\s+/).filter(Boolean);
+        const exact = parts.every(part => text.includes(part));
+        if (exact) best = Math.max(best, titleText.includes(variant) ? 5 : 3);
+        else if (parts.length === 1 && variant.length > 3 && words.some(w=>distance(w,variant)<=1)) best=Math.max(best,1);
+      }
+      if (best) { matched++; score += best; }
+    }
+    const required = Math.max(1, Math.ceil(units.length * 0.65));
+    return matched >= required ? score + (matched / units.length) * 4 : 0;
+  };
+  const fuzzyMatch = (haystack, query) => searchScore(haystack, query) > 0;
   const categoryName = id => state.categories.find(c => c.id === id)?.name || "سایر";
   const filtered = () => {
-    let list=state.resources.filter(item => (state.category==="all" || item.category===state.category) &&
-      fuzzyMatch([item.title,item.description,item.url,...(item.tags||[])].join(" "),state.query));
+    let list=state.resources.filter(item => state.category==="all" || item.category===state.category);
+    if(state.query) list=list.map(item=>({item,score:searchScore([item.title,item.description,item.url,...(item.tags||[])].join(" "),state.query,item.title)}))
+      .filter(x=>x.score>0).sort((a,b)=>b.score-a.score).map(x=>x.item);
     if(state.sort==="name") list.sort((a,b)=>a.title.localeCompare(b.title,"fa"));
     return list;
   };
@@ -69,7 +133,8 @@
   const updateSuggestions=()=>{
     const q=searchInput.value.trim();
     if(!q||!state.resources.length){closeSuggestions();return;}
-    const matches=state.resources.filter(item=>fuzzyMatch([item.title,item.description,item.url,...(item.tags||[])].join(" "),q)).slice(0,7);
+    const matches=state.resources.map(item=>({item,score:searchScore([item.title,item.description,item.url,...(item.tags||[])].join(" "),q,item.title)}))
+      .filter(x=>x.score>0).sort((a,b)=>b.score-a.score).slice(0,7).map(x=>x.item);
     state.suggestions=matches;
     if(!matches.length){suggestionBox.innerHTML='<div class="suggestion-hint">پیشنهادی پیدا نشد؛ برای دیدن نتایج کامل Enter بزن.</div>';suggestionBox.hidden=false;searchInput.setAttribute("aria-expanded","true");return;}
     suggestionBox.innerHTML=matches.map((item,i)=>'<button type="button" class="suggestion-item" role="option" aria-selected="'+(i===state.activeSuggestion)+'" data-suggestion="'+i+'"><span class="suggestion-initial">'+safe((item.title||"؟").trim().charAt(0))+'</span><span class="suggestion-copy"><strong>'+safe(item.title)+'</strong><small>'+safe(categoryName(item.category))+' · '+safe(item.url)+'</small></span></button>').join("")+'<div class="suggestion-hint">برای انتخاب پیشنهاد از کلیدهای جهت‌نما یا کلیک استفاده کن</div>';
@@ -88,19 +153,20 @@
     searchInput.value=item.title;state.query=item.title;state.page=1;closeSuggestions();render();
   });
   document.addEventListener("click",e=>{if(!e.target.closest(".search-wrap")&&!e.target.closest("#search-suggestions"))closeSuggestions();});
-  $("#ai-search-submit").addEventListener("click",async()=>{
-    const prompt=$("#ai-search-prompt").value.trim(),status=$("#ai-search-status"),button=$("#ai-search-submit");
+  $("#ai-search-form").addEventListener("submit", async event => {
+    event.preventDefault();
+    const prompt=$("#ai-search-prompt").value.trim(), status=$("#ai-search-status");
     if(!prompt){status.textContent="اول پرسشت را بنویس.";$("#ai-search-prompt").focus();return;}
-    button.disabled=true;
-    try{
+    // Open synchronously during the click gesture to avoid popup blockers.
+    const tab=window.open("https://duck.ai/","_blank");
+    if(tab) tab.opener=null;
+    try {
       await navigator.clipboard.writeText(prompt);
-      status.textContent="پرسش کپی شد؛ آن را در کادر گفتگو Paste کن.";
-      window.open("https://duck.ai/","_blank","noopener,noreferrer");
-    }catch(error){
-      status.textContent="کپی خودکار در دسترس نیست؛ متن را دستی کپی کن و Duck.ai را باز کن.";
+      status.textContent=tab ? "پرسش کپی شد؛ در Duck.ai فقط Paste کن." : "پرسش کپی شد؛ پنجرهٔ بازشو مسدود شد. از لینک پایین استفاده کن.";
+    } catch {
+      status.textContent=tab ? "کپی خودکار ممکن نشد؛ متن را انتخاب و کپی کن." : "مرورگر پنجرهٔ جدید را مسدود کرد؛ متن را کپی و لینک پایین را باز کن.";
       $("#ai-search-prompt").focus();$("#ai-search-prompt").select();
-      window.open("https://duck.ai/","_blank","noopener,noreferrer");
-    }finally{button.disabled=false;}
+    }
   });
   $("#clear-search").addEventListener("click",()=>{$("#search-input").value="";state.query="";state.page=1;closeSuggestions();render();});
   $("#reset-search").addEventListener("click",()=>{state.category="all";state.query="";$("#search-input").value="";state.page=1;closeSuggestions();render();});
