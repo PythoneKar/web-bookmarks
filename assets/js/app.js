@@ -283,6 +283,7 @@
       (folders.length<10?'<div class="context-menu-divider"></div><button type="button" class="context-action" data-context-new-folder>＋ ساخت پوشه جدید و افزودن این مورد</button>':'')+
       '<button type="button" class="folder-context-close" data-close-folder-menu>بستن</button>';
     document.body.appendChild(menu);
+    requestAnimationFrame(()=>{const rect=menu.getBoundingClientRect();menu.style.left=Math.max(8,Math.min(x,window.innerWidth-rect.width-8))+"px";menu.style.top=Math.max(8,Math.min(y,window.innerHeight-rect.height-8))+"px";});
   };
   const closeFolderMenu=()=>document.querySelector("#folder-context-menu")?.remove();
   const render = () => {
