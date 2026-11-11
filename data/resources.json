@@ -786,6 +786,303 @@
           ]
         }
       ]
+    },
+    {
+      "id": "school",
+      "name": "مدرسه",
+      "icon": "▤",
+      "subcategoryGroups": [
+        {
+          "title": "دوره ابتدایی",
+          "items": [
+            {
+              "id": "school-primary-math",
+              "name": "ریاضی ابتدایی"
+            },
+            {
+              "id": "school-primary-science",
+              "name": "علوم ابتدایی"
+            },
+            {
+              "id": "school-primary-language",
+              "name": "فارسی و نگارش"
+            },
+            {
+              "id": "school-primary-general",
+              "name": "مهارت‌های پایه و دروس عمومی"
+            }
+          ]
+        },
+        {
+          "title": "متوسطه اول",
+          "items": [
+            {
+              "id": "school-middle-math",
+              "name": "ریاضی متوسطه اول"
+            },
+            {
+              "id": "school-middle-science",
+              "name": "علوم و آزمایشگاه"
+            },
+            {
+              "id": "school-middle-language",
+              "name": "زبان و ادبیات"
+            },
+            {
+              "id": "school-middle-social",
+              "name": "مطالعات اجتماعی"
+            }
+          ]
+        },
+        {
+          "title": "متوسطه دوم و دبیرستان",
+          "items": [
+            {
+              "id": "school-high-math",
+              "name": "ریاضی، حسابان و هندسه"
+            },
+            {
+              "id": "school-high-physics",
+              "name": "فیزیک"
+            },
+            {
+              "id": "school-high-chemistry",
+              "name": "شیمی"
+            },
+            {
+              "id": "school-high-biology",
+              "name": "زیست‌شناسی"
+            },
+            {
+              "id": "school-high-humanities",
+              "name": "علوم انسانی و ادبیات"
+            },
+            {
+              "id": "school-high-language",
+              "name": "زبان انگلیسی و زبان‌های خارجی"
+            }
+          ]
+        },
+        {
+          "title": "هنرستان و آموزش فنی",
+          "items": [
+            {
+              "id": "school-vocational-computer",
+              "name": "کامپیوتر و شبکه"
+            },
+            {
+              "id": "school-vocational-electronics",
+              "name": "برق و الکترونیک"
+            },
+            {
+              "id": "school-vocational-design",
+              "name": "گرافیک و طراحی"
+            },
+            {
+              "id": "school-vocational-mechanics",
+              "name": "مکانیک و مهارت‌های فنی"
+            }
+          ]
+        },
+        {
+          "title": "آزمون، تکلیف و مهارت مطالعه",
+          "items": [
+            {
+              "id": "school-exams",
+              "name": "آزمون و آمادگی امتحان"
+            },
+            {
+              "id": "school-flashcards",
+              "name": "فلش‌کارت و مرور هوشمند"
+            },
+            {
+              "id": "school-notes",
+              "name": "یادداشت، جزوه و مدیریت تکلیف"
+            },
+            {
+              "id": "school-accessibility",
+              "name": "دسترسی‌پذیری و کمک‌آموزشی"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "university",
+      "name": "دانشگاه",
+      "icon": "⌂",
+      "subcategoryGroups": [
+        {
+          "title": "مهندسی و فناوری",
+          "items": [
+            {
+              "id": "uni-cs",
+              "name": "مهندسی کامپیوتر و علوم کامپیوتر"
+            },
+            {
+              "id": "uni-electrical",
+              "name": "مهندسی برق و الکترونیک"
+            },
+            {
+              "id": "uni-mechanical",
+              "name": "مهندسی مکانیک و هوافضا"
+            },
+            {
+              "id": "uni-civil",
+              "name": "مهندسی عمران و معماری"
+            },
+            {
+              "id": "uni-chemical",
+              "name": "مهندسی شیمی و مواد"
+            },
+            {
+              "id": "uni-industrial",
+              "name": "مهندسی صنایع و مدیریت فناوری"
+            }
+          ]
+        },
+        {
+          "title": "علوم پزشکی و سلامت",
+          "items": [
+            {
+              "id": "uni-medicine",
+              "name": "پزشکی و علوم بالینی"
+            },
+            {
+              "id": "uni-nursing",
+              "name": "پرستاری و مامایی"
+            },
+            {
+              "id": "uni-pharmacy",
+              "name": "داروسازی و علوم دارویی"
+            },
+            {
+              "id": "uni-dentistry",
+              "name": "دندان‌پزشکی"
+            },
+            {
+              "id": "uni-public-health",
+              "name": "بهداشت عمومی و اپیدمیولوژی"
+            },
+            {
+              "id": "uni-biomedical",
+              "name": "علوم آزمایشگاهی و زیست‌پزشکی"
+            }
+          ]
+        },
+        {
+          "title": "علوم پایه و کشاورزی",
+          "items": [
+            {
+              "id": "uni-math-stats",
+              "name": "ریاضی و آمار"
+            },
+            {
+              "id": "uni-physics",
+              "name": "فیزیک و نجوم"
+            },
+            {
+              "id": "uni-chemistry",
+              "name": "شیمی"
+            },
+            {
+              "id": "uni-biology",
+              "name": "زیست‌شناسی و ژنتیک"
+            },
+            {
+              "id": "uni-earth",
+              "name": "زمین‌شناسی و محیط‌زیست"
+            },
+            {
+              "id": "uni-agriculture",
+              "name": "کشاورزی و علوم غذایی"
+            }
+          ]
+        },
+        {
+          "title": "علوم انسانی، حقوق و آموزش",
+          "items": [
+            {
+              "id": "uni-law",
+              "name": "حقوق و علوم قضایی"
+            },
+            {
+              "id": "uni-psychology",
+              "name": "روان‌شناسی و علوم شناختی"
+            },
+            {
+              "id": "uni-economics",
+              "name": "اقتصاد"
+            },
+            {
+              "id": "uni-management",
+              "name": "مدیریت و حسابداری"
+            },
+            {
+              "id": "uni-literature",
+              "name": "زبان، ادبیات و زبان‌شناسی"
+            },
+            {
+              "id": "uni-history",
+              "name": "تاریخ، فلسفه و علوم اجتماعی"
+            },
+            {
+              "id": "uni-education",
+              "name": "علوم تربیتی و آموزش"
+            }
+          ]
+        },
+        {
+          "title": "هنر، رسانه و معماری",
+          "items": [
+            {
+              "id": "uni-arts",
+              "name": "هنرهای تجسمی و طراحی"
+            },
+            {
+              "id": "uni-architecture",
+              "name": "معماری و شهرسازی"
+            },
+            {
+              "id": "uni-media",
+              "name": "ارتباطات، رسانه و سینما"
+            },
+            {
+              "id": "uni-music",
+              "name": "موسیقی و هنرهای اجرایی"
+            }
+          ]
+        },
+        {
+          "title": "پژوهش و امور دانشگاهی",
+          "items": [
+            {
+              "id": "uni-papers",
+              "name": "جست‌وجوی مقاله و منابع علمی"
+            },
+            {
+              "id": "uni-citations",
+              "name": "مدیریت منابع و ارجاع‌دهی"
+            },
+            {
+              "id": "uni-writing",
+              "name": "نگارش علمی و پایان‌نامه"
+            },
+            {
+              "id": "uni-data",
+              "name": "تحلیل داده و آمار پژوهشی"
+            },
+            {
+              "id": "uni-labs",
+              "name": "محاسبات، شبیه‌سازی و آزمایشگاه"
+            },
+            {
+              "id": "uni-open-courses",
+              "name": "دوره‌ها و سخنرانی‌های دانشگاهی"
+            }
+          ]
+        }
+      ]
     }
   ],
   "resources": [
@@ -8142,6 +8439,1478 @@
         "football",
         "database"
       ]
+    },
+    {
+      "title": "Khan Academy – Math",
+      "category": "school",
+      "description": "آموزش تعاملی ریاضی از پایه تا مباحث پیشرفته.",
+      "url": "https://www.khanacademy.org/math",
+      "tags": [
+        "آموزشی",
+        "ریاضی",
+        "تمرین"
+      ],
+      "subcategory": "school-primary-math"
+    },
+    {
+      "title": "Math Learning Center",
+      "category": "school",
+      "description": "ابزارهای دیداری و تعاملی ریاضی برای یادگیری مفاهیم پایه.",
+      "url": "https://www.mathlearningcenter.org/apps",
+      "tags": [
+        "آموزشی",
+        "ریاضی",
+        "ابتدایی"
+      ],
+      "subcategory": "school-primary-math"
+    },
+    {
+      "title": "NASA Space Place",
+      "category": "school",
+      "description": "آموزش ساده نجوم، زمین و علوم با فعالیت‌های مناسب دانش‌آموزان.",
+      "url": "https://spaceplace.nasa.gov/",
+      "tags": [
+        "آموزشی",
+        "علوم",
+        "نجوم"
+      ],
+      "subcategory": "school-primary-science"
+    },
+    {
+      "title": "National Geographic Kids",
+      "category": "school",
+      "description": "مطالب و محتوای تصویری درباره طبیعت، جانوران و علوم.",
+      "url": "https://kids.nationalgeographic.com/",
+      "tags": [
+        "آموزشی",
+        "علوم",
+        "طبیعت"
+      ],
+      "subcategory": "school-primary-science"
+    },
+    {
+      "title": "ReadWriteThink",
+      "category": "school",
+      "description": "فعالیت‌ها و ابزارهای سواد خواندن، نوشتن و درک مطلب.",
+      "url": "https://www.readwritethink.org/",
+      "tags": [
+        "آموزشی",
+        "خواندن",
+        "نگارش"
+      ],
+      "subcategory": "school-primary-language"
+    },
+    {
+      "title": "StoryWeaver",
+      "category": "school",
+      "description": "کتاب داستان کودکانه چندزبانه برای تقویت خواندن.",
+      "url": "https://storyweaver.org.in/",
+      "tags": [
+        "آموزشی",
+        "کتاب",
+        "داستان"
+      ],
+      "subcategory": "school-primary-language"
+    },
+    {
+      "title": "LearningApps",
+      "category": "school",
+      "description": "ساخت و استفاده از تمرین‌ها و بازی‌های آموزشی تعاملی.",
+      "url": "https://learningapps.org/",
+      "tags": [
+        "آموزشی",
+        "تمرین",
+        "بازی آموزشی"
+      ],
+      "subcategory": "school-primary-general"
+    },
+    {
+      "title": "Wordwall",
+      "category": "school",
+      "description": "بازی‌ها و فعالیت‌های کلاسی برای مرور درس‌ها.",
+      "url": "https://wordwall.net/",
+      "tags": [
+        "آموزشی",
+        "تمرین",
+        "کلاس"
+      ],
+      "subcategory": "school-primary-general"
+    },
+    {
+      "title": "GeoGebra",
+      "category": "school",
+      "description": "ابزار هندسه، جبر، نمودار و ریاضی تعاملی.",
+      "url": "https://www.geogebra.org/",
+      "tags": [
+        "آموزشی",
+        "ریاضی",
+        "هندسه"
+      ],
+      "subcategory": "school-middle-math"
+    },
+    {
+      "title": "Desmos",
+      "category": "school",
+      "description": "ماشین‌حساب گرافیکی برای رسم و بررسی توابع.",
+      "url": "https://www.desmos.com/calculator",
+      "tags": [
+        "آموزشی",
+        "نمودار",
+        "ریاضی"
+      ],
+      "subcategory": "school-middle-math"
+    },
+    {
+      "title": "PhET Interactive Simulations",
+      "category": "school",
+      "description": "شبیه‌سازی تعاملی فیزیک، شیمی، زیست و ریاضی.",
+      "url": "https://phet.colorado.edu/",
+      "tags": [
+        "آموزشی",
+        "شبیه‌سازی",
+        "آزمایشگاه"
+      ],
+      "subcategory": "school-middle-science"
+    },
+    {
+      "title": "CK-12",
+      "category": "school",
+      "description": "کتاب‌ها و تمرین‌های تعاملی علوم و ریاضی.",
+      "url": "https://www.ck12.org/",
+      "tags": [
+        "آموزشی",
+        "علوم",
+        "کتاب درسی"
+      ],
+      "subcategory": "school-middle-science"
+    },
+    {
+      "title": "Duolingo",
+      "category": "school",
+      "description": "تمرین روزانه زبان با درس‌های کوتاه و تعاملی.",
+      "url": "https://www.duolingo.com/",
+      "tags": [
+        "آموزشی",
+        "زبان"
+      ],
+      "subcategory": "school-middle-language"
+    },
+    {
+      "title": "Quill",
+      "category": "school",
+      "description": "تمرین نگارش، دستور زبان و مهارت نوشتن.",
+      "url": "https://www.quill.org/",
+      "tags": [
+        "آموزشی",
+        "نگارش",
+        "زبان"
+      ],
+      "subcategory": "school-middle-language"
+    },
+    {
+      "title": "Google Earth",
+      "category": "school",
+      "description": "کاوش جغرافیا، نقشه‌ها و مکان‌های جهان.",
+      "url": "https://earth.google.com/web/",
+      "tags": [
+        "آموزشی",
+        "جغرافیا",
+        "نقشه"
+      ],
+      "subcategory": "school-middle-social"
+    },
+    {
+      "title": "Our World in Data",
+      "category": "school",
+      "description": "نمودارها و داده‌های قابل فهم برای شناخت مسائل جهان.",
+      "url": "https://ourworldindata.org/",
+      "tags": [
+        "آموزشی",
+        "داده",
+        "اجتماعی"
+      ],
+      "subcategory": "school-middle-social"
+    },
+    {
+      "title": "Wolfram Alpha",
+      "category": "school",
+      "description": "حل و بررسی مسائل ریاضی و محاسبات نمادین.",
+      "url": "https://www.wolframalpha.com/",
+      "tags": [
+        "آموزشی",
+        "ریاضی",
+        "حل مسئله"
+      ],
+      "subcategory": "school-high-math"
+    },
+    {
+      "title": "Symbolab",
+      "category": "school",
+      "description": "حل مرحله‌ای معادلات، مشتق، انتگرال و جبر.",
+      "url": "https://www.symbolab.com/",
+      "tags": [
+        "آموزشی",
+        "ریاضی",
+        "حل مرحله‌ای"
+      ],
+      "subcategory": "school-high-math"
+    },
+    {
+      "title": "PhET Physics",
+      "category": "school",
+      "description": "آزمایشگاه مجازی برای مفاهیم فیزیک.",
+      "url": "https://phet.colorado.edu/en/simulations/filter?subjects=physics",
+      "tags": [
+        "آموزشی",
+        "فیزیک",
+        "شبیه‌سازی"
+      ],
+      "subcategory": "school-high-physics"
+    },
+    {
+      "title": "Walter Fendt Physics",
+      "category": "school",
+      "description": "شبیه‌سازی‌های HTML5 برای مباحث فیزیک.",
+      "url": "https://www.walter-fendt.de/html5/phen/",
+      "tags": [
+        "آموزشی",
+        "فیزیک",
+        "آزمایشگاه"
+      ],
+      "subcategory": "school-high-physics"
+    },
+    {
+      "title": "ChemCollective",
+      "category": "school",
+      "description": "آزمایشگاه مجازی و تمرین‌های شیمی.",
+      "url": "https://chemcollective.org/",
+      "tags": [
+        "آموزشی",
+        "شیمی",
+        "آزمایشگاه"
+      ],
+      "subcategory": "school-high-chemistry"
+    },
+    {
+      "title": "PubChem",
+      "category": "school",
+      "description": "مرجع اطلاعات مواد و ترکیبات شیمیایی.",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/",
+      "tags": [
+        "آموزشی",
+        "شیمی",
+        "مرجع"
+      ],
+      "subcategory": "school-high-chemistry"
+    },
+    {
+      "title": "BioDigital Human",
+      "category": "school",
+      "description": "مدل‌های سه‌بعدی بدن انسان و آموزش آناتومی.",
+      "url": "https://www.biodigital.com/",
+      "tags": [
+        "آموزشی",
+        "زیست",
+        "آناتومی"
+      ],
+      "subcategory": "school-high-biology"
+    },
+    {
+      "title": "HHMI BioInteractive",
+      "category": "school",
+      "description": "منابع و شبیه‌سازی‌های آموزشی زیست‌شناسی.",
+      "url": "https://www.biointeractive.org/",
+      "tags": [
+        "آموزشی",
+        "زیست",
+        "آموزش"
+      ],
+      "subcategory": "school-high-biology"
+    },
+    {
+      "title": "Persian Wikisource",
+      "category": "school",
+      "description": "متون و منابع متنی فارسی برای مطالعه و تحقیق.",
+      "url": "https://fa.wikisource.org/",
+      "tags": [
+        "آموزشی",
+        "ادبیات",
+        "متن"
+      ],
+      "subcategory": "school-high-humanities"
+    },
+    {
+      "title": "Internet Archive",
+      "category": "school",
+      "description": "کتاب‌ها و منابع دیجیتال برای مطالعه و تحقیق.",
+      "url": "https://archive.org/",
+      "tags": [
+        "آموزشی",
+        "کتاب",
+        "آرشیو"
+      ],
+      "subcategory": "school-high-humanities"
+    },
+    {
+      "title": "British Council LearnEnglish",
+      "category": "school",
+      "description": "تمرین زبان انگلیسی در سطوح مختلف.",
+      "url": "https://learnenglish.britishcouncil.org/",
+      "tags": [
+        "آموزشی",
+        "انگلیسی"
+      ],
+      "subcategory": "school-high-language"
+    },
+    {
+      "title": "Cambridge Dictionary",
+      "category": "school",
+      "description": "فرهنگ لغت، تلفظ و مثال‌های زبان انگلیسی.",
+      "url": "https://dictionary.cambridge.org/",
+      "tags": [
+        "آموزشی",
+        "واژگان",
+        "فرهنگ لغت"
+      ],
+      "subcategory": "school-high-language"
+    },
+    {
+      "title": "Cisco Skills for All",
+      "category": "school",
+      "description": "دوره‌های مقدماتی شبکه، امنیت و مهارت‌های دیجیتال.",
+      "url": "https://skillsforall.com/",
+      "tags": [
+        "آموزشی",
+        "شبکه",
+        "مهارت فنی"
+      ],
+      "subcategory": "school-vocational-computer"
+    },
+    {
+      "title": "freeCodeCamp",
+      "category": "school",
+      "description": "آموزش عملی برنامه‌نویسی و توسعه وب.",
+      "url": "https://www.freecodecamp.org/",
+      "tags": [
+        "آموزشی",
+        "برنامه‌نویسی"
+      ],
+      "subcategory": "school-vocational-computer"
+    },
+    {
+      "title": "Tinkercad Circuits",
+      "category": "school",
+      "description": "طراحی و شبیه‌سازی مدارهای الکترونیکی.",
+      "url": "https://www.tinkercad.com/circuits",
+      "tags": [
+        "آموزشی",
+        "الکترونیک",
+        "شبیه‌سازی"
+      ],
+      "subcategory": "school-vocational-electronics"
+    },
+    {
+      "title": "CircuitLab",
+      "category": "school",
+      "description": "طراحی و تحلیل مدارهای الکتریکی در مرورگر.",
+      "url": "https://www.circuitlab.com/",
+      "tags": [
+        "آموزشی",
+        "مدار"
+      ],
+      "subcategory": "school-vocational-electronics"
+    },
+    {
+      "title": "Canva for Education",
+      "category": "school",
+      "description": "طراحی پوستر، ارائه و محتوای آموزشی.",
+      "url": "https://www.canva.com/education/",
+      "tags": [
+        "آموزشی",
+        "گرافیک",
+        "ارائه"
+      ],
+      "subcategory": "school-vocational-design"
+    },
+    {
+      "title": "Krita",
+      "category": "school",
+      "description": "نرم‌افزار آزاد نقاشی دیجیتال و تصویرسازی.",
+      "url": "https://krita.org/",
+      "tags": [
+        "آموزشی",
+        "طراحی",
+        "نقاشی"
+      ],
+      "subcategory": "school-vocational-design"
+    },
+    {
+      "title": "Onshape Education",
+      "category": "school",
+      "description": "طراحی سه‌بعدی و CAD برای آموزش مهندسی.",
+      "url": "https://www.onshape.com/en/education/",
+      "tags": [
+        "آموزشی",
+        "CAD",
+        "سه‌بعدی"
+      ],
+      "subcategory": "school-vocational-mechanics"
+    },
+    {
+      "title": "Autodesk Tinkercad",
+      "category": "school",
+      "description": "مدل‌سازی سه‌بعدی ساده برای یادگیری طراحی و ساخت.",
+      "url": "https://www.tinkercad.com/",
+      "tags": [
+        "آموزشی",
+        "سه‌بعدی",
+        "طراحی"
+      ],
+      "subcategory": "school-vocational-mechanics"
+    },
+    {
+      "title": "Quizlet",
+      "category": "school",
+      "description": "فلش‌کارت، آزمون و تمرین برای مرور مطالب.",
+      "url": "https://quizlet.com/",
+      "tags": [
+        "آموزشی",
+        "آزمون",
+        "فلش‌کارت"
+      ],
+      "subcategory": "school-exams"
+    },
+    {
+      "title": "Exam.net",
+      "category": "school",
+      "description": "سامانه برگزاری آزمون‌های آنلاین برای مدارس و معلمان.",
+      "url": "https://exam.net/",
+      "tags": [
+        "آموزشی",
+        "آزمون",
+        "مدرسه"
+      ],
+      "subcategory": "school-exams"
+    },
+    {
+      "title": "Anki",
+      "category": "school",
+      "description": "فلش‌کارت با تکرار فاصله‌دار برای تثبیت مطالب.",
+      "url": "https://apps.ankiweb.net/",
+      "tags": [
+        "آموزشی",
+        "مرور",
+        "حافظه"
+      ],
+      "subcategory": "school-flashcards"
+    },
+    {
+      "title": "Knowt",
+      "category": "school",
+      "description": "ساخت فلش‌کارت و آزمون از جزوه و یادداشت.",
+      "url": "https://knowt.com/",
+      "tags": [
+        "آموزشی",
+        "فلش‌کارت",
+        "آزمون"
+      ],
+      "subcategory": "school-flashcards"
+    },
+    {
+      "title": "Google Docs",
+      "category": "school",
+      "description": "نوشتن و همکاری روی تکالیف و جزوه‌ها.",
+      "url": "https://docs.google.com/",
+      "tags": [
+        "آموزشی",
+        "جزوه",
+        "همکاری"
+      ],
+      "subcategory": "school-notes"
+    },
+    {
+      "title": "Google Classroom",
+      "category": "school",
+      "description": "مدیریت کلاس، تکلیف و ارتباط معلم و دانش‌آموز.",
+      "url": "https://classroom.google.com/",
+      "tags": [
+        "آموزشی",
+        "کلاس",
+        "تکلیف"
+      ],
+      "subcategory": "school-notes"
+    },
+    {
+      "title": "Microsoft OneNote",
+      "category": "school",
+      "description": "دفترچه دیجیتال برای یادداشت و سازمان‌دهی درس‌ها.",
+      "url": "https://www.onenote.com/",
+      "tags": [
+        "آموزشی",
+        "یادداشت"
+      ],
+      "subcategory": "school-notes"
+    },
+    {
+      "title": "Microsoft Immersive Reader",
+      "category": "school",
+      "description": "ابزارهای خواندن، تمرکز و دسترس‌پذیری آموزشی.",
+      "url": "https://www.microsoft.com/en-us/education/products/learning-tools",
+      "tags": [
+        "آموزشی",
+        "خواندن",
+        "دسترس‌پذیری"
+      ],
+      "subcategory": "school-accessibility"
+    },
+    {
+      "title": "NaturalReader",
+      "category": "school",
+      "description": "تبدیل متن به گفتار برای شنیدن مطالب درسی.",
+      "url": "https://www.naturalreaders.com/",
+      "tags": [
+        "آموزشی",
+        "متن به گفتار"
+      ],
+      "subcategory": "school-accessibility"
+    },
+    {
+      "title": "GitHub",
+      "category": "university",
+      "description": "میزبانی پروژه، کنترل نسخه و همکاری در برنامه‌نویسی.",
+      "url": "https://github.com/",
+      "tags": [
+        "آموزشی",
+        "کدنویسی",
+        "پروژه"
+      ],
+      "subcategory": "uni-cs"
+    },
+    {
+      "title": "Stack Overflow",
+      "category": "university",
+      "description": "پرسش و پاسخ تخصصی برنامه‌نویسی.",
+      "url": "https://stackoverflow.com/",
+      "tags": [
+        "آموزشی",
+        "پرسش و پاسخ"
+      ],
+      "subcategory": "uni-cs"
+    },
+    {
+      "title": "Jupyter",
+      "category": "university",
+      "description": "دفترچه تعاملی برای کدنویسی، تحلیل و آموزش.",
+      "url": "https://jupyter.org/",
+      "tags": [
+        "آموزشی",
+        "پایتون",
+        "تحلیل"
+      ],
+      "subcategory": "uni-cs"
+    },
+    {
+      "title": "Google Colab",
+      "category": "university",
+      "description": "اجرای نوت‌بوک پایتون در فضای ابری.",
+      "url": "https://colab.research.google.com/",
+      "tags": [
+        "آموزشی",
+        "پایتون",
+        "محاسبات"
+      ],
+      "subcategory": "uni-cs"
+    },
+    {
+      "title": "LTspice",
+      "category": "university",
+      "description": "شبیه‌سازی مدارهای آنالوگ و الکترونیک.",
+      "url": "https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html",
+      "tags": [
+        "آموزشی",
+        "مدار",
+        "شبیه‌سازی"
+      ],
+      "subcategory": "uni-electrical"
+    },
+    {
+      "title": "CircuitJS",
+      "category": "university",
+      "description": "شبیه‌ساز تعاملی مدارهای الکتریکی.",
+      "url": "https://falstad.com/circuit/",
+      "tags": [
+        "آموزشی",
+        "مدار"
+      ],
+      "subcategory": "uni-electrical"
+    },
+    {
+      "title": "SimScale",
+      "category": "university",
+      "description": "شبیه‌سازی مهندسی و تحلیل اجزای محدود در فضای ابری.",
+      "url": "https://www.simscale.com/",
+      "tags": [
+        "آموزشی",
+        "شبیه‌سازی",
+        "CAE"
+      ],
+      "subcategory": "uni-mechanical"
+    },
+    {
+      "title": "FreeCAD",
+      "category": "university",
+      "description": "مدل‌سازی پارامتریک و طراحی مهندسی سه‌بعدی.",
+      "url": "https://www.freecad.org/",
+      "tags": [
+        "آموزشی",
+        "CAD"
+      ],
+      "subcategory": "uni-mechanical"
+    },
+    {
+      "title": "Autodesk Education",
+      "category": "university",
+      "description": "ابزارهای طراحی و مدل‌سازی مهندسی برای دانشجویان واجد شرایط.",
+      "url": "https://www.autodesk.com/education/edu-software/overview",
+      "tags": [
+        "آموزشی",
+        "CAD",
+        "BIM"
+      ],
+      "subcategory": "uni-civil"
+    },
+    {
+      "title": "OpenStreetMap",
+      "category": "university",
+      "description": "داده‌های نقشه آزاد برای پروژه‌های مکانی و شهری.",
+      "url": "https://www.openstreetmap.org/",
+      "tags": [
+        "آموزشی",
+        "نقشه",
+        "GIS"
+      ],
+      "subcategory": "uni-civil"
+    },
+    {
+      "title": "PubChem",
+      "category": "university",
+      "description": "داده‌های ساختار، خواص و منابع ترکیبات شیمیایی.",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/",
+      "tags": [
+        "آموزشی",
+        "شیمی",
+        "داده"
+      ],
+      "subcategory": "uni-chemical"
+    },
+    {
+      "title": "ChemSpider",
+      "category": "university",
+      "description": "پایگاه جست‌وجوی ساختار و اطلاعات مواد شیمیایی.",
+      "url": "https://www.chemspider.com/",
+      "tags": [
+        "آموزشی",
+        "شیمی"
+      ],
+      "subcategory": "uni-chemical"
+    },
+    {
+      "title": "OR-Tools",
+      "category": "university",
+      "description": "ابزار بهینه‌سازی برای زمان‌بندی، مسیر و تحقیق در عملیات.",
+      "url": "https://developers.google.com/optimization",
+      "tags": [
+        "آموزشی",
+        "بهینه‌سازی"
+      ],
+      "subcategory": "uni-industrial"
+    },
+    {
+      "title": "ProjectLibre",
+      "category": "university",
+      "description": "مدیریت پروژه و زمان‌بندی فعالیت‌ها.",
+      "url": "https://www.projectlibre.com/",
+      "tags": [
+        "آموزشی",
+        "مدیریت پروژه"
+      ],
+      "subcategory": "uni-industrial"
+    },
+    {
+      "title": "PubMed",
+      "category": "university",
+      "description": "جست‌وجوی مقالات زیست‌پزشکی و علوم سلامت.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "tags": [
+        "آموزشی",
+        "مقاله",
+        "پزشکی"
+      ],
+      "subcategory": "uni-medicine"
+    },
+    {
+      "title": "ClinicalTrials.gov",
+      "category": "university",
+      "description": "پایگاه کارآزمایی‌های بالینی و مطالعات پزشکی.",
+      "url": "https://clinicaltrials.gov/",
+      "tags": [
+        "آموزشی",
+        "پژوهش بالینی"
+      ],
+      "subcategory": "uni-medicine"
+    },
+    {
+      "title": "Radiopaedia",
+      "category": "university",
+      "description": "مرجع آموزشی رادیولوژی و تصاویر پزشکی.",
+      "url": "https://radiopaedia.org/",
+      "tags": [
+        "آموزشی",
+        "رادیولوژی",
+        "آموزش"
+      ],
+      "subcategory": "uni-medicine"
+    },
+    {
+      "title": "WHO",
+      "category": "university",
+      "description": "راهنماها، آمار و منابع معتبر سلامت عمومی.",
+      "url": "https://www.who.int/",
+      "tags": [
+        "آموزشی",
+        "سلامت",
+        "راهنما"
+      ],
+      "subcategory": "uni-nursing"
+    },
+    {
+      "title": "OpenStax Anatomy & Physiology",
+      "category": "university",
+      "description": "کتاب آزاد آناتومی و فیزیولوژی.",
+      "url": "https://openstax.org/details/books/anatomy-and-physiology-2e",
+      "tags": [
+        "آموزشی",
+        "آناتومی",
+        "کتاب"
+      ],
+      "subcategory": "uni-nursing"
+    },
+    {
+      "title": "DrugBank",
+      "category": "university",
+      "description": "پایگاه اطلاعات داروها و ویژگی‌های دارویی.",
+      "url": "https://go.drugbank.com/",
+      "tags": [
+        "آموزشی",
+        "داروسازی",
+        "دارو"
+      ],
+      "subcategory": "uni-pharmacy"
+    },
+    {
+      "title": "DailyMed",
+      "category": "university",
+      "description": "برچسب‌ها و اطلاعات رسمی داروهای عرضه‌شده در آمریکا.",
+      "url": "https://dailymed.nlm.nih.gov/dailymed/",
+      "tags": [
+        "آموزشی",
+        "دارو",
+        "اطلاعات رسمی"
+      ],
+      "subcategory": "uni-pharmacy"
+    },
+    {
+      "title": "Dental Trauma Guide",
+      "category": "university",
+      "description": "مرجع آموزشی مدیریت آسیب‌های دندانی.",
+      "url": "https://dentaltraumaguide.org/",
+      "tags": [
+        "آموزشی",
+        "دندان‌پزشکی"
+      ],
+      "subcategory": "uni-dentistry"
+    },
+    {
+      "title": "PubMed",
+      "category": "university",
+      "description": "جست‌وجوی پژوهش‌های دندان‌پزشکی و سلامت دهان.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "tags": [
+        "آموزشی",
+        "مقاله"
+      ],
+      "subcategory": "uni-dentistry"
+    },
+    {
+      "title": "WHO Data",
+      "category": "university",
+      "description": "داده‌ها و شاخص‌های سلامت جهانی.",
+      "url": "https://data.who.int/",
+      "tags": [
+        "آموزشی",
+        "آمار",
+        "سلامت"
+      ],
+      "subcategory": "uni-public-health"
+    },
+    {
+      "title": "Our World in Data",
+      "category": "university",
+      "description": "داده‌های باز و نمودارهای سلامت و جمعیت.",
+      "url": "https://ourworldindata.org/",
+      "tags": [
+        "آموزشی",
+        "داده",
+        "اپیدمیولوژی"
+      ],
+      "subcategory": "uni-public-health"
+    },
+    {
+      "title": "NCBI BLAST",
+      "category": "university",
+      "description": "ابزار مقایسه توالی‌های زیستی و تحلیل زیست‌اطلاعاتی.",
+      "url": "https://blast.ncbi.nlm.nih.gov/Blast.cgi",
+      "tags": [
+        "آموزشی",
+        "بیوانفورماتیک"
+      ],
+      "subcategory": "uni-biomedical"
+    },
+    {
+      "title": "Ensembl",
+      "category": "university",
+      "description": "مرجع ژنوم و داده‌های ژنتیکی گونه‌ها.",
+      "url": "https://www.ensembl.org/",
+      "tags": [
+        "آموزشی",
+        "ژنوم",
+        "ژنتیک"
+      ],
+      "subcategory": "uni-biomedical"
+    },
+    {
+      "title": "Wolfram Alpha",
+      "category": "university",
+      "description": "محاسبات نمادین، جبر و تحلیل ریاضی.",
+      "url": "https://www.wolframalpha.com/",
+      "tags": [
+        "آموزشی",
+        "ریاضی"
+      ],
+      "subcategory": "uni-math-stats"
+    },
+    {
+      "title": "R Project",
+      "category": "university",
+      "description": "محیط آزاد محاسبات آماری و تحلیل داده.",
+      "url": "https://www.r-project.org/",
+      "tags": [
+        "آموزشی",
+        "آمار",
+        "برنامه‌نویسی"
+      ],
+      "subcategory": "uni-math-stats"
+    },
+    {
+      "title": "Desmos",
+      "category": "university",
+      "description": "رسم نمودار و بررسی توابع.",
+      "url": "https://www.desmos.com/",
+      "tags": [
+        "آموزشی",
+        "نمودار"
+      ],
+      "subcategory": "uni-math-stats"
+    },
+    {
+      "title": "arXiv",
+      "category": "university",
+      "description": "پیش‌چاپ مقالات فیزیک و علوم محاسباتی.",
+      "url": "https://arxiv.org/",
+      "tags": [
+        "آموزشی",
+        "مقاله",
+        "پژوهش"
+      ],
+      "subcategory": "uni-physics"
+    },
+    {
+      "title": "PhET",
+      "category": "university",
+      "description": "شبیه‌سازی مفاهیم فیزیک و علوم پایه.",
+      "url": "https://phet.colorado.edu/",
+      "tags": [
+        "آموزشی",
+        "شبیه‌سازی"
+      ],
+      "subcategory": "uni-physics"
+    },
+    {
+      "title": "PubChem",
+      "category": "university",
+      "description": "پایگاه ساختار و خواص ترکیبات.",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/",
+      "tags": [
+        "آموزشی",
+        "شیمی"
+      ],
+      "subcategory": "uni-chemistry"
+    },
+    {
+      "title": "ChemDraw Cloud",
+      "category": "university",
+      "description": "رسم ساختارهای شیمیایی در مرورگر.",
+      "url": "https://chemdrawdirect.perkinelmer.cloud/",
+      "tags": [
+        "آموزشی",
+        "رسم ساختار"
+      ],
+      "subcategory": "uni-chemistry"
+    },
+    {
+      "title": "NCBI",
+      "category": "university",
+      "description": "پایگاه داده‌های زیست‌پزشکی، ژن و مقاله.",
+      "url": "https://www.ncbi.nlm.nih.gov/",
+      "tags": [
+        "آموزشی",
+        "زیست‌فناوری"
+      ],
+      "subcategory": "uni-biology"
+    },
+    {
+      "title": "iNaturalist",
+      "category": "university",
+      "description": "ثبت و شناسایی مشاهدات تنوع زیستی.",
+      "url": "https://www.inaturalist.org/",
+      "tags": [
+        "آموزشی",
+        "زیست‌شناسی",
+        "طبیعت"
+      ],
+      "subcategory": "uni-biology"
+    },
+    {
+      "title": "USGS",
+      "category": "university",
+      "description": "داده‌ها و منابع علمی زمین‌شناسی و محیط‌زیست.",
+      "url": "https://www.usgs.gov/",
+      "tags": [
+        "آموزشی",
+        "زمین‌شناسی"
+      ],
+      "subcategory": "uni-earth"
+    },
+    {
+      "title": "NASA Earthdata",
+      "category": "university",
+      "description": "داده‌های ماهواره‌ای و سنجش از دور زمین.",
+      "url": "https://www.earthdata.nasa.gov/",
+      "tags": [
+        "آموزشی",
+        "سنجش از دور",
+        "داده"
+      ],
+      "subcategory": "uni-earth"
+    },
+    {
+      "title": "FAOSTAT",
+      "category": "university",
+      "description": "داده‌های جهانی کشاورزی، غذا و منابع طبیعی.",
+      "url": "https://www.fao.org/faostat/",
+      "tags": [
+        "آموزشی",
+        "کشاورزی",
+        "آمار"
+      ],
+      "subcategory": "uni-agriculture"
+    },
+    {
+      "title": "PlantVillage",
+      "category": "university",
+      "description": "منابع شناسایی بیماری‌ها و آفات گیاهی.",
+      "url": "https://plantvillage.psu.edu/",
+      "tags": [
+        "آموزشی",
+        "گیاه‌پزشکی"
+      ],
+      "subcategory": "uni-agriculture"
+    },
+    {
+      "title": "Google Scholar",
+      "category": "university",
+      "description": "جست‌وجوی مقالات و منابع پژوهشی حقوق.",
+      "url": "https://scholar.google.com/",
+      "tags": [
+        "آموزشی",
+        "مقاله"
+      ],
+      "subcategory": "uni-law"
+    },
+    {
+      "title": "WorldLII",
+      "category": "university",
+      "description": "دسترسی به منابع و پایگاه‌های حقوقی بین‌المللی.",
+      "url": "https://www.worldlii.org/",
+      "tags": [
+        "آموزشی",
+        "حقوق",
+        "قانون"
+      ],
+      "subcategory": "uni-law"
+    },
+    {
+      "title": "APA PsycNet",
+      "category": "university",
+      "description": "پایگاه منابع و پژوهش‌های روان‌شناسی.",
+      "url": "https://psycnet.apa.org/",
+      "tags": [
+        "آموزشی",
+        "روان‌شناسی",
+        "مقاله"
+      ],
+      "subcategory": "uni-psychology"
+    },
+    {
+      "title": "OSF",
+      "category": "university",
+      "description": "مدیریت و اشتراک پروژه‌ها و داده‌های پژوهشی.",
+      "url": "https://osf.io/",
+      "tags": [
+        "آموزشی",
+        "پژوهش"
+      ],
+      "subcategory": "uni-psychology"
+    },
+    {
+      "title": "FRED",
+      "category": "university",
+      "description": "داده‌های اقتصادی و سری‌های زمانی.",
+      "url": "https://fred.stlouisfed.org/",
+      "tags": [
+        "آموزشی",
+        "اقتصاد",
+        "داده"
+      ],
+      "subcategory": "uni-economics"
+    },
+    {
+      "title": "World Bank Data",
+      "category": "university",
+      "description": "شاخص‌ها و داده‌های اقتصادی و توسعه‌ای کشورها.",
+      "url": "https://data.worldbank.org/",
+      "tags": [
+        "آموزشی",
+        "اقتصاد",
+        "آمار"
+      ],
+      "subcategory": "uni-economics"
+    },
+    {
+      "title": "Microsoft Excel",
+      "category": "university",
+      "description": "صفحه‌گسترده برای تحلیل داده، حسابداری و مدل‌سازی.",
+      "url": "https://www.microsoft.com/microsoft-365/excel",
+      "tags": [
+        "آموزشی",
+        "حسابداری",
+        "تحلیل"
+      ],
+      "subcategory": "uni-management"
+    },
+    {
+      "title": "Power BI",
+      "category": "university",
+      "description": "تحلیل داده و ساخت داشبوردهای مدیریتی.",
+      "url": "https://www.microsoft.com/power-platform/products/power-bi",
+      "tags": [
+        "آموزشی",
+        "داشبورد",
+        "داده"
+      ],
+      "subcategory": "uni-management"
+    },
+    {
+      "title": "Google Books",
+      "category": "university",
+      "description": "جست‌وجو و کشف کتاب‌ها و منابع متنی.",
+      "url": "https://books.google.com/",
+      "tags": [
+        "آموزشی",
+        "کتاب"
+      ],
+      "subcategory": "uni-literature"
+    },
+    {
+      "title": "Project Gutenberg",
+      "category": "university",
+      "description": "کتاب‌های الکترونیکی رایگان و آثار مالکیت عمومی.",
+      "url": "https://www.gutenberg.org/",
+      "tags": [
+        "آموزشی",
+        "ادبیات",
+        "کتاب"
+      ],
+      "subcategory": "uni-literature"
+    },
+    {
+      "title": "JSTOR",
+      "category": "university",
+      "description": "پایگاه مقالات و منابع علوم انسانی و اجتماعی.",
+      "url": "https://www.jstor.org/",
+      "tags": [
+        "آموزشی",
+        "مقاله",
+        "علوم انسانی"
+      ],
+      "subcategory": "uni-history"
+    },
+    {
+      "title": "Perseus Digital Library",
+      "category": "university",
+      "description": "کتابخانه دیجیتال متون و منابع مطالعات کلاسیک.",
+      "url": "https://www.perseus.tufts.edu/",
+      "tags": [
+        "آموزشی",
+        "تاریخ",
+        "متون"
+      ],
+      "subcategory": "uni-history"
+    },
+    {
+      "title": "ERIC",
+      "category": "university",
+      "description": "پایگاه پژوهش‌ها و منابع علوم تربیتی.",
+      "url": "https://eric.ed.gov/",
+      "tags": [
+        "آموزشی",
+        "آموزش",
+        "مقاله"
+      ],
+      "subcategory": "uni-education"
+    },
+    {
+      "title": "OpenLearn",
+      "category": "university",
+      "description": "دوره‌ها و منابع یادگیری آزاد دانشگاهی.",
+      "url": "https://www.open.edu/openlearn/",
+      "tags": [
+        "آموزشی",
+        "یادگیری"
+      ],
+      "subcategory": "uni-education"
+    },
+    {
+      "title": "Behance",
+      "category": "university",
+      "description": "نمایش نمونه‌کار و الهام در حوزه هنر و طراحی.",
+      "url": "https://www.behance.net/",
+      "tags": [
+        "آموزشی",
+        "نمونه‌کار"
+      ],
+      "subcategory": "uni-arts"
+    },
+    {
+      "title": "Google Arts & Culture",
+      "category": "university",
+      "description": "مجموعه‌های هنری، آثار و نمایشگاه‌های دیجیتال.",
+      "url": "https://artsandculture.google.com/",
+      "tags": [
+        "آموزشی",
+        "هنر",
+        "موزه"
+      ],
+      "subcategory": "uni-arts"
+    },
+    {
+      "title": "ArchDaily",
+      "category": "university",
+      "description": "پروژه‌ها و مقالات معماری و طراحی شهری.",
+      "url": "https://www.archdaily.com/",
+      "tags": [
+        "آموزشی",
+        "معماری"
+      ],
+      "subcategory": "uni-architecture"
+    },
+    {
+      "title": "SketchUp Free",
+      "category": "university",
+      "description": "مدل‌سازی سه‌بعدی معماری در مرورگر.",
+      "url": "https://app.sketchup.com/",
+      "tags": [
+        "آموزشی",
+        "مدل‌سازی"
+      ],
+      "subcategory": "uni-architecture"
+    },
+    {
+      "title": "Reuters Institute",
+      "category": "university",
+      "description": "پژوهش و گزارش‌های حوزه رسانه و روزنامه‌نگاری.",
+      "url": "https://reutersinstitute.politics.ox.ac.uk/",
+      "tags": [
+        "آموزشی",
+        "رسانه",
+        "پژوهش"
+      ],
+      "subcategory": "uni-media"
+    },
+    {
+      "title": "Internet Archive",
+      "category": "university",
+      "description": "آرشیو منابع صوتی‌تصویری و تاریخی.",
+      "url": "https://archive.org/",
+      "tags": [
+        "آموزشی",
+        "آرشیو"
+      ],
+      "subcategory": "uni-media"
+    },
+    {
+      "title": "MuseScore",
+      "category": "university",
+      "description": "نرم‌افزار نت‌نویسی و تنظیم موسیقی.",
+      "url": "https://musescore.org/",
+      "tags": [
+        "آموزشی",
+        "نت‌نویسی"
+      ],
+      "subcategory": "uni-music"
+    },
+    {
+      "title": "IMSLP",
+      "category": "university",
+      "description": "کتابخانه نت‌های موسیقی و آثار در مالکیت عمومی.",
+      "url": "https://imslp.org/",
+      "tags": [
+        "آموزشی",
+        "نت موسیقی"
+      ],
+      "subcategory": "uni-music"
+    },
+    {
+      "title": "Google Scholar",
+      "category": "university",
+      "description": "جست‌وجوی مقاله، پایان‌نامه و استنادهای علمی.",
+      "url": "https://scholar.google.com/",
+      "tags": [
+        "آموزشی",
+        "مقاله"
+      ],
+      "subcategory": "uni-papers"
+    },
+    {
+      "title": "Semantic Scholar",
+      "category": "university",
+      "description": "جست‌وجوی هوشمند مقالات و ارتباط پژوهش‌ها.",
+      "url": "https://www.semanticscholar.org/",
+      "tags": [
+        "آموزشی",
+        "مقاله",
+        "هوش مصنوعی"
+      ],
+      "subcategory": "uni-papers"
+    },
+    {
+      "title": "CORE",
+      "category": "university",
+      "description": "جست‌وجو در مقالات و مخازن دسترسی آزاد.",
+      "url": "https://core.ac.uk/",
+      "tags": [
+        "آموزشی",
+        "دسترسی آزاد"
+      ],
+      "subcategory": "uni-papers"
+    },
+    {
+      "title": "DOAJ",
+      "category": "university",
+      "description": "فهرست مجلات علمی دسترسی آزاد.",
+      "url": "https://doaj.org/",
+      "tags": [
+        "آموزشی",
+        "مجله علمی"
+      ],
+      "subcategory": "uni-papers"
+    },
+    {
+      "title": "Zotero",
+      "category": "university",
+      "description": "مدیریت منابع، یادداشت‌ها و ارجاع‌دهی علمی.",
+      "url": "https://www.zotero.org/",
+      "tags": [
+        "آموزشی",
+        "ارجاع‌دهی"
+      ],
+      "subcategory": "uni-citations"
+    },
+    {
+      "title": "Mendeley",
+      "category": "university",
+      "description": "مدیریت کتابخانه مقالات و ارجاعات.",
+      "url": "https://www.mendeley.com/",
+      "tags": [
+        "آموزشی",
+        "مقاله"
+      ],
+      "subcategory": "uni-citations"
+    },
+    {
+      "title": "JabRef",
+      "category": "university",
+      "description": "مدیریت منابع علمی و کتابخانه BibTeX.",
+      "url": "https://www.jabref.org/",
+      "tags": [
+        "آموزشی",
+        "BibTeX"
+      ],
+      "subcategory": "uni-citations"
+    },
+    {
+      "title": "Overleaf",
+      "category": "university",
+      "description": "نگارش مقاله و پایان‌نامه با LaTeX به‌صورت آنلاین.",
+      "url": "https://www.overleaf.com/",
+      "tags": [
+        "آموزشی",
+        "LaTeX"
+      ],
+      "subcategory": "uni-writing"
+    },
+    {
+      "title": "LanguageTool",
+      "category": "university",
+      "description": "بررسی دستور زبان و نگارش متن.",
+      "url": "https://languagetool.org/",
+      "tags": [
+        "آموزشی",
+        "ویرایش متن"
+      ],
+      "subcategory": "uni-writing"
+    },
+    {
+      "title": "Grammarly",
+      "category": "university",
+      "description": "کمک به ویرایش و بهبود نوشتار انگلیسی.",
+      "url": "https://www.grammarly.com/",
+      "tags": [
+        "آموزشی",
+        "نگارش انگلیسی"
+      ],
+      "subcategory": "uni-writing"
+    },
+    {
+      "title": "RStudio",
+      "category": "university",
+      "description": "محیط توسعه برای تحلیل آماری با R.",
+      "url": "https://posit.co/download/rstudio-desktop/",
+      "tags": [
+        "آموزشی",
+        "آمار",
+        "R"
+      ],
+      "subcategory": "uni-data"
+    },
+    {
+      "title": " jamovi",
+      "category": "university",
+      "description": "نرم‌افزار رایگان تحلیل آماری با رابط کاربری ساده.",
+      "url": "https://www.jamovi.org/",
+      "tags": [
+        "آموزشی",
+        "آمار"
+      ],
+      "subcategory": "uni-data"
+    },
+    {
+      "title": "JASP",
+      "category": "university",
+      "description": "تحلیل آماری و آزمون‌های آماری با رابط گرافیکی.",
+      "url": "https://jasp-stats.org/",
+      "tags": [
+        "آموزشی",
+        "آمار"
+      ],
+      "subcategory": "uni-data"
+    },
+    {
+      "title": "Google Colab",
+      "category": "university",
+      "description": "تحلیل داده و اجرای پایتون در فضای ابری.",
+      "url": "https://colab.research.google.com/",
+      "tags": [
+        "آموزشی",
+        "پایتون"
+      ],
+      "subcategory": "uni-data"
+    },
+    {
+      "title": "GNU Octave",
+      "category": "university",
+      "description": "محاسبات عددی و جایگزین آزاد برای بسیاری از کارهای MATLAB.",
+      "url": "https://octave.org/",
+      "tags": [
+        "آموزشی",
+        "محاسبات"
+      ],
+      "subcategory": "uni-labs"
+    },
+    {
+      "title": "MATLAB",
+      "category": "university",
+      "description": "محاسبات مهندسی، تحلیل داده و شبیه‌سازی.",
+      "url": "https://www.mathworks.com/products/matlab.html",
+      "tags": [
+        "آموزشی",
+        "مهندسی"
+      ],
+      "subcategory": "uni-labs"
+    },
+    {
+      "title": "COMSOL",
+      "category": "university",
+      "description": "شبیه‌سازی چندفیزیکی و مدل‌سازی مهندسی.",
+      "url": "https://www.comsol.com/",
+      "tags": [
+        "آموزشی",
+        "شبیه‌سازی"
+      ],
+      "subcategory": "uni-labs"
+    },
+    {
+      "title": "MIT OpenCourseWare",
+      "category": "university",
+      "description": "دسترسی آزاد به محتوای دروس دانشگاه MIT.",
+      "url": "https://ocw.mit.edu/",
+      "tags": [
+        "آموزشی",
+        "دوره دانشگاهی"
+      ],
+      "subcategory": "uni-open-courses"
+    },
+    {
+      "title": "edX",
+      "category": "university",
+      "description": "دوره‌های دانشگاهی و تخصصی آنلاین.",
+      "url": "https://www.edx.org/",
+      "tags": [
+        "آموزشی",
+        "دوره"
+      ],
+      "subcategory": "uni-open-courses"
+    },
+    {
+      "title": "Coursera",
+      "category": "university",
+      "description": "دوره‌ها و گواهی‌های آموزشی دانشگاهی و تخصصی.",
+      "url": "https://www.coursera.org/",
+      "tags": [
+        "آموزشی",
+        "دوره"
+      ],
+      "subcategory": "uni-open-courses"
     }
   ]
 }
