@@ -85,3 +85,6 @@ main{max-width:1240px;margin:auto;padding:0 28px}.hero{position:relative;isolati
   .mega-link-wrap:focus-within>.mega-submenu{display:block}
   .mega-tool{padding:7px}
 }
+
+/* Keep desktop nested flyouts outside the parent mega-menu clipping area */
+@media(min-width:681px){.mega-menu{overflow:visible;max-height:none}}
