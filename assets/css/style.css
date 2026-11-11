@@ -560,3 +560,38 @@ main{max-width:1240px;margin:auto;padding:0 28px}.hero{position:relative;isolati
 .context-folder-create-form input{width:1%;min-width:0;flex:1;min-height:34px;padding:6px 8px;border:1px solid var(--accent2);border-radius:7px;background:var(--panel2);color:var(--text);font:inherit;font-size:10px}
 .context-folder-create-form button{flex:0 0 auto;min-height:34px;padding:6px 9px;border:1px solid var(--accent2);border-radius:7px;background:color-mix(in srgb,var(--accent2) 17%,var(--panel));color:var(--text);font:inherit;font-size:10px;font-weight:700;cursor:pointer}
 @media(max-width:560px){.resource-card .card-top{padding-inline-end:68px}.resource-card .card-action-button{width:28px;height:28px;font-size:16px}.resource-card .card-actions{gap:4px}}
+
+
+/* Compact folder creation controls inside the right-click context menu */
+.folder-context-menu .context-folder-create-form{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  width:100%;
+  box-sizing:border-box;
+}
+.folder-context-menu .context-folder-create-form input{
+  flex:1 1 0;
+  width:0;
+  min-width:0;
+  height:32px;
+  min-height:32px;
+  box-sizing:border-box;
+  padding:5px 8px;
+  font-size:11px;
+}
+.folder-context-menu .context-folder-create-form button{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 auto;
+  width:auto !important;
+  min-width:82px;
+  height:32px;
+  min-height:32px;
+  padding:5px 9px;
+  white-space:nowrap;
+  text-align:center;
+  font-size:10px;
+  line-height:1.2;
+}
