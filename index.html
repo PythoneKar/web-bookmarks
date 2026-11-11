@@ -9,8 +9,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=20261111-21">
-  <script defer src="assets/js/app.js?v=20261111-21"></script>
+  <link rel="stylesheet" href="assets/css/style.css?v=20261111-22">
+  <script defer src="assets/js/app.js?v=20261111-22"></script>
 </head>
 <body>
   <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
@@ -20,6 +20,9 @@
     </a>
     <nav class="top-actions">
       <a href="#about">درباره</a>
+      <button id="backup-export" class="backup-button" type="button" title="دانلود فایل پشتیبان">پشتیبان‌گیری</button>
+      <button id="backup-import" class="backup-button backup-import-button" type="button" title="بازیابی از فایل پشتیبان">بازیابی</button>
+      <input id="backup-file-input" type="file" accept="application/json,.json" hidden>
       <button id="theme-toggle" class="icon-button" type="button" aria-label="تغییر پوسته">☼</button>
     </nav>
   </header>
