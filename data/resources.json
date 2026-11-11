@@ -645,6 +645,1752 @@
       "tags": [
         "امنیت"
       ]
+    },
+    {
+      "title": "Codeberg",
+      "category": "development",
+      "url": "https://codeberg.org",
+      "description": "میزبانی مخازن کد با رویکرد متن‌باز",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Bitbucket",
+      "category": "development",
+      "url": "https://bitbucket.org",
+      "description": "میزبانی مخازن Git و ابزارهای تیمی",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "SourceForge",
+      "category": "development",
+      "url": "https://sourceforge.net",
+      "description": "میزبانی و کشف پروژه‌های نرم‌افزار آزاد",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "npm",
+      "category": "development",
+      "url": "https://www.npmjs.com",
+      "description": "مخزن بسته‌های جاوااسکریپت",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "PyPI",
+      "category": "development",
+      "url": "https://pypi.org",
+      "description": "مخزن رسمی بسته‌های پایتون",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "NuGet",
+      "category": "development",
+      "url": "https://www.nuget.org",
+      "description": "مخزن بسته‌های دات‌نت",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Docker Hub",
+      "category": "development",
+      "url": "https://hub.docker.com",
+      "description": "مخزن ایمیج‌های کانتینری",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Replit",
+      "category": "development",
+      "url": "https://replit.com",
+      "description": "محیط برنامه‌نویسی آنلاین",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Glitch",
+      "category": "development",
+      "url": "https://glitch.com",
+      "description": "ساخت و میزبانی نمونه‌پروژه‌های وب",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "JSFiddle",
+      "category": "development",
+      "url": "https://jsfiddle.net",
+      "description": "آزمایش سریع کدهای HTML و CSS و JS",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "The Odin Project",
+      "category": "development",
+      "url": "https://www.theodinproject.com",
+      "description": "مسیر آموزشی توسعه وب",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Roadmap.sh",
+      "category": "development",
+      "url": "https://roadmap.sh",
+      "description": "نقشه راه مهارت‌های فناوری",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "DevDocs",
+      "category": "development",
+      "url": "https://devdocs.io",
+      "description": "مستندات یکپارچه زبان‌ها و ابزارها",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Can I use",
+      "category": "development",
+      "url": "https://caniuse.com",
+      "description": "بررسی پشتیبانی قابلیت‌های وب در مرورگرها",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Regex101",
+      "category": "development",
+      "url": "https://regex101.com",
+      "description": "ساخت و آزمایش عبارت‌های منظم",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Compiler Explorer",
+      "category": "development",
+      "url": "https://godbolt.org",
+      "description": "بررسی خروجی کامپایلرها به‌صورت آنلاین",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "LeetCode",
+      "category": "development",
+      "url": "https://leetcode.com",
+      "description": "تمرین الگوریتم و مصاحبه برنامه‌نویسی",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "HackerRank",
+      "category": "development",
+      "url": "https://www.hackerrank.com",
+      "description": "تمرین مهارت‌های برنامه‌نویسی",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Exercism",
+      "category": "development",
+      "url": "https://exercism.org",
+      "description": "تمرین زبان‌های برنامه‌نویسی با بازخورد",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Codewars",
+      "category": "development",
+      "url": "https://www.codewars.com",
+      "description": "چالش‌های کدنویسی مرحله‌ای",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Svelte",
+      "category": "development",
+      "url": "https://svelte.dev",
+      "description": "فریم‌ورک رابط کاربری وب",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Vue.js",
+      "category": "development",
+      "url": "https://vuejs.org",
+      "description": "فریم‌ورک جاوااسکریپت برای رابط کاربری",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "React",
+      "category": "development",
+      "url": "https://react.dev",
+      "description": "کتابخانه ساخت رابط کاربری",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Angular",
+      "category": "development",
+      "url": "https://angular.dev",
+      "description": "فریم‌ورک توسعه برنامه‌های وب",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Node.js",
+      "category": "development",
+      "url": "https://nodejs.org",
+      "description": "محیط اجرای جاوااسکریپت سمت سرور",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Deno",
+      "category": "development",
+      "url": "https://deno.com",
+      "description": "محیط اجرای مدرن جاوااسکریپت و تایپ‌اسکریپت",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Bun",
+      "category": "development",
+      "url": "https://bun.sh",
+      "description": "ابزار و محیط اجرای سریع جاوااسکریپت",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Vite",
+      "category": "development",
+      "url": "https://vite.dev",
+      "description": "ابزار ساخت و توسعه فرانت‌اند",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Astro",
+      "category": "development",
+      "url": "https://astro.build",
+      "description": "فریم‌ورک ساخت وب‌سایت‌های محتوامحور",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Tailwind CSS",
+      "category": "development",
+      "url": "https://tailwindcss.com",
+      "description": "فریم‌ورک CSS مبتنی بر کلاس‌های کاربردی",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Bootstrap",
+      "category": "development",
+      "url": "https://getbootstrap.com",
+      "description": "ابزار طراحی رابط واکنش‌گرا",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Sass",
+      "category": "development",
+      "url": "https://sass-lang.com",
+      "description": "زبان توسعه‌یافته CSS",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Postman",
+      "category": "development",
+      "url": "https://www.postman.com",
+      "description": "تست و مستندسازی API",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Insomnia",
+      "category": "development",
+      "url": "https://insomnia.rest",
+      "description": "ابزار کار با API",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Swagger",
+      "category": "development",
+      "url": "https://swagger.io",
+      "description": "طراحی و مستندسازی API",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Supabase",
+      "category": "development",
+      "url": "https://supabase.com",
+      "description": "پلتفرم متن‌باز بک‌اند",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Firebase",
+      "category": "development",
+      "url": "https://firebase.google.com",
+      "description": "سرویس‌های توسعه اپلیکیشن",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Vercel",
+      "category": "development",
+      "url": "https://vercel.com",
+      "description": "استقرار و میزبانی پروژه‌های وب",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Netlify",
+      "category": "development",
+      "url": "https://www.netlify.com",
+      "description": "میزبانی و استقرار وب‌سایت‌های مدرن",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Cloudflare Developers",
+      "category": "development",
+      "url": "https://developers.cloudflare.com",
+      "description": "مستندات سرویس‌های توسعه Cloudflare",
+      "tags": [
+        "development"
+      ]
+    },
+    {
+      "title": "Dribbble",
+      "category": "design",
+      "url": "https://dribbble.com",
+      "description": "الهام و نمونه‌کار طراحی دیجیتال",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "title": "Behance",
+      "category": "design",
+      "url": "https://www.behance.net",
+      "description": "نمایش نمونه‌کارهای خلاقانه",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "title": "Awwwards",
+      "category": "design",
+      "url": "https://www.awwwards.com",
+      "description": "معرفی وب‌سایت‌های برجسته از نظر طراحی",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "title": "Mobbin",
+      "category": "design",
+      "url": "https://mobbin.com",
+      "description": "مرجع الگوهای رابط کاربری اپلیکیشن‌ها",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "title": "Collect UI",
+      "category": "design",
+      "url": "https://collectui.com",
+      "description": "مجموعه ایده‌های طراحی رابط کاربری",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "title": "UIverse",
+      "category": "design",
+      "url": "https://uiverse.io",
+      "description": "اجزای رابط کاربری آماده CSS",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "title": "Coolors",
+      "category": "design",
+      "url": "https://coolors.co",
+      "description": "ساخت و کشف ترکیب رنگ",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "title": "Color Hunt",
+      "category": "design",
+      "url": "https://colorhunt.co",
+      "description": "پالت‌های رنگی منتخب",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "title": "Realtime Colors",
+      "category": "design",
+      "url": "https://www.realtimecolors.com",
+      "description": "پیش‌نمایش زنده رنگ و تایپوگرافی",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "title": "Font Squirrel",
+      "category": "design",
+      "url": "https://www.fontsquirrel.com",
+      "description": "فونت‌های قابل استفاده در طراحی",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "title": "DaFont",
+      "category": "design",
+      "url": "https://www.dafont.com",
+      "description": "مجموعه فونت‌های نمایشی",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "title": "Lucide",
+      "category": "design",
+      "url": "https://lucide.dev",
+      "description": "مجموعه آیکون‌های متن‌باز",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "title": "Iconify",
+      "category": "design",
+      "url": "https://iconify.design",
+      "description": "مخزن بزرگ آیکون‌های وب",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "title": "The Noun Project",
+      "category": "design",
+      "url": "https://thenounproject.com",
+      "description": "مجموعه آیکون و نماد",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "title": "Remove.bg",
+      "category": "design",
+      "url": "https://www.remove.bg",
+      "description": "حذف پس‌زمینه تصویر",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "title": "Photopea",
+      "category": "design",
+      "url": "https://www.photopea.com",
+      "description": "ویرایشگر تصویر آنلاین",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "title": "Excalidraw",
+      "category": "design",
+      "url": "https://excalidraw.com",
+      "description": "ترسیم نمودار و طرح دستی",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "title": "Penpot",
+      "category": "design",
+      "url": "https://penpot.app",
+      "description": "ابزار متن‌باز طراحی رابط",
+      "tags": [
+        "design"
+      ]
+    },
+    {
+      "title": "Google Gemini",
+      "category": "ai",
+      "url": "https://gemini.google.com",
+      "description": "دستیار هوش مصنوعی گوگل",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "title": "Claude",
+      "category": "ai",
+      "url": "https://claude.ai",
+      "description": "دستیار هوش مصنوعی برای نوشتن و تحلیل",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "title": "Perplexity",
+      "category": "ai",
+      "url": "https://www.perplexity.ai",
+      "description": "جست‌وجو و پاسخ‌گویی مبتنی بر منابع",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "title": "Microsoft Copilot",
+      "category": "ai",
+      "url": "https://copilot.microsoft.com",
+      "description": "دستیار هوش مصنوعی مایکروسافت",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "title": "Mistral Le Chat",
+      "category": "ai",
+      "url": "https://chat.mistral.ai",
+      "description": "دستیار هوش مصنوعی Mistral",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "title": "DeepSeek",
+      "category": "ai",
+      "url": "https://chat.deepseek.com",
+      "description": "دستیار هوش مصنوعی و گفت‌وگو",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "title": "Poe",
+      "category": "ai",
+      "url": "https://poe.com",
+      "description": "دسترسی به مجموعه‌ای از دستیارهای هوش مصنوعی",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "title": "LM Studio",
+      "category": "ai",
+      "url": "https://lmstudio.ai",
+      "description": "اجرای مدل‌های زبانی روی رایانه شخصی",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "title": "Ollama",
+      "category": "ai",
+      "url": "https://ollama.com",
+      "description": "اجرای مدل‌های هوش مصنوعی به‌صورت محلی",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "title": "Replicate",
+      "category": "ai",
+      "url": "https://replicate.com",
+      "description": "اجرای مدل‌های هوش مصنوعی از طریق API",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "title": " fal.ai",
+      "category": "ai",
+      "url": "https://fal.ai",
+      "description": "زیرساخت اجرای مدل‌های مولد",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "title": "ElevenLabs",
+      "category": "ai",
+      "url": "https://elevenlabs.io",
+      "description": "تولید و پردازش گفتار",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "title": "Whisper",
+      "category": "ai",
+      "url": "https://github.com/openai/whisper",
+      "description": "ابزار متن‌باز تبدیل گفتار به متن",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "title": "Papers with Code",
+      "category": "ai",
+      "url": "https://paperswithcode.com",
+      "description": "مقالات یادگیری ماشین همراه با کد",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "title": "Kaggle",
+      "category": "ai",
+      "url": "https://www.kaggle.com",
+      "description": "مجموعه داده و رقابت‌های علم داده",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "title": "Google Colab",
+      "category": "ai",
+      "url": "https://colab.research.google.com",
+      "description": "نوت‌بوک ابری پایتون و یادگیری ماشین",
+      "tags": [
+        "ai"
+      ]
+    },
+    {
+      "title": "MIT OpenCourseWare",
+      "category": "learning",
+      "url": "https://ocw.mit.edu",
+      "description": "دوره‌ها و منابع آموزشی آزاد MIT",
+      "tags": [
+        "learning"
+      ]
+    },
+    {
+      "title": "OpenLearn",
+      "category": "learning",
+      "url": "https://www.open.edu/openlearn",
+      "description": "دوره‌های آموزشی رایگان",
+      "tags": [
+        "learning"
+      ]
+    },
+    {
+      "title": "FutureLearn",
+      "category": "learning",
+      "url": "https://www.futurelearn.com",
+      "description": "دوره‌های آنلاین دانشگاهی",
+      "tags": [
+        "learning"
+      ]
+    },
+    {
+      "title": "Udacity",
+      "category": "learning",
+      "url": "https://www.udacity.com",
+      "description": "دوره‌های مهارت‌محور فناوری",
+      "tags": [
+        "learning"
+      ]
+    },
+    {
+      "title": "Pluralsight",
+      "category": "learning",
+      "url": "https://www.pluralsight.com",
+      "description": "آموزش مهارت‌های فناوری",
+      "tags": [
+        "learning"
+      ]
+    },
+    {
+      "title": "Skillshare",
+      "category": "learning",
+      "url": "https://www.skillshare.com",
+      "description": "دوره‌های خلاقیت و مهارت",
+      "tags": [
+        "learning"
+      ]
+    },
+    {
+      "title": "Duolingo",
+      "category": "learning",
+      "url": "https://www.duolingo.com",
+      "description": "یادگیری زبان با تمرین تعاملی",
+      "tags": [
+        "learning"
+      ]
+    },
+    {
+      "title": "Memrise",
+      "category": "learning",
+      "url": "https://www.memrise.com",
+      "description": "یادگیری زبان و واژگان",
+      "tags": [
+        "learning"
+      ]
+    },
+    {
+      "title": "BBC Learning English",
+      "category": "learning",
+      "url": "https://www.bbc.co.uk/learningenglish",
+      "description": "منابع یادگیری زبان انگلیسی",
+      "tags": [
+        "learning"
+      ]
+    },
+    {
+      "title": "TED-Ed",
+      "category": "learning",
+      "url": "https://ed.ted.com",
+      "description": "درس‌های کوتاه و ویدئویی",
+      "tags": [
+        "learning"
+      ]
+    },
+    {
+      "title": "OpenStax",
+      "category": "learning",
+      "url": "https://openstax.org",
+      "description": "کتاب‌های درسی رایگان و آزاد",
+      "tags": [
+        "learning"
+      ]
+    },
+    {
+      "title": "Project Gutenberg",
+      "category": "learning",
+      "url": "https://www.gutenberg.org",
+      "description": "کتاب‌های الکترونیکی آزاد",
+      "tags": [
+        "learning"
+      ]
+    },
+    {
+      "title": "Google Books",
+      "category": "learning",
+      "url": "https://books.google.com",
+      "description": "جست‌وجو و پیش‌نمایش کتاب‌ها",
+      "tags": [
+        "learning"
+      ]
+    },
+    {
+      "title": "DOAJ",
+      "category": "learning",
+      "url": "https://doaj.org",
+      "description": "فهرست مجلات علمی دسترسی آزاد",
+      "tags": [
+        "learning"
+      ]
+    },
+    {
+      "title": "arXiv",
+      "category": "learning",
+      "url": "https://arxiv.org",
+      "description": "پیش‌چاپ مقالات علمی",
+      "tags": [
+        "learning"
+      ]
+    },
+    {
+      "title": "Rotten Tomatoes",
+      "category": "movies",
+      "url": "https://www.rottentomatoes.com",
+      "description": "نقدها و امتیازهای فیلم و سریال",
+      "tags": [
+        "movies"
+      ]
+    },
+    {
+      "title": "Metacritic",
+      "category": "movies",
+      "url": "https://www.metacritic.com",
+      "description": "جمع‌بندی نقدهای فیلم و بازی",
+      "tags": [
+        "movies"
+      ]
+    },
+    {
+      "title": "TheTVDB",
+      "category": "movies",
+      "url": "https://thetvdb.com",
+      "description": "پایگاه اطلاعات سریال‌های تلویزیونی",
+      "tags": [
+        "movies"
+      ]
+    },
+    {
+      "title": "TV Guide",
+      "category": "movies",
+      "url": "https://www.tvguide.com",
+      "description": "راهنمای برنامه‌های تلویزیونی",
+      "tags": [
+        "movies"
+      ]
+    },
+    {
+      "title": "MUBI",
+      "category": "movies",
+      "url": "https://mubi.com",
+      "description": "سینمای منتخب و فیلم‌های مستقل",
+      "tags": [
+        "movies"
+      ]
+    },
+    {
+      "title": "Kanopy",
+      "category": "movies",
+      "url": "https://www.kanopy.com",
+      "description": "پلتفرم نمایش فیلم با دسترسی کتابخانه‌ای",
+      "tags": [
+        "movies"
+      ]
+    },
+    {
+      "title": "Open Culture",
+      "category": "movies",
+      "url": "https://www.openculture.com",
+      "description": "منابع فرهنگی و فیلم‌های رایگان منتخب",
+      "tags": [
+        "movies"
+      ]
+    },
+    {
+      "title": "Bandcamp",
+      "category": "media",
+      "url": "https://bandcamp.com",
+      "description": "کشف و خرید موسیقی از هنرمندان",
+      "tags": [
+        "media"
+      ]
+    },
+    {
+      "title": "Deezer",
+      "category": "media",
+      "url": "https://www.deezer.com",
+      "description": "پخش موسیقی آنلاین",
+      "tags": [
+        "media"
+      ]
+    },
+    {
+      "title": "Mixcloud",
+      "category": "media",
+      "url": "https://www.mixcloud.com",
+      "description": "میکس‌ها و برنامه‌های رادیویی",
+      "tags": [
+        "media"
+      ]
+    },
+    {
+      "title": "Radio Garden",
+      "category": "media",
+      "url": "https://radio.garden",
+      "description": "شنیدن ایستگاه‌های رادیویی جهان روی نقشه",
+      "tags": [
+        "media"
+      ]
+    },
+    {
+      "title": "TuneIn",
+      "category": "media",
+      "url": "https://tunein.com",
+      "description": "رادیو و پادکست آنلاین",
+      "tags": [
+        "media"
+      ]
+    },
+    {
+      "title": "Internet Radio",
+      "category": "media",
+      "url": "https://www.internet-radio.com",
+      "description": "فهرست ایستگاه‌های رادیویی اینترنتی",
+      "tags": [
+        "media"
+      ]
+    },
+    {
+      "title": "Pocket Casts",
+      "category": "media",
+      "url": "https://pocketcasts.com",
+      "description": "مدیریت و شنیدن پادکست",
+      "tags": [
+        "media"
+      ]
+    },
+    {
+      "title": "Podcast Index",
+      "category": "media",
+      "url": "https://podcastindex.org",
+      "description": "فهرست و جست‌وجوی پادکست‌ها",
+      "tags": [
+        "media"
+      ]
+    },
+    {
+      "title": "BBC News",
+      "category": "news",
+      "url": "https://www.bbc.com/news",
+      "description": "پوشش خبری بین‌المللی",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "The Guardian",
+      "category": "news",
+      "url": "https://www.theguardian.com/international",
+      "description": "روزنامه و گزارش‌های بین‌المللی",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "The New York Times",
+      "category": "news",
+      "url": "https://www.nytimes.com",
+      "description": "روزنامه و گزارش‌های خبری",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "The Washington Post",
+      "category": "news",
+      "url": "https://www.washingtonpost.com",
+      "description": "خبر و تحلیل رویدادها",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "The Independent",
+      "category": "news",
+      "url": "https://www.independent.co.uk",
+      "description": "رسانه خبری بریتانیا",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "The Telegraph",
+      "category": "news",
+      "url": "https://www.telegraph.co.uk",
+      "description": "خبر و گزارش بین‌المللی",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "Al Jazeera",
+      "category": "news",
+      "url": "https://www.aljazeera.com",
+      "description": "شبکه خبری بین‌المللی",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "Sky News",
+      "category": "news",
+      "url": "https://news.sky.com",
+      "description": "خبر و پوشش زنده رویدادها",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "ABC News",
+      "category": "news",
+      "url": "https://abcnews.go.com",
+      "description": "خبرگزاری و شبکه خبری آمریکا",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "CBS News",
+      "category": "news",
+      "url": "https://www.cbsnews.com",
+      "description": "گزارش‌ها و خبرهای روز",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "NBC News",
+      "category": "news",
+      "url": "https://www.nbcnews.com",
+      "description": "خبر و گزارش‌های تصویری",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "Franceinfo",
+      "category": "news",
+      "url": "https://www.francetvinfo.fr",
+      "description": "رسانه خبری فرانسه",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "RFI",
+      "category": "news",
+      "url": "https://www.rfi.fr",
+      "description": "رادیو و خبرگزاری بین‌المللی فرانسه",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "Deutsche Welle فارسی",
+      "category": "news",
+      "url": "https://www.dw.com/fa-ir",
+      "description": "اخبار و گزارش‌های فارسی",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "ایرنا",
+      "category": "news",
+      "url": "https://www.irna.ir",
+      "description": "خبرگزاری جمهوری اسلامی ایران",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "ایسنا",
+      "category": "news",
+      "url": "https://www.isna.ir",
+      "description": "خبرگزاری دانشجویان ایران",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "خبرگزاری مهر",
+      "category": "news",
+      "url": "https://www.mehrnews.com",
+      "description": "خبرگزاری و گزارش‌های خبری",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "ایلنا",
+      "category": "news",
+      "url": "https://www.ilna.ir",
+      "description": "خبرگزاری کار ایران",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "خبرآنلاین",
+      "category": "news",
+      "url": "https://www.khabaronline.ir",
+      "description": "پایگاه خبری و تحلیلی",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "تابناک",
+      "category": "news",
+      "url": "https://www.tabnak.ir",
+      "description": "پایگاه خبری",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "انتخاب",
+      "category": "news",
+      "url": "https://www.entekhab.ir",
+      "description": "پایگاه خبری و تحلیلی",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "دنیای اقتصاد",
+      "category": "news",
+      "url": "https://donya-e-eqtesad.com",
+      "description": "رسانه اخبار اقتصاد و بازار",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "زومیت",
+      "category": "news",
+      "url": "https://www.zoomit.ir",
+      "description": "اخبار فناوری و دانش",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "دیجیاتو",
+      "category": "news",
+      "url": "https://digiato.com",
+      "description": "اخبار فناوری و محصولات دیجیتال",
+      "tags": [
+        "news"
+      ]
+    },
+    {
+      "title": "BBC News Live",
+      "category": "satellite",
+      "url": "https://www.bbc.com/news/live",
+      "description": "پوشش زنده و گزارش‌های تصویری BBC",
+      "tags": [
+        "satellite"
+      ]
+    },
+    {
+      "title": "Sky News Live",
+      "category": "satellite",
+      "url": "https://news.sky.com/watch-live",
+      "description": "پخش زنده شبکه Sky News",
+      "tags": [
+        "satellite"
+      ]
+    },
+    {
+      "title": "Al Jazeera English Live",
+      "category": "satellite",
+      "url": "https://www.youtube.com/@AlJazeeraEnglish/live",
+      "description": "پخش زنده کانال انگلیسی الجزیره",
+      "tags": [
+        "satellite"
+      ]
+    },
+    {
+      "title": "DW News Live",
+      "category": "satellite",
+      "url": "https://www.youtube.com/@dwnews/live",
+      "description": "پخش زنده شبکه دویچه‌وله",
+      "tags": [
+        "satellite"
+      ]
+    },
+    {
+      "title": "NASA Live",
+      "category": "satellite",
+      "url": "https://www.nasa.gov/nasatv/",
+      "description": "پخش برنامه‌ها و رویدادهای ناسا",
+      "tags": [
+        "satellite"
+      ]
+    },
+    {
+      "title": "UN Web TV",
+      "category": "satellite",
+      "url": "https://webtv.un.org",
+      "description": "پخش زنده نشست‌ها و رویدادهای سازمان ملل",
+      "tags": [
+        "satellite"
+      ]
+    },
+    {
+      "title": "France 24 Français",
+      "category": "satellite",
+      "url": "https://www.france24.com/fr/direct",
+      "description": "پخش زنده فرانسوی فرانس ۲۴",
+      "tags": [
+        "satellite"
+      ]
+    },
+    {
+      "title": "NHK World",
+      "category": "satellite",
+      "url": "https://www3.nhk.or.jp/nhkworld/en/live/",
+      "description": "پخش زنده شبکه بین‌المللی ژاپن",
+      "tags": [
+        "satellite"
+      ]
+    },
+    {
+      "title": "TRT World",
+      "category": "satellite",
+      "url": "https://www.trtworld.com/live",
+      "description": "پخش زنده شبکه TRT World",
+      "tags": [
+        "satellite"
+      ]
+    },
+    {
+      "title": "CGTN Live",
+      "category": "satellite",
+      "url": "https://www.cgtn.com/tv",
+      "description": "پخش زنده شبکه CGTN",
+      "tags": [
+        "satellite"
+      ]
+    },
+    {
+      "title": "Skyline Webcams",
+      "category": "satellite",
+      "url": "https://www.skylinewebcams.com",
+      "description": "دوربین‌های زنده نقاط مختلف جهان",
+      "tags": [
+        "satellite"
+      ]
+    },
+    {
+      "title": "Bluesky",
+      "category": "social",
+      "url": "https://bsky.app",
+      "description": "شبکه اجتماعی غیرمتمرکز",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "title": "Pinterest",
+      "category": "social",
+      "url": "https://www.pinterest.com",
+      "description": "کشف و ذخیره ایده‌های تصویری",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "title": "Instagram",
+      "category": "social",
+      "url": "https://www.instagram.com",
+      "description": "شبکه اجتماعی اشتراک تصویر و ویدئو",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "title": "Facebook",
+      "category": "social",
+      "url": "https://www.facebook.com",
+      "description": "شبکه اجتماعی و ارتباطات",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "title": "X",
+      "category": "social",
+      "url": "https://x.com",
+      "description": "شبکه اجتماعی و دنبال‌کردن رویدادها",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "title": "Threads",
+      "category": "social",
+      "url": "https://www.threads.net",
+      "description": "شبکه اجتماعی گفت‌وگومحور",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "title": "Tumblr",
+      "category": "social",
+      "url": "https://www.tumblr.com",
+      "description": "وبلاگ و شبکه اجتماعی",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "title": "Lemmy",
+      "category": "social",
+      "url": "https://join-lemmy.org",
+      "description": "پلتفرم انجمن‌های غیرمتمرکز",
+      "tags": [
+        "social"
+      ]
+    },
+    {
+      "title": "OneDrive",
+      "category": "cloud",
+      "url": "https://onedrive.live.com",
+      "description": "ذخیره‌سازی ابری مایکروسافت",
+      "tags": [
+        "cloud"
+      ]
+    },
+    {
+      "title": "Google Photos",
+      "category": "cloud",
+      "url": "https://photos.google.com",
+      "description": "مدیریت و پشتیبان‌گیری عکس‌ها",
+      "tags": [
+        "cloud"
+      ]
+    },
+    {
+      "title": "WeTransfer",
+      "category": "cloud",
+      "url": "https://wetransfer.com",
+      "description": "ارسال فایل‌های حجیم",
+      "tags": [
+        "cloud"
+      ]
+    },
+    {
+      "title": "MEGA",
+      "category": "cloud",
+      "url": "https://mega.io",
+      "description": "فضای ذخیره‌سازی ابری",
+      "tags": [
+        "cloud"
+      ]
+    },
+    {
+      "title": "pCloud",
+      "category": "cloud",
+      "url": "https://www.pcloud.com",
+      "description": "ذخیره‌سازی و همگام‌سازی فایل",
+      "tags": [
+        "cloud"
+      ]
+    },
+    {
+      "title": "Sync.com",
+      "category": "cloud",
+      "url": "https://www.sync.com",
+      "description": "فضای ابری با تمرکز بر حریم خصوصی",
+      "tags": [
+        "cloud"
+      ]
+    },
+    {
+      "title": "Privacy Guides",
+      "category": "security",
+      "url": "https://www.privacyguides.org",
+      "description": "راهنمای ابزارها و روش‌های حریم خصوصی",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "title": "PrivacyTests.org",
+      "category": "security",
+      "url": "https://privacytests.org",
+      "description": "آزمون مقایسه‌ای حریم خصوصی مرورگرها",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "title": "VirusTotal",
+      "category": "security",
+      "url": "https://www.virustotal.com",
+      "description": "بررسی فایل‌ها و لینک‌های مشکوک",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "title": "URLScan",
+      "category": "security",
+      "url": "https://urlscan.io",
+      "description": "تحلیل فنی و ایمنی نشانی‌های وب",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "title": "Mozilla Monitor",
+      "category": "security",
+      "url": "https://monitor.mozilla.org",
+      "description": "بررسی رخدادهای افشای اطلاعات",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "title": "OWASP",
+      "category": "security",
+      "url": "https://owasp.org",
+      "description": "منابع امنیت نرم‌افزار و وب",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "title": "CVE",
+      "category": "security",
+      "url": "https://www.cve.org",
+      "description": "شناسه‌های آسیب‌پذیری‌های امنیتی",
+      "tags": [
+        "security"
+      ]
+    },
+    {
+      "title": "Google Keep",
+      "category": "productivity",
+      "url": "https://keep.google.com",
+      "description": "یادداشت‌برداری سریع",
+      "tags": [
+        "productivity"
+      ]
+    },
+    {
+      "title": "Google Tasks",
+      "category": "productivity",
+      "url": "https://tasks.google.com",
+      "description": "مدیریت فهرست وظایف",
+      "tags": [
+        "productivity"
+      ]
+    },
+    {
+      "title": "Google Calendar",
+      "category": "productivity",
+      "url": "https://calendar.google.com",
+      "description": "تقویم و برنامه‌ریزی",
+      "tags": [
+        "productivity"
+      ]
+    },
+    {
+      "title": "Obsidian",
+      "category": "productivity",
+      "url": "https://obsidian.md",
+      "description": "مدیریت یادداشت‌های پیوندی",
+      "tags": [
+        "productivity"
+      ]
+    },
+    {
+      "title": "Joplin",
+      "category": "productivity",
+      "url": "https://joplinapp.org",
+      "description": "یادداشت‌برداری متن‌باز",
+      "tags": [
+        "productivity"
+      ]
+    },
+    {
+      "title": "Anytype",
+      "category": "productivity",
+      "url": "https://anytype.io",
+      "description": "مدیریت دانش و اطلاعات شخصی",
+      "tags": [
+        "productivity"
+      ]
+    },
+    {
+      "title": "ClickUp",
+      "category": "productivity",
+      "url": "https://clickup.com",
+      "description": "مدیریت پروژه و وظایف",
+      "tags": [
+        "productivity"
+      ]
+    },
+    {
+      "title": "Asana",
+      "category": "productivity",
+      "url": "https://asana.com",
+      "description": "مدیریت کار تیمی",
+      "tags": [
+        "productivity"
+      ]
+    },
+    {
+      "title": "Miro",
+      "category": "productivity",
+      "url": "https://miro.com",
+      "description": "تخته سفید و همکاری بصری",
+      "tags": [
+        "productivity"
+      ]
+    },
+    {
+      "title": "Toggl Track",
+      "category": "productivity",
+      "url": "https://toggl.com/track",
+      "description": "ثبت و تحلیل زمان",
+      "tags": [
+        "productivity"
+      ]
+    },
+    {
+      "title": "Britannica",
+      "category": "reference",
+      "url": "https://www.britannica.com",
+      "description": "دانشنامه عمومی",
+      "tags": [
+        "reference"
+      ]
+    },
+    {
+      "title": "Wiktionary",
+      "category": "reference",
+      "url": "https://www.wiktionary.org",
+      "description": "واژه‌نامه آزاد چندزبانه",
+      "tags": [
+        "reference"
+      ]
+    },
+    {
+      "title": "Google Translate",
+      "category": "reference",
+      "url": "https://translate.google.com",
+      "description": "ترجمه متن و وب‌سایت",
+      "tags": [
+        "reference"
+      ]
+    },
+    {
+      "title": "DeepL",
+      "category": "reference",
+      "url": "https://www.deepl.com/translator",
+      "description": "ترجمه ماشینی متن",
+      "tags": [
+        "reference"
+      ]
+    },
+    {
+      "title": "Glosbe",
+      "category": "reference",
+      "url": "https://glosbe.com",
+      "description": "واژه‌نامه چندزبانه",
+      "tags": [
+        "reference"
+      ]
+    },
+    {
+      "title": "World Bank Data",
+      "category": "reference",
+      "url": "https://data.worldbank.org",
+      "description": "داده‌ها و شاخص‌های جهانی",
+      "tags": [
+        "reference"
+      ]
+    },
+    {
+      "title": "Our World in Data",
+      "category": "reference",
+      "url": "https://ourworldindata.org",
+      "description": "داده‌ها و نمودارهای موضوعی",
+      "tags": [
+        "reference"
+      ]
+    },
+    {
+      "title": "NASA",
+      "category": "reference",
+      "url": "https://www.nasa.gov",
+      "description": "اطلاعات و پژوهش‌های فضایی",
+      "tags": [
+        "reference"
+      ]
+    },
+    {
+      "title": "GeoNames",
+      "category": "reference",
+      "url": "https://www.geonames.org",
+      "description": "پایگاه داده نام‌های جغرافیایی",
+      "tags": [
+        "reference"
+      ]
+    },
+    {
+      "title": "Flickr",
+      "category": "photography",
+      "url": "https://www.flickr.com",
+      "description": "میزبانی و اشتراک عکس",
+      "tags": [
+        "photography"
+      ]
+    },
+    {
+      "title": "500px",
+      "category": "photography",
+      "url": "https://500px.com",
+      "description": "جامعه عکاسی و نمونه‌کار",
+      "tags": [
+        "photography"
+      ]
+    },
+    {
+      "title": "Wikimedia Images",
+      "category": "photography",
+      "url": "https://commons.wikimedia.org/wiki/Main_Page",
+      "description": "تصاویر آزاد و رسانه‌های آموزشی",
+      "tags": [
+        "photography"
+      ]
+    },
+    {
+      "title": "Darktable",
+      "category": "photography",
+      "url": "https://www.darktable.org",
+      "description": "پردازش خام عکس متن‌باز",
+      "tags": [
+        "photography"
+      ]
+    },
+    {
+      "title": "RawTherapee",
+      "category": "photography",
+      "url": "https://rawtherapee.com",
+      "description": "پردازش و ویرایش عکس خام",
+      "tags": [
+        "photography"
+      ]
+    },
+    {
+      "title": "AlternativeTo",
+      "category": "misc",
+      "url": "https://alternativeto.net",
+      "description": "یافتن جایگزین نرم‌افزارها",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "title": "Product Hunt",
+      "category": "misc",
+      "url": "https://www.producthunt.com",
+      "description": "کشف محصولات و ابزارهای تازه",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "title": "Hacker News",
+      "category": "misc",
+      "url": "https://news.ycombinator.com",
+      "description": "خبرها و گفت‌وگوهای فناوری",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "title": "Similarweb",
+      "category": "misc",
+      "url": "https://www.similarweb.com",
+      "description": "اطلاعات و تحلیل وب‌سایت‌ها",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "title": "Down For Everyone Or Just Me",
+      "category": "misc",
+      "url": "https://downforeveryoneorjustme.com",
+      "description": "بررسی در دسترس بودن وب‌سایت",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "title": "Archive.today",
+      "category": "misc",
+      "url": "https://archive.ph",
+      "description": "ذخیره نسخه آرشیوی صفحات وب",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "title": "Wayback Machine",
+      "category": "misc",
+      "url": "https://web.archive.org",
+      "description": "مشاهده نسخه‌های قدیمی وب‌سایت‌ها",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "title": "OpenStreetMap",
+      "category": "misc",
+      "url": "https://www.openstreetmap.org",
+      "description": "نقشه آزاد جهان",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "title": "WolframAlpha",
+      "category": "misc",
+      "url": "https://www.wolframalpha.com",
+      "description": "موتور محاسبات و دانش",
+      "tags": [
+        "misc"
+      ]
+    },
+    {
+      "title": "SpeedCrunch",
+      "category": "misc",
+      "url": "https://speedcrunch.org",
+      "description": "ماشین‌حساب علمی متن‌باز",
+      "tags": [
+        "misc"
+      ]
     }
   ]
 }
