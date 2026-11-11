@@ -2445,7 +2445,7 @@
       "title": "Simay Azadi",
       "category": "news",
       "description": "تلویزیون ماهواره‌ای فارسی‌زبان با پخش زنده، خبر، گفت‌وگو و برنامه‌های اجتماعی.",
-      "url": "https://www.iranntv.com/",
+      "url": "https://www.iranntv.com/about_us",
       "tags": [
         "فارسی",
         "خبر",
@@ -2455,7 +2455,7 @@
     },
     {
       "title": "ZED-TV",
-      "category": "news",
+      "category": "satellite-networks",
       "description": "شبکه ماهواره‌ای فارسی‌زبان با تمرکز بر خبر و محتوای روز.",
       "url": "https://zed-tv.com/",
       "tags": [
@@ -2468,7 +2468,7 @@
       "title": "Kalameh Farsi TV",
       "category": "news",
       "description": "شبکه فارسی‌زبان با خبر، تحلیل و برنامه‌های زنده ماهواره‌ای و آنلاین.",
-      "url": "https://www.kalamehfarsi.tv/",
+      "url": "https://www.kalamehfarsi.tv/en/about/",
       "tags": [
         "فارسی",
         "خبر",
@@ -2555,7 +2555,7 @@
       "title": "VOA Persian – Live",
       "category": "satellite-networks",
       "description": "صفحه پخش زنده و ویدئوهای صدای آمریکا؛ در دسترس بودن پخش ممکن است منطقه‌ای باشد.",
-      "url": "https://www.voa.com/live",
+      "url": "https://ir.voanews.com/",
       "tags": [
         "فارسی",
         "خبری",
@@ -2659,6 +2659,30 @@
         "فارسی",
         "ماهواره",
         "سرگرمی"
+      ]
+    },
+    {
+      "title": "Simay Azadi – شبکه و پخش زنده",
+      "category": "satellite-networks",
+      "url": "https://www.iranntv.com/",
+      "description": "وب‌سایت رسمی سیمای آزادی؛ برنامه‌های شبانه‌روزی، خبر و پخش زنده تلویزیون ماهواره‌ای.",
+      "tags": [
+        "فارسی",
+        "خبر",
+        "ماهواره",
+        "پخش زنده"
+      ]
+    },
+    {
+      "title": "Kalameh Farsi TV – شبکه زنده",
+      "category": "satellite-networks",
+      "url": "https://www.kalamehfarsi.tv/",
+      "description": "شبکه کلمه فارسی با پخش شبانه‌روزی ماهواره‌ای و آنلاین، خبر و برنامه‌های زنده.",
+      "tags": [
+        "فارسی",
+        "خبر",
+        "ماهواره",
+        "پخش زنده"
       ]
     }
   ]
