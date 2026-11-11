@@ -3,7 +3,7 @@
   const FAVORITES_KEY = "web-bookmarks:favorites";
   const FAVORITES_VERSION = 1;
   const BOOKMARKS_KEY = "web-bookmarks:pinned";
-  const ASSET_VERSION = "20261111-2";
+  const ASSET_VERSION = "20261111-3";
   const $ = (selector) => document.querySelector(selector);
   // Keep personal bookmarks separate from the site's frequently updated resource data.
   const loadFavorites = () => {
@@ -34,7 +34,7 @@
       return true;
     } catch (error) { console.warn("Could not save bookmarks", error); return false; }
   };
-  const state = { resources: [], categories: [], category: "all", query: "", page: 1, sort: "default", suggestions: [], activeSuggestion: -1 };
+  const state = { resources: [], categories: [], category: "all", subcategory: null, query: "", page: 1, sort: "default", suggestions: [], activeSuggestion: -1 };
   const normalize = (value) => String(value ?? "").toLowerCase()
     .replace(/[يى]/g, "ی").replace(/ك/g, "ک")
     .replace(/[\u064B-\u065F\u0670\u0640]/g, "")
@@ -119,9 +119,11 @@
   };
   const fuzzyMatch = (haystack, query) => searchScore(haystack, query) > 0;
   const categoryName = id => id === "favorites" ? "نشان‌شده‌های من" : (state.categories.find(c => c.id === id)?.name || "سایر");
+  const subcategoryName = id => state.categories.flatMap(c => c.subcategoryGroups || []).flatMap(g => g.items).find(x => x.id === id)?.name || "";
   const filtered = () => {
     let list=state.category==="favorites" ? state.resources.filter(item => favorites.has(item.url)) : state.resources.filter(item => state.category==="all" || item.category===state.category);
-    if(state.query) list=list.map(item=>({item,score:searchScore([item.title,item.description,item.url,...(item.tags||[])].join(" "),state.query,item.title)}))
+    if(state.category==="development" && state.subcategory) list=list.filter(item=>item.subcategory===state.subcategory);
+    if(state.query) list=list.map(item=>({item,score:searchScore([item.title,item.description,item.url,item.subcategory||"",subcategoryName(item.subcategory),...(item.tags||[])].join(" "),state.query,item.title)}))
       .filter(x=>x.score>0).sort((a,b)=>b.score-a.score).map(x=>x.item);
     list.sort((a,b) => {
       const ai = bookmarks.indexOf(a.url), bi = bookmarks.indexOf(b.url);
@@ -139,11 +141,22 @@
     const favoriteCategory = '<button class="category '+(state.category==="favorites"?'active':'')+'" data-category="favorites"><span class="category-icon">★</span><span>نشان‌شده‌های من</span><b>'+favorites.size.toLocaleString("fa-IR")+'</b></button>';
     root.innerHTML=favoriteCategory+state.categories.map(c=>{
       const count=state.resources.filter(r=>r.category===c.id).length;
-      return '<button class="category '+(state.category===c.id?'active':'')+'" data-category="'+c.id+'"><span class="category-icon">'+(c.icon||"◈")+'</span><span>'+c.name+'</span><b>'+count.toLocaleString("fa-IR")+'</b></button>';
+      if(c.id!=="development" || !c.subcategoryGroups) return '<button class="category '+(state.category===c.id?'active':'')+'" data-category="'+c.id+'"><span class="category-icon">'+(c.icon||"◈")+'</span><span>'+c.name+'</span><b>'+count.toLocaleString("fa-IR")+'</b></button>';
+      const groups=c.subcategoryGroups.map(group=>'<section class="mega-group"><h4>'+safe(group.title)+'</h4>'+group.items.map(item=>{
+        const n=state.resources.filter(r=>r.category===c.id&&r.subcategory===item.id).length;
+        return '<button type="button" class="mega-link '+(state.subcategory===item.id?'active':'')+'" data-subcategory="'+item.id+'"><span>'+safe(item.name)+'</span><b>'+n.toLocaleString("fa-IR")+'</b></button>';
+      }).join("")+'</section>').join("");
+      return '<div class="category-with-menu"><button class="category '+(state.category===c.id?'active':'')+'" data-category="'+c.id+'" aria-haspopup="true" aria-expanded="false"><span class="category-icon">'+(c.icon||"◈")+'</span><span>'+c.name+'</span><b>'+count.toLocaleString("fa-IR")+'</b><span class="category-menu-cue" aria-hidden="true">☷</span></button><div class="mega-menu" role="region" aria-label="شاخه‌های برنامه‌نویسی"><div class="mega-menu-head"><div><strong>جعبه‌ابزار برنامه‌نویسی</strong><small>ابزارهای منتخب برای هر مرحله توسعه</small></div><button type="button" class="mega-all" data-subcategory="">همه ابزارها</button></div><div class="mega-menu-grid">'+groups+'</div></div></div>';
     }).join("");
     $("#all-count").textContent=state.resources.length.toLocaleString("fa-IR");
     document.querySelectorAll(".category").forEach(button=>button.addEventListener("click",()=>{
-      state.category=button.dataset.category;state.page=1;render();
+      state.category=button.dataset.category;state.subcategory=null;state.page=1;render();
+      if(button.dataset.category==="development" && window.matchMedia("(max-width: 680px)").matches){const menu=document.querySelector(".category-with-menu");if(menu)menu.classList.add("open");}
+    }));
+    const mega=document.querySelector(".category-with-menu");
+    if(mega){mega.addEventListener("mouseenter",()=>mega.classList.add("open"));mega.addEventListener("mouseleave",()=>mega.classList.remove("open"));mega.addEventListener("focusin",()=>mega.classList.add("open"));mega.addEventListener("focusout",e=>{if(!mega.contains(e.relatedTarget))mega.classList.remove("open");});}
+    root.querySelectorAll("[data-subcategory]").forEach(button=>button.addEventListener("click",()=>{
+      state.category="development";state.subcategory=button.dataset.subcategory||null;state.page=1;render();
     }));
   };
   const safe = value => String(value??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
@@ -154,8 +167,8 @@
     const list=filtered(), pages=Math.max(1,Math.ceil(list.length/PAGE_SIZE));
     state.page=Math.min(state.page,pages);
     const start=(state.page-1)*PAGE_SIZE, visible=list.slice(start,start+PAGE_SIZE);
-    $("#results-title").textContent=state.category==="all"?"همه منابع":categoryName(state.category);
-    $("#results-subtitle").textContent=state.query?("نتایج جست‌وجو برای «"+state.query+"»"):"منابع منتخب، یک‌جا و مرتب";
+    $("#results-title").textContent=state.subcategory?subcategoryName(state.subcategory):(state.category==="all"?"همه منابع":categoryName(state.category));
+    $("#results-subtitle").textContent=state.query?("نتایج جست‌وجو برای «"+state.query+"»"):(state.subcategory?"ابزارها و منابع منتخب این شاخه":"منابع منتخب، یک‌جا و مرتب");
     $("#total-count").textContent=state.resources.length.toLocaleString("fa-IR")+" منبع در "+state.categories.length.toLocaleString("fa-IR")+" دسته";
     $("#active-filters").innerHTML=state.query?'<span class="filter-chip">جست‌وجو: '+safe(state.query)+'</span>':"";
     $("#resource-grid").innerHTML=visible.map(item=>{
@@ -201,7 +214,7 @@
   const updateSuggestions=()=>{
     const q=searchInput.value.trim();
     if(!q||!state.resources.length){closeSuggestions();return;}
-    const matches=state.resources.map(item=>({item,score:searchScore([item.title,item.description,item.url,...(item.tags||[])].join(" "),q,item.title)}))
+    const matches=state.resources.map(item=>({item,score:searchScore([item.title,item.description,item.url,item.subcategory||"",subcategoryName(item.subcategory),...(item.tags||[])].join(" "),q,item.title)}))
       .filter(x=>x.score>0).sort((a,b)=>b.score-a.score).slice(0,7).map(x=>x.item);
     state.suggestions=matches;
     if(!matches.length){suggestionBox.innerHTML='<div class="suggestion-hint">پیشنهادی پیدا نشد؛ برای دیدن نتایج کامل Enter بزن.</div>';suggestionBox.hidden=false;searchInput.setAttribute("aria-expanded","true");return;}
