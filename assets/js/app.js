@@ -3,7 +3,7 @@
   const FAVORITES_KEY = "web-bookmarks:favorites";
   const FAVORITES_VERSION = 1;
   const BOOKMARKS_KEY = "web-bookmarks:pinned";
-  const ASSET_VERSION = "20261111-10";
+  const ASSET_VERSION = "20261111-13";
   const $ = (selector) => document.querySelector(selector);
   // Keep personal bookmarks separate from the site's frequently updated resource data.
   const loadFavorites = () => {
