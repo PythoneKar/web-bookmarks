@@ -5,7 +5,7 @@
   const BOOKMARKS_KEY = "web-bookmarks:pinned";
   const FOLDERS_KEY = "web-bookmarks:folders";
   const FOLDER_ITEMS_KEY = "web-bookmarks:folder-items";
-  const ASSET_VERSION = "20261111-18";
+  const ASSET_VERSION = "20261111-19";
   const loadStored = (key,fallback) => { try { return JSON.parse(localStorage.getItem(key)||"null") ?? fallback; } catch { return fallback; } };
   let folderCreateOpen = false;
   let folders = loadStored(FOLDERS_KEY,[]);
@@ -162,7 +162,7 @@
         }).join("");
         return '<div class="mega-link-wrap"><button type="button" class="mega-link '+(state.subcategory===item.id?'active':'')+'" data-subcategory="'+item.id+'" aria-haspopup="true"><span>'+safe(item.name)+'</span><b>'+tools.length.toLocaleString("fa-IR")+'</b><span class="mega-link-arrow" aria-hidden="true">‹</span></button><div class="mega-submenu" role="region" aria-label="ابزارهای '+safe(item.name)+'"><div class="mega-submenu-head">'+safe(item.name)+' <small>'+tools.length.toLocaleString("fa-IR")+' ابزار</small></div><div class="mega-tool-list">'+(toolLinks||'<span class="mega-tools-empty">هنوز ابزاری ثبت نشده</span>')+'</div></div></div>';
       }).join("")+'</section>').join("");
-      return '<div class="category-with-menu"><button class="category '+(state.category===c.id?'active':'')+'" data-category="'+c.id+'" aria-haspopup="true" aria-expanded="false"><span class="category-icon">'+(c.icon||"◈")+'</span><span>'+safe(c.name)+'</span><b>'+count.toLocaleString("fa-IR")+'</b><span class="category-menu-cue" aria-hidden="true">☷</span></button><svg class="mega-bridge" aria-hidden="true" focusable="false"><path class="mega-bridge-path" d="" /></svg><div class="mega-menu" role="region" aria-label="زیرشاخه‌های '+safe(c.name)+'"><div class="mega-menu-head"><div><strong>'+safe(c.name)+'</strong><small>همه منابع این دسته، مرتب‌شده بر اساس موضوع</small></div><button type="button" class="mega-all" data-subcategory="">همه ابزارها و منابع</button></div><div class="mega-menu-grid">'+groups+'</div></div></div>';
+      return '<div class="category-with-menu"><button class="category '+(state.category===c.id?'active':'')+'" data-category="'+c.id+'" aria-haspopup="true" aria-expanded="false"><span class="category-icon">'+(c.icon||"◈")+'</span><span>'+safe(c.name)+'</span><b>'+count.toLocaleString("fa-IR")+'</b><span class="category-menu-cue" aria-hidden="true">☷</span></button><svg class="mega-bridge" aria-hidden="true" focusable="false"><path class="mega-bridge-path" id="mega-bridge-'+safe(c.id)+'" d="" /><text class="mega-bridge-label"><textPath href="#mega-bridge-'+safe(c.id)+'" startOffset="50%" text-anchor="middle">بیاین یکم بازی کنیم؛ مسیر رو دنبال کنید</textPath></text></svg><div class="mega-menu" role="region" aria-label="زیرشاخه‌های '+safe(c.name)+'"><div class="mega-menu-head"><div><strong>'+safe(c.name)+'</strong><small>همه منابع این دسته، مرتب‌شده بر اساس موضوع</small></div><button type="button" class="mega-all" data-subcategory="">همه ابزارها و منابع</button></div><div class="mega-menu-grid">'+groups+'</div></div></div>';
     }).join("");
     $("#all-count").textContent=state.resources.length.toLocaleString("fa-IR");
     const positionMegaBridge=wrapper=>{
