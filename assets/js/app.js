@@ -268,13 +268,13 @@
   };
   const closeFolderDeleteConfirm=()=>{pendingDeleteFolderId=null;document.querySelector("#folder-delete-confirm")?.remove();};
 
-  const showFolderMenu=(url,x,y)=>{
+  const showFolderMenu=(url,x,y,itemType="ابزارک")=>{
     document.querySelector("#folder-context-menu")?.remove();
     const menu=document.createElement("div");menu.id="folder-context-menu";menu.className="folder-context-menu";menu.dataset.url=url;
     menu.style.left=Math.max(8,Math.min(x,window.innerWidth-250))+"px";
     menu.style.top=Math.max(8,Math.min(y,window.innerHeight-300))+"px";
     const pinned=bookmarks.includes(url),starred=favorites.has(url);
-    menu.innerHTML='<strong>مدیریت کارت / ابزارک</strong>'+
+    menu.innerHTML='<strong>مدیریت '+safe(itemType)+'</strong>'+
       '<button type="button" class="context-action" data-context-bookmark>'+(pinned?'✓ حذف بوکمارک':'▣ افزودن به بوکمارک‌ها')+'</button>'+
       '<button type="button" class="context-action" data-context-favorite>'+(starred?'★ حذف از نشان‌شده‌ها':'☆ افزودن به نشان‌شده‌ها')+'</button>'+
       '<div class="context-menu-divider"></div><strong>انتقال به پوشه</strong>'+
@@ -457,7 +457,7 @@
     if(!row)return;
     const url=row.dataset.resourceUrl||row.querySelector(".mega-tool")?.getAttribute("href");
     if(!url)return;
-    e.preventDefault();e.stopPropagation();showFolderMenu(url,e.clientX,e.clientY);
+    e.preventDefault();e.stopPropagation();showFolderMenu(url,e.clientX,e.clientY,row.classList.contains("resource-card")?"کارت":"ابزارک");
   },true);
   document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeFolderMenu();closeFolderDeleteConfirm();}});
 
