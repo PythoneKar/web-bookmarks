@@ -74,6 +74,11 @@
       "id": "misc",
       "name": "سایر منابع",
       "icon": "＋"
+    },
+    {
+      "id": "satellite-networks",
+      "name": "شبکه‌های ماهواره‌ای",
+      "icon": "📡"
     }
   ],
   "resources": [
@@ -467,7 +472,7 @@
     },
     {
       "title": "Persian TV Live",
-      "category": "satellite",
+      "category": "satellite-networks",
       "description": "فهرست پخش زنده شبکه‌های فارسی‌زبان.",
       "url": "https://www.persiantvlive.com",
       "tags": [
@@ -477,7 +482,7 @@
     },
     {
       "title": "Zende TV",
-      "category": "satellite",
+      "category": "satellite-networks",
       "description": "دسترسی به پخش زنده شبکه‌های تلویزیونی.",
       "url": "https://www.zendetv.com/stream",
       "tags": [
@@ -2390,6 +2395,269 @@
       "description": "ماشین‌حساب علمی متن‌باز",
       "tags": [
         "misc"
+      ]
+    },
+    {
+      "title": "Iran International",
+      "category": "news",
+      "description": "رسانه خبری فارسی‌زبان مستقر در خارج از ایران با پوشش شبانه‌روزی اخبار و پخش تلویزیونی.",
+      "url": "https://www.iranintl.com/",
+      "tags": [
+        "فارسی",
+        "خبر",
+        "تلویزیون"
+      ]
+    },
+    {
+      "title": "VOA Persian",
+      "category": "news",
+      "description": "بخش فارسی صدای آمریکا؛ خبر، گزارش، تحلیل و برنامه‌های ویدئویی.",
+      "url": "https://www.voa.com/persian",
+      "tags": [
+        "فارسی",
+        "خبر",
+        "صدای آمریکا"
+      ]
+    },
+    {
+      "title": "Radio Farda",
+      "category": "news",
+      "description": "رسانه خبری فارسی‌زبان رادیو اروپای آزاد/رادیو آزادی با پوشش ایران و جهان.",
+      "url": "https://www.radiofarda.com/",
+      "tags": [
+        "فارسی",
+        "خبر",
+        "رادیو"
+      ]
+    },
+    {
+      "title": "Euronews Persian",
+      "category": "news",
+      "description": "نسخه فارسی یورونیوز با خبرها و گزارش‌های بین‌المللی.",
+      "url": "https://per.euronews.com/",
+      "tags": [
+        "فارسی",
+        "خبر",
+        "اروپا"
+      ]
+    },
+    {
+      "title": "Simay Azadi",
+      "category": "news",
+      "description": "تلویزیون ماهواره‌ای فارسی‌زبان با پخش زنده، خبر، گفت‌وگو و برنامه‌های اجتماعی.",
+      "url": "https://www.iranntv.com/",
+      "tags": [
+        "فارسی",
+        "خبر",
+        "ماهواره",
+        "پخش زنده"
+      ]
+    },
+    {
+      "title": "ZED-TV",
+      "category": "news",
+      "description": "شبکه ماهواره‌ای فارسی‌زبان با تمرکز بر خبر و محتوای روز.",
+      "url": "https://zed-tv.com/",
+      "tags": [
+        "فارسی",
+        "خبر",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "Kalameh Farsi TV",
+      "category": "news",
+      "description": "شبکه فارسی‌زبان با خبر، تحلیل و برنامه‌های زنده ماهواره‌ای و آنلاین.",
+      "url": "https://www.kalamehfarsi.tv/",
+      "tags": [
+        "فارسی",
+        "خبر",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "Agence France-Presse (AFP)",
+      "category": "news",
+      "description": "خبرگزاری جهانی فرانسه با گزارش و محتوای چندرسانه‌ای.",
+      "url": "https://www.afp.com/",
+      "tags": [
+        "خبر",
+        "فرانسه",
+        "بین‌المللی"
+      ]
+    },
+    {
+      "title": "CNN",
+      "category": "news",
+      "description": "شبکه خبری بین‌المللی آمریکا با پوشش زنده و گزارش‌های جهانی.",
+      "url": "https://www.cnn.com/",
+      "tags": [
+        "خبر",
+        "تلویزیون",
+        "آمریکا"
+      ]
+    },
+    {
+      "title": "Politico",
+      "category": "news",
+      "description": "رسانه خبری تخصصی سیاست و تحولات دولت‌ها.",
+      "url": "https://www.politico.com/",
+      "tags": [
+        "خبر",
+        "سیاست",
+        "بین‌المللی"
+      ]
+    },
+    {
+      "title": "Deutsche Welle English",
+      "category": "news",
+      "description": "نسخه انگلیسی دویچه‌وله برای خبرها و گزارش‌های بین‌المللی.",
+      "url": "https://www.dw.com/en/",
+      "tags": [
+        "خبر",
+        "انگلیسی"
+      ]
+    },
+    {
+      "title": "UKFarsi – Persian Live TV",
+      "category": "satellite-networks",
+      "description": "فهرست و راهنمای دسترسی به پخش زنده شبکه‌های فارسی‌زبان؛ وضعیت لینک‌ها ممکن است تغییر کند.",
+      "url": "https://ukfarsi.com/live-tv/",
+      "tags": [
+        "فارسی",
+        "پخش زنده",
+        "فهرست شبکه‌ها"
+      ]
+    },
+    {
+      "title": "Pardeh – Persian Live TV",
+      "category": "satellite-networks",
+      "description": "فهرست شبکه‌های فارسی‌زبان در دسته‌های خبری، سرگرمی، موسیقی و فیلم؛ دسترسی به پخش‌ها وابسته به منبع است.",
+      "url": "https://pardehtv.com/live-tv",
+      "tags": [
+        "فارسی",
+        "پخش زنده",
+        "فهرست شبکه‌ها"
+      ]
+    },
+    {
+      "title": "Farsi TV Live",
+      "category": "satellite-networks",
+      "description": "فهرست و دسترسی آنلاین به شبکه‌های تلویزیونی فارسی‌زبان.",
+      "url": "https://farsitvlive.com/",
+      "tags": [
+        "فارسی",
+        "پخش زنده"
+      ]
+    },
+    {
+      "title": "Iran International – Live",
+      "category": "satellite-networks",
+      "description": "پخش زنده تلویزیون ایران اینترنشنال.",
+      "url": "https://www.iranintl.com/live",
+      "tags": [
+        "فارسی",
+        "خبری",
+        "پخش زنده"
+      ]
+    },
+    {
+      "title": "VOA Persian – Live",
+      "category": "satellite-networks",
+      "description": "صفحه پخش زنده و ویدئوهای صدای آمریکا؛ در دسترس بودن پخش ممکن است منطقه‌ای باشد.",
+      "url": "https://www.voa.com/live",
+      "tags": [
+        "فارسی",
+        "خبری",
+        "پخش زنده"
+      ]
+    },
+    {
+      "title": "MBC Persia",
+      "category": "satellite-networks",
+      "description": "شبکه سرگرمی فارسی‌زبان؛ برنامه‌ها و اطلاعات پخش از درگاه رسمی گروه MBC.",
+      "url": "https://www.mbc.net/",
+      "tags": [
+        "فارسی",
+        "سرگرمی",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "PMC",
+      "category": "satellite-networks",
+      "description": "شبکه موسیقی فارسی‌زبان و اطلاعات برنامه‌ها.",
+      "url": "https://pmc.tv/",
+      "tags": [
+        "فارسی",
+        "موسیقی",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "GEM TV",
+      "category": "satellite-networks",
+      "description": "وب‌سایت گروه شبکه‌های GEM و معرفی شبکه‌ها و برنامه‌ها.",
+      "url": "https://gemgroup.tv/",
+      "tags": [
+        "فارسی",
+        "سرگرمی",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "Tapesh TV",
+      "category": "satellite-networks",
+      "description": "شبکه فارسی‌زبان موسیقی، سرگرمی و برنامه‌های تلویزیونی.",
+      "url": "https://tapesh.tv/",
+      "tags": [
+        "فارسی",
+        "سرگرمی",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "Pars TV",
+      "category": "satellite-networks",
+      "description": "شبکه تلویزیونی فارسی‌زبان با برنامه‌های خبری و گفت‌وگومحور.",
+      "url": "https://parstv.tv/",
+      "tags": [
+        "فارسی",
+        "خبر",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "Mihan TV",
+      "category": "satellite-networks",
+      "description": "شبکه تلویزیونی فارسی‌زبان با برنامه‌های سیاسی و اجتماعی.",
+      "url": "https://mihantv.com/",
+      "tags": [
+        "فارسی",
+        "خبر",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "Persiana",
+      "category": "satellite-networks",
+      "description": "درگاه شبکه‌های تلویزیونی پرشیانا و برنامه‌های سرگرمی و فیلم.",
+      "url": "https://persiana.tv/",
+      "tags": [
+        "فارسی",
+        "سرگرمی",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "Manoto Archive",
+      "category": "satellite-networks",
+      "description": "وب‌سایت مرتبط با آرشیو و محتوای من‌وتو؛ وضعیت پخش زنده یا فعالیت شبکه را پیش از استفاده بررسی کنید.",
+      "url": "https://www.manototv.com/",
+      "tags": [
+        "فارسی",
+        "آرشیو",
+        "تلویزیون"
       ]
     }
   ]
