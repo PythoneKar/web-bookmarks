@@ -2563,7 +2563,7 @@
       "subcategory": "ai-topic-2"
     },
     {
-      "title": " fal.ai",
+      "title": "fal.ai",
       "category": "ai",
       "url": "https://fal.ai",
       "description": "زیرساخت اجرای مدل‌های مولد",
@@ -3791,27 +3791,6 @@
       "subcategory": "satellite-networks-topic-3"
     },
     {
-      "title": "Persian TV Live",
-      "category": "satellite-networks",
-      "description": "فهرست پخش زنده شبکه‌های فارسی‌زبان.",
-      "url": "https://www.persiantvlive.com",
-      "tags": [
-        "فارسی",
-        "تلویزیون"
-      ],
-      "subcategory": "satellite-networks-topic-1"
-    },
-    {
-      "title": "Zende TV",
-      "category": "satellite-networks",
-      "description": "دسترسی به پخش زنده شبکه‌های تلویزیونی.",
-      "url": "https://www.zendetv.com/stream",
-      "tags": [
-        "تلویزیون"
-      ],
-      "subcategory": "satellite-networks-topic-1"
-    },
-    {
       "title": "ZED-TV",
       "category": "satellite-networks",
       "description": "شبکه ماهواره‌ای فارسی‌زبان با تمرکز بر خبر و محتوای روز.",
@@ -3820,42 +3799,6 @@
         "فارسی",
         "خبر",
         "ماهواره"
-      ],
-      "subcategory": "satellite-networks-topic-2"
-    },
-    {
-      "title": "UKFarsi – Persian Live TV",
-      "category": "satellite-networks",
-      "description": "فهرست و راهنمای دسترسی به پخش زنده شبکه‌های فارسی‌زبان؛ وضعیت لینک‌ها ممکن است تغییر کند.",
-      "url": "https://ukfarsi.com/live-tv/",
-      "tags": [
-        "فارسی",
-        "پخش زنده",
-        "فهرست شبکه‌ها"
-      ],
-      "subcategory": "satellite-networks-topic-1"
-    },
-    {
-      "title": "Pardeh – Persian Live TV",
-      "category": "satellite-networks",
-      "description": "فهرست شبکه‌های فارسی‌زبان در دسته‌های خبری، سرگرمی، موسیقی و فیلم؛ دسترسی به پخش‌ها وابسته به منبع است.",
-      "url": "https://pardehtv.com/live-tv",
-      "tags": [
-        "فارسی",
-        "پخش زنده",
-        "فهرست شبکه‌ها"
-      ],
-      "subcategory": "satellite-networks-topic-1"
-    },
-    {
-      "title": "Iran International – Live",
-      "category": "satellite-networks",
-      "description": "پخش زنده تلویزیون ایران اینترنشنال.",
-      "url": "https://www.iranintl.com/live",
-      "tags": [
-        "فارسی",
-        "خبری",
-        "پخش زنده"
       ],
       "subcategory": "satellite-networks-topic-2"
     },
@@ -3870,66 +3813,6 @@
         "صدای آمریکا"
       ],
       "subcategory": "satellite-networks-topic-2"
-    },
-    {
-      "title": "GEM TV",
-      "category": "satellite-networks",
-      "description": "وب‌سایت گروه شبکه‌های GEM و معرفی شبکه‌ها و برنامه‌ها.",
-      "url": "https://gemgroup.tv/",
-      "tags": [
-        "فارسی",
-        "سرگرمی",
-        "ماهواره"
-      ],
-      "subcategory": "satellite-networks-topic-3"
-    },
-    {
-      "title": "Tapesh TV",
-      "category": "satellite-networks",
-      "description": "شبکه فارسی‌زبان موسیقی، سرگرمی و برنامه‌های تلویزیونی.",
-      "url": "https://tapesh.tv/",
-      "tags": [
-        "فارسی",
-        "سرگرمی",
-        "ماهواره"
-      ],
-      "subcategory": "satellite-networks-topic-3"
-    },
-    {
-      "title": "Pars TV",
-      "category": "satellite-networks",
-      "description": "شبکه تلویزیونی فارسی‌زبان با برنامه‌های خبری و گفت‌وگومحور.",
-      "url": "https://parstv.tv/",
-      "tags": [
-        "فارسی",
-        "خبر",
-        "ماهواره"
-      ],
-      "subcategory": "satellite-networks-topic-2"
-    },
-    {
-      "title": "Mihan TV",
-      "category": "satellite-networks",
-      "description": "شبکه تلویزیونی فارسی‌زبان با برنامه‌های سیاسی و اجتماعی.",
-      "url": "https://mihantv.com/",
-      "tags": [
-        "فارسی",
-        "خبر",
-        "ماهواره"
-      ],
-      "subcategory": "satellite-networks-topic-2"
-    },
-    {
-      "title": "Persiana",
-      "category": "satellite-networks",
-      "description": "درگاه شبکه‌های تلویزیونی پرشیانا و برنامه‌های سرگرمی و فیلم.",
-      "url": "https://persiana.tv/",
-      "tags": [
-        "فارسی",
-        "سرگرمی",
-        "ماهواره"
-      ],
-      "subcategory": "satellite-networks-topic-3"
     },
     {
       "title": "Manoto Archive",
@@ -3956,18 +3839,6 @@
       "subcategory": "satellite-networks-topic-1"
     },
     {
-      "title": "Darya Stream – Live TV",
-      "category": "satellite-networks",
-      "url": "https://darya.stream/live-tv/",
-      "description": "فهرست پخش زنده شبکه‌های تلویزیونی بین‌المللی و فارسی؛ در دسترس بودن هر جریان ممکن است تغییر کند.",
-      "tags": [
-        "فارسی",
-        "پخش زنده",
-        "فهرست شبکه‌ها"
-      ],
-      "subcategory": "satellite-networks-topic-1"
-    },
-    {
       "title": "GEM Group",
       "category": "satellite-networks",
       "url": "https://www.gemgroup.tv/en/",
@@ -3978,32 +3849,6 @@
         "سرگرمی"
       ],
       "subcategory": "satellite-networks-topic-3"
-    },
-    {
-      "title": "Simay Azadi – شبکه و پخش زنده",
-      "category": "satellite-networks",
-      "url": "https://www.iranntv.com/",
-      "description": "وب‌سایت رسمی سیمای آزادی؛ برنامه‌های شبانه‌روزی، خبر و پخش زنده تلویزیون ماهواره‌ای.",
-      "tags": [
-        "فارسی",
-        "خبر",
-        "ماهواره",
-        "پخش زنده"
-      ],
-      "subcategory": "satellite-networks-topic-2"
-    },
-    {
-      "title": "Kalameh Farsi TV – شبکه زنده",
-      "category": "satellite-networks",
-      "url": "https://www.kalamehfarsi.tv/",
-      "description": "شبکه کلمه فارسی با پخش شبانه‌روزی ماهواره‌ای و آنلاین، خبر و برنامه‌های زنده.",
-      "tags": [
-        "فارسی",
-        "خبر",
-        "ماهواره",
-        "پخش زنده"
-      ],
-      "subcategory": "satellite-networks-topic-2"
     },
     {
       "title": "آپارات اسپرت – Aparat Sport",
@@ -5419,18 +5264,6 @@
       ]
     },
     {
-      "title": "The Odin Project",
-      "category": "development",
-      "subcategory": "learning-dev",
-      "description": "مسیر آموزشی رایگان و پروژه‌محور برای توسعه وب فول‌استک.",
-      "url": "https://www.theodinproject.com/",
-      "tags": [
-        "learn",
-        "web",
-        "برنامه‌نویسی"
-      ]
-    },
-    {
       "title": "Wappalyzer",
       "category": "development",
       "subcategory": "wp-detection",
@@ -6306,7 +6139,7 @@
       ]
     },
     {
-      "title": " xUnit.net",
+      "title": "xUnit.net",
       "category": "development",
       "subcategory": "testing",
       "description": "فریم‌ورک تست واحد برای برنامه‌های .NET.",
