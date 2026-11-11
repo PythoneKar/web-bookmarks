@@ -3,7 +3,7 @@
   const FAVORITES_KEY = "web-bookmarks:favorites";
   const FAVORITES_VERSION = 1;
   const BOOKMARKS_KEY = "web-bookmarks:pinned";
-  const ASSET_VERSION = "20261111-4";
+  const ASSET_VERSION = "20261111-5";
   const $ = (selector) => document.querySelector(selector);
   // Keep personal bookmarks separate from the site's frequently updated resource data.
   const loadFavorites = () => {
@@ -122,7 +122,7 @@
   const subcategoryName = id => state.categories.flatMap(c => c.subcategoryGroups || []).flatMap(g => g.items).find(x => x.id === id)?.name || "";
   const filtered = () => {
     let list=state.category==="favorites" ? state.resources.filter(item => favorites.has(item.url)) : state.resources.filter(item => state.category==="all" || item.category===state.category);
-    if(state.category==="development" && state.subcategory) list=list.filter(item=>item.subcategory===state.subcategory);
+    if(state.subcategory) list=list.filter(item=>item.subcategory===state.subcategory);
     if(state.query) list=list.map(item=>({item,score:searchScore([item.title,item.description,item.url,item.subcategory||"",subcategoryName(item.subcategory),...(item.tags||[])].join(" "),state.query,item.title)}))
       .filter(x=>x.score>0).sort((a,b)=>b.score-a.score).map(x=>x.item);
     list.sort((a,b) => {
@@ -141,22 +141,31 @@
     const favoriteCategory = '<button class="category '+(state.category==="favorites"?'active':'')+'" data-category="favorites"><span class="category-icon">★</span><span>نشان‌شده‌های من</span><b>'+favorites.size.toLocaleString("fa-IR")+'</b></button>';
     root.innerHTML=favoriteCategory+state.categories.map(c=>{
       const count=state.resources.filter(r=>r.category===c.id).length;
-      if(c.id!=="development" || !c.subcategoryGroups) return '<button class="category '+(state.category===c.id?'active':'')+'" data-category="'+c.id+'"><span class="category-icon">'+(c.icon||"◈")+'</span><span>'+c.name+'</span><b>'+count.toLocaleString("fa-IR")+'</b></button>';
+      if(!c.subcategoryGroups || !c.subcategoryGroups.length) return '<button class="category '+(state.category===c.id?'active':'')+'" data-category="'+c.id+'"><span class="category-icon">'+(c.icon||"◈")+'</span><span>'+safe(c.name)+'</span><b>'+count.toLocaleString("fa-IR")+'</b></button>';
       const groups=c.subcategoryGroups.map(group=>'<section class="mega-group"><h4>'+safe(group.title)+'</h4>'+group.items.map(item=>{
         const n=state.resources.filter(r=>r.category===c.id&&r.subcategory===item.id).length;
         return '<button type="button" class="mega-link '+(state.subcategory===item.id?'active':'')+'" data-subcategory="'+item.id+'"><span>'+safe(item.name)+'</span><b>'+n.toLocaleString("fa-IR")+'</b></button>';
       }).join("")+'</section>').join("");
-      return '<div class="category-with-menu"><button class="category '+(state.category===c.id?'active':'')+'" data-category="'+c.id+'" aria-haspopup="true" aria-expanded="false"><span class="category-icon">'+(c.icon||"◈")+'</span><span>'+c.name+'</span><b>'+count.toLocaleString("fa-IR")+'</b><span class="category-menu-cue" aria-hidden="true">☷</span></button><div class="mega-menu" role="region" aria-label="شاخه‌های برنامه‌نویسی"><div class="mega-menu-head"><div><strong>جعبه‌ابزار برنامه‌نویسی</strong><small>ابزارهای منتخب برای هر مرحله توسعه</small></div><button type="button" class="mega-all" data-subcategory="">همه ابزارها</button></div><div class="mega-menu-grid">'+groups+'</div></div></div>';
+      return '<div class="category-with-menu"><button class="category '+(state.category===c.id?'active':'')+'" data-category="'+c.id+'" aria-haspopup="true" aria-expanded="false"><span class="category-icon">'+(c.icon||"◈")+'</span><span>'+safe(c.name)+'</span><b>'+count.toLocaleString("fa-IR")+'</b><span class="category-menu-cue" aria-hidden="true">☷</span></button><div class="mega-menu" role="region" aria-label="زیرشاخه‌های '+safe(c.name)+'"><div class="mega-menu-head"><div><strong>'+safe(c.name)+'</strong><small>همه منابع این دسته، مرتب‌شده بر اساس موضوع</small></div><button type="button" class="mega-all" data-subcategory="">همه ابزارها و منابع</button></div><div class="mega-menu-grid">'+groups+'</div></div></div>';
     }).join("");
     $("#all-count").textContent=state.resources.length.toLocaleString("fa-IR");
     document.querySelectorAll(".category").forEach(button=>button.addEventListener("click",()=>{
       state.category=button.dataset.category;state.subcategory=null;state.page=1;render();
-      if(button.dataset.category==="development" && window.matchMedia("(max-width: 680px)").matches){const menu=document.querySelector(".category-with-menu");if(menu)menu.classList.add("open");}
+      const wrapper=[...document.querySelectorAll(".category-with-menu")].find(x=>x.querySelector(".category").dataset.category===button.dataset.category);
+      if(wrapper){wrapper.classList.add("open");wrapper.querySelector(".category").setAttribute("aria-expanded","true");}
     }));
-    const mega=document.querySelector(".category-with-menu");
-    if(mega){mega.addEventListener("mouseenter",()=>mega.classList.add("open"));mega.addEventListener("mouseleave",()=>mega.classList.remove("open"));mega.addEventListener("focusin",()=>mega.classList.add("open"));mega.addEventListener("focusout",e=>{if(!mega.contains(e.relatedTarget))mega.classList.remove("open");});}
+    const mega=document.querySelectorAll(".category-with-menu");
+    mega.forEach(wrapper=>{
+      const trigger=wrapper.querySelector(".category");
+      wrapper.addEventListener("mouseenter",()=>{wrapper.classList.add("open");trigger.setAttribute("aria-expanded","true");});
+      wrapper.addEventListener("mouseleave",()=>{wrapper.classList.remove("open");trigger.setAttribute("aria-expanded","false");});
+      wrapper.addEventListener("focusin",()=>{wrapper.classList.add("open");trigger.setAttribute("aria-expanded","true");});
+      wrapper.addEventListener("focusout",e=>{if(!wrapper.contains(e.relatedTarget)){wrapper.classList.remove("open");trigger.setAttribute("aria-expanded","false");}});
+    });
     root.querySelectorAll("[data-subcategory]").forEach(button=>button.addEventListener("click",()=>{
-      state.category="development";state.subcategory=button.dataset.subcategory||null;state.page=1;render();
+      const wrapper=button.closest(".category-with-menu");
+      state.category=wrapper.querySelector(".category").dataset.category;
+      state.subcategory=button.dataset.subcategory||null;state.page=1;render();
     }));
   };
   const safe = value => String(value??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
