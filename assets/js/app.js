@@ -3,7 +3,7 @@
   const FAVORITES_KEY = "web-bookmarks:favorites";
   const FAVORITES_VERSION = 1;
   const BOOKMARKS_KEY = "web-bookmarks:pinned";
-  const ASSET_VERSION = "20261111-13";
+  const ASSET_VERSION = "20261111-14";
   const $ = (selector) => document.querySelector(selector);
   // Keep personal bookmarks separate from the site's frequently updated resource data.
   const loadFavorites = () => {
@@ -146,7 +146,8 @@
         const tools=state.resources.filter(r=>r.category===c.id&&r.subcategory===item.id);
         const toolLinks=tools.map(tool=>{
           const favicon="https://www.google.com/s2/favicons?domain_url="+encodeURIComponent(tool.url)+"&sz=64";
-          return '<a class="mega-tool" href="'+safe(tool.url)+'" target="_blank" rel="noopener noreferrer"><img src="'+favicon+'" alt="" loading="lazy" referrerpolicy="no-referrer"><span>'+safe(tool.title)+'</span></a>';
+          const pinned=bookmarks.includes(tool.url), starred=favorites.has(tool.url);
+          return '<div class="mega-tool-row"><a class="mega-tool" href="'+safe(tool.url)+'" target="_blank" rel="noopener noreferrer"><img src="'+favicon+'" alt="" loading="lazy" referrerpolicy="no-referrer"><span>'+safe(tool.title)+'</span></a><div class="mega-tool-actions"><button class="mega-action-button mega-bookmark-action '+(pinned?'is-bookmarked':'')+'" type="button" data-mega-bookmark="'+safe(tool.url)+'" aria-label="'+(pinned?'برداشتن بوکمارک':'بوکمارک کردن ابزار')+'" aria-pressed="'+pinned+'" title="'+(pinned?'برداشتن بوکمارک':'بوکمارک کردن')+'"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.75 3.75h10.5a1 1 0 0 1 1 1v15.5L12 16.1l-6.25 4.15V4.75a1 1 0 0 1 1-1Z"/></svg></button><button class="mega-action-button mega-favorite-action '+(starred?'is-favorite':'')+'" type="button" data-mega-favorite="'+safe(tool.url)+'" aria-label="'+(starred?'حذف از نشان‌شده‌ها':'افزودن به نشان‌شده‌ها')+'" aria-pressed="'+starred+'" title="'+(starred?'حذف ستاره':'ستاره‌دار کردن')+'">'+(starred?'★':'☆')+'</button></div></div>';
         }).join("");
         return '<div class="mega-link-wrap"><button type="button" class="mega-link '+(state.subcategory===item.id?'active':'')+'" data-subcategory="'+item.id+'" aria-haspopup="true"><span>'+safe(item.name)+'</span><b>'+tools.length.toLocaleString("fa-IR")+'</b><span class="mega-link-arrow" aria-hidden="true">‹</span></button><div class="mega-submenu" role="region" aria-label="ابزارهای '+safe(item.name)+'"><div class="mega-submenu-head">'+safe(item.name)+' <small>'+tools.length.toLocaleString("fa-IR")+' ابزار</small></div><div class="mega-tool-list">'+(toolLinks||'<span class="mega-tools-empty">هنوز ابزاری ثبت نشده</span>')+'</div></div></div>';
       }).join("")+'</section>').join("");
@@ -190,6 +191,23 @@
       const wrapper=button.closest(".category-with-menu");
       state.category=wrapper.querySelector(".category").dataset.category;
       state.subcategory=button.dataset.subcategory||null;state.page=1;render();
+    }));
+    const syncMegaAction=(url)=>{
+      const pinned=bookmarks.includes(url), starred=favorites.has(url);
+      root.querySelectorAll("[data-mega-bookmark]").forEach(b=>{if(b.dataset.megaBookmark===url){b.classList.toggle("is-bookmarked",pinned);b.setAttribute("aria-pressed",String(pinned));b.setAttribute("aria-label",pinned?"برداشتن بوکمارک":"بوکمارک کردن ابزار");b.title=pinned?"برداشتن بوکمارک":"بوکمارک کردن";}});
+      root.querySelectorAll("[data-mega-favorite]").forEach(b=>{if(b.dataset.megaFavorite===url){b.classList.toggle("is-favorite",starred);b.setAttribute("aria-pressed",String(starred));b.setAttribute("aria-label",starred?"حذف از نشان‌شده‌ها":"افزودن به نشان‌شده‌ها");b.title=starred?"حذف ستاره":"ستاره‌دار کردن";b.textContent=starred?"★":"☆";}});
+      document.querySelectorAll(".resource-card[data-resource-url]").forEach(card=>{if(card.dataset.resourceUrl===url){card.classList.toggle("is-bookmarked",pinned);const b=card.querySelector("[data-bookmark]");if(b){b.classList.toggle("is-bookmarked",pinned);b.setAttribute("aria-pressed",String(pinned));b.setAttribute("aria-label",pinned?"برداشتن بوکمارک":"بوکمارک و انتقال به ابتدای دسته");}const f=card.querySelector("[data-favorite]");if(f){f.classList.toggle("is-favorite",starred);f.setAttribute("aria-pressed",String(starred));f.setAttribute("aria-label",starred?"حذف از نشان‌شده‌ها":"افزودن به نشان‌شده‌ها");f.textContent=starred?"★":"☆";}}});
+      const favCount=document.querySelector('[data-category="favorites"] b');if(favCount)favCount.textContent=favorites.size.toLocaleString("fa-IR");
+    };
+    root.querySelectorAll("[data-mega-bookmark]").forEach(button=>button.addEventListener("click",e=>{
+      e.preventDefault();e.stopPropagation();const url=button.dataset.megaBookmark,index=bookmarks.indexOf(url);
+      if(index!==-1)bookmarks.splice(index,1);else bookmarks.unshift(url);
+      saveBookmarks();syncMegaAction(url);
+    }));
+    root.querySelectorAll("[data-mega-favorite]").forEach(button=>button.addEventListener("click",e=>{
+      e.preventDefault();e.stopPropagation();const url=button.dataset.megaFavorite;
+      if(favorites.has(url))favorites.delete(url);else favorites.add(url);
+      saveFavorites();syncMegaAction(url);
     }));
   };
   const safe = value => String(value??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
