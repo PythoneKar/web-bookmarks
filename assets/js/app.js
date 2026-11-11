@@ -329,26 +329,6 @@
   });
   document.addEventListener("keydown",e=>{if(e.key==="Escape")closeFolderMenu();});
 
-  document.addEventListener("click",e=>{
-    const add=e.target.closest("#add-folder-button");
-    if(add){if(folders.length>=10)return;const name=window.prompt("نام پوشه جدید را وارد کن:");if(!name||!name.trim())return;
-      if(folders.some(f=>f.name.trim().toLocaleLowerCase()===name.trim().toLocaleLowerCase())){window.alert("پوشه‌ای با این نام وجود دارد.");return;}
-      folders.push({id:"folder-"+Date.now().toString(36)+"-"+Math.random().toString(36).slice(2,7),name:name.trim().slice(0,40)});saveFolders();renderFolderBar();return;}
-    const filter=e.target.closest("[data-folder-filter]");
-    if(filter){state.folderId=filter.dataset.folderFilter||null;state.category="all";state.subcategory=null;state.page=1;render();return;}
-    const assign=e.target.closest("[data-assign-folder]");
-    if(assign){const menu=$("#folder-context-menu"),url=menu?.dataset.url;if(!url)return;const id=assign.dataset.assignFolder;
-      if(folderItems[url]===id)delete folderItems[url];else folderItems[url]=id;saveFolderItems();closeFolderMenu();renderFolderBar();if(state.folderId)render();return;}
-    if(e.target.closest("[data-remove-folder-item]")){const url=$("#folder-context-menu")?.dataset.url;if(url){delete folderItems[url];saveFolderItems();closeFolderMenu();renderFolderBar();if(state.folderId)render();}return;}
-    if(e.target.closest("[data-close-folder-menu]")){closeFolderMenu();return;}
-    if(!e.target.closest("#folder-context-menu"))closeFolderMenu();
-  });
-  document.addEventListener("contextmenu",e=>{
-    const row=e.target.closest(".resource-card[data-resource-url],.mega-tool-row");if(!row)return;
-    const url=row.dataset.resourceUrl||row.querySelector(".mega-tool")?.getAttribute("href");if(!url)return;
-    e.preventDefault();showFolderMenu(url,e.clientX,e.clientY);
-  });
-  document.addEventListener("keydown",e=>{if(e.key==="Escape")closeFolderMenu();});
   const suggestionBox=$("#search-suggestions"), searchInput=$("#search-input");
   const closeSuggestions=()=>{suggestionBox.hidden=true;searchInput.setAttribute("aria-expanded","false");state.activeSuggestion=-1;};
   const updateSuggestions=()=>{
