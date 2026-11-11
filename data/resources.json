@@ -5659,6 +5659,2656 @@
         "on-page seo",
         "seo checker"
       ]
+    },
+    {
+      "title": "WordPress VIP",
+      "category": "development",
+      "subcategory": "wordpress",
+      "description": "پلتفرم سازمانی وردپرس برای انتشار محتوا و مدیریت سایت‌های پرترافیک.",
+      "url": "https://wpvip.com/",
+      "tags": [
+        "wordpress",
+        "cms"
+      ]
+    },
+    {
+      "title": "WP Engine",
+      "category": "development",
+      "subcategory": "wordpress",
+      "description": "میزبانی مدیریت‌شده و ابزارهای توسعه و نگهداری سایت‌های وردپرسی.",
+      "url": "https://wpengine.com/",
+      "tags": [
+        "wordpress",
+        "hosting"
+      ]
+    },
+    {
+      "title": "Kinsta",
+      "category": "development",
+      "subcategory": "wordpress",
+      "description": "میزبانی مدیریت‌شده وردپرس و برنامه‌های وب با ابزارهای پایش و پشتیبان‌گیری.",
+      "url": "https://kinsta.com/",
+      "tags": [
+        "wordpress",
+        "hosting"
+      ]
+    },
+    {
+      "title": "WordPress.tv",
+      "category": "development",
+      "subcategory": "wordpress",
+      "description": "ویدئوها و آموزش‌های جامعه وردپرس و رویدادهای WordCamp.",
+      "url": "https://wordpress.tv/",
+      "tags": [
+        "wordpress",
+        "learning"
+      ]
+    },
+    {
+      "title": "WordPress Theme Directory",
+      "category": "development",
+      "subcategory": "wordpress",
+      "description": "مخزن رسمی قالب‌های رایگان وردپرس.",
+      "url": "https://wordpress.org/themes/",
+      "tags": [
+        "wordpress",
+        "themes"
+      ]
+    },
+    {
+      "title": "WordPress Plugin Directory",
+      "category": "development",
+      "subcategory": "wordpress",
+      "description": "مخزن رسمی افزونه‌های وردپرس.",
+      "url": "https://wordpress.org/plugins/",
+      "tags": [
+        "wordpress",
+        "plugins"
+      ]
+    },
+    {
+      "title": "HTML.com",
+      "category": "development",
+      "subcategory": "frontend",
+      "description": "راهنماها و آموزش‌های HTML برای توسعه‌دهندگان وب.",
+      "url": "https://html.com/",
+      "tags": [
+        "html",
+        "learning"
+      ]
+    },
+    {
+      "title": "CSS Grid Garden",
+      "category": "development",
+      "subcategory": "frontend",
+      "description": "بازی تعاملی برای تمرین CSS Grid.",
+      "url": "https://cssgridgarden.com/",
+      "tags": [
+        "css",
+        "grid",
+        "learning"
+      ]
+    },
+    {
+      "title": "Flexbox Froggy",
+      "category": "development",
+      "subcategory": "frontend",
+      "description": "بازی آموزشی برای یادگیری CSS Flexbox.",
+      "url": "https://flexboxfroggy.com/",
+      "tags": [
+        "css",
+        "flexbox"
+      ]
+    },
+    {
+      "title": "Frontend Mentor",
+      "category": "development",
+      "subcategory": "frontend",
+      "description": "تمرین پروژه‌محور رابط‌های وب با طرح‌های آماده.",
+      "url": "https://www.frontendmentor.io/",
+      "tags": [
+        "frontend",
+        "practice"
+      ]
+    },
+    {
+      "title": "Responsive Design Checker",
+      "category": "development",
+      "subcategory": "frontend",
+      "description": "ابزار بررسی چیدمان واکنش‌گرا در اندازه‌های مختلف صفحه.",
+      "url": "https://responsively.app/",
+      "tags": [
+        "responsive",
+        "design"
+      ]
+    },
+    {
+      "title": "ESLint",
+      "category": "development",
+      "subcategory": "javascript",
+      "description": "ابزار تحلیل ایستای کد JavaScript و TypeScript برای یافتن خطاها و الگوهای نامناسب.",
+      "url": "https://eslint.org/",
+      "tags": [
+        "javascript",
+        "lint"
+      ]
+    },
+    {
+      "title": "Prettier",
+      "category": "development",
+      "subcategory": "javascript",
+      "description": "قالب‌بند خودکار کد برای زبان‌ها و فایل‌های متداول توسعه وب.",
+      "url": "https://prettier.io/",
+      "tags": [
+        "code",
+        "formatter"
+      ]
+    },
+    {
+      "title": "JSDoc",
+      "category": "development",
+      "subcategory": "javascript",
+      "description": "ابزار مستندسازی API و کد JavaScript از روی توضیحات داخل کد.",
+      "url": "https://jsdoc.app/",
+      "tags": [
+        "javascript",
+        "documentation"
+      ]
+    },
+    {
+      "title": "TanStack",
+      "category": "development",
+      "subcategory": "frontend-frameworks",
+      "description": "مجموعه کتابخانه‌های مدرن برای routing، query، table و مدیریت داده در برنامه‌های وب.",
+      "url": "https://tanstack.com/",
+      "tags": [
+        "react",
+        "framework"
+      ]
+    },
+    {
+      "title": "Gatsby",
+      "category": "development",
+      "subcategory": "frontend-frameworks",
+      "description": "فریم‌ورک React برای ساخت وب‌سایت‌های سریع و مبتنی بر محتوا.",
+      "url": "https://www.gatsbyjs.com/",
+      "tags": [
+        "react",
+        "static",
+        "site"
+      ]
+    },
+    {
+      "title": "Hono",
+      "category": "development",
+      "subcategory": "frontend-frameworks",
+      "description": "فریم‌ورک سبک وب برای JavaScript و TypeScript در محیط‌های مختلف اجرا.",
+      "url": "https://hono.dev/",
+      "tags": [
+        "web",
+        "framework"
+      ]
+    },
+    {
+      "title": "PHP The Right Way",
+      "category": "development",
+      "subcategory": "php",
+      "description": "راهنمای جامعه‌محور برای نوشتن PHP مدرن و استاندارد.",
+      "url": "https://phptherightway.com/",
+      "tags": [
+        "php",
+        "learning"
+      ]
+    },
+    {
+      "title": "CodeIgniter",
+      "category": "development",
+      "subcategory": "php",
+      "description": "فریم‌ورک سبک PHP برای توسعه برنامه‌های وب.",
+      "url": "https://codeigniter.com/",
+      "tags": [
+        "php",
+        "framework"
+      ]
+    },
+    {
+      "title": "Livewire",
+      "category": "development",
+      "subcategory": "php",
+      "description": "ساخت رابط‌های پویا در Laravel با حداقل JavaScript.",
+      "url": "https://livewire.laravel.com/",
+      "tags": [
+        "laravel",
+        "frontend"
+      ]
+    },
+    {
+      "title": "Python Tutor",
+      "category": "development",
+      "subcategory": "python",
+      "description": "نمایش گام‌به‌گام اجرای کد Python و چند زبان دیگر برای یادگیری.",
+      "url": "https://pythontutor.com/",
+      "tags": [
+        "python",
+        "learning",
+        "visualizer"
+      ]
+    },
+    {
+      "title": "Real Python",
+      "category": "development",
+      "subcategory": "python",
+      "description": "آموزش‌ها و مقالات کاربردی Python برای سطوح مختلف.",
+      "url": "https://realpython.com/",
+      "tags": [
+        "python",
+        "tutorials"
+      ]
+    },
+    {
+      "title": "Jupyter",
+      "category": "development",
+      "subcategory": "python",
+      "description": "محیط تعاملی دفترچه‌ای برای کدنویسی، تحلیل داده و آموزش.",
+      "url": "https://jupyter.org/",
+      "tags": [
+        "python",
+        "notebook"
+      ]
+    },
+    {
+      "title": "Streamlit",
+      "category": "development",
+      "subcategory": "python",
+      "description": "ساخت سریع برنامه‌های داده‌محور و داشبورد با Python.",
+      "url": "https://streamlit.io/",
+      "tags": [
+        "python",
+        "apps"
+      ]
+    },
+    {
+      "title": "Avalonia UI",
+      "category": "development",
+      "subcategory": "dotnet",
+      "description": "فریم‌ورک متن‌باز رابط کاربری چندسکویی برای .NET.",
+      "url": "https://avaloniaui.net/",
+      "tags": [
+        "dotnet",
+        "desktop"
+      ]
+    },
+    {
+      "title": "Uno Platform",
+      "category": "development",
+      "subcategory": "dotnet",
+      "description": "چارچوب ساخت برنامه‌های چندسکویی با C# و XAML.",
+      "url": "https://platform.uno/",
+      "tags": [
+        "dotnet",
+        "mobile",
+        "desktop"
+      ]
+    },
+    {
+      "title": "Maven",
+      "category": "development",
+      "subcategory": "java",
+      "description": "ابزار مدیریت وابستگی و ساخت پروژه‌های Java.",
+      "url": "https://maven.apache.org/",
+      "tags": [
+        "java",
+        "build"
+      ]
+    },
+    {
+      "title": "Gradle",
+      "category": "development",
+      "subcategory": "java",
+      "description": "سیستم ساخت و مدیریت وابستگی برای Java و پروژه‌های چندزبانه.",
+      "url": "https://gradle.org/",
+      "tags": [
+        "java",
+        "build"
+      ]
+    },
+    {
+      "title": "Baeldung",
+      "category": "development",
+      "subcategory": "java",
+      "description": "آموزش‌ها و راهنماهای Java، Spring و توسعه بک‌اند.",
+      "url": "https://www.baeldung.com/",
+      "tags": [
+        "java",
+        "tutorials"
+      ]
+    },
+    {
+      "title": "The Go Playground",
+      "category": "development",
+      "subcategory": "systems",
+      "description": "محیط آنلاین اجرای نمونه‌کدهای Go.",
+      "url": "https://go.dev/play/",
+      "tags": [
+        "golang",
+        "playground"
+      ]
+    },
+    {
+      "title": "Rust Playground",
+      "category": "development",
+      "subcategory": "systems",
+      "description": "محیط آنلاین آزمایش و اجرای کد Rust.",
+      "url": "https://play.rust-lang.org/",
+      "tags": [
+        "rust",
+        "playground"
+      ]
+    },
+    {
+      "title": "Exercism Go Track",
+      "category": "development",
+      "subcategory": "systems",
+      "description": "تمرین‌های مرحله‌ای برای یادگیری Go با بازخورد و تمرین عملی.",
+      "url": "https://exercism.org/tracks/go",
+      "tags": [
+        "golang",
+        "learning"
+      ]
+    },
+    {
+      "title": "Expo",
+      "category": "development",
+      "subcategory": "mobile",
+      "description": "ابزارها و پلتفرم توسعه و انتشار برنامه‌های React Native.",
+      "url": "https://expo.dev/",
+      "tags": [
+        "react",
+        "native",
+        "mobile"
+      ]
+    },
+    {
+      "title": "Ionic",
+      "category": "development",
+      "subcategory": "mobile",
+      "description": "فریم‌ورک ساخت اپلیکیشن‌های موبایل و وب با فناوری‌های وب.",
+      "url": "https://ionicframework.com/",
+      "tags": [
+        "mobile",
+        "app"
+      ]
+    },
+    {
+      "title": "Capacitor",
+      "category": "development",
+      "subcategory": "mobile",
+      "description": "اجرای برنامه‌های وب به‌صورت اپلیکیشن بومی موبایل و دسکتاپ.",
+      "url": "https://capacitorjs.com/",
+      "tags": [
+        "mobile",
+        "app"
+      ]
+    },
+    {
+      "title": "Kotlin Multiplatform",
+      "category": "development",
+      "subcategory": "mobile",
+      "description": "فناوری اشتراک‌گذاری منطق برنامه میان Android، iOS و سایر پلتفرم‌ها.",
+      "url": "https://kotlinlang.org/multiplatform/",
+      "tags": [
+        "kotlin",
+        "mobile"
+      ]
+    },
+    {
+      "title": "GameDev.net",
+      "category": "development",
+      "subcategory": "gamedev",
+      "description": "مقالات، انجمن و منابع جامعه توسعه‌دهندگان بازی.",
+      "url": "https://www.gamedev.net/",
+      "tags": [
+        "game",
+        "development"
+      ]
+    },
+    {
+      "title": "GDevelop",
+      "category": "development",
+      "subcategory": "gamedev",
+      "description": "موتور متن‌باز بازی‌سازی دوبعدی و بدون نیاز به کدنویسی سنگین.",
+      "url": "https://gdevelop.io/",
+      "tags": [
+        "game",
+        "engine"
+      ]
+    },
+    {
+      "title": "Construct",
+      "category": "development",
+      "subcategory": "gamedev",
+      "description": "محیط ساخت بازی‌های دوبعدی با رویکرد بصری و رویدادمحور.",
+      "url": "https://www.construct.net/",
+      "tags": [
+        "game",
+        "development"
+      ]
+    },
+    {
+      "title": "Kenney Assets",
+      "category": "development",
+      "subcategory": "gamedev",
+      "description": "مجموعه گسترده دارایی‌های رایگان بازی شامل مدل، صدا و گرافیک.",
+      "url": "https://kenney.nl/assets",
+      "tags": [
+        "game",
+        "assets"
+      ]
+    },
+    {
+      "title": "Sublime Text",
+      "category": "development",
+      "subcategory": "editors",
+      "description": "ویرایشگر کد سبک و سریع با قابلیت توسعه از طریق افزونه‌ها.",
+      "url": "https://www.sublimetext.com/",
+      "tags": [
+        "code",
+        "editor"
+      ]
+    },
+    {
+      "title": "Neovim",
+      "category": "development",
+      "subcategory": "editors",
+      "description": "ویرایشگر متنی قابل توسعه برای برنامه‌نویسی و کار در ترمینال.",
+      "url": "https://neovim.io/",
+      "tags": [
+        "code",
+        "editor"
+      ]
+    },
+    {
+      "title": "VSCodium",
+      "category": "development",
+      "subcategory": "editors",
+      "description": "نسخه متن‌باز و جامعه‌محور از Visual Studio Code.",
+      "url": "https://vscodium.com/",
+      "tags": [
+        "code",
+        "editor"
+      ]
+    },
+    {
+      "title": "Eclipse IDE",
+      "category": "development",
+      "subcategory": "editors",
+      "description": "محیط توسعه یکپارچه متن‌باز با پشتیبانی از زبان‌ها و افزونه‌های متعدد.",
+      "url": "https://www.eclipse.org/ide/",
+      "tags": [
+        "ide"
+      ]
+    },
+    {
+      "title": "GitHub Gist",
+      "category": "development",
+      "subcategory": "git",
+      "description": "اشتراک‌گذاری قطعه‌کدها و یادداشت‌های متنی با نسخه‌بندی Git.",
+      "url": "https://gist.github.com/",
+      "tags": [
+        "git",
+        "snippets"
+      ]
+    },
+    {
+      "title": "Gitea",
+      "category": "development",
+      "subcategory": "git",
+      "description": "سرویس سبک و خودمیزبان Git برای مدیریت مخزن و همکاری تیمی.",
+      "url": "https://about.gitea.com/",
+      "tags": [
+        "git",
+        "self",
+        "hosted"
+      ]
+    },
+    {
+      "title": "Forgejo",
+      "category": "development",
+      "subcategory": "git",
+      "description": "پلتفرم توسعه نرم‌افزار آزاد و خودمیزبان مبتنی بر Git.",
+      "url": "https://forgejo.org/",
+      "tags": [
+        "git",
+        "forge"
+      ]
+    },
+    {
+      "title": "GitLab CI/CD",
+      "category": "development",
+      "subcategory": "git",
+      "description": "ابزار یکپارچه‌سازی و تحویل پیوسته در پلتفرم GitLab.",
+      "url": "https://docs.gitlab.com/ee/ci/",
+      "tags": [
+        "git",
+        "ci",
+        "cd"
+      ]
+    },
+    {
+      "title": "Corepack",
+      "category": "development",
+      "subcategory": "packages",
+      "description": "ابزار مدیریت نسخه package managerهای Node.js.",
+      "url": "https://nodejs.org/api/corepack.html",
+      "tags": [
+        "node",
+        "package",
+        "manager"
+      ]
+    },
+    {
+      "title": "Changesets",
+      "category": "development",
+      "subcategory": "packages",
+      "description": "مدیریت نسخه و changelog برای مخازن و پکیج‌های JavaScript.",
+      "url": "https://github.com/changesets/changesets",
+      "tags": [
+        "release",
+        "management"
+      ]
+    },
+    {
+      "title": "Scalar",
+      "category": "development",
+      "subcategory": "api",
+      "description": "ابزار طراحی، مستندسازی و آزمایش API با رابط مدرن.",
+      "url": "https://scalar.com/",
+      "tags": [
+        "api",
+        "documentation"
+      ]
+    },
+    {
+      "title": "Redocly",
+      "category": "development",
+      "subcategory": "api",
+      "description": "ابزار مستندسازی و مدیریت APIهای مبتنی بر OpenAPI.",
+      "url": "https://redocly.com/",
+      "tags": [
+        "openapi",
+        "api"
+      ]
+    },
+    {
+      "title": "Stoplight",
+      "category": "development",
+      "subcategory": "api",
+      "description": "پلتفرم طراحی، مستندسازی و مدیریت چرخه عمر API.",
+      "url": "https://stoplight.io/",
+      "tags": [
+        "api",
+        "design"
+      ]
+    },
+    {
+      "title": "Apidog",
+      "category": "development",
+      "subcategory": "api",
+      "description": "محیط طراحی، تست و مستندسازی API و همکاری تیمی.",
+      "url": "https://apidog.com/",
+      "tags": [
+        "api",
+        "testing"
+      ]
+    },
+    {
+      "title": "k6",
+      "category": "development",
+      "subcategory": "testing",
+      "description": "ابزار متن‌باز تست بار و عملکرد سرویس‌ها و APIها.",
+      "url": "https://k6.io/",
+      "tags": [
+        "load",
+        "testing"
+      ]
+    },
+    {
+      "title": "Apache JMeter",
+      "category": "development",
+      "subcategory": "testing",
+      "description": "ابزار تست عملکرد و بار برای سرویس‌ها و برنامه‌های وب.",
+      "url": "https://jmeter.apache.org/",
+      "tags": [
+        "performance",
+        "testing"
+      ]
+    },
+    {
+      "title": "Testing Library",
+      "category": "development",
+      "subcategory": "testing",
+      "description": "مجموعه ابزارهای تست رابط کاربری با تمرکز بر رفتار کاربر.",
+      "url": "https://testing-library.com/",
+      "tags": [
+        "frontend",
+        "testing"
+      ]
+    },
+    {
+      "title": "pytest",
+      "category": "development",
+      "subcategory": "testing",
+      "description": "فریم‌ورک تست محبوب Python با اکوسیستم افزونه گسترده.",
+      "url": "https://pytest.org/",
+      "tags": [
+        "python",
+        "testing"
+      ]
+    },
+    {
+      "title": " xUnit.net",
+      "category": "development",
+      "subcategory": "testing",
+      "description": "فریم‌ورک تست واحد برای برنامه‌های .NET.",
+      "url": "https://xunit.net/",
+      "tags": [
+        "dotnet",
+        "testing"
+      ]
+    },
+    {
+      "title": "Polypane",
+      "category": "development",
+      "subcategory": "browser-tools",
+      "description": "مرورگر توسعه وب برای طراحی واکنش‌گرا، دسترس‌پذیری و دیباگ.",
+      "url": "https://polypane.app/",
+      "tags": [
+        "web",
+        "browser",
+        "devtools"
+      ]
+    },
+    {
+      "title": "PlanetScale",
+      "category": "development",
+      "subcategory": "databases",
+      "description": "پلتفرم پایگاه داده مدیریت‌شده و ابزارهای توسعه دیتابیس.",
+      "url": "https://planetscale.com/",
+      "tags": [
+        "database",
+        "hosting"
+      ]
+    },
+    {
+      "title": "CockroachDB",
+      "category": "development",
+      "subcategory": "databases",
+      "description": "پایگاه داده SQL توزیع‌شده برای برنامه‌های مقیاس‌پذیر.",
+      "url": "https://www.cockroachlabs.com/",
+      "tags": [
+        "sql",
+        "database"
+      ]
+    },
+    {
+      "title": "ClickHouse",
+      "category": "development",
+      "subcategory": "databases",
+      "description": "پایگاه داده ستونی سریع برای تحلیل داده‌های حجیم.",
+      "url": "https://clickhouse.com/",
+      "tags": [
+        "analytics",
+        "database"
+      ]
+    },
+    {
+      "title": "DuckDB",
+      "category": "development",
+      "subcategory": "databases",
+      "description": "موتور تحلیلی SQL سبک و تعبیه‌شدنی برای تحلیل داده.",
+      "url": "https://duckdb.org/",
+      "tags": [
+        "sql",
+        "analytics"
+      ]
+    },
+    {
+      "title": "MongoDB Atlas",
+      "category": "development",
+      "subcategory": "databases",
+      "description": "سرویس ابری مدیریت‌شده برای پایگاه داده MongoDB.",
+      "url": "https://www.mongodb.com/atlas",
+      "tags": [
+        "database",
+        "cloud"
+      ]
+    },
+    {
+      "title": "Podman",
+      "category": "development",
+      "subcategory": "devops",
+      "description": "ابزار متن‌باز ساخت و اجرای کانتینرها بدون نیاز به daemon مرکزی.",
+      "url": "https://podman.io/",
+      "tags": [
+        "containers"
+      ]
+    },
+    {
+      "title": "Docker Docs",
+      "category": "development",
+      "subcategory": "devops",
+      "description": "مستندات رسمی Docker برای کانتینر، image، compose و استقرار.",
+      "url": "https://docs.docker.com/",
+      "tags": [
+        "docker",
+        "containers"
+      ]
+    },
+    {
+      "title": "Argo CD",
+      "category": "development",
+      "subcategory": "devops",
+      "description": "ابزار GitOps برای استقرار پیوسته برنامه‌ها روی Kubernetes.",
+      "url": "https://argo-cd.readthedocs.io/",
+      "tags": [
+        "gitops",
+        "kubernetes"
+      ]
+    },
+    {
+      "title": "Coolify",
+      "category": "development",
+      "subcategory": "devops",
+      "description": "پلتفرم متن‌باز و خودمیزبان برای استقرار برنامه‌ها و دیتابیس‌ها.",
+      "url": "https://coolify.io/",
+      "tags": [
+        "self",
+        "hosted",
+        "deployment"
+      ]
+    },
+    {
+      "title": "GitHub Pages",
+      "category": "development",
+      "subcategory": "hosting",
+      "description": "میزبانی رایگان وب‌سایت‌های استاتیک از مخازن GitHub.",
+      "url": "https://pages.github.com/",
+      "tags": [
+        "static",
+        "hosting"
+      ]
+    },
+    {
+      "title": "Cloudflare Pages",
+      "category": "development",
+      "subcategory": "hosting",
+      "description": "میزبانی و استقرار سایت‌های استاتیک و برنامه‌های فرانت‌اند.",
+      "url": "https://pages.cloudflare.com/",
+      "tags": [
+        "static",
+        "hosting"
+      ]
+    },
+    {
+      "title": "Vultr",
+      "category": "development",
+      "subcategory": "hosting",
+      "description": "ارائه‌دهنده زیرساخت ابری، سرور مجازی و سرویس‌های میزبانی.",
+      "url": "https://www.vultr.com/",
+      "tags": [
+        "vps",
+        "hosting"
+      ]
+    },
+    {
+      "title": "Hetzner",
+      "category": "development",
+      "subcategory": "hosting",
+      "description": "خدمات سرور اختصاصی، ابری و دیتاسنتر.",
+      "url": "https://www.hetzner.com/",
+      "tags": [
+        "hosting",
+        "vps"
+      ]
+    },
+    {
+      "title": "Mozilla Observatory",
+      "category": "development",
+      "subcategory": "security",
+      "description": "ابزار بررسی پیکربندی امنیتی وب‌سایت و هدرهای HTTP.",
+      "url": "https://observatory.mozilla.org/",
+      "tags": [
+        "website",
+        "security"
+      ]
+    },
+    {
+      "title": "OWASP ZAP",
+      "category": "development",
+      "subcategory": "security",
+      "description": "اسکنر متن‌باز امنیت برنامه‌های وب برای آزمون‌های مجاز.",
+      "url": "https://www.zaproxy.org/",
+      "tags": [
+        "web",
+        "security",
+        "testing"
+      ]
+    },
+    {
+      "title": "Trivy",
+      "category": "development",
+      "subcategory": "security",
+      "description": "اسکنر آسیب‌پذیری برای imageهای کانتینر، مخازن و زیرساخت.",
+      "url": "https://trivy.dev/",
+      "tags": [
+        "security",
+        "scanner"
+      ]
+    },
+    {
+      "title": "Dependabot",
+      "category": "development",
+      "subcategory": "security",
+      "description": "بررسی و به‌روزرسانی خودکار وابستگی‌های آسیب‌پذیر در GitHub.",
+      "url": "https://github.com/dependabot",
+      "tags": [
+        "dependency",
+        "security"
+      ]
+    },
+    {
+      "title": "Uptime Kuma",
+      "category": "development",
+      "subcategory": "monitoring",
+      "description": "ابزار متن‌باز و خودمیزبان پایش uptime سرویس‌ها و وب‌سایت‌ها.",
+      "url": "https://uptime.kuma.pet/",
+      "tags": [
+        "uptime",
+        "monitoring"
+      ]
+    },
+    {
+      "title": "Better Stack",
+      "category": "development",
+      "subcategory": "monitoring",
+      "description": "پایش uptime، لاگ‌ها و رخدادهای زیرساخت و سرویس‌ها.",
+      "url": "https://betterstack.com/",
+      "tags": [
+        "monitoring",
+        "logs"
+      ]
+    },
+    {
+      "title": "OpenTelemetry",
+      "category": "development",
+      "subcategory": "monitoring",
+      "description": "استاندارد و ابزارهای متن‌باز جمع‌آوری trace، metric و log.",
+      "url": "https://opentelemetry.io/",
+      "tags": [
+        "observability"
+      ]
+    },
+    {
+      "title": "Continue",
+      "category": "development",
+      "subcategory": "ai-coding",
+      "description": "دستیار کدنویسی متن‌باز و قابل اتصال به مدل‌های مختلف.",
+      "url": "https://www.continue.dev/",
+      "tags": [
+        "ai",
+        "coding"
+      ]
+    },
+    {
+      "title": "Tabby",
+      "category": "development",
+      "subcategory": "ai-coding",
+      "description": "دستیار تکمیل کد خودمیزبان و متن‌باز برای تیم‌های توسعه.",
+      "url": "https://www.tabbyml.com/",
+      "tags": [
+        "local",
+        "ai",
+        "coding"
+      ]
+    },
+    {
+      "title": "Sourcegraph Cody",
+      "category": "development",
+      "subcategory": "ai-coding",
+      "description": "دستیار هوش مصنوعی برای جست‌وجو و فهم کد در مخازن بزرگ.",
+      "url": "https://sourcegraph.com/cody",
+      "tags": [
+        "ai",
+        "coding"
+      ]
+    },
+    {
+      "title": "Scrimba",
+      "category": "development",
+      "subcategory": "learning-dev",
+      "description": "دوره‌های تعاملی برنامه‌نویسی و توسعه وب.",
+      "url": "https://scrimba.com/",
+      "tags": [
+        "coding",
+        "courses"
+      ]
+    },
+    {
+      "title": "MDN Curriculum",
+      "category": "development",
+      "subcategory": "learning-dev",
+      "description": "برنامه آموزشی ساختاریافته برای مهارت‌های اصلی توسعه فرانت‌اند.",
+      "url": "https://developer.mozilla.org/en-US/curriculum/",
+      "tags": [
+        "web",
+        "learning"
+      ]
+    },
+    {
+      "title": "Framer",
+      "category": "design",
+      "subcategory": "design-topic-1",
+      "description": "ابزار طراحی و انتشار وب‌سایت با قابلیت‌های تعاملی و بصری.",
+      "url": "https://www.framer.com/",
+      "tags": [
+        "web",
+        "design"
+      ]
+    },
+    {
+      "title": "Sketch",
+      "category": "design",
+      "subcategory": "design-topic-1",
+      "description": "ابزار طراحی رابط کاربری و نمونه‌سازی برای محصولات دیجیتال.",
+      "url": "https://www.sketch.com/",
+      "tags": [
+        "ui",
+        "design"
+      ]
+    },
+    {
+      "title": "Balsamiq",
+      "category": "design",
+      "subcategory": "design-topic-1",
+      "description": "ابزار وایرفریم‌سازی سریع برای طراحی اولیه رابط کاربری.",
+      "url": "https://balsamiq.com/",
+      "tags": [
+        "wireframe"
+      ]
+    },
+    {
+      "title": "UX Collective",
+      "category": "design",
+      "subcategory": "design-topic-1",
+      "description": "مقالات و تجربه‌های حرفه‌ای در طراحی محصول و تجربه کاربری.",
+      "url": "https://uxdesign.cc/",
+      "tags": [
+        "ux",
+        "articles"
+      ]
+    },
+    {
+      "title": "Adobe Express",
+      "category": "design",
+      "subcategory": "design-topic-2",
+      "description": "ابزار طراحی گرافیک و تولید محتوای تصویری برای وب و شبکه‌های اجتماعی.",
+      "url": "https://www.adobe.com/express/",
+      "tags": [
+        "graphic",
+        "design"
+      ]
+    },
+    {
+      "title": "Krita",
+      "category": "design",
+      "subcategory": "design-topic-2",
+      "description": "نرم‌افزار نقاشی دیجیتال و تصویرسازی متن‌باز.",
+      "url": "https://krita.org/",
+      "tags": [
+        "digital",
+        "painting"
+      ]
+    },
+    {
+      "title": "Inkscape",
+      "category": "design",
+      "subcategory": "design-topic-2",
+      "description": "ویرایشگر متن‌باز گرافیک برداری و فایل‌های SVG.",
+      "url": "https://inkscape.org/",
+      "tags": [
+        "vector",
+        "graphics"
+      ]
+    },
+    {
+      "title": "Vectr",
+      "category": "design",
+      "subcategory": "design-topic-2",
+      "description": "ابزار طراحی گرافیک برداری و ویرایش SVG.",
+      "url": "https://vectr.com/",
+      "tags": [
+        "vector",
+        "design"
+      ]
+    },
+    {
+      "title": "Haikei",
+      "category": "design",
+      "subcategory": "design-topic-2",
+      "description": "ساخت شکل‌ها، پس‌زمینه‌ها و الگوهای گرافیکی برای طراحی وب.",
+      "url": "https://haikei.app/",
+      "tags": [
+        "svg",
+        "backgrounds"
+      ]
+    },
+    {
+      "title": "Google Material Symbols",
+      "category": "design",
+      "subcategory": "design-topic-3",
+      "description": "مجموعه آیکون‌های رسمی Material Design گوگل.",
+      "url": "https://fonts.google.com/icons",
+      "tags": [
+        "icons"
+      ]
+    },
+    {
+      "title": "Phosphor Icons",
+      "category": "design",
+      "subcategory": "design-topic-3",
+      "description": "مجموعه آیکون‌های منعطف برای رابط‌های کاربری و محصولات دیجیتال.",
+      "url": "https://phosphoricons.com/",
+      "tags": [
+        "icons"
+      ]
+    },
+    {
+      "title": "Tabler Icons",
+      "category": "design",
+      "subcategory": "design-topic-3",
+      "description": "مجموعه متن‌باز آیکون‌های SVG برای طراحی و توسعه رابط کاربری.",
+      "url": "https://tabler.io/icons",
+      "tags": [
+        "icons"
+      ]
+    },
+    {
+      "title": "Fontshare",
+      "category": "design",
+      "subcategory": "design-topic-3",
+      "description": "کتابخانه فونت‌های رایگان با طراحی حرفه‌ای از Indian Type Foundry.",
+      "url": "https://www.fontshare.com/",
+      "tags": [
+        "fonts"
+      ]
+    },
+    {
+      "title": "Fontpair",
+      "category": "design",
+      "subcategory": "design-topic-3",
+      "description": "پیشنهاد و نمونه ترکیب فونت‌های مناسب برای طراحی وب.",
+      "url": "https://www.fontpair.co/",
+      "tags": [
+        "font",
+        "pairing"
+      ]
+    },
+    {
+      "title": "SiteInspire",
+      "category": "design",
+      "subcategory": "design-topic-4",
+      "description": "گالری وب‌سایت‌های منتخب برای الهام طراحی و رابط کاربری.",
+      "url": "https://www.siteinspire.com/",
+      "tags": [
+        "web",
+        "design",
+        "inspiration"
+      ]
+    },
+    {
+      "title": "Godly",
+      "category": "design",
+      "subcategory": "design-topic-4",
+      "description": "مجموعه‌ای از وب‌سایت‌های خلاقانه و الهام‌بخش.",
+      "url": "https://godly.website/",
+      "tags": [
+        "web",
+        "inspiration"
+      ]
+    },
+    {
+      "title": "Designspiration",
+      "category": "design",
+      "subcategory": "design-topic-4",
+      "description": "موتور کشف الهام‌های بصری، رنگ، تایپوگرافی و گرافیک.",
+      "url": "https://www.designspiration.com/",
+      "tags": [
+        "design",
+        "inspiration"
+      ]
+    },
+    {
+      "title": "ChatGPT",
+      "category": "ai",
+      "subcategory": "ai-topic-1",
+      "description": "دستیار هوش مصنوعی برای نوشتن، تحلیل، برنامه‌نویسی و کارهای روزمره.",
+      "url": "https://chatgpt.com/",
+      "tags": [
+        "ai",
+        "assistant"
+      ]
+    },
+    {
+      "title": "You.com",
+      "category": "ai",
+      "subcategory": "ai-topic-1",
+      "description": "موتور جست‌وجو و دستیار هوش مصنوعی برای تحقیق و پاسخ‌گویی.",
+      "url": "https://you.com/",
+      "tags": [
+        "ai",
+        "search"
+      ]
+    },
+    {
+      "title": "Hugging Face Spaces",
+      "category": "ai",
+      "subcategory": "ai-topic-2",
+      "description": "محیط کشف و اجرای دموهای مدل‌های هوش مصنوعی و یادگیری ماشین.",
+      "url": "https://huggingface.co/spaces",
+      "tags": [
+        "machine",
+        "learning",
+        "demos"
+      ]
+    },
+    {
+      "title": "Keras",
+      "category": "ai",
+      "subcategory": "ai-topic-2",
+      "description": "کتابخانه سطح‌بالا برای ساخت و آموزش مدل‌های یادگیری عمیق.",
+      "url": "https://keras.io/",
+      "tags": [
+        "machine",
+        "learning"
+      ]
+    },
+    {
+      "title": "PyTorch",
+      "category": "ai",
+      "subcategory": "ai-topic-2",
+      "description": "چارچوب متن‌باز یادگیری عمیق و پژوهش هوش مصنوعی.",
+      "url": "https://pytorch.org/",
+      "tags": [
+        "machine",
+        "learning"
+      ]
+    },
+    {
+      "title": "TensorFlow",
+      "category": "ai",
+      "subcategory": "ai-topic-2",
+      "description": "پلتفرم متن‌باز ساخت و استقرار مدل‌های یادگیری ماشین.",
+      "url": "https://www.tensorflow.org/",
+      "tags": [
+        "machine",
+        "learning"
+      ]
+    },
+    {
+      "title": "ModelScope",
+      "category": "ai",
+      "subcategory": "ai-topic-2",
+      "description": "جامعه و مخزن مدل‌ها و ابزارهای هوش مصنوعی.",
+      "url": "https://modelscope.cn/",
+      "tags": [
+        "ai",
+        "models"
+      ]
+    },
+    {
+      "title": "Jan",
+      "category": "ai",
+      "subcategory": "ai-topic-3",
+      "description": "برنامه دسکتاپ متن‌باز برای اجرای مدل‌های هوش مصنوعی به‌صورت محلی.",
+      "url": "https://jan.ai/",
+      "tags": [
+        "local",
+        "ai"
+      ]
+    },
+    {
+      "title": "GPT4All",
+      "category": "ai",
+      "subcategory": "ai-topic-3",
+      "description": "اجرای مدل‌های زبانی محلی روی رایانه شخصی.",
+      "url": "https://www.nomic.ai/gpt4all",
+      "tags": [
+        "local",
+        "llm"
+      ]
+    },
+    {
+      "title": "Open WebUI",
+      "category": "ai",
+      "subcategory": "ai-topic-3",
+      "description": "رابط وب خودمیزبان برای کار با مدل‌های زبانی محلی و راه‌دور.",
+      "url": "https://openwebui.com/",
+      "tags": [
+        "local",
+        "llm",
+        "interface"
+      ]
+    },
+    {
+      "title": "llama.cpp",
+      "category": "ai",
+      "subcategory": "ai-topic-3",
+      "description": "اجرای بهینه مدل‌های زبانی روی CPU و GPU در محیط‌های مختلف.",
+      "url": "https://github.com/ggml-org/llama.cpp",
+      "tags": [
+        "local",
+        "llm",
+        "runtime"
+      ]
+    },
+    {
+      "title": "Piper TTS",
+      "category": "ai",
+      "subcategory": "ai-topic-4",
+      "description": "سامانه متن‌باز تبدیل متن به گفتار با قابلیت اجرای محلی.",
+      "url": "https://github.com/rhasspy/piper",
+      "tags": [
+        "text",
+        "to",
+        "speech"
+      ]
+    },
+    {
+      "title": "Coqui TTS",
+      "category": "ai",
+      "subcategory": "ai-topic-4",
+      "description": "ابزارها و مدل‌های متن‌باز تبدیل متن به گفتار.",
+      "url": "https://github.com/coqui-ai/TTS",
+      "tags": [
+        "speech",
+        "synthesis"
+      ]
+    },
+    {
+      "title": "Audacity",
+      "category": "ai",
+      "subcategory": "ai-topic-4",
+      "description": "نرم‌افزار متن‌باز ضبط و ویرایش صدا و پادکست.",
+      "url": "https://www.audacityteam.org/",
+      "tags": [
+        "audio",
+        "editing"
+      ]
+    },
+    {
+      "title": "OpenAlex",
+      "category": "ai",
+      "subcategory": "ai-topic-5",
+      "description": "پایگاه آزاد داده‌های پژوهش علمی، نویسندگان، آثار و مؤسسات.",
+      "url": "https://openalex.org/",
+      "tags": [
+        "research",
+        "data"
+      ]
+    },
+    {
+      "title": "Semantic Scholar",
+      "category": "ai",
+      "subcategory": "ai-topic-5",
+      "description": "موتور جست‌وجوی هوشمند مقالات و پژوهش‌های علمی.",
+      "url": "https://www.semanticscholar.org/",
+      "tags": [
+        "academic",
+        "search"
+      ]
+    },
+    {
+      "title": "freeCodeCamp",
+      "category": "learning",
+      "subcategory": "learning-topic-1",
+      "description": "آموزش رایگان و پروژه‌محور برنامه‌نویسی و توسعه وب.",
+      "url": "https://www.freecodecamp.org/",
+      "tags": [
+        "coding",
+        "courses"
+      ]
+    },
+    {
+      "title": "Alison",
+      "category": "learning",
+      "subcategory": "learning-topic-1",
+      "description": "دوره‌های آنلاین رایگان و گواهی‌های آموزشی در موضوعات گوناگون.",
+      "url": "https://alison.com/",
+      "tags": [
+        "online",
+        "courses"
+      ]
+    },
+    {
+      "title": "Class Central",
+      "category": "learning",
+      "subcategory": "learning-topic-1",
+      "description": "موتور جست‌وجو و فهرست دوره‌های آنلاین دانشگاه‌ها و پلتفرم‌ها.",
+      "url": "https://www.classcentral.com/",
+      "tags": [
+        "course",
+        "directory"
+      ]
+    },
+    {
+      "title": "Stanford Online",
+      "category": "learning",
+      "subcategory": "learning-topic-2",
+      "description": "دوره‌ها و محتوای آموزشی آنلاین دانشگاه استنفورد.",
+      "url": "https://online.stanford.edu/",
+      "tags": [
+        "university",
+        "courses"
+      ]
+    },
+    {
+      "title": "Harvard Online",
+      "category": "learning",
+      "subcategory": "learning-topic-2",
+      "description": "دوره‌ها و برنامه‌های آموزشی آنلاین دانشگاه هاروارد.",
+      "url": "https://pll.harvard.edu/",
+      "tags": [
+        "university",
+        "courses"
+      ]
+    },
+    {
+      "title": "Language Transfer",
+      "category": "learning",
+      "subcategory": "learning-topic-3",
+      "description": "درس‌های صوتی رایگان برای یادگیری زبان‌های مختلف.",
+      "url": "https://www.languagetransfer.org/",
+      "tags": [
+        "language",
+        "learning"
+      ]
+    },
+    {
+      "title": "Anki",
+      "category": "learning",
+      "subcategory": "learning-topic-3",
+      "description": "ابزار فلش‌کارت و مرور فاصله‌دار برای یادگیری و حفظ مطالب.",
+      "url": "https://apps.ankiweb.net/",
+      "tags": [
+        "flashcards"
+      ]
+    },
+    {
+      "title": "Forvo",
+      "category": "learning",
+      "subcategory": "learning-topic-3",
+      "description": "فرهنگ تلفظ واژه‌ها با نمونه صدای گویشوران بومی.",
+      "url": "https://forvo.com/",
+      "tags": [
+        "pronunciation"
+      ]
+    },
+    {
+      "title": "Open Library",
+      "category": "learning",
+      "subcategory": "learning-topic-4",
+      "description": "فهرست و دسترسی امانی به کتاب‌های دیجیتال و اطلاعات کتاب‌شناختی.",
+      "url": "https://openlibrary.org/",
+      "tags": [
+        "digital",
+        "library"
+      ]
+    },
+    {
+      "title": "Directory of Open Access Books",
+      "category": "learning",
+      "subcategory": "learning-topic-4",
+      "description": "فهرست کتاب‌های دانشگاهی دسترسی‌آزاد.",
+      "url": "https://www.doabooks.org/",
+      "tags": [
+        "open",
+        "access",
+        "books"
+      ]
+    },
+    {
+      "title": "CORE",
+      "category": "learning",
+      "subcategory": "learning-topic-4",
+      "description": "موتور جست‌وجوی مقالات و متون علمی دسترسی‌آزاد.",
+      "url": "https://core.ac.uk/",
+      "tags": [
+        "open",
+        "research"
+      ]
+    },
+    {
+      "title": "FilmAffinity",
+      "category": "movies",
+      "subcategory": "movies-topic-1",
+      "description": "پایگاه اطلاعات فیلم و امتیازها و نقدهای کاربران.",
+      "url": "https://www.filmaffinity.com/",
+      "tags": [
+        "film",
+        "reviews"
+      ]
+    },
+    {
+      "title": "RogerEbert.com",
+      "category": "movies",
+      "subcategory": "movies-topic-1",
+      "description": "نقدها و تحلیل‌های سینمایی و اخبار فیلم.",
+      "url": "https://www.rogerebert.com/",
+      "tags": [
+        "film",
+        "criticism"
+      ]
+    },
+    {
+      "title": "BFI",
+      "category": "movies",
+      "subcategory": "movies-topic-1",
+      "description": "مؤسسه فیلم بریتانیا؛ آرشیو، نقد، تاریخ سینما و برنامه نمایش.",
+      "url": "https://www.bfi.org.uk/",
+      "tags": [
+        "cinema",
+        "archive"
+      ]
+    },
+    {
+      "title": "Plex Discover",
+      "category": "movies",
+      "subcategory": "movies-topic-2",
+      "description": "کشف فیلم و سریال و یافتن سرویس‌های پخش در دسترس.",
+      "url": "https://www.plex.tv/discover/",
+      "tags": [
+        "streaming",
+        "guide"
+      ]
+    },
+    {
+      "title": "Reelgood",
+      "category": "movies",
+      "subcategory": "movies-topic-2",
+      "description": "راهنمای جست‌وجوی فیلم و سریال در سرویس‌های استریم.",
+      "url": "https://reelgood.com/",
+      "tags": [
+        "streaming",
+        "search"
+      ]
+    },
+    {
+      "title": "Criterion Channel",
+      "category": "movies",
+      "subcategory": "movies-topic-3",
+      "description": "سرویس نمایش و مجموعه‌های منتخب سینمای کلاسیک و هنری.",
+      "url": "https://www.criterionchannel.com/",
+      "tags": [
+        "art",
+        "cinema"
+      ]
+    },
+    {
+      "title": "National Film Board of Canada",
+      "category": "movies",
+      "subcategory": "movies-topic-3",
+      "description": "مجموعه فیلم‌ها و مستندهای تولیدشده توسط هیئت ملی فیلم کانادا.",
+      "url": "https://www.nfb.ca/",
+      "tags": [
+        "documentary",
+        "cinema"
+      ]
+    },
+    {
+      "title": "Dailymotion",
+      "category": "media",
+      "subcategory": "media-topic-1",
+      "description": "پلتفرم اشتراک‌گذاری و میزبانی ویدئو.",
+      "url": "https://www.dailymotion.com/",
+      "tags": [
+        "video",
+        "hosting"
+      ]
+    },
+    {
+      "title": "PeerTube",
+      "category": "media",
+      "subcategory": "media-topic-1",
+      "description": "پلتفرم آزاد و غیرمتمرکز میزبانی ویدئو.",
+      "url": "https://joinpeertube.org/",
+      "tags": [
+        "federated",
+        "video"
+      ]
+    },
+    {
+      "title": "Internet Archive TV News",
+      "category": "media",
+      "subcategory": "media-topic-1",
+      "description": "آرشیو ویدئویی و برنامه‌های تلویزیونی خبری.",
+      "url": "https://archive.org/details/tv",
+      "tags": [
+        "tv",
+        "archive"
+      ]
+    },
+    {
+      "title": "Tidal",
+      "category": "media",
+      "subcategory": "media-topic-2",
+      "description": "سرویس پخش موسیقی با تمرکز بر کیفیت صدا و اطلاعات هنرمندان.",
+      "url": "https://tidal.com/",
+      "tags": [
+        "music",
+        "streaming"
+      ]
+    },
+    {
+      "title": "Qobuz",
+      "category": "media",
+      "subcategory": "media-topic-2",
+      "description": "سرویس موسیقی دیجیتال و پخش با کیفیت بالا.",
+      "url": "https://www.qobuz.com/",
+      "tags": [
+        "music",
+        "streaming"
+      ]
+    },
+    {
+      "title": "Jamendo",
+      "category": "media",
+      "subcategory": "media-topic-2",
+      "description": "موسیقی مستقل و آثار قابل کشف برای شنیدن و استفاده با مجوزهای مشخص.",
+      "url": "https://www.jamendo.com/",
+      "tags": [
+        "independent",
+        "music"
+      ]
+    },
+    {
+      "title": "AntennaPod",
+      "category": "media",
+      "subcategory": "media-topic-3",
+      "description": "برنامه متن‌باز مدیریت و پخش پادکست.",
+      "url": "https://antennapod.org/",
+      "tags": [
+        "podcast",
+        "player"
+      ]
+    },
+    {
+      "title": "Listen Notes",
+      "category": "media",
+      "subcategory": "media-topic-3",
+      "description": "موتور جست‌وجوی پادکست و اپیزودها.",
+      "url": "https://www.listennotes.com/",
+      "tags": [
+        "podcast",
+        "search"
+      ]
+    },
+    {
+      "title": "Podbean",
+      "category": "media",
+      "subcategory": "media-topic-3",
+      "description": "میزبانی، انتشار و مدیریت پادکست.",
+      "url": "https://www.podbean.com/",
+      "tags": [
+        "podcast",
+        "hosting"
+      ]
+    },
+    {
+      "title": "Radio Zamaneh",
+      "category": "news",
+      "subcategory": "news-topic-1",
+      "description": "رسانه فارسی‌زبان با گزارش‌ها، برنامه‌ها و تحلیل‌های خبری.",
+      "url": "https://www.radiozamaneh.com/",
+      "tags": [
+        "persian",
+        "news"
+      ]
+    },
+    {
+      "title": "Independent Persian",
+      "category": "news",
+      "subcategory": "news-topic-1",
+      "description": "رسانه خبری فارسی‌زبان با پوشش رویدادهای ایران و جهان.",
+      "url": "https://www.independentpersian.com/",
+      "tags": [
+        "persian",
+        "news"
+      ]
+    },
+    {
+      "title": "IranWire",
+      "category": "news",
+      "subcategory": "news-topic-1",
+      "description": "رسانه فارسی‌زبان با گزارش‌های تحقیقی و پوشش مسائل اجتماعی و حقوق بشری.",
+      "url": "https://iranwire.com/",
+      "tags": [
+        "persian",
+        "journalism"
+      ]
+    },
+    {
+      "title": "The Conversation",
+      "category": "news",
+      "subcategory": "news-topic-2",
+      "description": "تحلیل‌ها و توضیحات کارشناسان و دانشگاهیان درباره رویدادهای روز.",
+      "url": "https://theconversation.com/",
+      "tags": [
+        "expert",
+        "analysis"
+      ]
+    },
+    {
+      "title": "NPR",
+      "category": "news",
+      "subcategory": "news-topic-2",
+      "description": "رسانه خبری و تولیدکننده برنامه‌های صوتی و گزارش‌های تحلیلی.",
+      "url": "https://www.npr.org/",
+      "tags": [
+        "international",
+        "news"
+      ]
+    },
+    {
+      "title": "The Japan Times",
+      "category": "news",
+      "subcategory": "news-topic-2",
+      "description": "روزنامه انگلیسی‌زبان ژاپن با پوشش اخبار آسیا و جهان.",
+      "url": "https://www.japantimes.co.jp/",
+      "tags": [
+        "world",
+        "news"
+      ]
+    },
+    {
+      "title": "TechCrunch",
+      "category": "news",
+      "subcategory": "news-topic-3",
+      "description": "اخبار فناوری، استارتاپ‌ها و شرکت‌های نوآور.",
+      "url": "https://techcrunch.com/",
+      "tags": [
+        "technology",
+        "news"
+      ]
+    },
+    {
+      "title": "The Verge",
+      "category": "news",
+      "subcategory": "news-topic-3",
+      "description": "اخبار و تحلیل فناوری، علم، فرهنگ دیجیتال و محصولات.",
+      "url": "https://www.theverge.com/",
+      "tags": [
+        "technology",
+        "news"
+      ]
+    },
+    {
+      "title": "Ars Technica",
+      "category": "news",
+      "subcategory": "news-topic-3",
+      "description": "گزارش‌های تخصصی فناوری، علم و امنیت دیجیتال.",
+      "url": "https://arstechnica.com/",
+      "tags": [
+        "technology",
+        "journalism"
+      ]
+    },
+    {
+      "title": "Bloomberg",
+      "category": "news",
+      "subcategory": "news-topic-3",
+      "description": "اخبار و تحلیل اقتصاد، بازارهای مالی و کسب‌وکار.",
+      "url": "https://www.bloomberg.com/",
+      "tags": [
+        "business",
+        "news"
+      ]
+    },
+    {
+      "title": "CNBC",
+      "category": "news",
+      "subcategory": "news-topic-3",
+      "description": "اخبار بازارها، اقتصاد و شرکت‌های بین‌المللی.",
+      "url": "https://www.cnbc.com/",
+      "tags": [
+        "financial",
+        "news"
+      ]
+    },
+    {
+      "title": "Reuters Live",
+      "category": "satellite",
+      "subcategory": "satellite-topic-2",
+      "description": "پخش ویدئویی و گزارش‌های زنده خبری رویترز.",
+      "url": "https://www.reuters.com/",
+      "tags": [
+        "live",
+        "news"
+      ]
+    },
+    {
+      "title": "DW English Live",
+      "category": "satellite",
+      "subcategory": "satellite-topic-2",
+      "description": "پخش زنده شبکه دویچه‌وله به زبان انگلیسی.",
+      "url": "https://www.dw.com/en/live-tv/s-100825",
+      "tags": [
+        "live",
+        "news"
+      ]
+    },
+    {
+      "title": "ESA Web TV",
+      "category": "satellite",
+      "subcategory": "satellite-topic-3",
+      "description": "ویدئوها و پخش برنامه‌های آژانس فضایی اروپا.",
+      "url": "https://www.esa.int/ESA_Multimedia/ESA_Web_TV",
+      "tags": [
+        "science",
+        "live"
+      ]
+    },
+    {
+      "title": "CERN Webcast",
+      "category": "satellite",
+      "subcategory": "satellite-topic-3",
+      "description": "پخش و آرشیو سخنرانی‌ها و رویدادهای علمی CERN.",
+      "url": "https://webcast.web.cern.ch/",
+      "tags": [
+        "science",
+        "webcast"
+      ]
+    },
+    {
+      "title": "Explore.org Live Cams",
+      "category": "satellite",
+      "subcategory": "satellite-topic-4",
+      "description": "دوربین‌های زنده طبیعت، حیات‌وحش و محیط زیست.",
+      "url": "https://explore.org/livecams",
+      "tags": [
+        "live",
+        "cameras"
+      ]
+    },
+    {
+      "title": "EarthCam",
+      "category": "satellite",
+      "subcategory": "satellite-topic-4",
+      "description": "مجموعه دوربین‌های زنده از شهرها و مکان‌های مختلف جهان.",
+      "url": "https://www.earthcam.com/",
+      "tags": [
+        "live",
+        "webcams"
+      ]
+    },
+    {
+      "title": "Pixelfed",
+      "category": "social",
+      "subcategory": "social-topic-1",
+      "description": "شبکه اجتماعی اشتراک‌گذاری عکس با رویکرد آزاد و غیرمتمرکز.",
+      "url": "https://pixelfed.org/",
+      "tags": [
+        "photo",
+        "social",
+        "network"
+      ]
+    },
+    {
+      "title": "Flickr",
+      "category": "social",
+      "subcategory": "social-topic-1",
+      "description": "جامعه و پلتفرم اشتراک‌گذاری و مدیریت عکس.",
+      "url": "https://www.flickr.com/",
+      "tags": [
+        "photo",
+        "community"
+      ]
+    },
+    {
+      "title": "Discord",
+      "category": "social",
+      "subcategory": "social-topic-1",
+      "description": "پلتفرم انجمن‌ها، گروه‌ها و ارتباط صوتی و متنی.",
+      "url": "https://discord.com/",
+      "tags": [
+        "community",
+        "chat"
+      ]
+    },
+    {
+      "title": "Twitch",
+      "category": "social",
+      "subcategory": "social-topic-1",
+      "description": "پلتفرم پخش زنده و جامعه سازندگان محتوا و بازی.",
+      "url": "https://www.twitch.tv/",
+      "tags": [
+        "live",
+        "streaming"
+      ]
+    },
+    {
+      "title": "Matrix",
+      "category": "social",
+      "subcategory": "social-topic-2",
+      "description": "استاندارد باز ارتباطات و پیام‌رسانی غیرمتمرکز.",
+      "url": "https://matrix.org/",
+      "tags": [
+        "messaging",
+        "protocol"
+      ]
+    },
+    {
+      "title": "Signal",
+      "category": "social",
+      "subcategory": "social-topic-2",
+      "description": "پیام‌رسان با تمرکز بر رمزنگاری سرتاسری و حریم خصوصی.",
+      "url": "https://signal.org/",
+      "tags": [
+        "secure",
+        "messaging"
+      ]
+    },
+    {
+      "title": "Element",
+      "category": "social",
+      "subcategory": "social-topic-2",
+      "description": "کارخواه پیام‌رسانی مبتنی بر پروتکل Matrix.",
+      "url": "https://element.io/",
+      "tags": [
+        "matrix",
+        "client"
+      ]
+    },
+    {
+      "title": "Discourse",
+      "category": "social",
+      "subcategory": "social-topic-2",
+      "description": "نرم‌افزار انجمن و گفت‌وگوی آنلاین برای جامعه‌ها.",
+      "url": "https://www.discourse.org/",
+      "tags": [
+        "forum",
+        "software"
+      ]
+    },
+    {
+      "title": "Nextcloud",
+      "category": "cloud",
+      "subcategory": "cloud-topic-1",
+      "description": "پلتفرم متن‌باز و خودمیزبان فایل، تقویم، مخاطبان و همکاری.",
+      "url": "https://nextcloud.com/",
+      "tags": [
+        "cloud",
+        "storage"
+      ]
+    },
+    {
+      "title": "Syncthing",
+      "category": "cloud",
+      "subcategory": "cloud-topic-1",
+      "description": "همگام‌سازی مستقیم و غیرمتمرکز فایل میان دستگاه‌ها.",
+      "url": "https://syncthing.net/",
+      "tags": [
+        "file",
+        "sync"
+      ]
+    },
+    {
+      "title": "Resilio Sync",
+      "category": "cloud",
+      "subcategory": "cloud-topic-1",
+      "description": "همگام‌سازی فایل میان دستگاه‌ها با فناوری همتابه‌همتا.",
+      "url": "https://www.resilio.com/individuals/",
+      "tags": [
+        "file",
+        "sync"
+      ]
+    },
+    {
+      "title": "Koofr",
+      "category": "cloud",
+      "subcategory": "cloud-topic-1",
+      "description": "فضای ذخیره‌سازی ابری برای مدیریت و همگام‌سازی فایل‌ها.",
+      "url": "https://koofr.eu/",
+      "tags": [
+        "cloud",
+        "storage"
+      ]
+    },
+    {
+      "title": "Send Anywhere",
+      "category": "cloud",
+      "subcategory": "cloud-topic-2",
+      "description": "ارسال فایل میان دستگاه‌ها با روش‌های مختلف انتقال.",
+      "url": "https://send-anywhere.com/",
+      "tags": [
+        "file",
+        "transfer"
+      ]
+    },
+    {
+      "title": "SwissTransfer",
+      "category": "cloud",
+      "subcategory": "cloud-topic-2",
+      "description": "سرویس ارسال فایل‌های حجیم با لینک اشتراک‌گذاری.",
+      "url": "https://www.swisstransfer.com/",
+      "tags": [
+        "large",
+        "file",
+        "transfer"
+      ]
+    },
+    {
+      "title": "Wormhole",
+      "category": "cloud",
+      "subcategory": "cloud-topic-2",
+      "description": "سرویس اشتراک‌گذاری فایل با لینک رمزنگاری‌شده و زمان‌دار.",
+      "url": "https://wormhole.app/",
+      "tags": [
+        "secure",
+        "file",
+        "transfer"
+      ]
+    },
+    {
+      "title": "Tor Project",
+      "category": "security",
+      "subcategory": "security-topic-1",
+      "description": "ابزارها و منابع دسترسی به اینترنت با تمرکز بر ناشناس‌ماندن.",
+      "url": "https://www.torproject.org/",
+      "tags": [
+        "privacy",
+        "anonymity"
+      ]
+    },
+    {
+      "title": "Mullvad",
+      "category": "security",
+      "subcategory": "security-topic-1",
+      "description": "سرویس VPN با تمرکز بر حریم خصوصی و شفافیت فنی.",
+      "url": "https://mullvad.net/",
+      "tags": [
+        "vpn",
+        "privacy"
+      ]
+    },
+    {
+      "title": "Proton VPN",
+      "category": "security",
+      "subcategory": "security-topic-1",
+      "description": "سرویس VPN از مجموعه ابزارهای حریم خصوصی Proton.",
+      "url": "https://protonvpn.com/",
+      "tags": [
+        "vpn",
+        "privacy"
+      ]
+    },
+    {
+      "title": "EFF Surveillance Self-Defense",
+      "category": "security",
+      "subcategory": "security-topic-1",
+      "description": "راهنماهای عملی حفاظت دیجیتال و مقابله با تهدیدهای حریم خصوصی.",
+      "url": "https://ssd.eff.org/",
+      "tags": [
+        "digital",
+        "safety"
+      ]
+    },
+    {
+      "title": "KeePassXC",
+      "category": "security",
+      "subcategory": "security-topic-2",
+      "description": "مدیر رمز عبور متن‌باز و آفلاین برای دسکتاپ.",
+      "url": "https://keepassxc.org/",
+      "tags": [
+        "password",
+        "manager"
+      ]
+    },
+    {
+      "title": "1Password",
+      "category": "security",
+      "subcategory": "security-topic-2",
+      "description": "مدیر رمز عبور و اطلاعات حساس برای افراد و تیم‌ها.",
+      "url": "https://1password.com/",
+      "tags": [
+        "password",
+        "manager"
+      ]
+    },
+    {
+      "title": "Proton Pass",
+      "category": "security",
+      "subcategory": "security-topic-2",
+      "description": "مدیر رمز عبور و هویت دیجیتال با قابلیت‌های حریم خصوصی.",
+      "url": "https://proton.me/pass",
+      "tags": [
+        "password",
+        "manager"
+      ]
+    },
+    {
+      "title": "Hybrid Analysis",
+      "category": "security",
+      "subcategory": "security-topic-3",
+      "description": "سامانه تحلیل فایل و بدافزار در محیط آزمایشگاهی آنلاین.",
+      "url": "https://www.hybrid-analysis.com/",
+      "tags": [
+        "malware",
+        "analysis"
+      ]
+    },
+    {
+      "title": "ANY.RUN",
+      "category": "security",
+      "subcategory": "security-topic-3",
+      "description": "محیط تعاملی تحلیل بدافزار و رفتار فایل‌های مشکوک.",
+      "url": "https://any.run/",
+      "tags": [
+        "malware",
+        "sandbox"
+      ]
+    },
+    {
+      "title": "Linear",
+      "category": "productivity",
+      "subcategory": "productivity-topic-1",
+      "description": "ابزار مدیریت پروژه و پیگیری کار برای تیم‌های محصول و نرم‌افزار.",
+      "url": "https://linear.app/",
+      "tags": [
+        "project",
+        "management"
+      ]
+    },
+    {
+      "title": "Basecamp",
+      "category": "productivity",
+      "subcategory": "productivity-topic-1",
+      "description": "پلتفرم مدیریت پروژه، گفتگو و همکاری تیمی.",
+      "url": "https://basecamp.com/",
+      "tags": [
+        "team",
+        "collaboration"
+      ]
+    },
+    {
+      "title": "Plane",
+      "category": "productivity",
+      "subcategory": "productivity-topic-1",
+      "description": "ابزار متن‌باز مدیریت پروژه و issue tracking.",
+      "url": "https://plane.so/",
+      "tags": [
+        "project",
+        "management"
+      ]
+    },
+    {
+      "title": "OpenProject",
+      "category": "productivity",
+      "subcategory": "productivity-topic-1",
+      "description": "پلتفرم مدیریت پروژه متن‌باز برای برنامه‌ریزی و پیگیری کار.",
+      "url": "https://www.openproject.org/",
+      "tags": [
+        "project",
+        "management"
+      ]
+    },
+    {
+      "title": "Logseq",
+      "category": "productivity",
+      "subcategory": "productivity-topic-2",
+      "description": "ابزار متن‌باز یادداشت‌برداری و مدیریت دانش به روش شبکه‌ای.",
+      "url": "https://logseq.com/",
+      "tags": [
+        "knowledge",
+        "management"
+      ]
+    },
+    {
+      "title": "Standard Notes",
+      "category": "productivity",
+      "subcategory": "productivity-topic-2",
+      "description": "برنامه یادداشت‌برداری با تمرکز بر رمزنگاری و حریم خصوصی.",
+      "url": "https://standardnotes.com/",
+      "tags": [
+        "notes"
+      ]
+    },
+    {
+      "title": "Cal.com",
+      "category": "productivity",
+      "subcategory": "productivity-topic-3",
+      "description": "پلتفرم زمان‌بندی جلسه و مدیریت نوبت با قابلیت خودمیزبانی.",
+      "url": "https://cal.com/",
+      "tags": [
+        "scheduling"
+      ]
+    },
+    {
+      "title": "Timeanddate",
+      "category": "productivity",
+      "subcategory": "productivity-topic-3",
+      "description": "ابزارهای ساعت جهانی، تقویم، منطقه زمانی و محاسبات تاریخ.",
+      "url": "https://www.timeanddate.com/",
+      "tags": [
+        "time",
+        "tools"
+      ]
+    },
+    {
+      "title": "World Time Buddy",
+      "category": "productivity",
+      "subcategory": "productivity-topic-3",
+      "description": "مقایسه ساعت شهرها و برنامه‌ریزی جلسه در مناطق زمانی مختلف.",
+      "url": "https://www.worldtimebuddy.com/",
+      "tags": [
+        "timezone",
+        "planner"
+      ]
+    },
+    {
+      "title": "Excalidraw",
+      "category": "productivity",
+      "subcategory": "productivity-topic-4",
+      "description": "تخته سفید آنلاین برای ترسیم دیاگرام و ایده‌پردازی.",
+      "url": "https://excalidraw.com/",
+      "tags": [
+        "whiteboard"
+      ]
+    },
+    {
+      "title": "FigJam",
+      "category": "productivity",
+      "subcategory": "productivity-topic-4",
+      "description": "تخته سفید مشارکتی برای ایده‌پردازی و کارگاه‌های تیمی.",
+      "url": "https://www.figma.com/figjam/",
+      "tags": [
+        "collaboration"
+      ]
+    },
+    {
+      "title": "Mural",
+      "category": "productivity",
+      "subcategory": "productivity-topic-4",
+      "description": "فضای همکاری بصری و تسهیل کارگاه‌های تیمی.",
+      "url": "https://www.mural.co/",
+      "tags": [
+        "visual",
+        "collaboration"
+      ]
+    },
+    {
+      "title": "Encyclopedia.com",
+      "category": "reference",
+      "subcategory": "reference-topic-1",
+      "description": "دانشنامه و مرجع موضوعی برای جست‌وجوی اطلاعات عمومی.",
+      "url": "https://www.encyclopedia.com/",
+      "tags": [
+        "encyclopedia"
+      ]
+    },
+    {
+      "title": "Stanford Encyclopedia of Philosophy",
+      "category": "reference",
+      "subcategory": "reference-topic-1",
+      "description": "دانشنامه تخصصی فلسفه با مقالات پژوهشی و داوری‌شده.",
+      "url": "https://plato.stanford.edu/",
+      "tags": [
+        "philosophy",
+        "reference"
+      ]
+    },
+    {
+      "title": "PubMed",
+      "category": "reference",
+      "subcategory": "reference-topic-2",
+      "description": "پایگاه جست‌وجوی مقالات علوم پزشکی و زیستی.",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/",
+      "tags": [
+        "medical",
+        "research"
+      ]
+    },
+    {
+      "title": "PubMed Central",
+      "category": "reference",
+      "subcategory": "reference-topic-2",
+      "description": "آرشیو متن کامل مقالات زیست‌پزشکی دسترسی‌آزاد.",
+      "url": "https://pmc.ncbi.nlm.nih.gov/",
+      "tags": [
+        "medical",
+        "papers"
+      ]
+    },
+    {
+      "title": "Zenodo",
+      "category": "reference",
+      "subcategory": "reference-topic-2",
+      "description": "مخزن آزاد انتشار و نگهداری داده‌ها، مقاله‌ها و خروجی‌های پژوهشی.",
+      "url": "https://zenodo.org/",
+      "tags": [
+        "research",
+        "repository"
+      ]
+    },
+    {
+      "title": "OSF",
+      "category": "reference",
+      "subcategory": "reference-topic-2",
+      "description": "پلتفرم مدیریت و اشتراک‌گذاری پروژه‌ها و داده‌های پژوهشی.",
+      "url": "https://osf.io/",
+      "tags": [
+        "open",
+        "science"
+      ]
+    },
+    {
+      "title": "Reverso Context",
+      "category": "reference",
+      "subcategory": "reference-topic-3",
+      "description": "جست‌وجوی ترجمه واژه و عبارت در متن‌های واقعی چندزبانه.",
+      "url": "https://context.reverso.net/",
+      "tags": [
+        "translation",
+        "context"
+      ]
+    },
+    {
+      "title": "Linguee",
+      "category": "reference",
+      "subcategory": "reference-topic-3",
+      "description": "فرهنگ لغت و موتور جست‌وجوی نمونه ترجمه در متون دوزبانه.",
+      "url": "https://www.linguee.com/",
+      "tags": [
+        "dictionary"
+      ]
+    },
+    {
+      "title": "Natural Earth",
+      "category": "reference",
+      "subcategory": "reference-topic-4",
+      "description": "داده‌های جغرافیایی و نقشه‌ای آزاد برای تحلیل و طراحی نقشه.",
+      "url": "https://www.naturalearthdata.com/",
+      "tags": [
+        "geospatial",
+        "data"
+      ]
+    },
+    {
+      "title": "Google Dataset Search",
+      "category": "reference",
+      "subcategory": "reference-topic-4",
+      "description": "موتور جست‌وجوی مجموعه‌داده‌های منتشرشده در وب.",
+      "url": "https://datasetsearch.research.google.com/",
+      "tags": [
+        "dataset",
+        "search"
+      ]
+    },
+    {
+      "title": "Burst by Shopify",
+      "category": "photography",
+      "subcategory": "photography-topic-1",
+      "description": "بانک عکس رایگان برای پروژه‌های تجاری و محتوای وب.",
+      "url": "https://www.shopify.com/stock-photos",
+      "tags": [
+        "free",
+        "stock",
+        "photos"
+      ]
+    },
+    {
+      "title": "Openverse",
+      "category": "photography",
+      "subcategory": "photography-topic-1",
+      "description": "موتور جست‌وجوی رسانه‌های دارای مجوز آزاد و Creative Commons.",
+      "url": "https://openverse.org/",
+      "tags": [
+        "creative",
+        "commons",
+        "images"
+      ]
+    },
+    {
+      "title": "DPReview",
+      "category": "photography",
+      "subcategory": "photography-topic-2",
+      "description": "اخبار، بررسی دوربین و تجهیزات عکاسی و جامعه کاربران.",
+      "url": "https://www.dpreview.com/",
+      "tags": [
+        "camera",
+        "reviews"
+      ]
+    },
+    {
+      "title": "PetaPixel",
+      "category": "photography",
+      "subcategory": "photography-topic-2",
+      "description": "اخبار، آموزش و تحلیل دنیای عکاسی و تصویر.",
+      "url": "https://petapixel.com/",
+      "tags": [
+        "photography",
+        "news"
+      ]
+    },
+    {
+      "title": "The Photographer's Ephemeris",
+      "category": "photography",
+      "subcategory": "photography-topic-2",
+      "description": "ابزار برنامه‌ریزی نور طبیعی و موقعیت خورشید و ماه برای عکاسی.",
+      "url": "https://photoephemeris.com/",
+      "tags": [
+        "photo",
+        "planning"
+      ]
+    },
+    {
+      "title": "GIMP",
+      "category": "photography",
+      "subcategory": "photography-topic-3",
+      "description": "نرم‌افزار آزاد و متن‌باز ویرایش و پردازش تصویر.",
+      "url": "https://www.gimp.org/",
+      "tags": [
+        "image",
+        "editor"
+      ]
+    },
+    {
+      "title": "Upscayl",
+      "category": "photography",
+      "subcategory": "photography-topic-3",
+      "description": "ابزار متن‌باز بزرگ‌نمایی تصویر با کمک هوش مصنوعی.",
+      "url": "https://upscayl.org/",
+      "tags": [
+        "ai",
+        "image",
+        "upscale"
+      ]
+    },
+    {
+      "title": "BuiltWith",
+      "category": "misc",
+      "subcategory": "misc-topic-1",
+      "description": "شناسایی فناوری‌ها و سرویس‌های استفاده‌شده در وب‌سایت‌ها.",
+      "url": "https://builtwith.com/",
+      "tags": [
+        "website",
+        "technology"
+      ]
+    },
+    {
+      "title": "W3Techs",
+      "category": "misc",
+      "subcategory": "misc-topic-1",
+      "description": "آمار و اطلاعات فناوری‌های مورد استفاده در وب‌سایت‌ها.",
+      "url": "https://w3techs.com/",
+      "tags": [
+        "web",
+        "statistics"
+      ]
+    },
+    {
+      "title": "DNSlytics",
+      "category": "misc",
+      "subcategory": "misc-topic-1",
+      "description": "ابزارهای بررسی DNS، دامنه و زیرساخت وب‌سایت‌ها.",
+      "url": "https://dnslytics.com/",
+      "tags": [
+        "dns",
+        "lookup"
+      ]
+    },
+    {
+      "title": "There's An AI For That",
+      "category": "misc",
+      "subcategory": "misc-topic-2",
+      "description": "فهرست و موتور جست‌وجوی ابزارهای هوش مصنوعی بر اساس کاربرد.",
+      "url": "https://theresanaiforthat.com/",
+      "tags": [
+        "ai",
+        "directory"
+      ]
+    },
+    {
+      "title": "SaaSHub",
+      "category": "misc",
+      "subcategory": "misc-topic-2",
+      "description": "فهرست و مقایسه نرم‌افزارها و سرویس‌های آنلاین.",
+      "url": "https://www.saashub.com/",
+      "tags": [
+        "software",
+        "directory"
+      ]
+    },
+    {
+      "title": "ChangeDetection.io",
+      "category": "misc",
+      "subcategory": "misc-topic-3",
+      "description": "پایش تغییرات صفحات وب و دریافت اعلان هنگام تغییر محتوا.",
+      "url": "https://changedetection.io/",
+      "tags": [
+        "website",
+        "change",
+        "monitor"
+      ]
+    },
+    {
+      "title": "Internet Archive Save Page Now",
+      "category": "misc",
+      "subcategory": "misc-topic-3",
+      "description": "ذخیره نسخه‌ای از صفحات وب در آرشیو اینترنت.",
+      "url": "https://web.archive.org/save/",
+      "tags": [
+        "web",
+        "archive"
+      ]
+    },
+    {
+      "title": "IsItDownRightNow",
+      "category": "misc",
+      "subcategory": "misc-topic-3",
+      "description": "بررسی وضعیت دسترسی وب‌سایت‌ها و سرویس‌های اینترنتی.",
+      "url": "https://www.isitdownrightnow.com/",
+      "tags": [
+        "website",
+        "status"
+      ]
+    },
+    {
+      "title": "CyberChef",
+      "category": "misc",
+      "subcategory": "misc-topic-4",
+      "description": "مجموعه ابزارهای مرورگری برای تبدیل، رمزگذاری و تحلیل داده.",
+      "url": "https://gchq.github.io/CyberChef/",
+      "tags": [
+        "data",
+        "tools"
+      ]
+    },
+    {
+      "title": "JSON Crack",
+      "category": "misc",
+      "subcategory": "misc-topic-4",
+      "description": "نمایش بصری ساختار JSON و تبدیل آن به نمودار درختی.",
+      "url": "https://jsoncrack.com/",
+      "tags": [
+        "json",
+        "visualizer"
+      ]
+    },
+    {
+      "title": "Excalidraw",
+      "category": "misc",
+      "subcategory": "misc-topic-4",
+      "description": "ترسیم سریع نمودار و دیاگرام با ظاهر دست‌کشیده.",
+      "url": "https://excalidraw.com/",
+      "tags": [
+        "diagram",
+        "tool"
+      ]
+    },
+    {
+      "title": "Regex101",
+      "category": "misc",
+      "subcategory": "misc-topic-4",
+      "description": "ساخت، آزمایش و توضیح عبارت‌های منظم در زبان‌های مختلف.",
+      "url": "https://regex101.com/",
+      "tags": [
+        "regex",
+        "tester"
+      ]
+    },
+    {
+      "title": "Convertio",
+      "category": "misc",
+      "subcategory": "misc-topic-4",
+      "description": "تبدیل آنلاین فایل‌ها میان قالب‌های گوناگون.",
+      "url": "https://convertio.co/",
+      "tags": [
+        "file",
+        "converter"
+      ]
+    },
+    {
+      "title": "LyngSat",
+      "category": "satellite-networks",
+      "subcategory": "satellite-networks-topic-1",
+      "description": "اطلاعات ماهواره‌ها، فرکانس‌ها و شبکه‌های تلویزیونی ماهواره‌ای.",
+      "url": "https://www.lyngsat.com/",
+      "tags": [
+        "satellite",
+        "frequencies"
+      ]
+    },
+    {
+      "title": "KingOfSat",
+      "category": "satellite-networks",
+      "subcategory": "satellite-networks-topic-1",
+      "description": "فهرست شبکه‌های ماهواره‌ای، فرکانس‌ها و تغییرات پخش.",
+      "url": "https://en.kingofsat.net/",
+      "tags": [
+        "satellite",
+        "channel",
+        "list"
+      ]
+    },
+    {
+      "title": "FlySat",
+      "category": "satellite-networks",
+      "subcategory": "satellite-networks-topic-1",
+      "description": "اطلاعات فرکانس و پوشش شبکه‌های ماهواره‌ای.",
+      "url": "https://www.flysat.com/",
+      "tags": [
+        "satellite",
+        "frequencies"
+      ]
+    },
+    {
+      "title": "SatBeams",
+      "category": "satellite-networks",
+      "subcategory": "satellite-networks-topic-4",
+      "description": "نقشه پوشش ماهواره‌ها و اطلاعات فنی ترانسپاندرها.",
+      "url": "https://www.satbeams.com/",
+      "tags": [
+        "satellite",
+        "footprint"
+      ]
+    },
+    {
+      "title": "ESPN",
+      "category": "sports",
+      "subcategory": "sports-topic-1",
+      "description": "اخبار، تحلیل و پوشش رویدادهای ورزشی بین‌المللی.",
+      "url": "https://www.espn.com/",
+      "tags": [
+        "sports",
+        "news"
+      ]
+    },
+    {
+      "title": "BBC Sport",
+      "category": "sports",
+      "subcategory": "sports-topic-1",
+      "description": "اخبار و گزارش‌های ورزشی از لیگ‌ها و رقابت‌های جهان.",
+      "url": "https://www.bbc.com/sport",
+      "tags": [
+        "sports",
+        "news"
+      ]
+    },
+    {
+      "title": "The Athletic",
+      "category": "sports",
+      "subcategory": "sports-topic-1",
+      "description": "گزارش‌ها و تحلیل‌های عمیق ورزشی.",
+      "url": "https://www.nytimes.com/athletic/",
+      "tags": [
+        "sports",
+        "analysis"
+      ]
+    },
+    {
+      "title": "Olympics",
+      "category": "sports",
+      "subcategory": "sports-topic-2",
+      "description": "پخش‌ها، ویدئوها و محتوای رسمی جنبش المپیک.",
+      "url": "https://olympics.com/",
+      "tags": [
+        "sports",
+        "video"
+      ]
+    },
+    {
+      "title": "FIFA+",
+      "category": "sports",
+      "subcategory": "sports-topic-2",
+      "description": "ویدئوها، آرشیو مسابقات و محتوای رسمی فوتبال.",
+      "url": "https://www.plus.fifa.com/",
+      "tags": [
+        "football",
+        "streaming"
+      ]
+    },
+    {
+      "title": "Flashscore",
+      "category": "sports",
+      "subcategory": "sports-topic-3",
+      "description": "نتایج زنده، برنامه مسابقات و آمار ورزشی.",
+      "url": "https://www.flashscore.com/",
+      "tags": [
+        "live",
+        "scores"
+      ]
+    },
+    {
+      "title": "Sofascore",
+      "category": "sports",
+      "subcategory": "sports-topic-3",
+      "description": "نتایج زنده، آمار بازیکنان و تحلیل مسابقات ورزشی.",
+      "url": "https://www.sofascore.com/",
+      "tags": [
+        "sports",
+        "statistics"
+      ]
+    },
+    {
+      "title": "Transfermarkt",
+      "category": "sports",
+      "subcategory": "sports-topic-3",
+      "description": "اطلاعات بازیکنان، نقل‌وانتقالات و ارزش‌گذاری فوتبال.",
+      "url": "https://www.transfermarkt.com/",
+      "tags": [
+        "football",
+        "database"
+      ]
     }
   ]
 }
