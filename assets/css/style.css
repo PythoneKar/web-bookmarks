@@ -51,3 +51,13 @@ main{max-width:1240px;margin:auto;padding:0 28px}.hero{position:relative;isolati
 @media(max-width:1100px){.mega-menu{width:min(680px,calc(100vw - 290px))}.mega-menu-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:680px){.category-with-menu{flex:0 0 auto}.category-menu-cue{margin-right:0}.mega-menu{position:fixed;top:145px;right:14px;left:14px;width:auto;max-height:calc(100vh - 175px);padding:14px;border-radius:15px;z-index:1000}.mega-menu-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.mega-menu-head strong{font-size:12px}}
 @media(prefers-reduced-motion:reduce){.mega-menu{animation:none!important}}
+
+
+/* Keep the sidebar mega menu above the resource cards and other page panels */
+.library-layout{position:relative;isolation:isolate}
+.sidebar{position:sticky;z-index:120;}
+.results-area{position:relative;z-index:1;min-width:0}
+.category-with-menu{z-index:130}
+.category-with-menu.open{z-index:140}
+.mega-menu{z-index:150}
+@media(max-width:680px){.sidebar{position:relative;z-index:120}.category-with-menu.open{z-index:140}.mega-menu{z-index:150}}
