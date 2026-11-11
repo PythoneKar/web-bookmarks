@@ -153,21 +153,6 @@
     searchInput.value=item.title;state.query=item.title;state.page=1;closeSuggestions();render();
   });
   document.addEventListener("click",e=>{if(!e.target.closest(".search-wrap")&&!e.target.closest("#search-suggestions"))closeSuggestions();});
-  $("#ai-search-form").addEventListener("submit", async event => {
-    event.preventDefault();
-    const prompt=$("#ai-search-prompt").value.trim(), status=$("#ai-search-status");
-    if(!prompt){status.textContent="اول پرسشت را بنویس.";$("#ai-search-prompt").focus();return;}
-    // Open synchronously during the click gesture to avoid popup blockers.
-    const tab=window.open("https://duck.ai/","_blank");
-    if(tab) tab.opener=null;
-    try {
-      await navigator.clipboard.writeText(prompt);
-      status.textContent=tab ? "پرسش کپی شد؛ در Duck.ai فقط Paste کن." : "پرسش کپی شد؛ پنجرهٔ بازشو مسدود شد. از لینک پایین استفاده کن.";
-    } catch {
-      status.textContent=tab ? "کپی خودکار ممکن نشد؛ متن را انتخاب و کپی کن." : "مرورگر پنجرهٔ جدید را مسدود کرد؛ متن را کپی و لینک پایین را باز کن.";
-      $("#ai-search-prompt").focus();$("#ai-search-prompt").select();
-    }
-  });
   $("#clear-search").addEventListener("click",()=>{$("#search-input").value="";state.query="";state.page=1;closeSuggestions();render();});
   $("#reset-search").addEventListener("click",()=>{state.category="all";state.query="";$("#search-input").value="";state.page=1;closeSuggestions();render();});
   $("#sort-select").addEventListener("change",e=>{state.sort=e.target.value;state.page=1;render();});
