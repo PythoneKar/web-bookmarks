@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101827">
+  <meta name="description" content="کتابخانه‌ای ساده و هوشمند برای جست‌وجو و دسته‌بندی منابع کاربردی وب">
+  <title>کتابخانه منابع وب</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/app.js"></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="./" aria-label="صفحه اصلی">
+      <span class="brand-mark">⌘</span><span>کتابخانه منابع</span>
+    </a>
+    <nav class="top-actions">
+      <a href="#about">درباره</a>
+      <button id="theme-toggle" class="icon-button" type="button" aria-label="تغییر پوسته">☼</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="eyebrow"><span class="pulse"></span> یک نقطه شروع برای وب‌گردی بهتر</div>
+      <h1>چیزی که دنبالش هستی،<br><span>اینجا پیداش می‌کنی.</span></h1>
+      <p class="hero-copy">مجموعه‌ای مرتب از وب‌سایت‌ها، ابزارها و منابع مفید؛ بدون شلوغی و با جست‌وجویی سریع.</p>
+      <div class="search-wrap">
+        <span class="search-icon">⌕</span>
+        <input id="search-input" type="search" autocomplete="off" placeholder="نام سایت، موضوع یا کلیدواژه را جست‌وجو کن..." aria-label="جست‌وجوی منابع">
+        <kbd>جست‌وجو</kbd>
+        <button id="clear-search" type="button" aria-label="پاک کردن جست‌وجو" hidden>×</button>
+      </div>
+      <div class="hero-meta"><span id="total-count">در حال بارگذاری منابع...</span><span class="meta-dot"></span><span>جست‌وجوی فارسی هوشمند</span></div>
+    </section>
+
+    <section class="library-layout" aria-label="کتابخانه منابع">
+      <aside class="sidebar">
+        <div class="sidebar-heading"><span>دسته‌بندی‌ها</span><span class="sidebar-label">LIBRARY</span></div>
+        <button class="category active" data-category="all"><span class="category-icon">✦</span><span>همه منابع</span><b id="all-count">۰</b></button>
+        <div id="category-list"></div>
+        <div class="sidebar-note"><span class="note-icon">✧</span><p>برای پیدا کردن سریع‌تر، چند حرف از نام سایت یا موضوع موردنظرت را بنویس.</p></div>
+      </aside>
+
+      <section class="results-area">
+        <div class="results-head">
+          <div><div class="section-kicker">BROWSE & DISCOVER</div><h2 id="results-title">همه منابع</h2><p id="results-subtitle">منابع منتخب، یک‌جا و مرتب</p></div>
+          <label class="sort-control">مرتب‌سازی
+            <select id="sort-select"><option value="default">پیش‌فرض</option><option value="name">نام: الف تا ی</option></select>
+          </label>
+        </div>
+        <div id="active-filters" class="active-filters"></div>
+        <div id="resource-grid" class="resource-grid" aria-live="polite"></div>
+        <div id="empty-state" class="empty-state" hidden><div class="empty-symbol">⌕</div><h3>چیزی پیدا نشد</h3><p>عبارت جست‌وجو یا دسته‌بندی را تغییر بده.</p><button id="reset-search" class="secondary-button" type="button">نمایش همه منابع</button></div>
+        <div class="pagination"><span id="page-info"></span><div><button id="prev-page" class="page-button" type="button" aria-label="صفحه قبل">→</button><div id="page-numbers"></div><button id="next-page" class="page-button" type="button" aria-label="صفحه بعد">←</button></div></div>
+      </section>
+    </section>
+
+    <section id="about" class="about-section"><div class="about-icon">✳</div><div><div class="section-kicker">ABOUT THIS LIBRARY</div><h2>وب، مرتب‌تر از همیشه</h2><p>این کتابخانه یک فهرست ایستا و سبک است. منابع در فایل داده نگهداری می‌شوند و می‌توان آن را به‌سادگی گسترش داد یا ویرایش کرد.</p></div></section>
+  </main>
+
+  <footer><span>کتابخانه منابع وب</span><span>ساده، سریع، همیشه در دسترس</span></footer>
+</body>
+</html>
