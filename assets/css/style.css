@@ -335,3 +335,9 @@ main{max-width:1240px;margin:auto;padding:0 28px}.hero{position:relative;isolati
   .mega-group{border-width:1px}
   .mega-link-wrap{border-bottom-color:color-mix(in srgb,var(--muted) 38%,var(--line))}
 }
+
+
+/* Numbered category navigation */
+.category-number{display:inline-grid;place-items:center;min-width:22px;height:22px;margin-inline:3px;padding:0 5px;border:1px solid color-mix(in srgb,var(--accent2) 45%,var(--line));border-radius:7px;background:color-mix(in srgb,var(--accent2) 12%,var(--panel));color:var(--accent2);font-size:10px;font-weight:800;font-variant-numeric:tabular-nums;line-height:1}
+.category-with-menu>.category{gap:7px}
+@media(max-width:680px){.category-number{min-width:20px;height:20px;font-size:9px}}
