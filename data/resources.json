@@ -2,8 +2,126 @@
   "categories": [
     {
       "id": "development",
-      "name": "برنامه‌نویسی و توسعه",
-      "icon": "⌘"
+      "name": "برنامه‌نویسی",
+      "icon": "⌘",
+      "subcategoryGroups": [
+        {
+          "title": "ساخت وب‌سایت",
+          "items": [
+            {
+              "id": "wordpress",
+              "name": "وردپرس و ووکامرس"
+            },
+            {
+              "id": "frontend",
+              "name": "فرانت‌اند و HTML/CSS"
+            },
+            {
+              "id": "javascript",
+              "name": "JavaScript و TypeScript"
+            },
+            {
+              "id": "frontend-frameworks",
+              "name": "فریم‌ورک‌های وب"
+            },
+            {
+              "id": "php",
+              "name": "PHP و فریم‌ورک‌ها"
+            }
+          ]
+        },
+        {
+          "title": "زبان‌ها و اپلیکیشن",
+          "items": [
+            {
+              "id": "python",
+              "name": "Python و فریم‌ورک‌ها"
+            },
+            {
+              "id": "dotnet",
+              "name": "C# و .NET"
+            },
+            {
+              "id": "java",
+              "name": "Java و Kotlin"
+            },
+            {
+              "id": "systems",
+              "name": "Go و Rust"
+            },
+            {
+              "id": "mobile",
+              "name": "توسعه موبایل"
+            },
+            {
+              "id": "gamedev",
+              "name": "بازی‌سازی"
+            }
+          ]
+        },
+        {
+          "title": "ابزارهای توسعه",
+          "items": [
+            {
+              "id": "editors",
+              "name": "ویرایشگرها و IDE"
+            },
+            {
+              "id": "git",
+              "name": "Git و مدیریت کد"
+            },
+            {
+              "id": "packages",
+              "name": "پکیج‌ها و ابزار ساخت"
+            },
+            {
+              "id": "api",
+              "name": "API و ابزارهای ارتباطی"
+            },
+            {
+              "id": "testing",
+              "name": "تست و تضمین کیفیت"
+            },
+            {
+              "id": "browser-tools",
+              "name": "ابزارهای مرورگر و دیباگ"
+            }
+          ]
+        },
+        {
+          "title": "زیرساخت و داده",
+          "items": [
+            {
+              "id": "databases",
+              "name": "پایگاه داده و ORM"
+            },
+            {
+              "id": "devops",
+              "name": "DevOps و کانتینر"
+            },
+            {
+              "id": "hosting",
+              "name": "هاست و استقرار"
+            },
+            {
+              "id": "security",
+              "name": "امنیت نرم‌افزار"
+            },
+            {
+              "id": "monitoring",
+              "name": "مانیتورینگ و تحلیل"
+            },
+            {
+              "id": "ai-coding",
+              "name": "هوش مصنوعی برنامه‌نویسی"
+            },
+            {
+              "id": "learning-dev",
+              "name": "یادگیری و مستندات"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "design",
@@ -522,7 +640,8 @@
         "git",
         "code",
         "گیت‌هاب"
-      ]
+      ],
+      "subcategory": "git"
     },
     {
       "title": "GitLab",
@@ -532,7 +651,8 @@
       "tags": [
         "git",
         "devops"
-      ]
+      ],
+      "subcategory": "git"
     },
     {
       "title": "Stack Overflow",
@@ -541,7 +661,8 @@
       "url": "https://stackoverflow.com",
       "tags": [
         "برنامه‌نویسی"
-      ]
+      ],
+      "subcategory": "learning-dev"
     },
     {
       "title": "MDN Web Docs",
@@ -552,7 +673,8 @@
         "html",
         "css",
         "javascript"
-      ]
+      ],
+      "subcategory": "learning-dev"
     },
     {
       "title": "W3Schools",
@@ -561,7 +683,8 @@
       "url": "https://www.w3schools.com",
       "tags": [
         "آموزش"
-      ]
+      ],
+      "subcategory": "learning-dev"
     },
     {
       "title": "CodePen",
@@ -571,7 +694,8 @@
       "tags": [
         "css",
         "html"
-      ]
+      ],
+      "subcategory": "frontend"
     },
     {
       "title": "freeCodeCamp",
@@ -581,7 +705,8 @@
       "tags": [
         "آموزش",
         "کدنویسی"
-      ]
+      ],
+      "subcategory": "learning-dev"
     },
     {
       "title": "Python.org",
@@ -590,7 +715,8 @@
       "url": "https://www.python.org",
       "tags": [
         "python"
-      ]
+      ],
+      "subcategory": "python"
     },
     {
       "title": "Microsoft Learn",
@@ -608,7 +734,8 @@
       "url": "https://code.visualstudio.com",
       "tags": [
         "ادیتور"
-      ]
+      ],
+      "subcategory": "editors"
     },
     {
       "title": "Figma",
@@ -1084,7 +1211,8 @@
       "description": "میزبانی مخازن کد با رویکرد متن‌باز",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "git"
     },
     {
       "title": "Bitbucket",
@@ -1093,7 +1221,8 @@
       "description": "میزبانی مخازن Git و ابزارهای تیمی",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "git"
     },
     {
       "title": "SourceForge",
@@ -1102,7 +1231,8 @@
       "description": "میزبانی و کشف پروژه‌های نرم‌افزار آزاد",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "git"
     },
     {
       "title": "npm",
@@ -1111,7 +1241,8 @@
       "description": "مخزن بسته‌های جاوااسکریپت",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "learning-dev"
     },
     {
       "title": "PyPI",
@@ -1120,7 +1251,8 @@
       "description": "مخزن رسمی بسته‌های پایتون",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "learning-dev"
     },
     {
       "title": "NuGet",
@@ -1129,7 +1261,8 @@
       "description": "مخزن بسته‌های دات‌نت",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "learning-dev"
     },
     {
       "title": "Docker Hub",
@@ -1138,7 +1271,8 @@
       "description": "مخزن ایمیج‌های کانتینری",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "learning-dev"
     },
     {
       "title": "Replit",
@@ -1147,7 +1281,8 @@
       "description": "محیط برنامه‌نویسی آنلاین",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "learning-dev"
     },
     {
       "title": "Glitch",
@@ -1156,7 +1291,8 @@
       "description": "ساخت و میزبانی نمونه‌پروژه‌های وب",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "learning-dev"
     },
     {
       "title": "JSFiddle",
@@ -1165,7 +1301,8 @@
       "description": "آزمایش سریع کدهای HTML و CSS و JS",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "frontend"
     },
     {
       "title": "The Odin Project",
@@ -1174,7 +1311,8 @@
       "description": "مسیر آموزشی توسعه وب",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "learning-dev"
     },
     {
       "title": "Roadmap.sh",
@@ -1183,7 +1321,8 @@
       "description": "نقشه راه مهارت‌های فناوری",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "learning-dev"
     },
     {
       "title": "DevDocs",
@@ -1192,7 +1331,8 @@
       "description": "مستندات یکپارچه زبان‌ها و ابزارها",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "learning-dev"
     },
     {
       "title": "Can I use",
@@ -1201,7 +1341,8 @@
       "description": "بررسی پشتیبانی قابلیت‌های وب در مرورگرها",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "browser-tools"
     },
     {
       "title": "Regex101",
@@ -1210,7 +1351,8 @@
       "description": "ساخت و آزمایش عبارت‌های منظم",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "browser-tools"
     },
     {
       "title": "Compiler Explorer",
@@ -1219,7 +1361,8 @@
       "description": "بررسی خروجی کامپایلرها به‌صورت آنلاین",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "browser-tools"
     },
     {
       "title": "LeetCode",
@@ -1228,7 +1371,8 @@
       "description": "تمرین الگوریتم و مصاحبه برنامه‌نویسی",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "learning-dev"
     },
     {
       "title": "HackerRank",
@@ -1237,7 +1381,8 @@
       "description": "تمرین مهارت‌های برنامه‌نویسی",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "learning-dev"
     },
     {
       "title": "Exercism",
@@ -1246,7 +1391,8 @@
       "description": "تمرین زبان‌های برنامه‌نویسی با بازخورد",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "learning-dev"
     },
     {
       "title": "Codewars",
@@ -1255,7 +1401,8 @@
       "description": "چالش‌های کدنویسی مرحله‌ای",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "learning-dev"
     },
     {
       "title": "Svelte",
@@ -1264,7 +1411,8 @@
       "description": "فریم‌ورک رابط کاربری وب",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "frontend-frameworks"
     },
     {
       "title": "Vue.js",
@@ -1273,7 +1421,8 @@
       "description": "فریم‌ورک جاوااسکریپت برای رابط کاربری",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "frontend-frameworks"
     },
     {
       "title": "React",
@@ -1282,7 +1431,8 @@
       "description": "کتابخانه ساخت رابط کاربری",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "frontend-frameworks"
     },
     {
       "title": "Angular",
@@ -1291,7 +1441,8 @@
       "description": "فریم‌ورک توسعه برنامه‌های وب",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "frontend-frameworks"
     },
     {
       "title": "Node.js",
@@ -1300,7 +1451,8 @@
       "description": "محیط اجرای جاوااسکریپت سمت سرور",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "javascript"
     },
     {
       "title": "Deno",
@@ -1309,7 +1461,8 @@
       "description": "محیط اجرای مدرن جاوااسکریپت و تایپ‌اسکریپت",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "javascript"
     },
     {
       "title": "Bun",
@@ -1318,7 +1471,8 @@
       "description": "ابزار و محیط اجرای سریع جاوااسکریپت",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "javascript"
     },
     {
       "title": "Vite",
@@ -1327,7 +1481,8 @@
       "description": "ابزار ساخت و توسعه فرانت‌اند",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "packages"
     },
     {
       "title": "Astro",
@@ -1336,7 +1491,8 @@
       "description": "فریم‌ورک ساخت وب‌سایت‌های محتوامحور",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "frontend-frameworks"
     },
     {
       "title": "Tailwind CSS",
@@ -1345,7 +1501,8 @@
       "description": "فریم‌ورک CSS مبتنی بر کلاس‌های کاربردی",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "frontend"
     },
     {
       "title": "Bootstrap",
@@ -1354,7 +1511,8 @@
       "description": "ابزار طراحی رابط واکنش‌گرا",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "frontend"
     },
     {
       "title": "Sass",
@@ -1363,7 +1521,8 @@
       "description": "زبان توسعه‌یافته CSS",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "frontend"
     },
     {
       "title": "Postman",
@@ -1372,7 +1531,8 @@
       "description": "تست و مستندسازی API",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "api"
     },
     {
       "title": "Insomnia",
@@ -1381,7 +1541,8 @@
       "description": "ابزار کار با API",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "api"
     },
     {
       "title": "Swagger",
@@ -1390,7 +1551,8 @@
       "description": "طراحی و مستندسازی API",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "api"
     },
     {
       "title": "Supabase",
@@ -1399,7 +1561,8 @@
       "description": "پلتفرم متن‌باز بک‌اند",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "databases"
     },
     {
       "title": "Firebase",
@@ -1408,7 +1571,8 @@
       "description": "سرویس‌های توسعه اپلیکیشن",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "databases"
     },
     {
       "title": "Vercel",
@@ -1417,7 +1581,8 @@
       "description": "استقرار و میزبانی پروژه‌های وب",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "hosting"
     },
     {
       "title": "Netlify",
@@ -1426,7 +1591,8 @@
       "description": "میزبانی و استقرار وب‌سایت‌های مدرن",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "hosting"
     },
     {
       "title": "Cloudflare Developers",
@@ -1435,7 +1601,8 @@
       "description": "مستندات سرویس‌های توسعه Cloudflare",
       "tags": [
         "development"
-      ]
+      ],
+      "subcategory": "devops"
     },
     {
       "title": "Dribbble",
@@ -3105,6 +3272,1311 @@
         "مسابقات ایران",
         "فوتبال",
         "والیبال"
+      ]
+    },
+    {
+      "title": "WordPress.org",
+      "category": "development",
+      "subcategory": "wordpress",
+      "description": "مرجع رسمی وردپرس برای دریافت هسته، پوسته‌ها و افزونه‌ها.",
+      "url": "https://wordpress.org/",
+      "tags": [
+        "wordpress",
+        "cms",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "WordPress Developer Resources",
+      "category": "development",
+      "subcategory": "wordpress",
+      "description": "مستندات رسمی توسعه قالب، افزونه، REST API و استانداردهای وردپرس.",
+      "url": "https://developer.wordpress.org/",
+      "tags": [
+        "wordpress developer",
+        "docs",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "WordPress Playground",
+      "category": "development",
+      "subcategory": "wordpress",
+      "description": "اجرای وردپرس در مرورگر برای آزمایش و نمونه‌سازی بدون هاست.",
+      "url": "https://playground.wordpress.net/",
+      "tags": [
+        "wordpress",
+        "sandbox",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Make WordPress",
+      "category": "development",
+      "subcategory": "wordpress",
+      "description": "فضای مشارکت و توسعه پروژه متن‌باز وردپرس در تیم‌های مختلف.",
+      "url": "https://make.wordpress.org/",
+      "tags": [
+        "wordpress",
+        "community",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "WP-CLI",
+      "category": "development",
+      "subcategory": "wordpress",
+      "description": "ابزار خط فرمان برای مدیریت و توسعه وب‌سایت‌های وردپرسی.",
+      "url": "https://wp-cli.org/",
+      "tags": [
+        "wordpress",
+        "cli",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "WooCommerce",
+      "category": "development",
+      "subcategory": "wordpress",
+      "description": "پلتفرم تجارت الکترونیک وردپرس و مستندات توسعه فروشگاه.",
+      "url": "https://woocommerce.com/",
+      "tags": [
+        "woocommerce",
+        "فروشگاه",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Elementor Developers",
+      "category": "development",
+      "subcategory": "wordpress",
+      "description": "مستندات توسعه افزونه‌ها و قابلیت‌های سفارشی Elementor.",
+      "url": "https://developers.elementor.com/",
+      "tags": [
+        "elementor",
+        "wordpress",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Advanced Custom Fields",
+      "category": "development",
+      "subcategory": "wordpress",
+      "description": "ابزار توسعه فیلدهای سفارشی برای وردپرس.",
+      "url": "https://www.advancedcustomfields.com/",
+      "tags": [
+        "acf",
+        "wordpress",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Query Monitor",
+      "category": "development",
+      "subcategory": "wordpress",
+      "description": "افزونه عیب‌یابی کوئری‌ها، هوک‌ها و خطاهای PHP در وردپرس.",
+      "url": "https://wordpress.org/plugins/query-monitor/",
+      "tags": [
+        "debug",
+        "wordpress",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "HTML Living Standard",
+      "category": "development",
+      "subcategory": "frontend",
+      "description": "استاندارد مرجع HTML برای ساختار صفحات وب.",
+      "url": "https://html.spec.whatwg.org/",
+      "tags": [
+        "html",
+        "standard",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "CSS Reference",
+      "category": "development",
+      "subcategory": "frontend",
+      "description": "مرجع جامع ویژگی‌ها، انتخابگرها و قواعد CSS.",
+      "url": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      "tags": [
+        "css",
+        "mdn",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "web.dev",
+      "category": "development",
+      "subcategory": "frontend",
+      "description": "راهنماهای مدرن برای ساخت وب‌سایت‌های سریع، امن و قابل‌دسترس.",
+      "url": "https://web.dev/",
+      "tags": [
+        "web",
+        "performance",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "CSS-Tricks",
+      "category": "development",
+      "subcategory": "frontend",
+      "description": "مقالات و راهنماهای کاربردی CSS، چیدمان و رابط کاربری.",
+      "url": "https://css-tricks.com/",
+      "tags": [
+        "css",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "shadcn/ui",
+      "category": "development",
+      "subcategory": "frontend",
+      "description": "کامپوننت‌های قابل‌سفارشی‌سازی برای رابط‌های React.",
+      "url": "https://ui.shadcn.com/",
+      "tags": [
+        "react",
+        "components",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Radix UI",
+      "category": "development",
+      "subcategory": "frontend",
+      "description": "کامپوننت‌های دسترس‌پذیر و بدون استایل برای رابط کاربری.",
+      "url": "https://www.radix-ui.com/",
+      "tags": [
+        "ui",
+        "react",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "DaisyUI",
+      "category": "development",
+      "subcategory": "frontend",
+      "description": "کامپوننت‌های آماده مبتنی بر Tailwind CSS.",
+      "url": "https://daisyui.com/",
+      "tags": [
+        "tailwind",
+        "components",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Material UI",
+      "category": "development",
+      "subcategory": "frontend",
+      "description": "کتابخانه کامپوننت‌های React با سیستم طراحی متریال.",
+      "url": "https://mui.com/",
+      "tags": [
+        "react",
+        "ui",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "JavaScript.info",
+      "category": "development",
+      "subcategory": "javascript",
+      "description": "آموزش JavaScript از مبانی تا مفاهیم پیشرفته.",
+      "url": "https://javascript.info/",
+      "tags": [
+        "javascript",
+        "tutorial",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "TypeScript",
+      "category": "development",
+      "subcategory": "javascript",
+      "description": "وب‌سایت رسمی زبان TypeScript، مستندات و Playground.",
+      "url": "https://www.typescriptlang.org/",
+      "tags": [
+        "typescript",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "TC39",
+      "category": "development",
+      "subcategory": "javascript",
+      "description": "استانداردها و پیشنهادهای زبان ECMAScript و JavaScript.",
+      "url": "https://tc39.es/",
+      "tags": [
+        "javascript",
+        "ecmascript",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Node.js Learn",
+      "category": "development",
+      "subcategory": "javascript",
+      "description": "راهنمای رسمی توسعه سمت سرور با Node.js.",
+      "url": "https://nodejs.org/en/learn",
+      "tags": [
+        "nodejs",
+        "backend",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Express",
+      "category": "development",
+      "subcategory": "javascript",
+      "description": "فریم‌ورک مینیمال Node.js برای ساخت وب‌سرور و API.",
+      "url": "https://expressjs.com/",
+      "tags": [
+        "nodejs",
+        "api",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "NestJS",
+      "category": "development",
+      "subcategory": "javascript",
+      "description": "فریم‌ورک ساختارمند Node.js و TypeScript برای برنامه‌های سمت سرور.",
+      "url": "https://nestjs.com/",
+      "tags": [
+        "nodejs",
+        "typescript",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Next.js",
+      "category": "development",
+      "subcategory": "frontend-frameworks",
+      "description": "فریم‌ورک React برای اپلیکیشن‌های فول‌استک و رندر سمت سرور.",
+      "url": "https://nextjs.org/",
+      "tags": [
+        "react",
+        "nextjs",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Nuxt",
+      "category": "development",
+      "subcategory": "frontend-frameworks",
+      "description": "فریم‌ورک Vue برای ساخت وب‌سایت‌ها و اپلیکیشن‌های فول‌استک.",
+      "url": "https://nuxt.com/",
+      "tags": [
+        "vue",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Remix",
+      "category": "development",
+      "subcategory": "frontend-frameworks",
+      "description": "فریم‌ورک وب مبتنی بر React و استانداردهای وب.",
+      "url": "https://remix.run/",
+      "tags": [
+        "react",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Qwik",
+      "category": "development",
+      "subcategory": "frontend-frameworks",
+      "description": "فریم‌ورک وب با تمرکز بر بارگذاری سریع و resumability.",
+      "url": "https://qwik.dev/",
+      "tags": [
+        "web",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "SolidJS",
+      "category": "development",
+      "subcategory": "frontend-frameworks",
+      "description": "کتابخانه رابط کاربری واکنشی با تمرکز بر عملکرد.",
+      "url": "https://www.solidjs.com/",
+      "tags": [
+        "javascript",
+        "ui",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Lit",
+      "category": "development",
+      "subcategory": "frontend-frameworks",
+      "description": "کتابخانه سبک برای ساخت Web Components استاندارد.",
+      "url": "https://lit.dev/",
+      "tags": [
+        "web components",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "PHP",
+      "category": "development",
+      "subcategory": "php",
+      "description": "مستندات رسمی زبان PHP و مرجع توابع و قابلیت‌ها.",
+      "url": "https://www.php.net/",
+      "tags": [
+        "php",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Laravel",
+      "category": "development",
+      "subcategory": "php",
+      "description": "فریم‌ورک PHP برای ساخت برنامه‌های وب و API.",
+      "url": "https://laravel.com/",
+      "tags": [
+        "php",
+        "framework",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Symfony",
+      "category": "development",
+      "subcategory": "php",
+      "description": "فریم‌ورک PHP و مجموعه کامپوننت‌های توسعه وب.",
+      "url": "https://symfony.com/",
+      "tags": [
+        "php",
+        "framework",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Composer",
+      "category": "development",
+      "subcategory": "php",
+      "description": "مدیر وابستگی استاندارد برای پروژه‌های PHP.",
+      "url": "https://getcomposer.org/",
+      "tags": [
+        "php",
+        "package manager",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Packagist",
+      "category": "development",
+      "subcategory": "php",
+      "description": "مخزن اصلی پکیج‌های PHP و Composer.",
+      "url": "https://packagist.org/",
+      "tags": [
+        "php",
+        "packages",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Python Documentation",
+      "category": "development",
+      "subcategory": "python",
+      "description": "مستندات رسمی زبان Python و کتابخانه استاندارد آن.",
+      "url": "https://docs.python.org/3/",
+      "tags": [
+        "python",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Django",
+      "category": "development",
+      "subcategory": "python",
+      "description": "فریم‌ورک Python برای توسعه سریع و امن وب.",
+      "url": "https://www.djangoproject.com/",
+      "tags": [
+        "python",
+        "web",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "FastAPI",
+      "category": "development",
+      "subcategory": "python",
+      "description": "فریم‌ورک مدرن Python برای ساخت APIهای سریع.",
+      "url": "https://fastapi.tiangolo.com/",
+      "tags": [
+        "python",
+        "api",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Flask",
+      "category": "development",
+      "subcategory": "python",
+      "description": "فریم‌ورک سبک Python برای ساخت برنامه‌های وب.",
+      "url": "https://flask.palletsprojects.com/",
+      "tags": [
+        "python",
+        "web",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "PyPA",
+      "category": "development",
+      "subcategory": "python",
+      "description": "راهنمای بسته‌بندی، انتشار و مدیریت پروژه‌های Python.",
+      "url": "https://packaging.python.org/",
+      "tags": [
+        "python",
+        "packaging",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "uv",
+      "category": "development",
+      "subcategory": "python",
+      "description": "ابزار سریع مدیریت محیط و وابستگی‌های Python.",
+      "url": "https://docs.astral.sh/uv/",
+      "tags": [
+        "python",
+        "package manager",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": ".NET",
+      "category": "development",
+      "subcategory": "dotnet",
+      "description": "پلتفرم متن‌باز مایکروسافت برای ساخت برنامه‌های C#، وب و دسکتاپ.",
+      "url": "https://dotnet.microsoft.com/",
+      "tags": [
+        "dotnet",
+        "csharp",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "C# Documentation",
+      "category": "development",
+      "subcategory": "dotnet",
+      "description": "مستندات رسمی زبان C# و نمونه‌کدها.",
+      "url": "https://learn.microsoft.com/en-us/dotnet/csharp/",
+      "tags": [
+        "csharp",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "ASP.NET Core",
+      "category": "development",
+      "subcategory": "dotnet",
+      "description": "فریم‌ورک ساخت وب‌سایت، سرویس و API با .NET.",
+      "url": "https://learn.microsoft.com/en-us/aspnet/core/",
+      "tags": [
+        "aspnet",
+        "dotnet",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Blazor",
+      "category": "development",
+      "subcategory": "dotnet",
+      "description": "ساخت رابط وب تعاملی با C# و .NET.",
+      "url": "https://dotnet.microsoft.com/en-us/apps/aspnet/web-apps/blazor",
+      "tags": [
+        "blazor",
+        "csharp",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Java",
+      "category": "development",
+      "subcategory": "java",
+      "description": "مرجع رسمی توسعه‌دهندگان Java و مسیرهای یادگیری.",
+      "url": "https://dev.java/",
+      "tags": [
+        "java",
+        "jvm",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Spring",
+      "category": "development",
+      "subcategory": "java",
+      "description": "اکوسیستم و فریم‌ورک‌های Java برای برنامه‌های سازمانی و وب.",
+      "url": "https://spring.io/",
+      "tags": [
+        "java",
+        "spring",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Kotlin",
+      "category": "development",
+      "subcategory": "java",
+      "description": "زبان مدرن چندسکویی برای JVM، اندروید و سرور.",
+      "url": "https://kotlinlang.org/",
+      "tags": [
+        "kotlin",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Go",
+      "category": "development",
+      "subcategory": "systems",
+      "description": "وب‌سایت رسمی زبان Go و ابزارهای توسعه.",
+      "url": "https://go.dev/",
+      "tags": [
+        "golang",
+        "go",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Rust",
+      "category": "development",
+      "subcategory": "systems",
+      "description": "زبان سیستمی با تمرکز بر ایمنی حافظه و کارایی.",
+      "url": "https://www.rust-lang.org/",
+      "tags": [
+        "rust",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Flutter",
+      "category": "development",
+      "subcategory": "mobile",
+      "description": "فریم‌ورک گوگل برای ساخت اپلیکیشن چندسکویی با Dart.",
+      "url": "https://flutter.dev/",
+      "tags": [
+        "mobile",
+        "dart",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "React Native",
+      "category": "development",
+      "subcategory": "mobile",
+      "description": "ساخت اپلیکیشن موبایل بومی با React و JavaScript.",
+      "url": "https://reactnative.dev/",
+      "tags": [
+        "mobile",
+        "react",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Android Developers",
+      "category": "development",
+      "subcategory": "mobile",
+      "description": "مرجع رسمی ساخت اپلیکیشن‌های اندروید.",
+      "url": "https://developer.android.com/",
+      "tags": [
+        "android",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Apple Developer",
+      "category": "development",
+      "subcategory": "mobile",
+      "description": "ابزارها و مستندات توسعه برای iOS و macOS.",
+      "url": "https://developer.apple.com/",
+      "tags": [
+        "ios",
+        "swift",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Godot Engine",
+      "category": "development",
+      "subcategory": "gamedev",
+      "description": "موتور متن‌باز بازی‌سازی دوبعدی و سه‌بعدی.",
+      "url": "https://godotengine.org/",
+      "tags": [
+        "game",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Unity",
+      "category": "development",
+      "subcategory": "gamedev",
+      "description": "موتور توسعه بازی و تجربه‌های تعاملی چندسکویی.",
+      "url": "https://unity.com/",
+      "tags": [
+        "game",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Unreal Engine",
+      "category": "development",
+      "subcategory": "gamedev",
+      "description": "موتور بازی‌سازی سه‌بعدی برای بازی‌ها و تجربه‌های بلادرنگ.",
+      "url": "https://www.unrealengine.com/",
+      "tags": [
+        "game",
+        "3d",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "PostgreSQL",
+      "category": "development",
+      "subcategory": "databases",
+      "description": "پایگاه داده رابطه‌ای قدرتمند و متن‌باز.",
+      "url": "https://www.postgresql.org/",
+      "tags": [
+        "database",
+        "sql",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "MySQL",
+      "category": "development",
+      "subcategory": "databases",
+      "description": "پایگاه داده رابطه‌ای پرکاربرد برای وب و سازمان‌ها.",
+      "url": "https://www.mysql.com/",
+      "tags": [
+        "database",
+        "sql",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "SQLite",
+      "category": "development",
+      "subcategory": "databases",
+      "description": "پایگاه داده سبک و بدون سرور برای برنامه‌های محلی.",
+      "url": "https://sqlite.org/",
+      "tags": [
+        "database",
+        "sql",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "MongoDB",
+      "category": "development",
+      "subcategory": "databases",
+      "description": "پایگاه داده سندگرا برای برنامه‌های مدرن.",
+      "url": "https://www.mongodb.com/",
+      "tags": [
+        "database",
+        "nosql",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Redis",
+      "category": "development",
+      "subcategory": "databases",
+      "description": "ذخیره‌ساز داده در حافظه برای کش، صف و داده بلادرنگ.",
+      "url": "https://redis.io/",
+      "tags": [
+        "database",
+        "cache",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "DBeaver",
+      "category": "development",
+      "subcategory": "databases",
+      "description": "کلاینت چندپایگاه‌داده‌ای برای مدیریت و اجرای کوئری SQL.",
+      "url": "https://dbeaver.io/",
+      "tags": [
+        "database",
+        "sql",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Prisma",
+      "category": "development",
+      "subcategory": "databases",
+      "description": "ORM و ابزار مدیریت پایگاه داده برای TypeScript.",
+      "url": "https://www.prisma.io/",
+      "tags": [
+        "orm",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Drizzle ORM",
+      "category": "development",
+      "subcategory": "databases",
+      "description": "ORM سبک و تایپ‌سیف برای TypeScript و SQL.",
+      "url": "https://orm.drizzle.team/",
+      "tags": [
+        "orm",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Neon",
+      "category": "development",
+      "subcategory": "databases",
+      "description": "PostgreSQL ابری با معماری serverless و قابلیت branching.",
+      "url": "https://neon.com/",
+      "tags": [
+        "postgres",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Git",
+      "category": "development",
+      "subcategory": "git",
+      "description": "وب‌سایت رسمی سیستم کنترل نسخه Git و مستندات آن.",
+      "url": "https://git-scm.com/",
+      "tags": [
+        "version control",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "GitHub Desktop",
+      "category": "development",
+      "subcategory": "git",
+      "description": "رابط گرافیکی برای کار با مخازن Git و GitHub.",
+      "url": "https://desktop.github.com/",
+      "tags": [
+        "github",
+        "gui",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "GitKraken",
+      "category": "development",
+      "subcategory": "git",
+      "description": "ابزار گرافیکی مدیریت Git، شاخه‌ها و تاریخچه تغییرات.",
+      "url": "https://www.gitkraken.com/",
+      "tags": [
+        "git",
+        "gui",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Sourcetree",
+      "category": "development",
+      "subcategory": "git",
+      "description": "کلاینت گرافیکی Git برای مدیریت مخازن و شاخه‌ها.",
+      "url": "https://www.sourcetreeapp.com/",
+      "tags": [
+        "git",
+        "gui",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Visual Studio",
+      "category": "development",
+      "subcategory": "editors",
+      "description": "محیط توسعه یکپارچه مایکروسافت برای .NET و C++.",
+      "url": "https://visualstudio.microsoft.com/",
+      "tags": [
+        "ide",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "JetBrains",
+      "category": "development",
+      "subcategory": "editors",
+      "description": "مجموعه IDEهای تخصصی برای زبان‌ها و پلتفرم‌های مختلف.",
+      "url": "https://www.jetbrains.com/",
+      "tags": [
+        "ide",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Zed",
+      "category": "development",
+      "subcategory": "editors",
+      "description": "ویرایشگر کد سریع با امکانات همکاری و توسعه مدرن.",
+      "url": "https://zed.dev/",
+      "tags": [
+        "editor",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Cursor",
+      "category": "development",
+      "subcategory": "ai-coding",
+      "description": "ویرایشگر کد مبتنی بر هوش مصنوعی برای کار با پروژه‌ها.",
+      "url": "https://cursor.com/",
+      "tags": [
+        "ai",
+        "editor",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "GitHub Copilot",
+      "category": "development",
+      "subcategory": "ai-coding",
+      "description": "دستیار هوش مصنوعی برای تکمیل کد، چت و گردش کار توسعه.",
+      "url": "https://github.com/features/copilot",
+      "tags": [
+        "ai",
+        "coding",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Claude Code",
+      "category": "development",
+      "subcategory": "ai-coding",
+      "description": "ابزار کدنویسی عامل‌محور برای درک و ویرایش پروژه.",
+      "url": "https://docs.anthropic.com/en/docs/claude-code/overview",
+      "tags": [
+        "ai",
+        "agent",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Windsurf",
+      "category": "development",
+      "subcategory": "ai-coding",
+      "description": "محیط توسعه هوشمند با قابلیت‌های عامل‌محور.",
+      "url": "https://windsurf.com/",
+      "tags": [
+        "ai",
+        "ide",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Aider",
+      "category": "development",
+      "subcategory": "ai-coding",
+      "description": "دستیار کدنویسی متن‌باز و ترمینالی برای مخازن Git.",
+      "url": "https://aider.chat/",
+      "tags": [
+        "ai",
+        "terminal",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "pnpm",
+      "category": "development",
+      "subcategory": "packages",
+      "description": "مدیر پکیج سریع و کم‌مصرف برای JavaScript و TypeScript.",
+      "url": "https://pnpm.io/",
+      "tags": [
+        "nodejs",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Yarn",
+      "category": "development",
+      "subcategory": "packages",
+      "description": "مدیر وابستگی برای پروژه‌های JavaScript.",
+      "url": "https://yarnpkg.com/",
+      "tags": [
+        "javascript",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Webpack",
+      "category": "development",
+      "subcategory": "packages",
+      "description": "ابزار bundling برای بسته‌بندی منابع برنامه‌های وب.",
+      "url": "https://webpack.js.org/",
+      "tags": [
+        "bundler",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Rollup",
+      "category": "development",
+      "subcategory": "packages",
+      "description": "ابزار بسته‌بندی ماژول‌های JavaScript.",
+      "url": "https://rollupjs.org/",
+      "tags": [
+        "bundler",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Babel",
+      "category": "development",
+      "subcategory": "packages",
+      "description": "کامپایلر JavaScript برای تبدیل کد به نسخه‌های سازگارتر.",
+      "url": "https://babeljs.io/",
+      "tags": [
+        "compiler",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Bruno",
+      "category": "development",
+      "subcategory": "api",
+      "description": "کلاینت API متن‌باز با ذخیره درخواست‌ها در فایل‌های پروژه.",
+      "url": "https://www.usebruno.com/",
+      "tags": [
+        "rest",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Hoppscotch",
+      "category": "development",
+      "subcategory": "api",
+      "description": "ابزار متن‌باز برای آزمایش REST، GraphQL و WebSocket.",
+      "url": "https://hoppscotch.io/",
+      "tags": [
+        "graphql",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "GraphQL",
+      "category": "development",
+      "subcategory": "api",
+      "description": "زبان پرس‌وجو و محیط اجرایی برای APIها.",
+      "url": "https://graphql.org/",
+      "tags": [
+        "api",
+        "query",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "gRPC",
+      "category": "development",
+      "subcategory": "api",
+      "description": "چارچوب RPC مدرن و متن‌باز برای ارتباط سرویس‌ها.",
+      "url": "https://grpc.io/",
+      "tags": [
+        "rpc",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Playwright",
+      "category": "development",
+      "subcategory": "testing",
+      "description": "فریم‌ورک تست خودکار مرورگر برای Chromium، Firefox و WebKit.",
+      "url": "https://playwright.dev/",
+      "tags": [
+        "e2e",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Cypress",
+      "category": "development",
+      "subcategory": "testing",
+      "description": "پلتفرم تست خودکار end-to-end و component برای وب.",
+      "url": "https://www.cypress.io/",
+      "tags": [
+        "e2e",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Vitest",
+      "category": "development",
+      "subcategory": "testing",
+      "description": "فریم‌ورک تست سریع برای پروژه‌های JavaScript و Vite.",
+      "url": "https://vitest.dev/",
+      "tags": [
+        "javascript",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Jest",
+      "category": "development",
+      "subcategory": "testing",
+      "description": "فریم‌ورک تست JavaScript با امکانات mock و پوشش کد.",
+      "url": "https://jestjs.io/",
+      "tags": [
+        "javascript",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Selenium",
+      "category": "development",
+      "subcategory": "testing",
+      "description": "ابزار متن‌باز خودکارسازی مرورگر برای تست وب.",
+      "url": "https://www.selenium.dev/",
+      "tags": [
+        "browser",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "BrowserStack",
+      "category": "development",
+      "subcategory": "testing",
+      "description": "آزمایش وب‌سایت و اپلیکیشن روی مرورگرها و دستگاه‌های واقعی.",
+      "url": "https://www.browserstack.com/",
+      "tags": [
+        "qa",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Chrome DevTools",
+      "category": "development",
+      "subcategory": "browser-tools",
+      "description": "ابزار بازرسی، دیباگ، تحلیل عملکرد و شبکه در Chrome.",
+      "url": "https://developer.chrome.com/docs/devtools/",
+      "tags": [
+        "debug",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Firefox Developer Tools",
+      "category": "development",
+      "subcategory": "browser-tools",
+      "description": "ابزارهای توسعه‌دهنده Firefox برای بررسی DOM، CSS و شبکه.",
+      "url": "https://firefox-source-docs.mozilla.org/devtools-user/",
+      "tags": [
+        "debug",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Lighthouse",
+      "category": "development",
+      "subcategory": "browser-tools",
+      "description": "ابزار ممیزی عملکرد، دسترس‌پذیری، سئو و کیفیت صفحات وب.",
+      "url": "https://developer.chrome.com/docs/lighthouse/",
+      "tags": [
+        "performance",
+        "seo",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Kubernetes",
+      "category": "development",
+      "subcategory": "devops",
+      "description": "سامانه متن‌باز ارکستراسیون و مدیریت کانتینرها.",
+      "url": "https://kubernetes.io/",
+      "tags": [
+        "container",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "GitHub Actions",
+      "category": "development",
+      "subcategory": "devops",
+      "description": "اتوماسیون CI/CD و گردش‌کارهای توسعه در GitHub.",
+      "url": "https://github.com/features/actions",
+      "tags": [
+        "ci",
+        "cd",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Jenkins",
+      "category": "development",
+      "subcategory": "devops",
+      "description": "سرور اتوماسیون متن‌باز برای ساخت، تست و استقرار نرم‌افزار.",
+      "url": "https://www.jenkins.io/",
+      "tags": [
+        "ci",
+        "cd",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Terraform",
+      "category": "development",
+      "subcategory": "devops",
+      "description": "زیرساخت به‌عنوان کد برای ایجاد و مدیریت منابع ابری.",
+      "url": "https://developer.hashicorp.com/terraform",
+      "tags": [
+        "iac",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Ansible",
+      "category": "development",
+      "subcategory": "devops",
+      "description": "اتوماسیون پیکربندی، استقرار و مدیریت زیرساخت.",
+      "url": "https://www.ansible.com/",
+      "tags": [
+        "automation",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Render",
+      "category": "development",
+      "subcategory": "hosting",
+      "description": "پلتفرم ابری برای میزبانی وب‌سرویس، دیتابیس و برنامه‌ها.",
+      "url": "https://render.com/",
+      "tags": [
+        "cloud",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Railway",
+      "category": "development",
+      "subcategory": "hosting",
+      "description": "پلتفرم ابری برای استقرار برنامه‌ها، دیتابیس‌ها و سرویس‌ها.",
+      "url": "https://railway.com/",
+      "tags": [
+        "cloud",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Fly.io",
+      "category": "development",
+      "subcategory": "hosting",
+      "description": "پلتفرم اجرای اپلیکیشن‌ها و سرویس‌ها در نقاط جغرافیایی مختلف.",
+      "url": "https://fly.io/",
+      "tags": [
+        "cloud",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "DigitalOcean",
+      "category": "development",
+      "subcategory": "hosting",
+      "description": "زیرساخت ابری و سرویس‌های میزبانی برای توسعه‌دهندگان.",
+      "url": "https://www.digitalocean.com/",
+      "tags": [
+        "cloud",
+        "vps",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "OWASP",
+      "category": "development",
+      "subcategory": "security",
+      "description": "بنیاد و منابع متن‌باز برای بهبود امنیت نرم‌افزار و برنامه‌های وب.",
+      "url": "https://owasp.org/",
+      "tags": [
+        "security",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Snyk",
+      "category": "development",
+      "subcategory": "security",
+      "description": "ابزار شناسایی و مدیریت آسیب‌پذیری در کد و وابستگی‌ها.",
+      "url": "https://snyk.io/",
+      "tags": [
+        "security",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Semgrep",
+      "category": "development",
+      "subcategory": "security",
+      "description": "تحلیل ایستای کد و بررسی الگوهای امنیتی نرم‌افزار.",
+      "url": "https://semgrep.dev/",
+      "tags": [
+        "sast",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Sentry",
+      "category": "development",
+      "subcategory": "monitoring",
+      "description": "پایش خطا و عملکرد برنامه‌ها با ردیابی خطاهای واقعی.",
+      "url": "https://sentry.io/",
+      "tags": [
+        "errors",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Grafana",
+      "category": "development",
+      "subcategory": "monitoring",
+      "description": "پلتفرم داشبورد و مشاهده‌پذیری برای معیارها، لاگ‌ها و تریس‌ها.",
+      "url": "https://grafana.com/",
+      "tags": [
+        "observability",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "Prometheus",
+      "category": "development",
+      "subcategory": "monitoring",
+      "description": "سامانه متن‌باز جمع‌آوری و پایش معیارهای زمانی.",
+      "url": "https://prometheus.io/",
+      "tags": [
+        "metrics",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "PostHog",
+      "category": "development",
+      "subcategory": "monitoring",
+      "description": "ابزار تحلیل محصول، ضبط نشست، آزمایش و feature flag.",
+      "url": "https://posthog.com/",
+      "tags": [
+        "analytics",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "GitHub Skills",
+      "category": "development",
+      "subcategory": "learning-dev",
+      "description": "تمرین‌های تعاملی برای یادگیری GitHub، Git و گردش کار توسعه.",
+      "url": "https://skills.github.com/",
+      "tags": [
+        "learn",
+        "برنامه‌نویسی"
+      ]
+    },
+    {
+      "title": "The Odin Project",
+      "category": "development",
+      "subcategory": "learning-dev",
+      "description": "مسیر آموزشی رایگان و پروژه‌محور برای توسعه وب فول‌استک.",
+      "url": "https://www.theodinproject.com/",
+      "tags": [
+        "learn",
+        "web",
+        "برنامه‌نویسی"
       ]
     }
   ]
