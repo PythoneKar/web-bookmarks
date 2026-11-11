@@ -514,3 +514,26 @@ main{max-width:1240px;margin:auto;padding:0 28px}.hero{position:relative;isolati
 .folder-context-menu{min-width:238px;max-width:min(290px,calc(100vw - 16px));max-height:min(72vh,520px);overflow:auto}
 .folder-context-menu .context-action{font-weight:700}
 .folder-context-menu .context-menu-divider{height:1px;background:var(--line);margin:7px 2px}
+
+
+/* Folder manager: inline editing, drag sorting and Telegram-like delete confirmation */
+.folder-chip-wrap{display:inline-flex;align-items:center;gap:3px;position:relative}
+.folder-chip-wrap[draggable="true"]{cursor:grab}
+.folder-chip-wrap.is-dragging{opacity:.38;transform:scale(.97)}
+.folder-chip-wrap.folder-editing{padding:3px;border:1px dashed var(--accent2);border-radius:11px;background:color-mix(in srgb,var(--accent2) 7%,var(--panel))}
+.folder-manage-button,.folder-edit-toggle{min-height:30px;padding:4px 8px;border:1px solid var(--line);border-radius:8px;background:var(--panel2);color:var(--text);font:inherit;font-size:11px;cursor:pointer}
+.folder-manage-button:hover,.folder-edit-toggle:hover,.folder-edit-toggle.active{border-color:var(--accent2);color:var(--accent2)}
+.folder-delete-button{color:#e06b70;font-size:16px}
+.folder-edit-form{display:inline-flex;align-items:center;gap:4px;flex-wrap:wrap}
+.folder-edit-form input{width:min(180px,42vw);min-width:100px;min-height:32px;padding:6px 9px;border:1px solid var(--accent2);border-radius:8px;background:var(--panel2);color:var(--text);font:inherit;font-size:10px}
+.folder-confirm-backdrop{position:fixed;inset:0;z-index:12000;display:grid;place-items:center;padding:18px;background:rgba(7,10,18,.68);backdrop-filter:blur(5px)}
+.folder-confirm-dialog{width:min(390px,100%);padding:23px;border:1px solid var(--line);border-radius:18px;background:var(--panel);color:var(--text);text-align:center;box-shadow:0 24px 80px rgba(0,0,0,.45);direction:rtl;animation:folder-dialog-in .16s ease-out}
+.folder-confirm-icon{width:42px;height:42px;display:grid;place-items:center;margin:0 auto 12px;border-radius:50%;background:rgba(224,107,112,.14);color:#e06b70;font-size:22px;font-weight:900}
+.folder-confirm-dialog strong{display:block;font-size:15px}
+.folder-confirm-dialog p{margin:10px 0 20px;color:var(--muted);font-size:11px;line-height:1.9}
+.folder-confirm-actions{display:flex;justify-content:center;gap:9px}
+.folder-confirm-actions button{min-width:100px;min-height:37px;padding:7px 15px;border:1px solid var(--line);border-radius:9px;font:inherit;font-size:11px;font-weight:700;cursor:pointer}
+.folder-confirm-no{background:var(--panel2);color:var(--text)}
+.folder-confirm-yes{border-color:#c95660!important;background:#c95660;color:white}
+@keyframes folder-dialog-in{from{opacity:0;transform:translateY(8px) scale(.98)}to{opacity:1;transform:translateY(0) scale(1)}}
+@media(max-width:680px){.folder-edit-toggle{font-size:9px}.folder-confirm-dialog{padding:19px}}
