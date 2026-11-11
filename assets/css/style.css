@@ -455,3 +455,37 @@ main{max-width:1240px;margin:auto;padding:0 28px}.hero{position:relative;isolati
   .category-with-menu.open>.mega-menu,
   .category-with-menu:focus-within>.mega-menu{animation:mega-center-in .18s ease-out}
 }
+
+
+/* Keep the floating mega menu entirely inside the results column, clear of categories */
+@media(min-width:681px){
+  .category-with-menu>.mega-menu{
+    position:fixed!important;
+    top:50%!important;
+    left:max(28px,calc((100vw - 1240px)/2 + 28px))!important;
+    right:max(307px,calc((100vw - 1240px)/2 + 307px))!important;
+    width:auto!important;
+    max-height:min(84vh,860px)!important;
+    overflow-y:auto!important;
+    overflow-x:hidden!important;
+    transform:translateY(-50%)!important;
+    z-index:9999!important;
+  }
+  .mega-bridge{
+    display:block;position:fixed;inset:0;width:100vw;height:100vh;
+    overflow:visible;pointer-events:none;z-index:9998;
+  }
+  .mega-bridge-path{
+    fill:none;stroke:var(--accent);stroke-width:30;stroke-linecap:round;
+    stroke-linejoin:round;opacity:.25;pointer-events:stroke;
+  }
+  .category-with-menu:not(.open)>.mega-bridge{display:none}
+}
+@media(max-width:680px){
+  .category-with-menu>.mega-menu{
+    position:fixed!important;top:50%!important;left:10px!important;right:10px!important;
+    width:auto!important;max-height:calc(100vh - 40px)!important;
+    transform:translateY(-50%)!important;z-index:9999!important;
+  }
+  .mega-bridge{display:none!important}
+}
