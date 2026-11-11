@@ -5,9 +5,13 @@
   const BOOKMARKS_KEY = "web-bookmarks:pinned";
   const FOLDERS_KEY = "web-bookmarks:folders";
   const FOLDER_ITEMS_KEY = "web-bookmarks:folder-items";
-  const ASSET_VERSION = "20261111-20";
+  const ASSET_VERSION = "20261111-21";
   const loadStored = (key,fallback) => { try { return JSON.parse(localStorage.getItem(key)||"null") ?? fallback; } catch { return fallback; } };
   let folderCreateOpen = false;
+  let folderEditMode = false;
+  let editingFolderId = null;
+  let pendingDeleteFolderId = null;
+  let draggedFolderId = null;
   let folders = loadStored(FOLDERS_KEY,[]);
   if(!Array.isArray(folders)) folders=[];
   folders=folders.filter(f=>f&&typeof f.id==="string"&&typeof f.name==="string").slice(0,10);
@@ -240,12 +244,30 @@
     const createControl=folderCreateOpen
       ? '<form class="folder-create-form" id="folder-create-form"><input id="folder-name-input" name="folderName" type="text" maxlength="40" autocomplete="off" placeholder="نام پوشه..." aria-label="نام پوشه جدید" required><button type="submit" class="folder-save-button">ذخیره</button><button type="button" class="folder-cancel-button" data-cancel-folder>انصراف</button></form>'
       : '<button type="button" class="folder-add-button" id="add-folder-button" '+(folders.length>=10?'disabled':'')+'>＋ افزودن پوشه جدید</button>';
+    const folderMarkup=folders.map(f=>{
+      if(editingFolderId===f.id)return '<form class="folder-edit-form" data-folder-edit-form="'+safe(f.id)+'"><input name="folderName" maxlength="40" value="'+safe(f.name)+'" aria-label="نام جدید پوشه" required><button type="submit" class="folder-save-button">ذخیره</button><button type="button" class="folder-cancel-button" data-cancel-folder-edit>انصراف</button></form>';
+      return '<div class="folder-chip-wrap '+(folderEditMode?'folder-editing':'')+'" '+(folderEditMode?'draggable="true" data-folder-drag="'+safe(f.id)+'"':'')+'>'+
+        '<button type="button" class="folder-chip '+(state.folderId===f.id?'active':'')+'" data-folder-filter="'+safe(f.id)+'">📁 '+safe(f.name)+' <span>'+state.resources.filter(r=>folderItems[r.url]===f.id).length.toLocaleString("fa-IR")+'</span></button>'+
+        (folderEditMode?'<button type="button" class="folder-manage-button" data-edit-folder="'+safe(f.id)+'" aria-label="ویرایش پوشه '+safe(f.name)+'" title="ویرایش">✎</button><button type="button" class="folder-manage-button folder-delete-button" data-delete-folder="'+safe(f.id)+'" aria-label="حذف پوشه '+safe(f.name)+'" title="حذف">×</button>':'')+'</div>';
+    }).join('');
     bar.innerHTML=createControl+
       '<button type="button" class="folder-chip '+(!state.folderId?'active':'')+'" data-folder-filter="">همه منابع</button>'+
-      folders.map(f=>'<button type="button" class="folder-chip '+(state.folderId===f.id?'active':'')+'" data-folder-filter="'+safe(f.id)+'">📁 '+safe(f.name)+' <span>'+state.resources.filter(r=>folderItems[r.url]===f.id).length.toLocaleString("fa-IR")+'</span></button>').join('')+
+      folderMarkup+
+      '<button type="button" class="folder-edit-toggle '+(folderEditMode?'active':'')+'" data-toggle-folder-edit>'+ (folderEditMode?'پایان ویرایش':'✎ ویرایش پوشه‌ها')+'</button>'+
       '<span class="folder-limit">'+folders.length.toLocaleString("fa-IR")+' از ۱۰ پوشه</span>';
     if(folderCreateOpen) requestAnimationFrame(()=>$("#folder-name-input")?.focus());
+    if(editingFolderId) requestAnimationFrame(()=>bar.querySelector('[data-folder-edit-form] input')?.focus());
   };
+  const showFolderDeleteConfirm=id=>{
+    const folder=folders.find(f=>f.id===id);if(!folder)return;
+    pendingDeleteFolderId=id;
+    document.querySelector("#folder-delete-confirm")?.remove();
+    const dialog=document.createElement("div");dialog.id="folder-delete-confirm";dialog.className="folder-confirm-backdrop";
+    dialog.innerHTML='<div class="folder-confirm-dialog" role="dialog" aria-modal="true" aria-labelledby="folder-delete-title"><div class="folder-confirm-icon">!</div><strong id="folder-delete-title">حذف پوشه</strong><p>مطمئنی می‌خوای پوشه «'+safe(folder.name)+'» رو حذف کنی؟ ابزارهای داخل پوشه حذف نمی‌شن و فقط از این پوشه خارج می‌شن.</p><div class="folder-confirm-actions"><button type="button" class="folder-confirm-no" data-folder-delete-no>نه</button><button type="button" class="folder-confirm-yes" data-folder-delete-yes>آره، حذفش کن</button></div></div>';
+    document.body.appendChild(dialog);
+  };
+  const closeFolderDeleteConfirm=()=>{pendingDeleteFolderId=null;document.querySelector("#folder-delete-confirm")?.remove();};
+
   const showFolderMenu=(url,x,y)=>{
     document.querySelector("#folder-context-menu")?.remove();
     const menu=document.createElement("div");menu.id="folder-context-menu";menu.className="folder-context-menu";menu.dataset.url=url;
@@ -315,6 +337,23 @@
 
   // Personal folders: saved locally and kept separate from the catalogue.
   document.addEventListener("click",e=>{
+    if(e.target.closest("[data-folder-delete-no]")){closeFolderDeleteConfirm();return;}
+    if(e.target.closest("[data-folder-delete-yes]")){
+      const id=pendingDeleteFolderId;
+      if(id){
+        folders=folders.filter(f=>f.id!==id);
+        Object.keys(folderItems).forEach(url=>{if(folderItems[url]===id)delete folderItems[url];});
+        saveFolders();saveFolderItems();
+        if(state.folderId===id){state.folderId=null;state.category="all";state.page=1;}
+      }
+      closeFolderDeleteConfirm();renderFolderBar();if(state.folderId===null)render();return;
+    }
+    const deleteFolder=e.target.closest("[data-delete-folder]");
+    if(deleteFolder){showFolderDeleteConfirm(deleteFolder.dataset.deleteFolder);return;}
+    const editFolder=e.target.closest("[data-edit-folder]");
+    if(editFolder){editingFolderId=editFolder.dataset.editFolder;renderFolderBar();return;}
+    if(e.target.closest("[data-cancel-folder-edit]")){editingFolderId=null;renderFolderBar();return;}
+    if(e.target.closest("[data-toggle-folder-edit]")){folderEditMode=!folderEditMode;editingFolderId=null;renderFolderBar();return;}
     const contextAction=e.target.closest("[data-context-bookmark],[data-context-favorite]");
     if(contextAction){
       const menu=$("#folder-context-menu"),url=menu?.dataset.url;if(!url)return;
@@ -351,6 +390,16 @@
     if(!e.target.closest("#folder-context-menu"))closeFolderMenu();
   });
   document.addEventListener("submit",e=>{
+    const editForm=e.target.closest("[data-folder-edit-form]");
+    if(editForm){
+      e.preventDefault();const folder=folders.find(f=>f.id===editForm.dataset.folderEditForm);
+      const name=(editForm.querySelector("input")?.value||"").trim();
+      if(!folder||!name)return;
+      if(folders.some(f=>f.id!==folder.id&&f.name.trim().toLocaleLowerCase()===name.toLocaleLowerCase())){
+        const input=editForm.querySelector("input");input.setCustomValidity("پوشه‌ای با این نام وجود دارد.");input.reportValidity();return;
+      }
+      folder.name=name.slice(0,40);saveFolders();editingFolderId=null;renderFolderBar();return;
+    }
     const form=e.target.closest("#folder-create-form");if(!form)return;
     e.preventDefault();
     const input=form.querySelector("#folder-name-input");
@@ -363,6 +412,24 @@
     folders.push({id:"folder-"+Date.now().toString(36)+"-"+Math.random().toString(36).slice(2,7),name:name.slice(0,40)});
     saveFolders();folderCreateOpen=false;renderFolderBar();
   });
+  document.addEventListener("dragstart",e=>{
+    const item=e.target.closest("[data-folder-drag]");if(!item||!folderEditMode)return;
+    draggedFolderId=item.dataset.folderDrag;item.classList.add("is-dragging");
+    e.dataTransfer.effectAllowed="move";e.dataTransfer.setData("text/plain",draggedFolderId);
+  });
+  document.addEventListener("dragover",e=>{
+    const target=e.target.closest("[data-folder-drag]");if(!target||!draggedFolderId)return;
+    e.preventDefault();e.dataTransfer.dropEffect="move";
+  });
+  document.addEventListener("drop",e=>{
+    const target=e.target.closest("[data-folder-drag]");if(!target||!draggedFolderId)return;
+    e.preventDefault();const from=folders.findIndex(f=>f.id===draggedFolderId),to=folders.findIndex(f=>f.id===target.dataset.folderDrag);
+    if(from>=0&&to>=0&&from!==to){const [moved]=folders.splice(from,1);folders.splice(to,0,moved);saveFolders();renderFolderBar();}
+    draggedFolderId=null;
+  });
+  document.addEventListener("dragend",e=>{
+    e.target.closest("[data-folder-drag]")?.classList.remove("is-dragging");draggedFolderId=null;
+  });
   document.addEventListener("contextmenu",e=>{
     const target=e.target instanceof Element?e.target:e.target?.parentElement;
     const row=target?.closest(".resource-card[data-resource-url],.mega-tool-row");
@@ -371,7 +438,7 @@
     if(!url)return;
     e.preventDefault();e.stopPropagation();showFolderMenu(url,e.clientX,e.clientY);
   },true);
-  document.addEventListener("keydown",e=>{if(e.key==="Escape")closeFolderMenu();});
+  document.addEventListener("keydown",e=>{if(e.key==="Escape"){closeFolderMenu();closeFolderDeleteConfirm();}});
 
   const suggestionBox=$("#search-suggestions"), searchInput=$("#search-input");
   const closeSuggestions=()=>{suggestionBox.hidden=true;searchInput.setAttribute("aria-expanded","false");state.activeSuggestion=-1;};
