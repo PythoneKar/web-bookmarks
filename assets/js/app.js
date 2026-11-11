@@ -3,7 +3,7 @@
   const FAVORITES_KEY = "web-bookmarks:favorites";
   const FAVORITES_VERSION = 1;
   const BOOKMARKS_KEY = "web-bookmarks:pinned";
-  const ASSET_VERSION = "20261111-7";
+  const ASSET_VERSION = "20261111-8";
   const $ = (selector) => document.querySelector(selector);
   // Keep personal bookmarks separate from the site's frequently updated resource data.
   const loadFavorites = () => {
@@ -165,6 +165,26 @@
       wrapper.addEventListener("mouseleave",()=>{wrapper.classList.remove("open");trigger.setAttribute("aria-expanded","false");});
       wrapper.addEventListener("focusin",()=>{wrapper.classList.add("open");trigger.setAttribute("aria-expanded","true");});
       wrapper.addEventListener("focusout",e=>{if(!wrapper.contains(e.relatedTarget)){wrapper.classList.remove("open");trigger.setAttribute("aria-expanded","false");}});
+    });
+    // When a nested tool list opens near the bottom, gently scroll only its own mega menu
+    // far enough to reveal the complete list without moving the whole page.
+    root.querySelectorAll(".mega-link-wrap").forEach(item=>{
+      item.addEventListener("mouseenter",()=>{
+        const menu=item.closest(".mega-menu");
+        const submenu=item.querySelector(".mega-submenu");
+        if(!menu||!submenu) return;
+        requestAnimationFrame(()=>{
+          const menuRect=menu.getBoundingClientRect();
+          const subRect=submenu.getBoundingClientRect();
+          const visibleBottom=menuRect.bottom-menu.clientTop;
+          const overflow=subRect.bottom-visibleBottom;
+          if(overflow>6){
+            const maxScroll=menu.scrollHeight-menu.clientHeight;
+            const target=Math.min(maxScroll,menu.scrollTop+overflow+14);
+            menu.scrollTo({top:target,behavior:"smooth"});
+          }
+        });
+      });
     });
     root.querySelectorAll("[data-subcategory]").forEach(button=>button.addEventListener("click",()=>{
       const wrapper=button.closest(".category-with-menu");
