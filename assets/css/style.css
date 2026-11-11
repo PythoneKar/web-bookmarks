@@ -409,3 +409,43 @@ main{max-width:1240px;margin:auto;padding:0 28px}.hero{position:relative;isolati
 .folder-context-menu .folder-remove-item{color:#e7a56a}
 .folder-context-menu .folder-context-close{margin-top:5px;border-top:1px solid var(--line);color:var(--muted)}
 @media(max-width:680px){.folder-toolbar{gap:5px;padding:8px}.folder-add-button,.folder-chip{min-height:30px;padding:5px 8px;font-size:9px}.folder-limit{width:100%;margin:2px 3px 0}}
+
+
+/* Centered floating mega menus: independent of the hovered category's vertical position */
+@media(min-width:681px){
+  .category-with-menu>.mega-menu{
+    position:fixed;
+    top:50%;
+    left:50%;
+    right:auto;
+    width:min(1080px,calc(100vw - 48px));
+    max-height:min(84vh,860px);
+    overflow-y:auto;
+    overflow-x:hidden;
+    transform:translate(-50%,-50%);
+    z-index:9999;
+    animation:mega-center-in .18s ease-out;
+  }
+  @keyframes mega-center-in{
+    from{opacity:0;transform:translate(-50%,-48%) scale(.985)}
+    to{opacity:1;transform:translate(-50%,-50%) scale(1)}
+  }
+}
+@media(max-width:680px){
+  .category-with-menu>.mega-menu{
+    position:fixed;
+    top:50%;left:10px;right:10px;
+    width:auto;max-height:calc(100vh - 40px);
+    transform:translateY(-50%);
+    z-index:9999;
+  }
+}
+
+/* Folder creation is an inline form; it does not rely on browser prompt dialogs */
+.folder-create-form{display:flex;align-items:center;gap:6px;flex:1 1 100%;min-width:220px}
+.folder-create-form input{width:min(240px,48vw);min-width:120px;min-height:32px;padding:6px 10px;border:1px solid var(--accent);border-radius:8px;background:var(--panel2);color:var(--text);font:inherit;font-size:11px;outline:0}
+.folder-save-button,.folder-cancel-button{min-height:32px;padding:6px 11px;border:1px solid var(--line);border-radius:8px;background:var(--panel2);color:var(--text);font:inherit;font-size:10px;cursor:pointer}
+.folder-save-button{background:color-mix(in srgb,var(--accent2) 17%,var(--panel));border-color:var(--accent2);font-weight:700}
+.folder-cancel-button{color:var(--muted)}
+.folder-toolbar:empty{display:flex;min-height:52px}
+@media(max-width:680px){.folder-create-form{flex-wrap:wrap}.folder-create-form input{flex:1;width:auto}}
