@@ -449,3 +449,9 @@ main{max-width:1240px;margin:auto;padding:0 28px}.hero{position:relative;isolati
 .folder-cancel-button{color:var(--muted)}
 .folder-toolbar:empty{display:flex;min-height:52px}
 @media(max-width:680px){.folder-create-form{flex-wrap:wrap}.folder-create-form input{flex:1;width:auto}}
+
+/* Preserve the centered transform during the mega-menu entrance animation */
+@media(min-width:681px){
+  .category-with-menu.open>.mega-menu,
+  .category-with-menu:focus-within>.mega-menu{animation:mega-center-in .18s ease-out}
+}
