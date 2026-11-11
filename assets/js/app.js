@@ -2,6 +2,8 @@
   const PAGE_SIZE = 18;
   const FAVORITES_KEY = "web-bookmarks:favorites";
   const FAVORITES_VERSION = 1;
+  const BOOKMARKS_KEY = "web-bookmarks:pinned";
+  const ASSET_VERSION = "20261111-2";
   const $ = (selector) => document.querySelector(selector);
   // Keep personal bookmarks separate from the site's frequently updated resource data.
   const loadFavorites = () => {
@@ -13,6 +15,19 @@
     return new Set();
   };
   const favorites = loadFavorites();
+  // Pinned bookmarks are separate from starred favorites and survive catalogue updates.
+  const loadBookmarks = () => {
+    try {
+      const saved = JSON.parse(localStorage.getItem(BOOKMARKS_KEY) || "[]");
+      return Array.isArray(saved) ? [...new Set(saved.filter(v => typeof v === "string"))] : [];
+    } catch (error) { console.warn("Could not read pinned bookmarks", error); return []; }
+  };
+  let bookmarks = loadBookmarks();
+  const saveBookmarks = () => {
+    try { localStorage.setItem(BOOKMARKS_KEY, JSON.stringify(bookmarks)); return true; }
+    catch (error) { console.warn("Could not save pinned bookmarks", error); return false; }
+  };
+  let animateCardsOnNextRender = false;
   const saveFavorites = () => {
     try {
       localStorage.setItem(FAVORITES_KEY, JSON.stringify({ version: FAVORITES_VERSION, items: [...favorites] }));
@@ -108,7 +123,15 @@
     let list=state.category==="favorites" ? state.resources.filter(item => favorites.has(item.url)) : state.resources.filter(item => state.category==="all" || item.category===state.category);
     if(state.query) list=list.map(item=>({item,score:searchScore([item.title,item.description,item.url,...(item.tags||[])].join(" "),state.query,item.title)}))
       .filter(x=>x.score>0).sort((a,b)=>b.score-a.score).map(x=>x.item);
-    if(state.sort==="name") list.sort((a,b)=>a.title.localeCompare(b.title,"fa"));
+    list.sort((a,b) => {
+      const ai = bookmarks.indexOf(a.url), bi = bookmarks.indexOf(b.url);
+      if (ai !== -1 || bi !== -1) {
+        if (ai === -1) return 1;
+        if (bi === -1) return -1;
+        return ai - bi;
+      }
+      return state.sort === "name" ? a.title.localeCompare(b.title,"fa") : 0;
+    });
     return list;
   };
   const renderCategories = () => {
@@ -125,6 +148,8 @@
   };
   const safe = value => String(value??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
   const render = () => {
+    const previousRects = animateCardsOnNextRender ? new Map([...document.querySelectorAll(".resource-card[data-resource-url]")].map(card => [card.dataset.resourceUrl, card.getBoundingClientRect()])) : null;
+    animateCardsOnNextRender = false;
     renderCategories();
     const list=filtered(), pages=Math.max(1,Math.ceil(list.length/PAGE_SIZE));
     state.page=Math.min(state.page,pages);
@@ -138,12 +163,28 @@
       const initial=(item.title||"؟").trim().charAt(0);
       const favicon="https://www.google.com/s2/favicons?domain_url="+encodeURIComponent(item.url)+"&sz=128";
       const isFavorite=favorites.has(item.url);
-      return '<article class="resource-card"><div class="card-top"><div class="site-icon"><img src="'+favicon+'" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="site-icon-fallback" hidden>'+safe(initial)+'</span></div><div class="card-heading"><div class="card-title">'+safe(item.title)+'</div><div class="card-category">'+safe(categoryName(item.category))+'</div></div><button class="favorite-button '+(isFavorite?'is-favorite':'')+'" type="button" data-favorite="'+safe(item.url)+'" aria-label="'+(isFavorite?'حذف از نشان‌شده‌ها':'افزودن به نشان‌شده‌ها')+'" aria-pressed="'+isFavorite+'">'+(isFavorite?'★':'☆')+'</button></div><p class="card-description">'+safe(item.description)+'</p><div class="card-bottom"><span class="card-domain">'+safe(domain)+'</span><a class="visit-link" href="'+safe(item.url)+'" target="_blank" rel="noopener noreferrer">بازدید از سایت ↗</a></div></article>';
+      const isBookmarked=bookmarks.includes(item.url);
+      return '<article class="resource-card '+(isBookmarked?'is-bookmarked':'')+'" data-resource-url="'+safe(item.url)+'"><div class="card-top"><div class="site-icon"><img src="'+favicon+'" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.hidden=true;this.nextElementSibling.hidden=false"><span class="site-icon-fallback" hidden>'+safe(initial)+'</span></div><div class="card-heading"><div class="card-title">'+safe(item.title)+'</div><div class="card-category">'+safe(categoryName(item.category))+'</div></div><button class="bookmark-button '+(isBookmarked?'is-bookmarked':'')+'" type="button" data-bookmark="'+safe(item.url)+'" aria-label="'+(isBookmarked?'برداشتن بوکمارک':'بوکمارک و انتقال به ابتدای دسته')+'" aria-pressed="'+isBookmarked+'"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.75 3.75h10.5a1 1 0 0 1 1 1v15.5L12 16.1l-6.25 4.15V4.75a1 1 0 0 1 1-1Z"/></svg></button><button class="favorite-button '+(isFavorite?'is-favorite':'')+'" type="button" data-favorite="'+safe(item.url)+'" aria-label="'+(isFavorite?'حذف از نشان‌شده‌ها':'افزودن به نشان‌شده‌ها')+'" aria-pressed="'+isFavorite+'">'+(isFavorite?'★':'☆')+'</button></div><p class="card-description">'+safe(item.description)+'</p><div class="card-bottom"><span class="card-domain">'+safe(domain)+'</span><a class="visit-link" href="'+safe(item.url)+'" target="_blank" rel="noopener noreferrer">بازدید از سایت ↗</a></div></article>';
     }).join("");
     $("#empty-state").hidden=visible.length!==0;$("#resource-grid").hidden=visible.length===0;
     $("#page-info").textContent=list.length?("نمایش "+(start+1).toLocaleString("fa-IR")+" تا "+Math.min(start+PAGE_SIZE,list.length).toLocaleString("fa-IR")+" از "+list.length.toLocaleString("fa-IR")):"۰ نتیجه";
     $("#page-numbers").innerHTML=Array.from({length:pages},(_,i)=>i+1).filter(n=>pages<=5||Math.abs(n-state.page)<=1||n===1||n===pages).map(n=>'<button class="page-number '+(n===state.page?"current":"")+'" data-page="'+n+'">'+n.toLocaleString("fa-IR")+'</button>').join("");
     document.querySelectorAll("[data-page]").forEach(b=>b.addEventListener("click",()=>{state.page=Number(b.dataset.page);render();}));
+    if (previousRects) document.querySelectorAll(".resource-card[data-resource-url]").forEach(card => {
+      const before = previousRects.get(card.dataset.resourceUrl);
+      if (!before) return;
+      const after = card.getBoundingClientRect();
+      const dx = before.left - after.left, dy = before.top - after.top;
+      if (dx || dy) card.animate([{ transform: "translate(" + dx + "px, " + dy + "px)" }, { transform: "translate(0, 0)" }], { duration: 560, easing: "cubic-bezier(.2,.8,.2,1)" });
+    });
+    document.querySelectorAll("[data-bookmark]").forEach(button=>button.addEventListener("click",()=>{
+      const url=button.dataset.bookmark;
+      const index=bookmarks.indexOf(url);
+      if(index!==-1) bookmarks.splice(index,1); else bookmarks.unshift(url);
+      saveBookmarks();
+      animateCardsOnNextRender=true;
+      render();
+    }));
     document.querySelectorAll("[data-favorite]").forEach(button=>button.addEventListener("click",()=>{
       const url=button.dataset.favorite;
       if(favorites.has(url)) favorites.delete(url); else favorites.add(url);
@@ -185,7 +226,7 @@
   $("#sort-select").addEventListener("change",e=>{state.sort=e.target.value;state.page=1;render();});
   $("#theme-toggle").addEventListener("click",()=>{const light=document.documentElement.classList.toggle("light");localStorage.setItem("library-theme",light?"light":"dark");});
   if(localStorage.getItem("library-theme")==="light")document.documentElement.classList.add("light");
-  fetch("data/resources.json").then(r=>{if(!r.ok)throw new Error("Data unavailable");return r.json()}).then(data=>{
+  fetch("data/resources.json?v=" + ASSET_VERSION).then(r=>{if(!r.ok)throw new Error("Data unavailable");return r.json()}).then(data=>{
     state.resources=data.resources||[];state.categories=data.categories||[];render();
   }).catch(()=>{$("#total-count").textContent="بارگذاری منابع ناموفق بود";$("#resource-grid").innerHTML='<p class="card-description">فایل داده در دسترس نیست. لطفاً صفحه را دوباره بارگذاری کن.</p>';});
 })();
