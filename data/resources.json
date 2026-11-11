@@ -843,25 +843,6 @@
       ]
     },
     {
-      "title": "Persian TV Live",
-      "category": "satellite-networks",
-      "description": "فهرست پخش زنده شبکه‌های فارسی‌زبان.",
-      "url": "https://www.persiantvlive.com",
-      "tags": [
-        "فارسی",
-        "تلویزیون"
-      ]
-    },
-    {
-      "title": "Zende TV",
-      "category": "satellite-networks",
-      "description": "دسترسی به پخش زنده شبکه‌های تلویزیونی.",
-      "url": "https://www.zendetv.com/stream",
-      "tags": [
-        "تلویزیون"
-      ]
-    },
-    {
       "title": "Telegram",
       "category": "social",
       "description": "پیام‌رسان و بستر کانال‌ها و گروه‌ها.",
@@ -2551,6 +2532,217 @@
       "description": "ماشین‌حساب علمی متن‌باز",
       "tags": [
         "misc"
+      ]
+    },
+    {
+      "title": "Pardeh – تلویزیون زنده فارسی",
+      "category": "satellite-networks",
+      "description": "درگاه تجمیعی شبکه‌های فارسی‌زبان با فهرست کانال‌های خبری، سرگرمی، موسیقی، فیلم و برنامه‌های عمومی؛ لینک پخش هر شبکه ممکن است تغییر کند.",
+      "url": "https://pardehtv.com/live-tv",
+      "tags": [
+        "فارسی",
+        "پخش زنده",
+        "تلویزیون",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "Persian TV Live – پخش زنده شبکه‌ها",
+      "category": "satellite-networks",
+      "description": "فهرست گسترده شبکه‌های فارسی‌زبان و ماهواره‌ای در حوزه خبر، موسیقی، سرگرمی، فیلم، ورزش و شبکه‌های داخلی.",
+      "url": "https://www.persiantvlive.com/",
+      "tags": [
+        "فارسی",
+        "پخش زنده",
+        "تلویزیون",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "UKFarsi – راهنمای پخش زنده فارسی",
+      "category": "satellite-networks",
+      "description": "دایرکتوری جست‌وجوپذیر شبکه‌های فارسی‌زبان با تفکیک شبکه‌ها و تجمیع‌کننده‌ها؛ وضعیت لینک‌ها متغیر است.",
+      "url": "https://ukfarsi.com/live-tv/",
+      "tags": [
+        "فارسی",
+        "پخش زنده",
+        "تلویزیون",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "Zende TV – فهرست پخش زنده",
+      "category": "satellite-networks",
+      "description": "فهرست پخش زنده شبکه‌های تلویزیونی فارسی، داخلی و بین‌المللی؛ فعال بودن هر جریان را هنگام باز کردن بررسی کنید.",
+      "url": "https://www.zendetv.com/stream",
+      "tags": [
+        "فارسی",
+        "پخش زنده",
+        "تلویزیون",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "Darya Stream – تلویزیون زنده",
+      "category": "satellite-networks",
+      "description": "درگاه فهرست و دسترسی به پخش زنده شبکه‌های تلویزیونی فارسی و بین‌المللی.",
+      "url": "https://darya.stream/live-tv/",
+      "tags": [
+        "فارسی",
+        "پخش زنده",
+        "تلویزیون",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "Iran International – پخش زنده",
+      "category": "satellite-networks",
+      "description": "صفحه رسمی پخش زنده تلویزیون ایران اینترنشنال و جدول برنامه‌ها.",
+      "url": "https://www.iranintl.com/live",
+      "tags": [
+        "فارسی",
+        "پخش زنده",
+        "تلویزیون",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "VOA Persian – تلویزیون و پخش زنده",
+      "category": "satellite-networks",
+      "description": "صفحه رسمی معرفی برنامه‌های تلویزیونی فارسی صدای آمریکا و راه‌های دسترسی به VOA365.",
+      "url": "https://ir.voanews.com/",
+      "tags": [
+        "فارسی",
+        "پخش زنده",
+        "تلویزیون",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "Simay Azadi – سیمای آزادی",
+      "category": "satellite-networks",
+      "description": "وب‌سایت شبکه سیمای آزادی با برنامه‌های تلویزیونی فارسی و دسترسی به محتوای ویدئویی و پخش شبکه.",
+      "url": "https://www.iranntv.com/",
+      "tags": [
+        "فارسی",
+        "پخش زنده",
+        "تلویزیون",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "Kalameh Farsi TV – شبکه کلمه",
+      "category": "satellite-networks",
+      "description": "وب‌سایت رسمی شبکه کلمه فارسی و برنامه‌های تلویزیونی و ویدئویی.",
+      "url": "https://www.kalamehfarsi.tv/",
+      "tags": [
+        "فارسی",
+        "پخش زنده",
+        "تلویزیون",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "Pars TV – پارس تی‌وی",
+      "category": "satellite-networks",
+      "description": "وب‌سایت شبکه فارسی‌زبان پارس تی‌وی با برنامه‌های خبری، گفت‌وگو و محتوای تلویزیونی.",
+      "url": "https://parstv.tv/",
+      "tags": [
+        "فارسی",
+        "پخش زنده",
+        "تلویزیون",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "Mihan TV – میهن تی‌وی",
+      "category": "satellite-networks",
+      "description": "وب‌سایت شبکه فارسی‌زبان میهن با برنامه‌های سیاسی، اجتماعی و تلویزیونی.",
+      "url": "https://mihantv.com/",
+      "tags": [
+        "فارسی",
+        "پخش زنده",
+        "تلویزیون",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "Tapesh TV – تپش",
+      "category": "satellite-networks",
+      "description": "وب‌سایت شبکه تپش با برنامه‌های فارسی، موسیقی و سرگرمی.",
+      "url": "https://tapesh.tv/",
+      "tags": [
+        "فارسی",
+        "پخش زنده",
+        "تلویزیون",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "GEM Group – شبکه‌های جم",
+      "category": "satellite-networks",
+      "description": "وب‌سایت گروه شبکه‌های جم برای معرفی شبکه‌ها، برنامه‌ها و اطلاعات رسمی مجموعه؛ این صفحه لزوماً پخش زنده مستقیم نیست.",
+      "url": "https://gemgroup.tv/",
+      "tags": [
+        "فارسی",
+        "پخش زنده",
+        "تلویزیون",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "Persiana – شبکه‌های پرشیانا",
+      "category": "satellite-networks",
+      "description": "درگاه رسمی مجموعه شبکه‌های پرشیانا و معرفی کانال‌های فیلم، سریال، موسیقی و سرگرمی.",
+      "url": "https://persiana.tv/",
+      "tags": [
+        "فارسی",
+        "پخش زنده",
+        "تلویزیون",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "MBC Persia – ام‌بی‌سی پرشیا",
+      "category": "satellite-networks",
+      "description": "وب‌سایت شبکه ام‌بی‌سی پرشیا و برنامه‌های سرگرمی فارسی‌زبان.",
+      "url": "https://www.mbc.net/",
+      "tags": [
+        "فارسی",
+        "پخش زنده",
+        "تلویزیون",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "PMC – Persian Music Channel",
+      "category": "satellite-networks",
+      "description": "شبکه موسیقی فارسی PMC؛ وب‌سایت و اطلاعات شبکه.",
+      "url": "https://pmc.tv/",
+      "tags": [
+        "فارسی",
+        "پخش زنده",
+        "تلویزیون",
+        "ماهواره"
+      ]
+    },
+    {
+      "title": "Persian TV Live",
+      "category": "satellite-networks",
+      "description": "فهرست پخش زنده شبکه‌های فارسی‌زبان.",
+      "url": "https://www.persiantvlive.com",
+      "tags": [
+        "فارسی",
+        "تلویزیون"
+      ]
+    },
+    {
+      "title": "Zende TV",
+      "category": "satellite-networks",
+      "description": "دسترسی به پخش زنده شبکه‌های تلویزیونی.",
+      "url": "https://www.zendetv.com/stream",
+      "tags": [
+        "تلویزیون"
       ]
     },
     {
