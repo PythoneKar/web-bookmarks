@@ -595,3 +595,98 @@ main{max-width:1240px;margin:auto;padding:0 28px}.hero{position:relative;isolati
   font-size:10px;
   line-height:1.2;
 }
+
+
+/* Mobile viewport overflow containment */
+@media (max-width: 680px) {
+  html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip;
+  }
+  body, main, .topbar, footer {
+    min-width: 0;
+  }
+  .topbar {
+    width: 100%;
+    padding-inline: 12px;
+    gap: 8px;
+  }
+  .brand {
+    min-width: 0;
+    flex: 0 1 auto;
+    gap: 7px;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  .top-actions {
+    min-width: 0;
+    flex: 0 1 auto;
+    gap: 5px;
+    justify-content: flex-end;
+  }
+  .top-actions > a {
+    white-space: nowrap;
+  }
+  main {
+    width: 100%;
+    max-width: 100%;
+    padding-inline: 12px;
+  }
+  .hero, .library-layout, .sidebar, .results-area,
+  .about-section, .resource-grid, .folder-toolbar {
+    min-width: 0;
+    max-width: 100%;
+  }
+  .resource-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .resource-card, .card-top, .card-heading,
+  .results-head > div, .about-section > div {
+    min-width: 0;
+  }
+  .results-head {
+    flex-wrap: wrap;
+  }
+  .sort-control {
+    max-width: 100%;
+  }
+  .about-section {
+    align-items: flex-start;
+    overflow-wrap: anywhere;
+  }
+  .about-section p {
+    overflow-wrap: anywhere;
+  }
+  footer {
+    width: 100%;
+    gap: 8px;
+    flex-wrap: wrap;
+    overflow-wrap: anywhere;
+  }
+  .category-with-menu > .mega-menu {
+    position: fixed !important;
+    inset-inline: 10px !important;
+    left: 10px !important;
+    right: 10px !important;
+    width: auto !important;
+    max-width: calc(100vw - 20px) !important;
+    box-sizing: border-box;
+  }
+  .mega-menu, .mega-menu-grid, .mega-group,
+  .mega-submenu, .mega-tool-row {
+    min-width: 0;
+    max-width: 100%;
+  }
+  .mega-menu-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 390px) {
+  .topbar { padding-inline: 9px; }
+  .brand { font-size: 11px; }
+  .brand-mark { width: 29px; height: 29px; }
+  .top-actions { gap: 3px; }
+  .backup-button { padding-inline: 6px; }
+  main { padding-inline: 10px; }
+}
