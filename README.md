@@ -2,6 +2,10 @@
 
 A lightweight, responsive, Persian RTL directory for useful websites and online tools.
 
+## Live website
+
+[Open Web Resource Library](https://pythonekar.github.io/web-bookmarks/)
+
 ## Features
 - Responsive layout for desktop, tablet and mobile
 - Persian and Arabic character normalization
